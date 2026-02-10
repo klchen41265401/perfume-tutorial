@@ -227,4 +227,36 @@ export default {
 canvas {
   border-radius: 8px;
 }
+
+@media (max-width: 767px) {
+  .molecule-card {
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.15rem;
+  }
+  .molecule-label {
+    font-size: 0.72rem;
+  }
+  .molecule-smiles {
+    font-size: 0.62rem;
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 479px) {
+  .molecule-card {
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+  .molecule-card:hover {
+    transform: none;
+  }
+  .molecule-label {
+    font-size: 0.68rem;
+  }
+  .molecule-smiles {
+    font-size: 0.58rem;
+    max-width: 130px;
+  }
+}
 </style>

@@ -45,7 +45,8 @@ export default {
         { to: '/chapter/6', label: '第6章 · 分析', icon: '📊' },
         { to: '/chapter/7', label: '第7章 · 案例', icon: '🌹' },
         { to: '/chapter/8', label: '第8章 · 進階', icon: '🧬' },
-        { to: '/chapter/9', label: '第9章 · 分子圖鑑', icon: '📖' }
+        { to: '/chapter/9', label: '第9章 · 分子圖鑑', icon: '📖' },
+        { to: '/chapter/10', label: '第10章 · 市售配方', icon: '🧴' }
       ]
     }
   }
@@ -214,33 +215,114 @@ export default {
   letter-spacing: 1px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 991px) {
   .collapse-toggle { display: none; }
 
   .nav-rail {
     flex-direction: row;
     align-items: center;
     overflow-x: auto;
+    overflow-y: hidden;
     height: auto;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+    border-radius: 14px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
 
   .nav-brand {
     border-bottom: none;
     border-right: 1px solid rgba(255, 215, 0, 0.25);
     padding-right: 1rem;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+  }
+
+  .brand-sub {
+    font-size: 0.72rem;
+    margin-top: 0.15rem;
   }
 
   .nav-group {
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 0.3rem;
   }
 
   .nav-item {
     white-space: nowrap;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.82rem;
+    border-radius: 10px;
+  }
+
+  .nav-item:hover {
+    transform: translateY(-1px);
   }
 
   .nav-foot {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-rail {
+    padding: 0.6rem 0.75rem;
+    gap: 0.5rem;
+    border-radius: 12px;
+  }
+
+  .brand-title {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+
+  .brand-sub {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.78rem;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-ornament {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-rail {
+    padding: 0.5rem 0.6rem;
+    gap: 0.35rem;
+    border-radius: 10px;
+  }
+
+  .nav-brand {
+    padding-right: 0.6rem;
+  }
+
+  .brand-title {
+    font-size: 0.75rem;
+  }
+
+  .nav-item {
+    padding: 0.35rem 0.45rem;
+    border-radius: 8px;
+  }
+
+  .nav-ornament {
+    font-size: 1rem;
   }
 }
 </style>

@@ -53,6 +53,23 @@
       </div>
 
       <div class="filter-section">
+        <div class="filter-label">分子家族（生合成來源）</div>
+        <div class="chip-group">
+          <button
+            v-for="mf in moleculeFamilyOptions"
+            :key="mf.id"
+            class="chip"
+            :class="{ active: selectedMoleculeFamilies.has(mf.id) }"
+            :style="selectedMoleculeFamilies.has(mf.id) ? { background: mf.color + '22', borderColor: mf.color, color: mf.color } : {}"
+            @click="toggleMoleculeFamily(mf.id)"
+          >
+            <span class="chip-icon">{{ mf.icon }}</span>
+            <span>{{ mf.label }}</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-section">
         <div class="filter-label">香調位置</div>
         <div class="chip-group">
           <button
@@ -137,6 +154,13 @@
             >
               {{ getFgLabel(mol.functionalGroup) }}
             </span>
+            <span
+              v-if="mol.moleculeFamily"
+              class="mol-family-badge"
+              :style="{ background: getMfColor(mol.moleculeFamily) + '18', color: getMfColor(mol.moleculeFamily) }"
+            >
+              {{ getMfIcon(mol.moleculeFamily) }} {{ getMfLabel(mol.moleculeFamily) }}
+            </span>
           </div>
           <div class="mol-card-name">{{ mol.name }}</div>
           <div class="mol-card-name-en">{{ mol.nameEn }}</div>
@@ -188,6 +212,9 @@
                   </span>
                   <span class="mol-fg-badge" :style="{ background: getFgColor(selectedMol.functionalGroup) + '18', color: getFgColor(selectedMol.functionalGroup) }">
                     ⬡ {{ getFgLabel(selectedMol.functionalGroup) }}
+                  </span>
+                  <span v-if="selectedMol.moleculeFamily" class="mol-family-badge" :style="{ background: getMfColor(selectedMol.moleculeFamily) + '18', color: getMfColor(selectedMol.moleculeFamily) }">
+                    {{ getMfIcon(selectedMol.moleculeFamily) }} {{ getMfLabel(selectedMol.moleculeFamily) }} ({{ getMfLabelEn(selectedMol.moleculeFamily) }})
                   </span>
                   <span v-if="selectedMol.cas" class="cas-badge">CAS: {{ selectedMol.cas }}</span>
                 </div>
@@ -243,6 +270,7 @@
                   <tr v-if="selectedMol.properties.vaporPressure"><td>蒸氣壓 (25°C)</td><td>{{ selectedMol.properties.vaporPressure }} Pa</td></tr>
                   <tr v-if="selectedMol.properties.appearance"><td>外觀</td><td>{{ selectedMol.properties.appearance }}</td></tr>
                   <tr><td>化學分類</td><td>{{ getFgLabel(selectedMol.functionalGroup) }} ({{ getFgLabelEn(selectedMol.functionalGroup) }})</td></tr>
+                  <tr v-if="selectedMol.moleculeFamily"><td>分子家族</td><td>{{ getMfIcon(selectedMol.moleculeFamily) }} {{ getMfLabel(selectedMol.moleculeFamily) }} ({{ getMfLabelEn(selectedMol.moleculeFamily) }})</td></tr>
                 </tbody>
               </table>
             </div>
@@ -287,6 +315,7 @@
     <!-- 底部導航 -->
     <div class="enc-footer-nav">
       <router-link to="/chapter/8" class="nav-btn">← 第8章：進階主題</router-link>
+      <router-link to="/chapter/10" class="nav-btn">第10章：市售配方解析 →</router-link>
     </div>
   </div>
 </template>
@@ -294,7 +323,7 @@
 <script>
 import { ref, computed } from 'vue'
 import MoleculeRenderer from '../components/MoleculeRenderer.vue'
-import { ENCYCLOPEDIA, CATEGORY_OPTIONS, NOTE_OPTIONS, FUNCTIONAL_GROUP_OPTIONS, OLFACTORY_FAMILIES, NOTE_POSITIONS, FUNCTIONAL_GROUPS } from '../data/encyclopedia.js'
+import { ENCYCLOPEDIA, CATEGORY_OPTIONS, NOTE_OPTIONS, FUNCTIONAL_GROUP_OPTIONS, MOLECULE_FAMILY_OPTIONS, OLFACTORY_FAMILIES, NOTE_POSITIONS, FUNCTIONAL_GROUPS, MOLECULE_FAMILIES } from '../data/encyclopedia.js'
 
 export default {
   name: 'Chapter9View',
@@ -304,6 +333,7 @@ export default {
     const selectedCategories = ref(new Set())
     const selectedNotes = ref(new Set())
     const selectedFunctionalGroups = ref(new Set())
+    const selectedMoleculeFamilies = ref(new Set())
     const selectedMol = ref(null)
 
     // Property range filters
@@ -318,6 +348,7 @@ export default {
     const categoryOptions = CATEGORY_OPTIONS
     const noteOptions = NOTE_OPTIONS
     const functionalGroupOptions = FUNCTIONAL_GROUP_OPTIONS
+    const moleculeFamilyOptions = MOLECULE_FAMILY_OPTIONS
 
     // Compute data bounds for placeholder hints
     const bpBounds = computed(() => {
@@ -338,6 +369,7 @@ export default {
       selectedCategories.value.size > 0 ||
       selectedNotes.value.size > 0 ||
       selectedFunctionalGroups.value.size > 0 ||
+      selectedMoleculeFamilies.value.size > 0 ||
       bpMin.value != null || bpMax.value != null ||
       mwMin.value != null || mwMax.value != null ||
       logPMin.value != null || logPMax.value != null
@@ -371,6 +403,10 @@ export default {
         result = result.filter(m => selectedFunctionalGroups.value.has(m.functionalGroup))
       }
 
+      if (selectedMoleculeFamilies.value.size > 0) {
+        result = result.filter(m => m.moleculeFamily && selectedMoleculeFamilies.value.has(m.moleculeFamily))
+      }
+
       // Property range filters
       if (bpMin.value != null) result = result.filter(m => m.properties.bp != null && m.properties.bp >= bpMin.value)
       if (bpMax.value != null) result = result.filter(m => m.properties.bp != null && m.properties.bp <= bpMax.value)
@@ -397,12 +433,18 @@ export default {
       if (s.has(id)) s.delete(id); else s.add(id)
       selectedFunctionalGroups.value = s
     }
+    function toggleMoleculeFamily(id) {
+      const s = new Set(selectedMoleculeFamilies.value)
+      if (s.has(id)) s.delete(id); else s.add(id)
+      selectedMoleculeFamilies.value = s
+    }
 
     function resetFilters() {
       searchQuery.value = ''
       selectedCategories.value = new Set()
       selectedNotes.value = new Set()
       selectedFunctionalGroups.value = new Set()
+      selectedMoleculeFamilies.value = new Set()
       bpMin.value = null; bpMax.value = null
       mwMin.value = null; mwMax.value = null
       logPMin.value = null; logPMax.value = null
@@ -418,17 +460,22 @@ export default {
     function getFgColor(id) { return FUNCTIONAL_GROUPS[id]?.color || '#888' }
     function getFgLabel(id) { return FUNCTIONAL_GROUPS[id]?.label || id }
     function getFgLabelEn(id) { return FUNCTIONAL_GROUPS[id]?.labelEn || id }
+    function getMfColor(id) { return MOLECULE_FAMILIES[id]?.color || '#888' }
+    function getMfIcon(id) { return MOLECULE_FAMILIES[id]?.icon || '·' }
+    function getMfLabel(id) { return MOLECULE_FAMILIES[id]?.label || id }
+    function getMfLabelEn(id) { return MOLECULE_FAMILIES[id]?.labelEn || id }
 
     return {
-      searchQuery, selectedCategories, selectedNotes, selectedFunctionalGroups, selectedMol,
-      allMolecules, categoryOptions, noteOptions, functionalGroupOptions,
+      searchQuery, selectedCategories, selectedNotes, selectedFunctionalGroups, selectedMoleculeFamilies, selectedMol,
+      allMolecules, categoryOptions, noteOptions, functionalGroupOptions, moleculeFamilyOptions,
       bpMin, bpMax, mwMin, mwMax, logPMin, logPMax,
       bpBounds, mwBounds, logPBounds,
       hasActiveFilters, filteredMolecules,
-      toggleCategory, toggleNote, toggleFunctionalGroup, resetFilters, selectMolecule,
+      toggleCategory, toggleNote, toggleFunctionalGroup, toggleMoleculeFamily, resetFilters, selectMolecule,
       getCategoryColor, getCategoryIcon, getCategoryLabel,
       getNoteColor, getNoteLabel,
       getFgColor, getFgLabel, getFgLabelEn,
+      getMfColor, getMfIcon, getMfLabel, getMfLabelEn,
     }
   }
 }
@@ -682,7 +729,8 @@ export default {
 
 .mol-category-badge,
 .mol-note-badge,
-.mol-fg-badge {
+.mol-fg-badge,
+.mol-family-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.2rem;
@@ -983,9 +1031,11 @@ export default {
 /* 底部導航 */
 .enc-footer-nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1rem 0;
   border-top: 2px solid var(--border-color);
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-btn {
@@ -1009,25 +1059,136 @@ export default {
 }
 
 /* 響應式 */
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .molecule-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .molecule-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.8rem;
+  }
+  .detail-panel {
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+  .range-filters {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .molecule-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.6rem;
   }
 
   .detail-overlay {
-    padding: 1rem 0.5rem;
+    padding: 0.75rem;
   }
 
   .detail-panel {
     padding: 1.25rem;
+    max-width: 100%;
+    border-radius: 16px;
   }
 
   .detail-name {
     font-size: 1.4rem;
   }
 
-  .range-filters {
-    flex-direction: column;
+  .filter-bar {
+    padding: 0.9rem;
+    border-radius: 12px;
+  }
+
+  .chip {
+    font-size: 0.78rem;
+    padding: 0.28rem 0.6rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    padding: 0.6rem 2.2rem 0.6rem 2.5rem;
+  }
+
+  .mol-card-body {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .mol-card-name { font-size: 0.95rem; }
+  .mol-card-name-en { font-size: 0.72rem; }
+  .prop-table { font-size: 0.85rem; }
+  .prop-table td { padding: 0.45rem 0.6rem; }
+  .prop-table tr td:first-child { width: 100px; }
+}
+
+@media (max-width: 479px) {
+  .molecule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-overlay {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .detail-panel {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .detail-name {
+    font-size: 1.2rem;
+  }
+
+  .detail-name-en {
+    font-size: 0.85rem;
+  }
+
+  .detail-badges {
+    gap: 0.25rem;
+  }
+
+  .filter-bar {
+    padding: 0.75rem;
+  }
+
+  .chip-group {
+    gap: 0.3rem;
+  }
+
+  .chip {
+    font-size: 0.72rem;
+    padding: 0.22rem 0.5rem;
+  }
+
+  .enc-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .enc-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .scent-description {
+    font-size: 0.88rem;
+    padding: 0.6rem;
+  }
+
+  .scent-bar-row {
+    gap: 0.4rem;
+  }
+
+  .bar-label {
+    font-size: 0.78rem;
+    min-width: 50px;
+  }
+
+  .detail-structure {
+    padding: 0.5rem;
   }
 }
 </style>

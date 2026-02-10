@@ -136,20 +136,60 @@ export default {
   box-shadow: 0 8px 16px rgba(10, 25, 10, 0.25);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .chapter-pagination {
     gap: 0.5rem;
-    padding: 0.75rem;
+    padding: 0.7rem 0.8rem;
   }
   .page-btn {
     font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+    padding: 0.35rem 0.75rem;
+  }
+  .page-numbers {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .page-num {
     min-width: 30px;
     height: 30px;
     font-size: 0.75rem;
     padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .chapter-pagination {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    border-radius: 12px;
+  }
+  .page-btn {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
+    width: 100%;
+    text-align: center;
+  }
+  .page-numbers {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .chapter-pagination {
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.75rem 0 1rem;
+  }
+  .page-btn {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .page-num {
+    min-width: 26px;
+    height: 26px;
+    font-size: 0.68rem;
   }
 }
 </style>

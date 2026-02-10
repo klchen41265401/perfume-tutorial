@@ -54,4 +54,29 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+@media (max-width: 767px) {
+  .molecule-gallery {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+  .gallery-grid {
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .gallery-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .molecule-gallery {
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.8rem 0;
+  }
+  .gallery-grid {
+    gap: 0.3rem;
+  }
+}
 </style>

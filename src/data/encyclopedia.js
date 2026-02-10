@@ -52,6 +52,112 @@ export const FUNCTIONAL_GROUPS = {
 }
 
 /**
+ * 分子家族分類（生合成 / 化學骨架來源）
+ */
+export const MOLECULE_FAMILIES = {
+  monoterpenoid:   { id: 'monoterpenoid',   label: '單萜類',       labelEn: 'Monoterpenoids',        icon: '🌿', color: '#22c55e' },
+  sesquiterpenoid: { id: 'sesquiterpenoid', label: '倍半萜類',     labelEn: 'Sesquiterpenoids',      icon: '🌲', color: '#15803d' },
+  diterpenoid:     { id: 'diterpenoid',     label: '二萜類',       labelEn: 'Diterpenoids',          icon: '🏔️', color: '#166534' },
+  norisoprenoid:   { id: 'norisoprenoid',   label: '降異戊二烯類', labelEn: 'Norisoprenoids',        icon: '🌅', color: '#ea580c' },
+  phenylpropanoid: { id: 'phenylpropanoid', label: '苯丙素類',     labelEn: 'Phenylpropanoids',      icon: '🌺', color: '#dc2626' },
+  benzenoid:       { id: 'benzenoid',       label: '苯環衍生物',   labelEn: 'Benzenoids',            icon: '⬡',  color: '#7c3aed' },
+  aliphatic:       { id: 'aliphatic',       label: '脂肪族',       labelEn: 'Aliphatics',            icon: '〰️', color: '#0891b2' },
+  lactone:         { id: 'lactone',         label: '內酯/香豆素',  labelEn: 'Lactones & Coumarins',  icon: '🔵', color: '#c026d3' },
+  macrocyclic:     { id: 'macrocyclic',     label: '大環麝香',     labelEn: 'Macrocyclic Musks',     icon: '⭕', color: '#9333ea' },
+  polycyclic:      { id: 'polycyclic',      label: '多環合成麝香', labelEn: 'Polycyclic Musks',      icon: '💎', color: '#6366f1' },
+  heterocyclic:    { id: 'heterocyclic',    label: '雜環化合物',   labelEn: 'Heterocyclics',         icon: '🔷', color: '#475569' },
+  synthetic:       { id: 'synthetic',       label: '合成特殊體',   labelEn: 'Synthetic Specialties', icon: '⚙️', color: '#0ea5e9' },
+}
+
+/**
+ * 分子 → 家族映射表 (按生合成與化學骨架歸類)
+ */
+const MOLECULE_FAMILY_MAP = {
+  // ── Monoterpenoids (C10 萜烯及其衍生物) ──
+  limonene: 'monoterpenoid', citral: 'monoterpenoid', citronellal: 'monoterpenoid',
+  linalool: 'monoterpenoid', geraniol: 'monoterpenoid', citronellol: 'monoterpenoid',
+  nerol: 'monoterpenoid', menthol: 'monoterpenoid', camphor: 'monoterpenoid',
+  terpineol: 'monoterpenoid', rCarvone: 'monoterpenoid', sCarvone: 'monoterpenoid',
+  myrcene: 'monoterpenoid', alphaPinene: 'monoterpenoid', eucalyptol: 'monoterpenoid',
+  verbenone: 'monoterpenoid', borneol: 'monoterpenoid', fenchone: 'monoterpenoid',
+  dihydromyrcenol: 'monoterpenoid', linalylAcetate: 'monoterpenoid',
+  nerylAcetate: 'monoterpenoid', citronellylAcetate: 'monoterpenoid',
+  geranylAcetate: 'monoterpenoid', terpinylAcetate: 'monoterpenoid',
+  roseOxide: 'monoterpenoid', lavandulol: 'monoterpenoid',
+  hydroxycitronellal: 'monoterpenoid', methylHeptenone: 'monoterpenoid',
+  thymol: 'monoterpenoid',
+
+  // ── Sesquiterpenoids (C15) ──
+  farnesol: 'sesquiterpenoid', nerolidol: 'sesquiterpenoid', nootkatone: 'sesquiterpenoid',
+  santalol: 'sesquiterpenoid', cedrol: 'sesquiterpenoid', patchoulol: 'sesquiterpenoid',
+  betaCaryophyllene: 'sesquiterpenoid', cedrylAcetate: 'sesquiterpenoid',
+  acetylCedrene: 'sesquiterpenoid', vetiverylAcetate: 'sesquiterpenoid',
+  cisJasmone: 'sesquiterpenoid', isoESuper: 'sesquiterpenoid',
+
+  // ── Diterpenoids (C20) ──
+  sclareol: 'diterpenoid', ambroxide: 'diterpenoid',
+
+  // ── Norisoprenoids (C13, 類胡蘿蔔素裂解產物) ──
+  betaIonone: 'norisoprenoid', alphaIonone: 'norisoprenoid',
+  alphaIsomethylIonone: 'norisoprenoid', damascenone: 'norisoprenoid',
+  alphaDamascone: 'norisoprenoid', safranal: 'norisoprenoid',
+
+  // ── Phenylpropanoids (C6-C3 苯丙素骨架) ──
+  eugenol: 'phenylpropanoid', cinnamaldehyde: 'phenylpropanoid',
+  isoeugenol: 'phenylpropanoid', cinnamylAlcohol: 'phenylpropanoid',
+  hexylCinnamal: 'phenylpropanoid', amylcinnamal: 'phenylpropanoid',
+  methylCinnamate: 'phenylpropanoid', methylEugenol: 'phenylpropanoid',
+  estragole: 'phenylpropanoid', anethole: 'phenylpropanoid',
+  cinnamicAcid: 'phenylpropanoid',
+
+  // ── Benzenoids (簡單芳環衍生物) ──
+  phenylethylAlcohol: 'benzenoid', phenylacetaldehyde: 'benzenoid',
+  benzaldehyde: 'benzenoid', benzylAcetate: 'benzenoid',
+  benzylBenzoate: 'benzenoid', benzylSalicylate: 'benzenoid',
+  benzylAlcohol: 'benzenoid', phenylethylAcetate: 'benzenoid',
+  methylSalicylate: 'benzenoid', hexylSalicylate: 'benzenoid',
+  methylBenzoate: 'benzenoid', anisaldehyde: 'benzenoid',
+  veratraldehyde: 'benzenoid', piperonal: 'benzenoid',
+  pCresol: 'benzenoid', guaiacol: 'benzenoid',
+  vanillin: 'benzenoid', ethylVanillin: 'benzenoid',
+  methylAnthranilate: 'benzenoid', evernyl: 'benzenoid',
+  lilial: 'benzenoid', bourgeonal: 'benzenoid',
+
+  // ── Aliphatics (直鏈/支鏈脂肪族) ──
+  decanal: 'aliphatic', nonanal: 'aliphatic', octanal: 'aliphatic',
+  undecanal: 'aliphatic', dodecanal: 'aliphatic', methylUndecanal: 'aliphatic',
+  transHexenal: 'aliphatic', cis3HexenylAcetate: 'aliphatic',
+  cis3Hexenol: 'aliphatic', ethylButyrate: 'aliphatic',
+  isoamylAcetate: 'aliphatic',
+
+  // ── Lactones & Coumarins (內酯環) ──
+  gammaDecalactone: 'lactone', gammaUndecalactone: 'lactone',
+  deltaDecalactone: 'lactone', gammaNonalactone: 'lactone',
+  gammaOctalactone: 'lactone', dihydrocoumarin: 'lactone',
+  coumarin: 'lactone',
+
+  // ── Macrocyclic Musks (大環麝香) ──
+  muscone: 'macrocyclic', ethyleneBrassylate: 'macrocyclic',
+  exaltolide: 'macrocyclic', ambrettolide: 'macrocyclic',
+  habanolide: 'macrocyclic', civettone: 'macrocyclic',
+
+  // ── Polycyclic Musks (多環合成麝香) ──
+  galaxolide: 'polycyclic', tonalide: 'polycyclic',
+  cashmeran: 'polycyclic', muskKetone: 'polycyclic',
+
+  // ── Heterocyclics (雜環) ──
+  indole: 'heterocyclic', skatole: 'heterocyclic',
+  quinoline: 'heterocyclic', isobutylQuinoline: 'heterocyclic',
+  calone: 'heterocyclic', ethylMaltol: 'heterocyclic',
+  maltol: 'heterocyclic', furaneol: 'heterocyclic',
+
+  // ── Synthetic Specialties (合成特殊芳香體) ──
+  sandalore: 'synthetic', javanol: 'synthetic', hedione: 'synthetic',
+  helional: 'synthetic', triplal: 'synthetic', helvetolide: 'synthetic',
+  tropional: 'synthetic', floralozone: 'synthetic',
+}
+
+/**
  * 完整分子百科資料庫
  */
 export const ENCYCLOPEDIA = [
@@ -2993,3 +3099,13 @@ export const NOTE_OPTIONS = Object.values(NOTE_POSITIONS)
  * 所有化學官能團選項（給篩選用）
  */
 export const FUNCTIONAL_GROUP_OPTIONS = Object.values(FUNCTIONAL_GROUPS)
+
+/**
+ * 所有分子家族選項（給篩選用）
+ */
+export const MOLECULE_FAMILY_OPTIONS = Object.values(MOLECULE_FAMILIES)
+
+// ── 將分子家族注入 ENCYCLOPEDIA 每一個條目 ──
+ENCYCLOPEDIA.forEach(mol => {
+  mol.moleculeFamily = MOLECULE_FAMILY_MAP[mol.id] || null
+})

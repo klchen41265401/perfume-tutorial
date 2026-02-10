@@ -125,6 +125,16 @@
         <li>安全法規與 IFRA 限制</li>
       </ul>
     </div>
+    <div class="card">
+      <router-link to="/chapter/10" class="chapter-link">第10章：市售香水配方解析 🧴</router-link>
+      <ul>
+        <li>20+ 經典香水完整配方拆解</li>
+        <li>品牌、香調家族、濃度多維篩選</li>
+        <li>前/中/基調金字塔視覺化</li>
+        <li>成分佔比分析與性能指標</li>
+        <li>成分名稱、CAS 編號檢索</li>
+      </ul>
+    </div>
 
     <hr>
 

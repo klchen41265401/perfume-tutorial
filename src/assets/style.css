@@ -484,25 +484,193 @@ hr {
   box-shadow: var(--shadow-sm);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  html { font-size: 14px; }
-  .container { padding: 1rem; }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
+/* ========================================
+   Responsive Design System
+   Breakpoints:
+     - xl: 1400px+    (large desktop)
+     - lg: 1200-1399   (desktop)
+     - md: 992-1199    (small desktop / landscape tablet)
+     - sm: 768-991     (tablet)
+     - xs: 480-767     (mobile)
+     - xxs: <480       (small mobile)
+   ======================================== */
+
+/* ── Large Desktop (1400px+) ── */
+@media (min-width: 1400px) {
+  .layout {
+    max-width: 1600px;
+    margin: 0 auto;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    padding: 28px;
+  }
+  .main-panel {
+    padding: 2rem 2.5rem 2.5rem;
+  }
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* ── Desktop default (1200-1399) ── */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .layout {
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+/* ── Small Desktop / Landscape Tablet (992-1199) ── */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .main-panel {
+    padding: 1.5rem 1.75rem 2rem;
+  }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.75rem; }
+}
+
+/* ── Tablet (768-991) ── */
+@media (min-width: 768px) and (max-width: 991px) {
+  html { font-size: 15px; }
   .layout {
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
     height: auto;
+    min-height: 100vh;
+    gap: 16px;
     padding: 16px;
+  }
+  .layout.sidebar-collapsed {
+    grid-template-columns: 1fr;
   }
   .side-rail {
     height: auto;
   }
   .main-panel {
     height: auto;
-    padding: 1.5rem 1.25rem 2rem;
+    min-height: calc(100vh - 140px);
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: 20px;
   }
-  .molecule-viewer { height: 300px; }
-  table { font-size: 0.9rem; }
-  th, td { padding: 0.5rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  .container { padding: 1.25rem; }
+  .molecule-viewer { height: 320px; }
+  table { font-size: 0.92rem; }
+  th, td { padding: 0.65rem; }
+  .slider-group { gap: 0.5rem; }
+  .slider-item { flex: 1 1 200px; }
+  .chapter-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (480-767) ── */
+@media (min-width: 480px) and (max-width: 767px) {
+  html { font-size: 14px; }
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: auto;
+    min-height: 100vh;
+    gap: 12px;
+    padding: 12px;
+  }
+  .layout.sidebar-collapsed {
+    grid-template-columns: 1fr;
+  }
+  .side-rail {
+    height: auto;
+  }
+  .main-panel {
+    height: auto;
+    min-height: calc(100vh - 120px);
+    padding: 1.25rem 1rem 1.75rem;
+    border-radius: 16px;
+  }
+  .container { padding: 1rem; }
+  h1 { font-size: 1.75rem; }
+  h1::after { width: 70px; height: 3px; }
+  h2 { font-size: 1.4rem; padding-left: 0.75rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1.05rem; }
+  p { font-size: 0.95rem; }
+  .molecule-viewer { height: 260px; }
+  table { font-size: 0.85rem; display: block; overflow-x: auto; }
+  th, td { padding: 0.5rem 0.6rem; white-space: nowrap; }
+  .card { padding: 1.1rem; margin: 0.8rem 0; border-radius: 12px; }
+  .card:hover { transform: translateY(-2px); }
+  .slider-group { flex-direction: column; gap: 0.5rem; }
+  .slider-item { flex: 1 1 100%; }
+  .slider-item label { min-width: 70px; font-size: 0.8rem; }
+  .chart-container { padding: 0.8rem; }
+  .chapter-sections {
+    grid-template-columns: 1fr;
+  }
+  pre { padding: 1rem; font-size: 0.85em; }
+  blockquote { padding: 0.9rem; }
+  ul, ol { margin: 0.8rem 0 0.8rem 1.5rem; }
+  .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+}
+
+/* ── Small Mobile (<480) ── */
+@media (max-width: 479px) {
+  html { font-size: 13px; }
+  body { overflow-x: hidden; }
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: auto;
+    min-height: 100vh;
+    gap: 8px;
+    padding: 8px;
+  }
+  .layout.sidebar-collapsed {
+    grid-template-columns: 1fr;
+  }
+  .side-rail {
+    height: auto;
+  }
+  .main-panel {
+    height: auto;
+    min-height: calc(100vh - 100px);
+    padding: 1rem 0.75rem 1.5rem;
+    border-radius: 14px;
+  }
+  .container { padding: 0.75rem; }
+  h1 { font-size: 1.5rem; }
+  h1::after { width: 60px; height: 2px; bottom: -6px; }
+  h2 { font-size: 1.25rem; padding-left: 0.6rem; border-left-width: 3px; }
+  h3 { font-size: 1.1rem; }
+  h4 { font-size: 1rem; }
+  p { font-size: 0.9rem; line-height: 1.7; }
+  .molecule-viewer { height: 220px; margin: 1rem 0; }
+  table { font-size: 0.8rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  th, td { padding: 0.4rem 0.5rem; white-space: nowrap; }
+  thead th { font-size: 0.75em; }
+  .card { padding: 0.9rem; margin: 0.7rem 0; border-radius: 10px; }
+  .card:hover { transform: none; }
+  .slider-group { flex-direction: column; gap: 0.4rem; }
+  .slider-item { flex: 1 1 100%; }
+  .slider-item label { min-width: 60px; font-size: 0.78rem; }
+  .chart-container { padding: 0.6rem; border-radius: 10px; }
+  .chapter-sections { grid-template-columns: 1fr; gap: 0.7rem; }
+  pre { padding: 0.8rem; font-size: 0.8em; border-radius: 8px; }
+  blockquote { padding: 0.7rem; border-radius: 8px; }
+  ul, ol { margin: 0.6rem 0 0.6rem 1.2rem; }
+  li { font-size: 0.9rem; }
+  .btn { padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .btn:hover { transform: none; }
+  code { padding: 0.15rem 0.35rem; font-size: 0.85em; }
+  hr { margin: 1.2rem 0; }
+
+  /* Scrollbar: thinner on small screens */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
 }
