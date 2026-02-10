@@ -24,8 +24,8 @@ export default {
   props: {
     title: { type: String, default: '' },
     molecules: { type: Array, required: true },
-    itemWidth: { type: Number, default: 260 },
-    itemHeight: { type: Number, default: 180 },
+    itemWidth: { type: Number, default: 220 },
+    itemHeight: { type: Number, default: 140 },
     showSmiles: { type: Boolean, default: true }
   }
 }
@@ -33,24 +33,25 @@ export default {
 
 <style scoped>
 .molecule-gallery {
-  background: #f8f9fc;
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--border-color);
   border-radius: 15px;
-  padding: 1.5rem;
-  margin: 2rem 0;
+  padding: 1rem;
+  margin: 1.2rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .gallery-title {
   color: var(--accent-purple);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
 }
 
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  gap: 0.6rem;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 </style>

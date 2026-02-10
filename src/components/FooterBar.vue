@@ -10,7 +10,7 @@
   margin-top: 4rem;
   padding: 2rem;
   text-align: center;
-  border-top: 2px solid var(--border-color);
+  border-top: 1px solid rgba(15, 40, 22, 0.2);
   color: var(--text-muted);
   font-size: 0.9rem;
 }

@@ -115,6 +115,16 @@
         <li>個性化香水的演算法</li>
       </ul>
     </div>
+    <div class="card">
+      <router-link to="/chapter/9" class="chapter-link">第9章：香料分子圖鑑 🧪</router-link>
+      <ul>
+        <li>70+ 市售主要香料分子百科</li>
+        <li>嗅覺家族分類與篩選</li>
+        <li>感性氣味描述 × 物化數據</li>
+        <li>典型用量與經典香水搭配</li>
+        <li>安全法規與 IFRA 限制</li>
+      </ul>
+    </div>
 
     <hr>
 
@@ -191,24 +201,14 @@
 
 <script>
 import MoleculeGallery from '../components/MoleculeGallery.vue'
+import { HOME_MOLECULES } from '../data/molecules.js'
 
 export default {
   name: 'HomeView',
   components: { MoleculeGallery },
   data() {
     return {
-      keyMolecules: [
-        { name: '檸檬醛 (Citral)', smiles: 'CC(=CC=O)CCC=C(C)C' },
-        { name: '芳樟醇 (Linalool)', smiles: 'CC(=CCCC(C)(O)C=C)C' },
-        { name: '香草醛 (Vanillin)', smiles: 'O=Cc1ccc(O)c(OC)c1' },
-        { name: '(R)-香芹酮', smiles: 'CC(=O)[C@H]1CC=C(C)CC1' },
-        { name: '(S)-香芹酮', smiles: 'CC(=O)[C@@H]1CC=C(C)CC1' },
-        { name: '麝香酮 (Muscone)', smiles: 'O=C1CCCCCCCCCCCC(C)C1' },
-        { name: '香葉醇 (Geraniol)', smiles: 'CC(=CCCC(=CCO)C)C' },
-        { name: '苯甲醛 (Benzaldehyde)', smiles: 'O=Cc1ccccc1' },
-        { name: '香豆素 (Coumarin)', smiles: 'O=C1Oc2ccccc2C=C1' },
-        { name: '乙基麥芽酚', smiles: 'CCC1=C(O)C(=O)C=CO1' }
-      ]
+      keyMolecules: HOME_MOLECULES
     }
   }
 }

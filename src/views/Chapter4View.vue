@@ -1,14 +1,18 @@
 <template>
-  <div>
-    <h1>第4章：合成化學與反應機制</h1>
-    <ChapterNav :prev="{ to: '/chapter/3', label: '第3章：SAR' }" :next="{ to: '/chapter/5', label: '第5章：配方工程' }" />
-    <MoleculeGallery title="🧪 本章關鍵分子" :molecules="molecules" />
-    <hr>
-
-    <h2>4.1 工業香料合成：從石化原料到精緻香氣</h2>
-    <h3>4.1.1 香茅醇合成路線比較</h3>
-    <p>香茅醇 (Citronellol) 是玫瑰香的核心成分。工業上有三種主要合成路線：</p>
-    <pre><code>路線A：Rhodium催化氫化（Takasago法）
+  <ChapterLayout
+    title="第4章：合成化學與反應機制"
+    :prev="{ to: '/chapter/3', label: '第3章：SAR' }"
+    :next="{ to: '/chapter/5', label: '第5章：配方工程' }"
+    :sections="sections"
+    :active-section="activeSection"
+    @update:activeSection="activeSection = $event"
+  >
+    <div class="chapter-sections">
+      <section v-show="activeSection === 'sec-4-1'" class="chapter-section">
+        <h2 id="sec-4-1">4.1 工業香料合成：從石化原料到精緻香氣</h2>
+        <h3>4.1.1 香茅醇合成路線比較</h3>
+        <p>香茅醇 (Citronellol) 是玫瑰香的核心成分。工業上有三種主要合成路線：</p>
+        <pre><code>路線A：Rhodium催化氫化（Takasago法）
 步驟1：Myrcene環化
 Myrcene + H₂ → β-Pinene [Rh(COD)Cl]₂ + (S,S)-DIOP
 產率：95%, ee: 99%
@@ -24,7 +28,7 @@ Citronellal + H₂ → Citronellol [Pd/C]
 總產率：80%
 立體選擇性：>99% ee
 成本：$45/kg (2023)</code></pre>
-    <pre><code>路線B：Grignard反應（BASF法）
+        <pre><code>路線B：Grignard反應（BASF法）
 步驟1：Grignard試劑製備
 3,7-dimethyl-6-octenal + CH₃MgBr → (R)-Citronellol
 產率：72%, ee: 85% (需要拆分)
@@ -35,10 +39,10 @@ Citronellal + H₂ → Citronellol [Pd/C]
 總產率：32%
 成本：$65/kg</code></pre>
 
-    <h3>4.1.2 反應機制深度解析</h3>
-    <div class="attention-box">
-      <h4>🔬 Rhodium催化循環機制</h4>
-      <pre><code>氧化加成階段：
+        <h3>4.1.2 反應機制深度解析</h3>
+        <div class="attention-box">
+          <h4>🔬 Rhodium催化循環機制</h4>
+          <pre><code>氧化加成階段：
 Rh(I) + H₂ → Rh(III)-H₂
 ΔG‡ = +18.3 kcal/mol (DFT計算)
 
@@ -50,58 +54,62 @@ K_eq = 2.4 × 10⁵ M⁻¹
 [Rh(III)-H₂-Substrate] → Rh(I) + Product
 ΔG‡ = +22.7 kcal/mol
 k = 3.2 × 10³ s⁻¹ (at 80°C)</code></pre>
-    </div>
+        </div>
+      </section>
 
-    <hr>
-    <h2>4.2 立體選擇性合成策略</h2>
-    <h3>4.2.1 手性輔助劑設計</h3>
-    <p>以 (R)-(−)-Carvone 合成為例，使用 CBS 還原：</p>
-    <div class="chart-container"><canvas ref="stereoChart" style="max-height: 400px;"></canvas></div>
+      <section v-show="activeSection === 'sec-4-2'" class="chapter-section">
+        <h2 id="sec-4-2">4.2 立體選擇性合成策略</h2>
+        <h3>4.2.1 手性輔助劑設計</h3>
+        <p>以 (R)-(−)-Carvone 合成為例，使用 CBS 還原：</p>
+        <div class="chart-container"><canvas ref="stereoChart" style="max-height: 320px;"></canvas></div>
+      </section>
 
-    <hr>
-    <h2>4.3 副反應與雜質控制</h2>
-    <h3>4.3.1 香草醛合成中的副產物分析</h3>
-    <pre><code>主反應：
+      <section v-show="activeSection === 'sec-4-3'" class="chapter-section">
+        <h2 id="sec-4-3">4.3 副反應與雜質控制</h2>
+        <h3>4.3.1 香草醛合成中的副產物分析</h3>
+        <pre><code>主反應：
 Guaiacol + Glyoxylic acid → Vanillin  產率：85%
 
 副反應1：過度氧化  Vanillin + [O] → Vanillic acid (5%)
 副反應2：自身縮合  2 Vanillin → Dehydrodivanillin (3%)
 副反應3：脫甲基化  Vanillin → Protocatechualdehyde (2%)
 副反應4：還原      Vanillin + H₂ → Vanillyl alcohol (1%)</code></pre>
-    <div class="chart-container"><canvas ref="optimizationChart" style="max-height: 400px;"></canvas></div>
+        <div class="chart-container"><canvas ref="optimizationChart" style="max-height: 320px;"></canvas></div>
+      </section>
 
-    <hr>
-    <h2>4.4 綠色化學替代方案</h2>
-    <h3>4.4.1 生物催化：酶促合成</h3>
-    <div class="attention-box">
-      <h4>🌱 酶促合成 vs 化學合成</h4>
-      <table>
-        <thead><tr><th>參數</th><th>化學催化</th><th>酶催化</th></tr></thead>
-        <tbody>
-          <tr><td>反應溫度</td><td>80-150°C</td><td>25-40°C</td></tr>
-          <tr><td>壓力</td><td>5-50 bar</td><td>1 bar</td></tr>
-          <tr><td>立體選擇性</td><td>85-95% ee</td><td>>99% ee</td></tr>
-          <tr><td>E-factor</td><td>25-100</td><td>5-15</td></tr>
-          <tr><td>成本</td><td>$</td><td>$$$</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <section v-show="activeSection === 'sec-4-4'" class="chapter-section">
+        <h2 id="sec-4-4">4.4 綠色化學替代方案</h2>
+        <h3>4.4.1 生物催化：酶促合成</h3>
+        <div class="attention-box">
+          <h4>🌱 酶促合成 vs 化學合成</h4>
+          <table>
+            <thead><tr><th>參數</th><th>化學催化</th><th>酶催化</th></tr></thead>
+            <tbody>
+              <tr><td>反應溫度</td><td>80-150°C</td><td>25-40°C</td></tr>
+              <tr><td>壓力</td><td>5-50 bar</td><td>1 bar</td></tr>
+              <tr><td>立體選擇性</td><td>85-95% ee</td><td>>99% ee</td></tr>
+              <tr><td>E-factor</td><td>25-100</td><td>5-15</td></tr>
+              <tr><td>成本</td><td>$</td><td>$$$</td></tr>
+            </tbody>
+          </table>
+        </div>
 
-    <h3>4.4.2 實例：(R)-Phenylethanol 的酶促合成</h3>
-    <pre><code>Acetophenone + NADH → (R)-Phenylethanol + NAD⁺
+        <h3>4.4.2 實例：(R)-Phenylethanol 的酶促合成</h3>
+        <pre><code>Acetophenone + NADH → (R)-Phenylethanol + NAD⁺
 [Saccharomyces cerevisiae]
 
 反應條件：30°C, pH 6.5, 底物 50 mM, 酵母 100 g/L
 結果：轉化率 92%, ee >99.5%, 產率 85%, 24h</code></pre>
 
-    <h3>4.4.3 流動化學：連續合成</h3>
-    <p>微反應器技術在香料合成中的應用。</p>
+        <h3>4.4.3 流動化學：連續合成</h3>
+        <p>微反應器技術在香料合成中的應用。</p>
+      </section>
 
-    <hr>
-    <h2>4.5 工業案例：Hedione® 合成</h2>
-    <h3>4.5.1 Firmenich專利路線</h3>
-    <p>Hedione (甲基二氫茉莉酸酯) 是最重要的合成香料之一：</p>
-    <pre><code>步驟1：Michael加成
+      <section v-show="activeSection === 'sec-4-5'" class="chapter-section">
+        <h2 id="sec-4-5">4.5 工業案例：Hedione® 合成</h2>
+        <h3>4.5.1 Firmenich專利路線</h3>
+        <p>Hedione (甲基二氫茉莉酸酯) 是最重要的合成香料之一：</p>
+        <pre><code>步驟1：Michael加成
 Methyl acetoacetate + Methyl vinyl ketone → Michael adduct
 催化劑：NaOEt, 20°C, 產率：88%
 
@@ -115,42 +123,41 @@ THF, 25°C, 產率：76%
 總產率：55%, 年產量 >1000噸, 成本 ~$35/kg
 GC純度 >98%, trans/cis > 95:5</code></pre>
 
-    <div class="chart-container"><canvas ref="synthesisRouteChart" style="max-height: 400px;"></canvas></div>
+        <div class="chart-container"><canvas ref="synthesisRouteChart" style="max-height: 320px;"></canvas></div>
 
-    <hr>
-    <h2>📚 延伸閱讀</h2>
-    <ul>
-      <li>Bauer, K. et al. (2001). <em>Common Fragrance and Flavor Materials</em>. Wiley-VCH.</li>
-      <li>Sheldon, R.A. (2012). "Fundamentals of Green Chemistry". <em>Chem. Soc. Rev.</em> 41, 1437-1451.</li>
-      <li>Anastas, P.T. & Warner, J.C. (1998). <em>Green Chemistry: Theory and Practice</em>. Oxford.</li>
-    </ul>
-
-    <ChapterNav :prev="{ to: '/chapter/3', label: '第3章：SAR' }" :next="{ to: '/chapter/5', label: '第5章：配方工程' }" />
-  </div>
+        <h2>📚 延伸閱讀</h2>
+        <ul>
+          <li>Bauer, K. et al. (2001). <em>Common Fragrance and Flavor Materials</em>. Wiley-VCH.</li>
+          <li>Sheldon, R.A. (2012). "Fundamentals of Green Chemistry". <em>Chem. Soc. Rev.</em> 41, 1437-1451.</li>
+          <li>Anastas, P.T. & Warner, J.C. (1998). <em>Green Chemistry: Theory and Practice</em>. Oxford.</li>
+        </ul>
+      </section>
+    </div>
+  </ChapterLayout>
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { Chart } from 'chart.js/auto'
-import ChapterNav from '../components/ChapterNav.vue'
-import MoleculeGallery from '../components/MoleculeGallery.vue'
+import ChapterLayout from '../components/ChapterLayout.vue'
 
 export default {
   name: 'Chapter4View',
-  components: { ChapterNav, MoleculeGallery },
+  components: { ChapterLayout },
   setup() {
     const stereoChart = ref(null)
     const optimizationChart = ref(null)
     const synthesisRouteChart = ref(null)
     let charts = []
 
-    const molecules = [
-      { name: '香茅醇 (Citronellol)', smiles: 'CC(CCO)CCC=C(C)C' },
-      { name: '香草醛 (Vanillin)', smiles: 'O=Cc1ccc(O)c(OC)c1' },
-      { name: 'Hedione', smiles: 'COC(=O)CC1CCC(=O)C1' },
-      { name: '(R)-苯乙醇', smiles: 'OC(C)c1ccccc1' },
-      { name: '月桂烯 (Myrcene)', smiles: 'CC(=C)CCC=C(C)C' }
+    const sections = [
+      { id: 'sec-4-1', label: '4.1' },
+      { id: 'sec-4-2', label: '4.2' },
+      { id: 'sec-4-3', label: '4.3' },
+      { id: 'sec-4-4', label: '4.4' },
+      { id: 'sec-4-5', label: '4.5' }
     ]
+    const activeSection = ref(sections[0].id)
 
     onMounted(() => {
       // Stereo chart — compute via Boltzmann
@@ -217,9 +224,13 @@ export default {
         }))
       }
     })
+    watch(activeSection, async () => {
+      await nextTick()
+      charts.forEach(chart => chart.resize())
+    })
     onUnmounted(() => charts.forEach(c => c.destroy()))
 
-    return { stereoChart, optimizationChart, synthesisRouteChart, molecules }
+    return { stereoChart, optimizationChart, synthesisRouteChart, sections, activeSection }
   }
 }
 </script>

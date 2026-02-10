@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "chart.js": "^4.5.1",
+    "three": "^0.161.0",
     "smiles-drawer": "^2.1.7",
     "vue": "^3.5.25",
     "vue-router": "^4.6.4"

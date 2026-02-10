@@ -3,31 +3,32 @@
     <router-link
       v-if="prev"
       :to="prev.to"
-      class="page-btn"
+      class="page-btn chapter-btn"
     >
-      ← {{ prev.label }}
+      &larr; {{ prev.label }}
     </router-link>
-    <span v-else class="page-btn disabled">← 上一章</span>
+    <span v-else class="page-btn chapter-btn disabled">&larr; 上一章</span>
 
-    <div class="page-numbers">
-      <router-link
-        v-for="n in 8"
-        :key="n"
-        :to="`/chapter/${n}`"
-        :class="['page-num', { active: currentChapter === n }]"
+    <div class="page-numbers" v-if="sections && sections.length">
+      <button
+        v-for="sec in sections"
+        :key="sec.id"
+        :class="['page-num', 'section-btn', { active: activeSection === sec.id }]"
+        @click="selectSection(sec.id)"
+        :title="sec.label"
       >
-        {{ n }}
-      </router-link>
+        {{ sec.label }}
+      </button>
     </div>
 
     <router-link
       v-if="next"
       :to="next.to"
-      class="page-btn"
+      class="page-btn chapter-btn"
     >
-      {{ next.label }} →
+      {{ next.label }} &rarr;
     </router-link>
-    <span v-else class="page-btn disabled">下一章 →</span>
+    <span v-else class="page-btn chapter-btn disabled">下一章 &rarr;</span>
   </div>
 </template>
 
@@ -36,12 +37,14 @@ export default {
   name: 'ChapterNav',
   props: {
     prev: { type: Object, default: null },
-    next: { type: Object, default: null }
+    next: { type: Object, default: null },
+    sections: { type: Array, default: () => [] },
+    activeSection: { type: String, default: '' }
   },
-  computed: {
-    currentChapter() {
-      const match = this.$route.path.match(/\/chapter\/(\d+)/)
-      return match ? parseInt(match[1]) : null
+  emits: ['update:activeSection'],
+  methods: {
+    selectSection(id) {
+      this.$emit('update:activeSection', id)
     }
   }
 }
@@ -52,32 +55,33 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  margin: 1.5rem 0 2rem;
-  padding: 1rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: var(--shadow-sm);
+  margin: 1rem 0 1.5rem;
+  padding: 0.75rem 0.9rem;
+  background: rgba(18, 40, 22, 0.55);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
 }
 
 .page-btn {
-  color: var(--accent-blue) !important;
+  color: var(--leaf-light) !important;
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 8px;
   transition: all 0.25s ease;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: rgba(20, 45, 28, 0.6);
+  border: 1px solid rgba(168, 230, 207, 0.25);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   white-space: nowrap;
 }
 
 .page-btn:hover {
-  background: #eef2ff;
-  border-color: #c7d2fe;
+  background: rgba(255, 215, 0, 0.18);
+  border-color: rgba(255, 215, 0, 0.4);
   transform: translateY(-1px);
 }
 
@@ -100,33 +104,36 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  min-width: 32px;
+  height: 30px;
+  padding: 0 0.4rem;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   color: var(--text-secondary) !important;
   text-decoration: none;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: rgba(20, 45, 28, 0.6);
+  border: 1px solid rgba(168, 230, 207, 0.25);
   transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .page-num:hover {
-  background: #eef2ff;
-  color: var(--accent-blue) !important;
-  border-color: #c7d2fe;
+  background: rgba(255, 215, 0, 0.18);
+  color: var(--gold-glow) !important;
+  border-color: rgba(255, 215, 0, 0.4);
 }
 
 .page-num::after {
   display: none;
 }
 
-.page-num.active {
-  background: var(--gradient-primary);
-  color: #ffffff !important;
+.section-btn.active {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.7), rgba(168, 230, 207, 0.7));
+  color: #0b1a10 !important;
   border-color: transparent;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 16px rgba(10, 25, 10, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -139,9 +146,10 @@ export default {
     padding: 0.4rem 0.8rem;
   }
   .page-num {
-    width: 30px;
+    min-width: 30px;
     height: 30px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    padding: 0 0.3rem;
   }
 }
 </style>

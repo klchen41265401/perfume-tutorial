@@ -1,106 +1,246 @@
 <template>
-  <nav class="nav" :class="{ scrolled: isScrolled }">
-    <router-link to="/" :class="{ active: $route.path === '/' }">🏠 首頁</router-link>
-    <router-link to="/chapter/1" :class="{ active: $route.path === '/chapter/1' }">第1章 量子化學</router-link>
-    <router-link to="/chapter/2" :class="{ active: $route.path === '/chapter/2' }">第2章 熱力學</router-link>
-    <router-link to="/chapter/3" :class="{ active: $route.path === '/chapter/3' }">第3章 SAR</router-link>
-    <router-link to="/chapter/4" :class="{ active: $route.path === '/chapter/4' }">第4章 合成</router-link>
-    <router-link to="/chapter/5" :class="{ active: $route.path === '/chapter/5' }">第5章 配方</router-link>
-    <router-link to="/chapter/6" :class="{ active: $route.path === '/chapter/6' }">第6章 分析</router-link>
-    <router-link to="/chapter/7" :class="{ active: $route.path === '/chapter/7' }">第7章 案例</router-link>
-    <router-link to="/chapter/8" :class="{ active: $route.path === '/chapter/8' }">第8章 進階</router-link>
+  <nav class="nav-rail" :class="{ collapsed }">
+    <button class="collapse-toggle" @click="$emit('toggle')" :title="collapsed ? '展開側邊欄' : '收合側邊欄'">
+      <span class="toggle-icon">{{ collapsed ? '▸' : '◂' }}</span>
+    </button>
+    <div class="nav-brand">
+      <div class="brand-title">{{ collapsed ? 'S·S' : 'SYLVAN SANCTUM' }}</div>
+      <div v-if="!collapsed" class="brand-sub">香料化學課程</div>
+    </div>
+    <div class="nav-group">
+      <router-link
+        v-for="item in navItems"
+        :key="item.to"
+        :to="item.to"
+        class="nav-item"
+        :class="{ active: $route.path === item.to }"
+        :title="collapsed ? item.label : ''"
+      >
+        <span class="nav-ornament">{{ item.icon }}</span>
+        <span v-if="!collapsed" class="nav-label">{{ item.label }}</span>
+      </router-link>
+    </div>
+    <div v-if="!collapsed" class="nav-foot">
+      <span class="nav-foot-line">Forest Lab Edition</span>
+    </div>
   </nav>
 </template>
 
 <script>
 export default {
   name: 'NavBar',
+  props: {
+    collapsed: { type: Boolean, default: false }
+  },
+  emits: ['toggle'],
   data() {
-    return { isScrolled: false }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  unmounted() {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll() {
-      this.isScrolled = window.scrollY > 50
+    return {
+      navItems: [
+        { to: '/', label: '首頁 · Realm Overview', icon: '🏠' },
+        { to: '/chapter/1', label: '第1章 · 量子化學', icon: '⚛️' },
+        { to: '/chapter/2', label: '第2章 · 熱力學', icon: '🔥' },
+        { to: '/chapter/3', label: '第3章 · SAR', icon: '🔗' },
+        { to: '/chapter/4', label: '第4章 · 合成', icon: '⚗️' },
+        { to: '/chapter/5', label: '第5章 · 配方', icon: '📋' },
+        { to: '/chapter/6', label: '第6章 · 分析', icon: '📊' },
+        { to: '/chapter/7', label: '第7章 · 案例', icon: '🌹' },
+        { to: '/chapter/8', label: '第8章 · 進階', icon: '🧬' },
+        { to: '/chapter/9', label: '第9章 · 分子圖鑑', icon: '📖' }
+      ]
     }
   }
 }
 </script>
 
 <style scoped>
-.nav {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(20px);
-  padding: 0.8rem 2rem;
-  margin: -2rem -2rem 2rem -2rem;
-  border-radius: 0 0 16px 16px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+.nav-rail {
+  position: relative;
+  height: 100%;
+  padding: 1.5rem 1.25rem;
   display: flex;
-  gap: 0.4rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--glass-panel);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: padding 0.3s ease;
+}
+
+.nav-rail.collapsed {
+  padding: 1.2rem 0.5rem;
   align-items: center;
-  flex-wrap: wrap;
-  z-index: 1000;
-  border-bottom: 2px solid #e2e8f0;
+}
+
+/* ── 收合按鈕 ── */
+.collapse-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  background: rgba(12, 30, 18, 0.5);
+  color: var(--gold-glow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  z-index: 2;
+  transition: all 0.25s ease;
+  padding: 0;
+}
+
+.collapse-toggle:hover {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: var(--gold-glow);
+  transform: scale(1.1);
+}
+
+.collapsed .collapse-toggle {
+  position: static;
+  margin-bottom: 0.2rem;
+}
+
+.nav-brand {
+  text-align: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
   transition: all 0.3s ease;
 }
 
-.nav.scrolled {
-  padding: 0.5rem 2rem;
-  border-radius: 0;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+.collapsed .nav-brand {
+  padding-bottom: 0.5rem;
 }
 
-.nav a {
-  color: #475569;
+.brand-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: var(--leaf-light);
+  text-shadow: 0 0 18px rgba(168, 230, 207, 0.5);
+  transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.collapsed .brand-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.4rem;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 0.88rem;
-  transition: all 0.25s ease;
-  position: relative;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.35s ease;
   border: 1px solid transparent;
+  background: rgba(15, 35, 20, 0.18);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.nav a::before {
+.collapsed .nav-item {
+  justify-content: center;
+  padding: 0.55rem;
+}
+
+.nav-item::after {
   display: none;
 }
 
-.nav a:hover {
-  color: #2563eb;
-  background: #eef2ff;
-  border-color: #c7d2fe;
-  transform: translateY(-1px);
+.nav-ornament {
+  font-size: 1rem;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.nav a::after {
-  display: none;
+.collapsed .nav-ornament {
+  font-size: 1.15rem;
+  opacity: 1;
 }
 
-.nav a.active,
-.nav a.router-link-exact-active {
-  background: var(--gradient-primary);
+.nav-item:hover {
   color: #ffffff;
-  font-weight: 600;
-  border-color: transparent;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  border-color: rgba(255, 215, 0, 0.4);
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.18), rgba(20, 50, 25, 0.2));
+  transform: translateX(4px);
 }
 
-@media (max-width: 768px) {
-  .nav {
-    padding: 0.6rem 0.8rem;
-    gap: 0.25rem;
+.collapsed .nav-item:hover {
+  transform: scale(1.08);
+}
+
+.nav-item:hover .nav-ornament {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav-item.active,
+.nav-item.router-link-exact-active {
+  color: #ffffff;
+  border-color: rgba(168, 230, 207, 0.6);
+  background: linear-gradient(90deg, rgba(168, 230, 207, 0.25), rgba(20, 45, 25, 0.2));
+  box-shadow: 0 8px 18px rgba(10, 25, 10, 0.2);
+}
+
+.nav-foot {
+  margin-top: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 980px) {
+  .collapse-toggle { display: none; }
+
+  .nav-rail {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    height: auto;
   }
-  .nav a {
-    font-size: 0.72rem;
-    padding: 0.35rem 0.5rem;
+
+  .nav-brand {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 215, 0, 0.25);
+    padding-right: 1rem;
+  }
+
+  .nav-group {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .nav-item {
+    white-space: nowrap;
+  }
+
+  .nav-foot {
+    display: none;
   }
 }
 </style>
