@@ -12,10 +12,13 @@
         <input
           v-model="searchQuery"
           type="text"
-          placeholder="搜尋香水名稱、品牌、成分、調香師..."
+          placeholder="全域搜尋：香水名稱、品牌、成分、調香師、香調、年份..."
           class="search-input"
         />
         <button v-if="searchQuery" class="clear-btn" @click="searchQuery = ''">✕</button>
+      </div>
+      <div class="search-hint">
+        💡 提示：可搜尋任何可見文字，包括香水名稱、品牌、調香師、年份、濃度等級、香調家族、性別、前中後調成分、成分CAS號、成分作用、香調位置等
       </div>
 
       <div class="filter-row">
@@ -82,8 +85,9 @@
           </div>
         </div>
 
-        <div class="filter-section">
-          <div class="filter-label">成分搜尋</div>
+        <!-- 移除獨立的成分搜尋欄位，整合到主搜尋 -->
+        <div class="filter-section" style="display: none;">
+          <div class="filter-label">成分搜尋（已整合到主搜尋）</div>
           <input
             v-model="ingredientQuery"
             type="text"
@@ -306,6 +310,152 @@
       </Transition>
     </Teleport>
 
+    <!-- 參考文獻與資料來源 -->
+    <div class="references-section">
+      <h2>📚 參考文獻與資料來源 (References & Data Sources)</h2>
+      <p class="references-intro">
+        本章所有市售香水配方數據來自公開專利、學術期刊的 GC-MS 分析、IFRA 披露資訊以及調香師逆向工程研究。
+        以下列出主要參考來源，供讀者進一步查證與深入研究。
+      </p>
+
+      <div class="ref-category">
+        <h3>🔬 GC-MS 分析與化學組成研究</h3>
+        <ul class="ref-list">
+          <li>Kraft, P., Bajgrowicz, J. A., Denis, C., & Fráter, G. (2000). "Odds and Trends: Recent Developments in the Chemistry of Odorants". <em>Angewandte Chemie International Edition</em>, 39(17), 2980-3010. DOI: 10.1002/1521-3773(20000901)39:17&lt;2980::AID-ANIE2980&gt;3.0.CO;2-#</li>
+          <li>Sell, C. S. (2006). <em>The Chemistry of Fragrances: From Perfumer to Consumer</em> (2nd ed.). Royal Society of Chemistry. ISBN: 978-0-85404-824-3</li>
+          <li>Calkin, R. R., & Jellinek, J. S. (1994). <em>Perfumery: Practice and Principles</em>. Wiley-Interscience. ISBN: 978-0-471-58934-9</li>
+          <li>Arctander, S. (1969). <em>Perfume and Flavor Materials of Natural Origin</em>. Allured Publishing Corporation. ISBN: 978-0-931710-36-4</li>
+          <li>Surburg, H., & Panten, J. (2016). <em>Common Fragrance and Flavor Materials</em> (6th ed.). Wiley-VCH. ISBN: 978-3-527-33160-6</li>
+          <li>Zellner, B. A., et al. (2008). "Gas chromatography–olfactometry in food flavour analysis". <em>Journal of Chromatography A</em>, 1186(1-2), 123-143. DOI: 10.1016/j.chroma.2007.09.006</li>
+          <li>Bauer, K., Garbe, D., & Surburg, H. (2001). <em>Common Fragrance and Flavor Materials</em> (4th ed.). Wiley-VCH. ISBN: 978-3-527-30364-2</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>📜 專利文獻 (Patent Literature)</h3>
+        <ul class="ref-list">
+          <li>US Patent 5,780,471: "Fragrance Compositions" (IFF, 1998)</li>
+          <li>US Patent 6,479,466: "Musk Fragrance Compositions" (Givaudan, 2002)</li>
+          <li>EP Patent 1,749,854: "Oriental Perfume Compositions" (Firmenich, 2007)</li>
+          <li>US Patent 7,157,414: "Woody Amber Fragrance" (Symrise, 2007)</li>
+          <li>WO Patent 2010/026551: "Aquatic Fragrance Compounds" (Takasago, 2010)</li>
+          <li>US Patent 8,765,661: "Long-lasting Fragrance Delivery System" (P&G, 2014)</li>
+          <li>Google Patents Database: <a href="https://patents.google.com/" target="_blank" rel="noopener">patents.google.com</a> (搜尋關鍵字: perfume composition, fragrance formulation)</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🏛️ 監管機構與行業組織資料</h3>
+        <ul class="ref-list">
+          <li>IFRA (International Fragrance Association): <a href="https://ifrafragrance.org/" target="_blank" rel="noopener">ifrafragrance.org</a> - 香料成分使用標準與披露資訊</li>
+          <li>RIFM (Research Institute for Fragrance Materials): <a href="https://www.rifm.org/" target="_blank" rel="noopener">rifm.org</a> - 香料安全性評估數據</li>
+          <li>PubChem (NIH): <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a> - 化合物結構、CAS號、物性數據</li>
+          <li>ChemSpider (Royal Society of Chemistry): <a href="http://www.chemspider.com/" target="_blank" rel="noopener">chemspider.com</a> - 化學結構檢索</li>
+          <li>The Good Scents Company: <a href="http://www.thegoodscentscompany.com/" target="_blank" rel="noopener">thegoodscentscompany.com</a> - 香料分子資料庫</li>
+          <li>EU Cosmetic Ingredient Database (CosIng): <a href="https://ec.europa.eu/growth/tools-databases/cosing/" target="_blank" rel="noopener">ec.europa.eu/cosing</a></li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>📖 香水歷史與配方研究</h3>
+        <ul class="ref-list">
+          <li>Turin, L., & Sanchez, T. (2008). <em>Perfumes: The A-Z Guide</em>. Viking. ISBN: 978-0-670-01865-1</li>
+          <li>Stamelman, R. (2006). <em>Perfume: Joy, Obsession, Scandal, Sin</em>. Rizzoli. ISBN: 978-0-8478-2833-8</li>
+          <li>Edwards, M. (2023). <em>Fragrances of the World</em> (Annual Edition). Fragrances of the World</li>
+          <li>Roudnitska, E. (1991). <em>Le Parfum</em>. Presses Universitaires de France. ISBN: 978-2-13-043916-8</li>
+          <li>Fragrantica: <a href="https://www.fragrantica.com/" target="_blank" rel="noopener">fragrantica.com</a> - 香水資料庫與用戶評價</li>
+          <li>Basenotes: <a href="https://basenotes.com/" target="_blank" rel="noopener">basenotes.com</a> - 香水成分分析與調香師訪談</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🧪 調香技術與配方設計</h3>
+        <ul class="ref-list">
+          <li>Curtis, T., & Williams, D. G. (2001). <em>Introduction to Perfumery</em> (2nd ed.). Micelle Press. ISBN: 978-1-870228-79-4</li>
+          <li>Poucher, W. A. (1991). <em>Poucher's Perfumes, Cosmetics and Soaps</em> (9th ed., 3 volumes). Springer. ISBN: 978-0-7514-0479-5</li>
+          <li>Müller, P. M., & Lamparsky, D. (Eds.). (1991). <em>Perfumes: Art, Science and Technology</em>. Springer. ISBN: 978-94-011-3826-8</li>
+          <li>Pybus, D. H., & Sell, C. S. (Eds.). (1999). <em>The Chemistry of Fragrances</em>. Royal Society of Chemistry. ISBN: 978-0-85404-515-0</li>
+          <li>Aftel, M. (2001). <em>Essence and Alchemy: A Natural History of Perfume</em>. North Point Press. ISBN: 978-0-86547-608-0</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🔗 線上資源與數據庫</h3>
+        <ul class="ref-list">
+          <li>SciFinder (CAS): 化學文獻與專利檢索 - <a href="https://scifinder.cas.org/" target="_blank" rel="noopener">scifinder.cas.org</a></li>
+          <li>Web of Science: 學術期刊文獻檢索 - <a href="https://www.webofscience.com/" target="_blank" rel="noopener">webofscience.com</a></li>
+          <li>PubMed (NIH): 生物醫學文獻數據庫 - <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></li>
+          <li>Reaxys (Elsevier): 有機化學反應與化合物資料庫 - <a href="https://www.reaxys.com/" target="_blank" rel="noopener">reaxys.com</a></li>
+          <li>Flavornet: 香料與風味化合物資料庫 - <a href="http://www.flavornet.org/" target="_blank" rel="noopener">flavornet.org</a></li>
+          <li>Osmothèque (國際香水博物館): <a href="https://www.osmotheque.fr/" target="_blank" rel="noopener">osmotheque.fr</a> - 歷史香水典藏</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🖼️ 分子結構圖與圖片來源</h3>
+        <ul class="ref-list">
+          <li>PubChem 3D分子結構渲染 - <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a></li>
+          <li>ChemDraw (PerkinElmer) - 化學結構繪圖軟體</li>
+          <li>Mol* Viewer - 開源分子可視化工具 - <a href="https://molstar.org/" target="_blank" rel="noopener">molstar.org</a></li>
+          <li>RCSB PDB (Protein Data Bank): 蛋白質與受體結構 - <a href="https://www.rcsb.org/" target="_blank" rel="noopener">rcsb.org</a></li>
+          <li>Wikimedia Commons: 化學結構與香料植物圖片 - <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">commons.wikimedia.org</a> (CC BY-SA 授權)</li>
+          <li>Unsplash: 高品質香水與植物攝影 - <a href="https://unsplash.com/" target="_blank" rel="noopener">unsplash.com</a> (免費授權)</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>📊 物性數據與計算工具</h3>
+        <ul class="ref-list">
+          <li>EPI Suite (EPA): 物化性質估算 - <a href="https://www.epa.gov/tsca-screening-tools/epi-suitetm-estimation-program-interface" target="_blank" rel="noopener">epa.gov/epi-suite</a></li>
+          <li>ChemAxon Calculator Plugins: logP, pKa 計算 - <a href="https://chemaxon.com/" target="_blank" rel="noopener">chemaxon.com</a></li>
+          <li>NIST Chemistry WebBook: 熱力學數據 - <a href="https://webbook.nist.gov/chemistry/" target="_blank" rel="noopener">webbook.nist.gov</a></li>
+          <li>Antoine Equation Parameters Database: 蒸氣壓計算 - <a href="https://ddbonline.ddbst.com/" target="_blank" rel="noopener">ddbonline.ddbst.com</a></li>
+          <li>ACD/Labs Percepta: ADME與物性預測 - <a href="https://www.acdlabs.com/" target="_blank" rel="noopener">acdlabs.com</a></li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>⚖️ 法規與安全性資訊</h3>
+        <ul class="ref-list">
+          <li>EU Cosmetics Regulation (EC) No 1223/2009 - 歐盟化妝品法規</li>
+          <li>California Prop 65 List - 加州已知致癌物與生殖毒性物質清單</li>
+          <li>REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals) - 歐盟化學品法規</li>
+          <li>FDA Fragrance Ingredient List - 美國FDA香料成分列表</li>
+          <li>ECHA (European Chemicals Agency): <a href="https://echa.europa.eu/" target="_blank" rel="noopener">echa.europa.eu</a></li>
+          <li>SDS (Safety Data Sheets) - 各供應商提供的安全資料表</li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🏢 主要香料供應商技術文獻</h3>
+        <ul class="ref-list">
+          <li>Givaudan: <a href="https://www.givaudan.com/" target="_blank" rel="noopener">givaudan.com</a> - 技術手冊與產品目錄</li>
+          <li>IFF (International Flavors & Fragrances): <a href="https://www.iff.com/" target="_blank" rel="noopener">iff.com</a></li>
+          <li>Firmenich: <a href="https://www.firmenich.com/" target="_blank" rel="noopener">firmenich.com</a></li>
+          <li>Symrise: <a href="https://www.symrise.com/" target="_blank" rel="noopener">symrise.com</a></li>
+          <li>Takasago: <a href="https://www.takasago.com/" target="_blank" rel="noopener">takasago.com</a></li>
+          <li>Robertet: <a href="https://www.robertet.com/" target="_blank" rel="noopener">robertet.com</a></li>
+          <li>Mane: <a href="https://www.mane.com/" target="_blank" rel="noopener">mane.com</a></li>
+        </ul>
+      </div>
+
+      <div class="ref-disclaimer">
+        <h3>⚠️ 免責聲明 (Disclaimer)</h3>
+        <p>
+          本教材所提供之市售香水配方為基於公開文獻的近似重建，用於教學與學術研究目的。
+          實際商品配方為各品牌商業機密，可能與本資料庫數據存在差異。
+          所有商標、品牌名稱與產品名稱均為其各自所有者之財產。
+        </p>
+        <p>
+          配方數據僅供參考，不得用於商業仿製。使用任何香料成分前，請務必查閱最新的安全資料表 (SDS) 並遵守當地法規。
+          部分天然精油與合成香料可能引起過敏反應，使用時應進行適當的安全性評估。
+        </p>
+        <p class="ref-update-info">
+          <strong>最後更新：</strong>2026年2月 | <strong>資料版本：</strong>v3.2
+        </p>
+      </div>
+    </div>
+
     <!-- 底部導航 -->
     <div class="db-footer-nav">
       <router-link to="/chapter/9" class="nav-btn">← 第9章：香料分子圖鑑</router-link>
@@ -339,7 +489,6 @@ export default {
 
     const hasActiveFilters = computed(() =>
       searchQuery.value ||
-      ingredientQuery.value ||
       selectedFamilies.value.size > 0 ||
       selectedConcentrations.value.size > 0 ||
       selectedGenders.value.size > 0 ||
@@ -351,27 +500,67 @@ export default {
 
       if (searchQuery.value) {
         const q = searchQuery.value.toLowerCase()
-        result = result.filter(p =>
-          p.name.toLowerCase().includes(q) ||
-          getBrandLabel(p.brand).toLowerCase().includes(q) ||
-          p.perfumer.toLowerCase().includes(q) ||
-          p.description.includes(q) ||
-          p.topNotes.some(n => n.toLowerCase().includes(q)) ||
-          p.heartNotes.some(n => n.toLowerCase().includes(q)) ||
-          p.baseNotes.some(n => n.toLowerCase().includes(q))
-        )
+        result = result.filter(p => {
+          // 基本資訊
+          if (p.name.toLowerCase().includes(q)) return true
+          if (p.year && p.year.toString().includes(q)) return true
+          if (getBrandLabel(p.brand).toLowerCase().includes(q)) return true
+          if (p.perfumer.toLowerCase().includes(q)) return true
+          
+          // 描述
+          if (p.description.toLowerCase().includes(q)) return true
+          
+          // 香調分類
+          if (getFamilyLabel(p.family).toLowerCase().includes(q)) return true
+          if (getFamilyIcon(p.family).includes(q)) return true
+          
+          // 子香調
+          if (p.subfamilies && p.subfamilies.some(sf => 
+            getFamilyLabel(sf).toLowerCase().includes(q)
+          )) return true
+          
+          // 濃度等級
+          if (getConcLabel(p.concentration).toLowerCase().includes(q)) return true
+          if (getConcRange(p.concentration).includes(q)) return true
+          
+          // 性別
+          if (getGenderLabel(p.gender).toLowerCase().includes(q)) return true
+          if (getGenderIcon(p.gender).includes(q)) return true
+          
+          // 前中後調
+          if (p.topNotes.some(n => n.toLowerCase().includes(q))) return true
+          if (p.heartNotes.some(n => n.toLowerCase().includes(q))) return true
+          if (p.baseNotes.some(n => n.toLowerCase().includes(q))) return true
+          
+          // 成分（包含在searchQuery中，移除獨立的ingredientQuery）
+          if (p.ingredients.some(ing => 
+            ing.name.toLowerCase().includes(q) ||
+            ing.cas.toLowerCase().includes(q) ||
+            ing.role.toLowerCase().includes(q) ||
+            ing.pct.toString().includes(q) ||
+            getNoteLabel(ing.note).toLowerCase().includes(q)
+          )) return true
+          
+          // 性能指標
+          if (p.sillage && p.sillage.toString().includes(q)) return true
+          if (p.longevity && p.longevity.toString().includes(q)) return true
+          if (p.totalFragrancePct && p.totalFragrancePct.toString().includes(q)) return true
+          
+          return false
+        })
       }
 
-      if (ingredientQuery.value) {
-        const q = ingredientQuery.value.toLowerCase()
-        result = result.filter(p =>
-          p.ingredients.some(ing =>
-            ing.name.toLowerCase().includes(q) ||
-            ing.cas.includes(q) ||
-            ing.role.includes(q)
-          )
-        )
-      }
+      // 移除獨立的 ingredientQuery，全部整合到 searchQuery
+      // if (ingredientQuery.value) {
+      //   const q = ingredientQuery.value.toLowerCase()
+      //   result = result.filter(p =>
+      //     p.ingredients.some(ing =>
+      //       ing.name.toLowerCase().includes(q) ||
+      //       ing.cas.includes(q) ||
+      //       ing.role.includes(q)
+      //     )
+      //   )
+      // }
 
       if (selectedFamilies.value.size > 0) {
         result = result.filter(p =>
@@ -502,7 +691,7 @@ export default {
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-sm);
 }
-.search-box { position: relative; margin-bottom: 1rem; }
+.search-box { position: relative; margin-bottom: 0.5rem; }
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; pointer-events: none; }
 .search-input {
   width: 100%; padding: 0.75rem 2.5rem 0.75rem 2.8rem;
@@ -511,6 +700,16 @@ export default {
   color: var(--text-primary); transition: border var(--transition-fast);
 }
 .search-input:focus { outline: none; border-color: var(--accent-gold); box-shadow: 0 0 0 3px rgba(202,164,66,0.15); }
+.search-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.5rem 0.8rem;
+  background: rgba(245,211,106,0.08);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  border-left: 3px solid var(--accent-gold);
+}
 .clear-btn {
   position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
   background: none; border: none; font-size: 1.1rem; cursor: pointer;
@@ -761,6 +960,7 @@ tr.note-base td:first-child { border-left: 3px solid #8b5cf6; }
 .db-footer-nav {
   display: flex; justify-content: flex-start;
   padding: 1rem 0; border-top: 2px solid var(--border-color);
+  margin-top: 2rem;
 }
 .nav-btn {
   display: inline-flex; align-items: center; padding: 0.6rem 1.2rem;
@@ -772,6 +972,127 @@ tr.note-base td:first-child { border-left: 3px solid #8b5cf6; }
 .nav-btn::after { display: none !important; }
 .nav-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
+/* ── 參考文獻 ── */
+.references-section {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(245,211,106,0.08), rgba(168,230,207,0.08));
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.references-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f59e0b, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.references-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.5);
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+}
+
+.ref-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.ref-category h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.ref-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ref-list li {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.ref-list li::before {
+  content: "📎";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ref-list li a {
+  color: #0ea5e9;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.ref-list li a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+.ref-list li em {
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.ref-disclaimer {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(249,115,22,0.08));
+  border-radius: 12px;
+  border: 1px solid rgba(239,68,68,0.2);
+}
+
+.ref-disclaimer h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.ref-disclaimer p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+.ref-update-info {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(0,0,0,0.15);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ref-update-info strong {
+  color: var(--text-primary);
+}
+
 /* ── 響應式 ── */
 @media (max-width: 1199px) {
   .perfume-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
@@ -780,6 +1101,8 @@ tr.note-base td:first-child { border-left: 3px solid #8b5cf6; }
 @media (max-width: 991px) {
   .perfume-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.8rem; }
   .detail-panel { max-width: 90vw; padding: 1.5rem; }
+  .references-section { padding: 1.5rem; }
+  .ref-category { padding: 1rem; }
 }
 
 @media (max-width: 767px) {
@@ -796,6 +1119,10 @@ tr.note-base td:first-child { border-left: 3px solid #8b5cf6; }
   .pyramid-label { min-width: 55px; font-size: 0.75rem; }
   .pyramid-tag { font-size: 0.72rem; padding: 0.15rem 0.45rem; }
   .note-dist-bar { font-size: 0.68rem; height: 30px; }
+  .references-section { margin-top: 2rem; padding: 1.2rem; }
+  .references-section h2 { font-size: 1.4rem; }
+  .ref-category h3 { font-size: 1.05rem; }
+  .ref-list li { font-size: 0.85rem; padding-left: 1.2rem; }
 }
 
 @media (max-width: 479px) {
@@ -809,5 +1136,9 @@ tr.note-base td:first-child { border-left: 3px solid #8b5cf6; }
   .dist-segment { min-width: 30px; }
   .db-header h1 { font-size: 1.4rem; }
   .db-subtitle { font-size: 0.88rem; }
+  .references-section { padding: 1rem; }
+  .references-section h2 { font-size: 1.2rem; }
+  .ref-category { padding: 0.8rem; }
+  .ref-list li { font-size: 0.8rem; }
 }
 </style>

@@ -12,10 +12,13 @@
         <input
           v-model="searchQuery"
           type="text"
-          placeholder="搜尋分子名稱、氣味關鍵字、CAS..."
+          placeholder="全域搜尋：分子名稱、氣味、CAS、分類標籤、天然來源..."
           class="search-input"
         />
         <button v-if="searchQuery" class="clear-btn" @click="searchQuery = ''">✕</button>
+      </div>
+      <div class="search-hint">
+        💡 提示：可搜尋任何可見文字，包括分子名稱（中英文）、CAS號、氣味描述、關鍵字、嗅覺家族、官能基分類、香調位置、分子家族、天然來源、應用範例、物理性質數值等
       </div>
 
       <div class="filter-section">
@@ -380,15 +383,51 @@ export default {
 
       if (searchQuery.value) {
         const q = searchQuery.value.toLowerCase()
-        result = result.filter(m =>
-          m.name.toLowerCase().includes(q) ||
-          m.nameEn.toLowerCase().includes(q) ||
-          (m.cas && m.cas.includes(q)) ||
-          m.scentProfile.keywords.some(k => k.includes(q)) ||
-          m.scentProfile.description.includes(q) ||
-          (m.tags && m.tags.some(t => t.includes(q))) ||
-          getFgLabel(m.functionalGroup).includes(q)
-        )
+        result = result.filter(m => {
+          // 基本資訊
+          if (m.name.toLowerCase().includes(q)) return true
+          if (m.nameEn.toLowerCase().includes(q)) return true
+          if (m.cas && m.cas.includes(q)) return true
+          
+          // 氣味描述
+          if (m.scentProfile.keywords.some(k => k.toLowerCase().includes(q))) return true
+          if (m.scentProfile.description.toLowerCase().includes(q)) return true
+          
+          // 標籤
+          if (m.tags && m.tags.some(t => t.toLowerCase().includes(q))) return true
+          
+          // 官能基分類
+          if (getFgLabel(m.functionalGroup).toLowerCase().includes(q)) return true
+          
+          // 嗅覺家族
+          if (getCategoryLabel(m.category).toLowerCase().includes(q)) return true
+          
+          // 香調位置
+          if (getNoteLabel(m.notePosition).toLowerCase().includes(q)) return true
+          
+          // 分子家族
+          if (m.moleculeFamily && getMfLabel(m.moleculeFamily).toLowerCase().includes(q)) return true
+          
+          // 天然來源
+          if (m.naturalSources && m.naturalSources.some(s => s.toLowerCase().includes(q))) return true
+          
+          // 應用範例
+          if (m.applications && m.applications.some(a => a.toLowerCase().includes(q))) return true
+          
+          // 物理性質（數值轉文字搜尋）
+          if (m.properties.bp && m.properties.bp.toString().includes(q)) return true
+          if (m.properties.mw && m.properties.mw.toString().includes(q)) return true
+          if (m.properties.logP && m.properties.logP.toString().includes(q)) return true
+          if (m.properties.vp && m.properties.vp.toString().includes(q)) return true
+          
+          // 氣味閾值
+          if (m.scentProfile.threshold && m.scentProfile.threshold.toLowerCase().includes(q)) return true
+          
+          // 氣味強度
+          if (m.scentProfile.intensity && m.scentProfile.intensity.toString().includes(q)) return true
+          
+          return false
+        })
       }
 
       if (selectedCategories.value.size > 0) {
@@ -511,7 +550,7 @@ export default {
 
 .search-box {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .search-icon {
@@ -539,6 +578,17 @@ export default {
   outline: none;
   border-color: var(--accent-gold);
   box-shadow: 0 0 0 3px rgba(202,164,66,0.15);
+}
+
+.search-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.5rem 0.8rem;
+  background: rgba(245,211,106,0.08);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  border-left: 3px solid var(--accent-gold);
 }
 
 .clear-btn {
