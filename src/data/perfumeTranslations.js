@@ -381,6 +381,12 @@ export const NOTE_EN = {
   '茴芹': 'Anise',
   '金雀花': 'Broom',
   '黑醋栗芽': 'Blackcurrant bud',
+  // ── batch 361-380 ──
+  '星茴香': 'Star anise',
+  '格拉斯茉莉': 'Grasse jasmine',
+  '白茶': 'White tea',
+  '蜜柑': 'Mandarin orange',
+  '龍艾': 'Tarragon',
 }
 
 // ─────────────────────────────────────────
@@ -607,6 +613,8 @@ const ROLE_DIRECT = {
   '堅果苦甜': 'Nutty bittersweet',
   '綠色果香': 'Green fruity',
   '草本甜潤': 'Herbal sweet',
+  // ── batch 361-380 ──
+  '美食焦甜': 'Gourmand caramel',
 }
 
 // Material prefixes for decomposition
@@ -1146,4 +1154,24 @@ export const DESCRIPTION_EN = {
   'dolce-lightblue-intense': 'Light Blue turned up to full Mediterranean intensity. Apple-lemon-raspberry sparkle like Capri\'s turquoise waters, jasmine-lily-of-the-valley-rose bloom under the Italian sun, and amber-white musk-cedar extend the summer holiday indefinitely.',
   'creed-millesime': 'Creed\'s regal sea-and-citrus jewel, allegedly created for a European royal. Sea salt-lemon-bergamot shimmer like sunlight on waves, iris-jasmine-marine notes create a refined aquatic heart, and amber-musk-cedar dry down like driftwood warmed by the sun.',
   'gucci-memoire': 'A genderless ode to memory and warmth. Chamomile-bitter almond-bergamot open with nostalgic comfort, jasmine-rose-Indian coral jasmine bloom with quiet intimacy, and sandalwood-cedar-musk create a cocooning woody embrace. Alessandro Michele\'s most personal fragrance.',
+  // ── batch 361-380 ──
+  'chanel-jersey': 'A soft embrace from Chanel\'s Les Exclusifs. Lavender-iris-bergamot open with powdery gentleness, rose-jasmine-lily-of-the-valley wrap like fine knit fabric, and musk-vanilla-tonka bean settle as a warm second skin. Effortless comfort redefined.',
+  'chanel-boisdesiles': 'A 1926 exotic wood masterpiece. Aldehyde-bergamot-neroli create a sparkling prelude, jasmine-iris root-rose form an elegant floral heart, and sandalwood-vanilla-vetiver build a warm, island-wood base. Chanel\'s most seductive woody treasure.',
+  'dior-jadore-absolu': 'J\'adore at its most opulent. Grasse jasmine-bergamot-neroli open with luxuriant richness, May rose-tuberose-ylang-ylang bloom at maximum intensity, and musk-sandalwood-amber provide a soft golden cradle. The absolute expression of Dior\'s flower.',
+  'dior-eausaledior': 'Eau Sauvage reborn as parfum. Bergamot-lavender-lemon retain the classic freshness, vetiver-nutmeg-star anise add brooding spicy depth, and amber-musk-cedar deliver a warm, long-lasting woody trail. The gentleman\'s fragrance — evolved.',
+  'guerlain-vol-de-nuit': 'Inspired by Saint-Exupéry\'s night flight (1933). Bergamot-tarragon-lemon open with cool evening air, iris-jasmine-rose shimmer like starlight, and oakmoss-vanilla-benzoin descend into deep, velvety darkness. Aviation poetry in a bottle.',
+  'guerlain-aquaall-herbalfresca': 'A burst of green herbal joy. Mint-lemon-bergamot deliver a cooling green splash, green tea-white tea-mint create a crystalline aromatic heart, and white musk-cedar-amber settle like a fresh breeze. Guerlain\'s most refreshing Allegoria.',
+  'tomford-santal-blush': 'Sandalwood blushing with spice. Cinnamon-saffron-cardamom open with warm spiced richness, sandalwood-ylang-rose entwine in creamy woody florals, and musk-amber-tonka bean finish with a shy, powdery warmth. Eastern sensuality distilled.',
+  'tomford-plumjapanais': 'Japanese plum meets sacred wood. Plum-saffron-cinnamon open with dark fruity spice, oud-cinnamon-frankincense smolder at the core, and amber-benzoin-musk linger like temple incense. An olfactory meditation on East-meets-West.',
+  'hermes-rouge': 'Rouge like the iconic lipstick. Red berries-rose-bergamot open with vivid crimson notes, iris-cedar-jasmine form a powdery chypre heart, and oakmoss-amber-musk close with timeless elegance. Hermès\'s boldest feminine statement.',
+  'hermes-jardinalapluie': 'An Indian garden after the monsoon. Coriander-ginger-cardamom capture rain-spiced air, gardenia-ginger-pepper bloom in humid warmth, and vetiver-cedar-amber ground everything in wet, earthy petrichor. Ellena\'s most exotic garden journey.',
+  'ysl-lhomme-parfum': 'L\'Homme pushed to parfum intensity. Lavender-cardamom-bergamot open with aromatic power, violet-iris-rose form a velvety powdery heart, and tonka bean-amber-cedar deliver a deep, commanding woody finish. The definitive gentleman\'s evening scent.',
+  'ysl-blackopium-extreme': 'Black Opium taken to extremes. Coffee-blackcurrant-pink pepper hit with doubled intensity, lavender-chestnut-neroli create a unique floral-gourmand heart, and vanilla-caramel-musk form an intoxicatingly sweet base. Nightlife amplified.',
+  'gucci-blossomintense': 'Bloom\'s most saturated chapter. Jasmine-gardenia-bergamot open with abundant white florals, tuberose-jasmine-ylang bloom with creamy richness, and tonka bean-sandalwood-musk add oriental-woody depth. A garden at the peak of its bloom.',
+  'gucci-rush': 'A 1999 sensory rush. Coriander-bergamot-cardamom open with spicy sweetness, peony-gardenia-rose build a lush floral wall, and patchouli-animalic musk-vanilla create a deep, hypnotic trail. The fragrance that defined the 1990s nightlife.',
+  'givenchy-irresistible-edp': 'Irresistible in its most intense form. Pear-almond-bergamot open with sweet charm, rose-iris-jasmine weave a romantic floral heart, and white musk-cedar-amber close with a soft, huggable warmth. Modern romance bottled.',
+  'mj-daisy-dream': 'Daisy in a daydream. Blackberry-grapefruit-pear open with fruity lightness, jasmine-lily-of-the-valley drift like petals on a breeze, and white musk-cedar-ambergris settle like a cloud. Marc Jacobs\'s most airy creation.',
+  'mj-decadence': 'Decadent dark luxury. Plum-iris-saffron open with moody opulence, Bulgarian rose-jasmine-violet form a deep floral core, and patchouli-leather-amber deliver a darkly seductive base. The fragrance of velvet midnight.',
+  'issey-leau-intense': 'L\'Eau d\'Issey warmed to intensity. Cinnamon-neroli-bergamot add spiced depth, lily-lily-of-the-valley-lotus retain the water-flower heart, and benzoin-sandalwood-musk create an oriental finish. East meets Miyake.',
+  'issey-pure': 'A single drop of floral beauty. Lilac-apple-bergamot open with fresh sweetness, jasmine-neroli-rose bloom with pure clarity, and caramel-white musk-cedar add a gourmand whisper. Issey Miyake\'s modern feminine chapter.',
 }
