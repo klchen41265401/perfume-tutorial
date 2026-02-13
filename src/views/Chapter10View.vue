@@ -375,18 +375,18 @@
           <li>US Patent 7,157,414: "Woody Amber Fragrance" (Symrise, 2007)</li>
           <li>WO Patent 2010/026551: "Aquatic Fragrance Compounds" (Takasago, 2010)</li>
           <li>US Patent 8,765,661: "Long-lasting Fragrance Delivery System" (P&G, 2014)</li>
-          <li>Google Patents Database: <a href="https://patents.google.com/" target="_blank" rel="noopener">patents.google.com</a> (搜尋關鍵字: perfume composition, fragrance formulation)</li>
+          <li>Google Patents Database: <a href="https://patents.google.com/" target="_blank" rel="noopener">patents.google.com</a> ({{ isZh ? '搜尋關鍵字' : 'Search keywords' }}: perfume composition, fragrance formulation)</li>
         </ul>
       </div>
 
       <div class="ref-category">
         <h3>🏛️ {{ t('ch10.regulatoryData') }}</h3>
         <ul class="ref-list">
-          <li>IFRA (International Fragrance Association): <a href="https://ifrafragrance.org/" target="_blank" rel="noopener">ifrafragrance.org</a> - 香料成分使用標準與披露資訊</li>
-          <li>RIFM (Research Institute for Fragrance Materials): <a href="https://www.rifm.org/" target="_blank" rel="noopener">rifm.org</a> - 香料安全性評估數據</li>
-          <li>PubChem (NIH): <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a> - 化合物結構、CAS號、物性數據</li>
-          <li>ChemSpider (Royal Society of Chemistry): <a href="http://www.chemspider.com/" target="_blank" rel="noopener">chemspider.com</a> - 化學結構檢索</li>
-          <li>The Good Scents Company: <a href="http://www.thegoodscentscompany.com/" target="_blank" rel="noopener">thegoodscentscompany.com</a> - 香料分子資料庫</li>
+          <li>IFRA (International Fragrance Association): <a href="https://ifrafragrance.org/" target="_blank" rel="noopener">ifrafragrance.org</a> - {{ isZh ? '香料成分使用標準與披露資訊' : 'Fragrance ingredient usage standards & disclosure' }}</li>
+          <li>RIFM (Research Institute for Fragrance Materials): <a href="https://www.rifm.org/" target="_blank" rel="noopener">rifm.org</a> - {{ isZh ? '香料安全性評估數據' : 'Fragrance safety assessment data' }}</li>
+          <li>PubChem (NIH): <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a> - {{ isZh ? '化合物結構、CAS號、物性數據' : 'Compound structures, CAS numbers & physical property data' }}</li>
+          <li>ChemSpider (Royal Society of Chemistry): <a href="http://www.chemspider.com/" target="_blank" rel="noopener">chemspider.com</a> - {{ isZh ? '化學結構檢索' : 'Chemical structure search' }}</li>
+          <li>The Good Scents Company: <a href="http://www.thegoodscentscompany.com/" target="_blank" rel="noopener">thegoodscentscompany.com</a> - {{ isZh ? '香料分子資料庫' : 'Fragrance molecule database' }}</li>
           <li>EU Cosmetic Ingredient Database (CosIng): <a href="https://ec.europa.eu/growth/tools-databases/cosing/" target="_blank" rel="noopener">ec.europa.eu/cosing</a></li>
         </ul>
       </div>
