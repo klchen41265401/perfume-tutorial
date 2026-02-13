@@ -1,8 +1,8 @@
 <template>
   <div class="perfume-db">
     <div class="db-header">
-      <h1>第10章：市售香水配方解析</h1>
-      <p class="db-subtitle">商品化香水的成分組成、濃度與配方結構 — 從分子角度解讀經典香水</p>
+      <h1>{{ t('ch10.title') }}</h1>
+      <p class="db-subtitle">{{ t('ch10.subtitle') }}</p>
     </div>
 
     <!-- 搜尋與篩選 -->
@@ -12,18 +12,18 @@
         <input
           v-model="searchQuery"
           type="text"
-          placeholder="全域搜尋：香水名稱、品牌、成分、調香師、香調、年份..."
+          :placeholder="t('ch10.searchPlaceholder')"
           class="search-input"
         />
         <button v-if="searchQuery" class="clear-btn" @click="searchQuery = ''">✕</button>
       </div>
       <div class="search-hint">
-        💡 提示：可搜尋任何可見文字，包括香水名稱、品牌、調香師、年份、濃度等級、香調家族、性別、前中後調成分、成分CAS號、成分作用、香調位置等
+        {{ t('ch10.searchHint') }}
       </div>
 
       <div class="filter-row">
         <div class="filter-section">
-          <div class="filter-label">香調家族</div>
+          <div class="filter-label">{{ t('ch10.fragranceFamily') }}</div>
           <div class="chip-group">
             <button
               v-for="fam in familyOptions"
@@ -34,13 +34,13 @@
               @click="toggleFilter('family', fam.id)"
             >
               <span class="chip-icon">{{ fam.icon }}</span>
-              <span>{{ fam.label }}</span>
+              <span>{{ getLabel(fam) }}</span>
             </button>
           </div>
         </div>
 
         <div class="filter-section">
-          <div class="filter-label">濃度等級</div>
+          <div class="filter-label">{{ t('ch10.concentrationLevel') }}</div>
           <div class="chip-group">
             <button
               v-for="conc in concentrationOptions"
@@ -50,13 +50,13 @@
               :style="selectedConcentrations.has(conc.id) ? { background: conc.color + '22', borderColor: conc.color, color: conc.color } : {}"
               @click="toggleFilter('concentration', conc.id)"
             >
-              {{ conc.label }}
+              {{ getLabel(conc) }}
             </button>
           </div>
         </div>
 
         <div class="filter-section">
-          <div class="filter-label">性別</div>
+          <div class="filter-label">{{ t('ch10.gender') }}</div>
           <div class="chip-group">
             <button
               v-for="g in genderOptions"
@@ -65,23 +65,59 @@
               :class="{ active: selectedGenders.has(g.id) }"
               @click="toggleFilter('gender', g.id)"
             >
-              {{ g.icon }} {{ g.label }}
+              {{ g.icon }} {{ getLabel(g) }}
             </button>
           </div>
         </div>
 
         <div class="filter-section">
-          <div class="filter-label">品牌</div>
-          <div class="chip-group">
-            <button
-              v-for="b in brandOptions"
-              :key="b.id"
-              class="chip"
-              :class="{ active: selectedBrands.has(b.id) }"
-              @click="toggleFilter('brand', b.id)"
-            >
-              {{ b.label }}
+          <div class="filter-label">
+            {{ t('ch10.brand') }}
+            <span v-if="selectedBrands.size > 0" class="selected-count">({{ t('ch10.selected') }} {{ selectedBrands.size }})</span>
+          </div>
+          <div class="brand-filter-wrapper">
+            <button class="brand-dropdown-toggle" @click="brandDropdownOpen = !brandDropdownOpen">
+              <span v-if="selectedBrands.size === 0">{{ t('ch10.selectBrand') }}</span>
+              <span v-else class="selected-brands-preview">
+                {{ Array.from(selectedBrands).slice(0, 3).map(id => getBrandLabel(id)).join('、') }}
+                <span v-if="selectedBrands.size > 3"> +{{ selectedBrands.size - 3 }}</span>
+              </span>
+              <span class="dropdown-arrow" :class="{ open: brandDropdownOpen }">▼</span>
             </button>
+            
+            <Transition name="dropdown">
+              <div v-if="brandDropdownOpen" class="brand-dropdown">
+                <div class="brand-search">
+                  <input
+                    v-model="brandSearchQuery"
+                    type="text"
+                    :placeholder="t('ch10.searchBrand')"
+                    class="brand-search-input"
+                    @click.stop
+                  />
+                </div>
+                <div class="brand-options-list">
+                  <label
+                    v-for="b in filteredBrandOptions"
+                    :key="b.id"
+                    class="brand-option"
+                    @click.stop
+                  >
+                    <input
+                      type="checkbox"
+                      :checked="selectedBrands.has(b.id)"
+                      @change="toggleFilter('brand', b.id)"
+                    />
+                    <span class="brand-option-label">{{ b.label }}</span>
+                    <span class="brand-option-count">({{ getBrandCount(b.id) }})</span>
+                  </label>
+                </div>
+                <div class="brand-dropdown-footer">
+                  <button class="brand-clear-btn" @click.stop="selectedBrands = new Set()">{{ t('common.clear') }}</button>
+                  <button class="brand-close-btn" @click.stop="brandDropdownOpen = false">{{ t('ch10.close') }}</button>
+                </div>
+              </div>
+            </Transition>
           </div>
         </div>
 
@@ -98,8 +134,8 @@
       </div>
 
       <div class="filter-meta">
-        <span>顯示 <strong>{{ filteredPerfumes.length }}</strong> / {{ allPerfumes.length }} 款香水</span>
-        <button v-if="hasActiveFilters" class="reset-btn" @click="resetFilters">清除篩選</button>
+        <span>{{ t('ch10.showing') }} <strong>{{ filteredPerfumes.length }}</strong> / {{ allPerfumes.length }} {{ t('ch10.perfumes') }}</span>
+        <button v-if="hasActiveFilters" class="reset-btn" @click="resetFilters">{{ t('ch10.clearFilters') }}</button>
       </div>
     </div>
 
@@ -131,30 +167,30 @@
         </div>
         <div class="perfume-notes-preview">
           <div class="note-row">
-            <span class="note-label top">前調</span>
-            <span class="note-items">{{ p.topNotes.slice(0, 3).join('、') }}</span>
+            <span class="note-label top">{{ t('ch10.topShort') }}</span>
+            <span class="note-items">{{ joinNotes(p.topNotes, 3) }}</span>
           </div>
           <div class="note-row">
-            <span class="note-label heart">中調</span>
-            <span class="note-items">{{ p.heartNotes.slice(0, 3).join('、') }}</span>
+            <span class="note-label heart">{{ t('ch10.heartShort') }}</span>
+            <span class="note-items">{{ joinNotes(p.heartNotes, 3) }}</span>
           </div>
           <div class="note-row">
-            <span class="note-label base">基調</span>
-            <span class="note-items">{{ p.baseNotes.slice(0, 3).join('、') }}</span>
+            <span class="note-label base">{{ t('ch10.baseShort') }}</span>
+            <span class="note-items">{{ joinNotes(p.baseNotes, 3) }}</span>
           </div>
         </div>
         <div class="perfume-card-bars">
           <div class="mini-bar">
-            <span class="mini-label">擴散</span>
+            <span class="mini-label">{{ t('ch10.sillageShort') }}</span>
             <div class="mini-track"><div class="mini-fill" :style="{ width: (p.sillage / 5 * 100) + '%', background: '#f59e0b' }"></div></div>
           </div>
           <div class="mini-bar">
-            <span class="mini-label">持久</span>
+            <span class="mini-label">{{ t('ch10.longevityShort') }}</span>
             <div class="mini-track"><div class="mini-fill" :style="{ width: (p.longevity / 5 * 100) + '%', background: '#8b5cf6' }"></div></div>
           </div>
         </div>
         <div class="perfume-ingredient-count">
-          🧪 {{ p.ingredients.length }} 種主要成分
+          🧪 {{ p.ingredients.length }} {{ t('ch10.ingredientsCount') }}
         </div>
       </div>
     </div>
@@ -162,8 +198,8 @@
     <!-- 空狀態 -->
     <div v-if="filteredPerfumes.length === 0" class="empty-state">
       <div class="empty-icon">🧴</div>
-      <p>找不到符合條件的香水</p>
-      <button class="reset-btn" @click="resetFilters">清除所有篩選</button>
+      <p>{{ t('ch10.emptyState') }}</p>
+      <button class="reset-btn" @click="resetFilters">{{ t('ch10.clearAll') }}</button>
     </div>
 
     <!-- 香水詳情 Modal -->
@@ -178,7 +214,7 @@
               <h2 class="detail-name">{{ selectedPerfume.name }}</h2>
               <div class="detail-meta">
                 <span>{{ selectedPerfume.year }}</span>
-                <span>調香師：{{ selectedPerfume.perfumer }}</span>
+                <span>{{ t('ch10.perfumer') }}：{{ selectedPerfume.perfumer }}</span>
               </div>
               <div class="detail-badges">
                 <span class="badge family-badge"
@@ -201,30 +237,30 @@
 
             <!-- 描述 -->
             <div class="detail-section">
-              <h3>📖 配方概述</h3>
-              <p class="perfume-description">{{ selectedPerfume.description }}</p>
+              <h3>📖 {{ t('ch10.formulaOverview') }}</h3>
+              <p class="perfume-description">{{ desc(selectedPerfume) }}</p>
             </div>
 
             <!-- 香調金字塔 -->
             <div class="detail-section">
-              <h3>🎵 香調金字塔</h3>
+              <h3>🎵 {{ t('ch10.fragrancePyramid') }}</h3>
               <div class="pyramid">
                 <div class="pyramid-layer top-layer">
-                  <div class="pyramid-label">前調 Top</div>
+                  <div class="pyramid-label">{{ t('ch10.top') }}</div>
                   <div class="pyramid-tags">
-                    <span v-for="n in selectedPerfume.topNotes" :key="n" class="pyramid-tag top">{{ n }}</span>
+                    <span v-for="n in selectedPerfume.topNotes" :key="n" class="pyramid-tag top">{{ tn(n) }}</span>
                   </div>
                 </div>
                 <div class="pyramid-layer heart-layer">
-                  <div class="pyramid-label">中調 Heart</div>
+                  <div class="pyramid-label">{{ t('ch10.heart') }}</div>
                   <div class="pyramid-tags">
-                    <span v-for="n in selectedPerfume.heartNotes" :key="n" class="pyramid-tag heart">{{ n }}</span>
+                    <span v-for="n in selectedPerfume.heartNotes" :key="n" class="pyramid-tag heart">{{ tn(n) }}</span>
                   </div>
                 </div>
                 <div class="pyramid-layer base-layer">
-                  <div class="pyramid-label">基調 Base</div>
+                  <div class="pyramid-label">{{ t('ch10.base') }}</div>
                   <div class="pyramid-tags">
-                    <span v-for="n in selectedPerfume.baseNotes" :key="n" class="pyramid-tag base">{{ n }}</span>
+                    <span v-for="n in selectedPerfume.baseNotes" :key="n" class="pyramid-tag base">{{ tn(n) }}</span>
                   </div>
                 </div>
               </div>
@@ -232,20 +268,20 @@
 
             <!-- 性能指標 -->
             <div class="detail-section">
-              <h3>📊 性能指標</h3>
+              <h3>📊 {{ t('ch10.performanceMetrics') }}</h3>
               <div class="perf-bars">
                 <div class="perf-bar-row">
-                  <span class="perf-label">擴散力 (Sillage)</span>
+                  <span class="perf-label">{{ t('ch10.sillageFull') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: (selectedPerfume.sillage / 5 * 100) + '%', background: 'linear-gradient(90deg, #fbbf24, #f59e0b)' }"></div></div>
                   <span class="perf-value">{{ selectedPerfume.sillage }}/5</span>
                 </div>
                 <div class="perf-bar-row">
-                  <span class="perf-label">持久力 (Longevity)</span>
+                  <span class="perf-label">{{ t('ch10.longevityFull') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: (selectedPerfume.longevity / 5 * 100) + '%', background: 'linear-gradient(90deg, #c084fc, #8b5cf6)' }"></div></div>
                   <span class="perf-value">{{ selectedPerfume.longevity }}/5</span>
                 </div>
                 <div class="perf-bar-row">
-                  <span class="perf-label">香精濃度</span>
+                  <span class="perf-label">{{ t('ch10.fragranceConcentration') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: Math.min(selectedPerfume.totalFragrancePct / 25 * 100, 100) + '%', background: 'linear-gradient(90deg, #67e8f9, #06b6d4)' }"></div></div>
                   <span class="perf-value">{{ selectedPerfume.totalFragrancePct }}%</span>
                 </div>
@@ -254,16 +290,16 @@
 
             <!-- 完整配方表 -->
             <div class="detail-section">
-              <h3>⚗️ 配方成分表（香精油中佔比）</h3>
+              <h3>⚗️ {{ t('ch10.formulaTable') }}</h3>
               <div class="formula-table-wrap">
                 <table class="formula-table">
                   <thead>
                     <tr>
-                      <th>成分</th>
+                      <th>{{ t('ch10.ingredient') }}</th>
                       <th>CAS</th>
-                      <th>佔比</th>
-                      <th>香調</th>
-                      <th>作用</th>
+                      <th>{{ t('ch10.percentage') }}</th>
+                      <th>{{ t('ch10.note') }}</th>
+                      <th>{{ t('ch10.role') }}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -280,7 +316,7 @@
                         <span class="note-dot" :style="{ background: getNoteBarColor(ing.note) }"></span>
                         {{ getNoteLabel(ing.note) }}
                       </td>
-                      <td class="ing-role">{{ ing.role }}</td>
+                      <td class="ing-role">{{ tr(ing.role) }}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -289,17 +325,17 @@
 
             <!-- 成分佔比圖 -->
             <div class="detail-section">
-              <h3>📈 前/中/基調佔比</h3>
+              <h3>📈 {{ t('ch10.noteDistChart') }}</h3>
               <div class="note-distribution">
                 <div class="note-dist-bar">
                   <div class="dist-segment top-seg" :style="{ width: noteDistribution.topPct + '%' }">
-                    前調 {{ noteDistribution.topPct }}%
+                    {{ t('ch10.top2') }} {{ noteDistribution.topPct }}%
                   </div>
                   <div class="dist-segment heart-seg" :style="{ width: noteDistribution.heartPct + '%' }">
-                    中調 {{ noteDistribution.heartPct }}%
+                    {{ t('ch10.heart2') }} {{ noteDistribution.heartPct }}%
                   </div>
                   <div class="dist-segment base-seg" :style="{ width: noteDistribution.basePct + '%' }">
-                    基調 {{ noteDistribution.basePct }}%
+                    {{ t('ch10.base2') }} {{ noteDistribution.basePct }}%
                   </div>
                 </div>
               </div>
@@ -312,14 +348,13 @@
 
     <!-- 參考文獻與資料來源 -->
     <div class="references-section">
-      <h2>📚 參考文獻與資料來源 (References & Data Sources)</h2>
+      <h2>📚 {{ t('ch10.references') }}</h2>
       <p class="references-intro">
-        本章所有市售香水配方數據來自公開專利、學術期刊的 GC-MS 分析、IFRA 披露資訊以及調香師逆向工程研究。
-        以下列出主要參考來源，供讀者進一步查證與深入研究。
+        {{ t('ch10.referencesIntro') }}
       </p>
 
       <div class="ref-category">
-        <h3>🔬 GC-MS 分析與化學組成研究</h3>
+        <h3>🔬 {{ t('ch10.gcmsAnalysis') }}</h3>
         <ul class="ref-list">
           <li>Kraft, P., Bajgrowicz, J. A., Denis, C., & Fráter, G. (2000). "Odds and Trends: Recent Developments in the Chemistry of Odorants". <em>Angewandte Chemie International Edition</em>, 39(17), 2980-3010. DOI: 10.1002/1521-3773(20000901)39:17&lt;2980::AID-ANIE2980&gt;3.0.CO;2-#</li>
           <li>Sell, C. S. (2006). <em>The Chemistry of Fragrances: From Perfumer to Consumer</em> (2nd ed.). Royal Society of Chemistry. ISBN: 978-0-85404-824-3</li>
@@ -332,7 +367,7 @@
       </div>
 
       <div class="ref-category">
-        <h3>📜 專利文獻 (Patent Literature)</h3>
+        <h3>📜 {{ t('ch10.patentLiterature') }}</h3>
         <ul class="ref-list">
           <li>US Patent 5,780,471: "Fragrance Compositions" (IFF, 1998)</li>
           <li>US Patent 6,479,466: "Musk Fragrance Compositions" (Givaudan, 2002)</li>
@@ -345,7 +380,7 @@
       </div>
 
       <div class="ref-category">
-        <h3>🏛️ 監管機構與行業組織資料</h3>
+        <h3>🏛️ {{ t('ch10.regulatoryData') }}</h3>
         <ul class="ref-list">
           <li>IFRA (International Fragrance Association): <a href="https://ifrafragrance.org/" target="_blank" rel="noopener">ifrafragrance.org</a> - 香料成分使用標準與披露資訊</li>
           <li>RIFM (Research Institute for Fragrance Materials): <a href="https://www.rifm.org/" target="_blank" rel="noopener">rifm.org</a> - 香料安全性評估數據</li>
@@ -357,19 +392,19 @@
       </div>
 
       <div class="ref-category">
-        <h3>📖 香水歷史與配方研究</h3>
+        <h3>📖 {{ t('ch10.perfumeHistory') }}</h3>
         <ul class="ref-list">
           <li>Turin, L., & Sanchez, T. (2008). <em>Perfumes: The A-Z Guide</em>. Viking. ISBN: 978-0-670-01865-1</li>
           <li>Stamelman, R. (2006). <em>Perfume: Joy, Obsession, Scandal, Sin</em>. Rizzoli. ISBN: 978-0-8478-2833-8</li>
           <li>Edwards, M. (2023). <em>Fragrances of the World</em> (Annual Edition). Fragrances of the World</li>
           <li>Roudnitska, E. (1991). <em>Le Parfum</em>. Presses Universitaires de France. ISBN: 978-2-13-043916-8</li>
-          <li>Fragrantica: <a href="https://www.fragrantica.com/" target="_blank" rel="noopener">fragrantica.com</a> - 香水資料庫與用戶評價</li>
-          <li>Basenotes: <a href="https://basenotes.com/" target="_blank" rel="noopener">basenotes.com</a> - 香水成分分析與調香師訪談</li>
+          <li>Fragrantica: <a href="https://www.fragrantica.com/" target="_blank" rel="noopener">fragrantica.com</a> - {{ isZh ? '香水資料庫與用戶評價' : 'Perfume database & user reviews' }}</li>
+          <li>Basenotes: <a href="https://basenotes.com/" target="_blank" rel="noopener">basenotes.com</a> - {{ isZh ? '香水成分分析與調香師訪談' : 'Ingredient analysis & perfumer interviews' }}</li>
         </ul>
       </div>
 
       <div class="ref-category">
-        <h3>🧪 調香技術與配方設計</h3>
+        <h3>🧪 {{ t('ch10.perfumeryTechniques') }}</h3>
         <ul class="ref-list">
           <li>Curtis, T., & Williams, D. G. (2001). <em>Introduction to Perfumery</em> (2nd ed.). Micelle Press. ISBN: 978-1-870228-79-4</li>
           <li>Poucher, W. A. (1991). <em>Poucher's Perfumes, Cosmetics and Soaps</em> (9th ed., 3 volumes). Springer. ISBN: 978-0-7514-0479-5</li>
@@ -380,56 +415,56 @@
       </div>
 
       <div class="ref-category">
-        <h3>🔗 線上資源與數據庫</h3>
+        <h3>🔗 {{ t('ch10.onlineResources') }}</h3>
         <ul class="ref-list">
-          <li>SciFinder (CAS): 化學文獻與專利檢索 - <a href="https://scifinder.cas.org/" target="_blank" rel="noopener">scifinder.cas.org</a></li>
-          <li>Web of Science: 學術期刊文獻檢索 - <a href="https://www.webofscience.com/" target="_blank" rel="noopener">webofscience.com</a></li>
-          <li>PubMed (NIH): 生物醫學文獻數據庫 - <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></li>
-          <li>Reaxys (Elsevier): 有機化學反應與化合物資料庫 - <a href="https://www.reaxys.com/" target="_blank" rel="noopener">reaxys.com</a></li>
-          <li>Flavornet: 香料與風味化合物資料庫 - <a href="http://www.flavornet.org/" target="_blank" rel="noopener">flavornet.org</a></li>
-          <li>Osmothèque (國際香水博物館): <a href="https://www.osmotheque.fr/" target="_blank" rel="noopener">osmotheque.fr</a> - 歷史香水典藏</li>
+          <li>SciFinder (CAS): {{ isZh ? '化學文獻與專利檢索' : 'Chemical literature & patent search' }} - <a href="https://scifinder.cas.org/" target="_blank" rel="noopener">scifinder.cas.org</a></li>
+          <li>Web of Science: {{ isZh ? '學術期刊文獻檢索' : 'Academic journal search' }} - <a href="https://www.webofscience.com/" target="_blank" rel="noopener">webofscience.com</a></li>
+          <li>PubMed (NIH): {{ isZh ? '生物醫學文獻數據庫' : 'Biomedical literature database' }} - <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></li>
+          <li>Reaxys (Elsevier): {{ isZh ? '有機化學反應與化合物資料庫' : 'Organic chemistry reactions & compound database' }} - <a href="https://www.reaxys.com/" target="_blank" rel="noopener">reaxys.com</a></li>
+          <li>Flavornet: {{ isZh ? '香料與風味化合物資料庫' : 'Flavor & fragrance compound database' }} - <a href="http://www.flavornet.org/" target="_blank" rel="noopener">flavornet.org</a></li>
+          <li>Osmothèque ({{ isZh ? '國際香水博物館' : 'International Perfume Museum' }}): <a href="https://www.osmotheque.fr/" target="_blank" rel="noopener">osmotheque.fr</a> - {{ isZh ? '歷史香水典藏' : 'Historic perfume archive' }}</li>
         </ul>
       </div>
 
       <div class="ref-category">
-        <h3>🖼️ 分子結構圖與圖片來源</h3>
+        <h3>🖼️ {{ isZh ? '分子結構圖與圖片來源' : 'Molecular Structures & Image Sources' }}</h3>
         <ul class="ref-list">
-          <li>PubChem 3D分子結構渲染 - <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a></li>
-          <li>ChemDraw (PerkinElmer) - 化學結構繪圖軟體</li>
-          <li>Mol* Viewer - 開源分子可視化工具 - <a href="https://molstar.org/" target="_blank" rel="noopener">molstar.org</a></li>
-          <li>RCSB PDB (Protein Data Bank): 蛋白質與受體結構 - <a href="https://www.rcsb.org/" target="_blank" rel="noopener">rcsb.org</a></li>
-          <li>Wikimedia Commons: 化學結構與香料植物圖片 - <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">commons.wikimedia.org</a> (CC BY-SA 授權)</li>
-          <li>Unsplash: 高品質香水與植物攝影 - <a href="https://unsplash.com/" target="_blank" rel="noopener">unsplash.com</a> (免費授權)</li>
+          <li>PubChem {{ isZh ? '3D分子結構渲染' : '3D molecular structure rendering' }} - <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">pubchem.ncbi.nlm.nih.gov</a></li>
+          <li>ChemDraw (PerkinElmer) - {{ isZh ? '化學結構繪圖軟體' : 'Chemical structure drawing software' }}</li>
+          <li>Mol* Viewer - {{ isZh ? '開源分子可視化工具' : 'Open-source molecular visualization' }} - <a href="https://molstar.org/" target="_blank" rel="noopener">molstar.org</a></li>
+          <li>RCSB PDB (Protein Data Bank): {{ isZh ? '蛋白質與受體結構' : 'Protein & receptor structures' }} - <a href="https://www.rcsb.org/" target="_blank" rel="noopener">rcsb.org</a></li>
+          <li>Wikimedia Commons: {{ isZh ? '化學結構與香料植物圖片' : 'Chemical structures & fragrance plant images' }} - <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">commons.wikimedia.org</a> (CC BY-SA)</li>
+          <li>Unsplash: {{ isZh ? '高品質香水與植物攝影' : 'High-quality perfume & botanical photography' }} - <a href="https://unsplash.com/" target="_blank" rel="noopener">unsplash.com</a> ({{ isZh ? '免費授權' : 'Free license' }})</li>
         </ul>
       </div>
 
       <div class="ref-category">
-        <h3>📊 物性數據與計算工具</h3>
+        <h3>📊 {{ isZh ? '物性數據與計算工具' : 'Physical Property Data & Calculation Tools' }}</h3>
         <ul class="ref-list">
-          <li>EPI Suite (EPA): 物化性質估算 - <a href="https://www.epa.gov/tsca-screening-tools/epi-suitetm-estimation-program-interface" target="_blank" rel="noopener">epa.gov/epi-suite</a></li>
-          <li>ChemAxon Calculator Plugins: logP, pKa 計算 - <a href="https://chemaxon.com/" target="_blank" rel="noopener">chemaxon.com</a></li>
-          <li>NIST Chemistry WebBook: 熱力學數據 - <a href="https://webbook.nist.gov/chemistry/" target="_blank" rel="noopener">webbook.nist.gov</a></li>
-          <li>Antoine Equation Parameters Database: 蒸氣壓計算 - <a href="https://ddbonline.ddbst.com/" target="_blank" rel="noopener">ddbonline.ddbst.com</a></li>
-          <li>ACD/Labs Percepta: ADME與物性預測 - <a href="https://www.acdlabs.com/" target="_blank" rel="noopener">acdlabs.com</a></li>
+          <li>EPI Suite (EPA): {{ isZh ? '物化性質估算' : 'Physicochemical property estimation' }} - <a href="https://www.epa.gov/tsca-screening-tools/epi-suitetm-estimation-program-interface" target="_blank" rel="noopener">epa.gov/epi-suite</a></li>
+          <li>ChemAxon Calculator Plugins: logP, pKa {{ isZh ? '計算' : 'calculation' }} - <a href="https://chemaxon.com/" target="_blank" rel="noopener">chemaxon.com</a></li>
+          <li>NIST Chemistry WebBook: {{ isZh ? '熱力學數據' : 'Thermodynamic data' }} - <a href="https://webbook.nist.gov/chemistry/" target="_blank" rel="noopener">webbook.nist.gov</a></li>
+          <li>Antoine Equation Parameters Database: {{ isZh ? '蒸氣壓計算' : 'Vapor pressure calculation' }} - <a href="https://ddbonline.ddbst.com/" target="_blank" rel="noopener">ddbonline.ddbst.com</a></li>
+          <li>ACD/Labs Percepta: ADME{{ isZh ? '與物性預測' : ' & property prediction' }} - <a href="https://www.acdlabs.com/" target="_blank" rel="noopener">acdlabs.com</a></li>
         </ul>
       </div>
 
       <div class="ref-category">
-        <h3>⚖️ 法規與安全性資訊</h3>
+        <h3>⚖️ {{ t('ch10.regulatorySafety') }}</h3>
         <ul class="ref-list">
-          <li>EU Cosmetics Regulation (EC) No 1223/2009 - 歐盟化妝品法規</li>
-          <li>California Prop 65 List - 加州已知致癌物與生殖毒性物質清單</li>
-          <li>REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals) - 歐盟化學品法規</li>
-          <li>FDA Fragrance Ingredient List - 美國FDA香料成分列表</li>
+          <li>EU Cosmetics Regulation (EC) No 1223/2009 - {{ isZh ? '歐盟化妝品法規' : 'EU Cosmetics Regulation' }}</li>
+          <li>California Prop 65 List - {{ isZh ? '加州已知致癌物與生殖毒性物質清單' : 'Known carcinogens & reproductive toxicants list' }}</li>
+          <li>REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals) - {{ isZh ? '歐盟化學品法規' : 'EU Chemicals Regulation' }}</li>
+          <li>FDA Fragrance Ingredient List - {{ isZh ? '美國FDA香料成分列表' : 'US FDA fragrance ingredient list' }}</li>
           <li>ECHA (European Chemicals Agency): <a href="https://echa.europa.eu/" target="_blank" rel="noopener">echa.europa.eu</a></li>
-          <li>SDS (Safety Data Sheets) - 各供應商提供的安全資料表</li>
+          <li>SDS (Safety Data Sheets) - {{ isZh ? '各供應商提供的安全資料表' : 'Safety data sheets from suppliers' }}</li>
         </ul>
       </div>
 
       <div class="ref-category">
-        <h3>🏢 主要香料供應商技術文獻</h3>
+        <h3>🏢 {{ t('ch10.fragranceSuppliers') }}</h3>
         <ul class="ref-list">
-          <li>Givaudan: <a href="https://www.givaudan.com/" target="_blank" rel="noopener">givaudan.com</a> - 技術手冊與產品目錄</li>
+          <li>Givaudan: <a href="https://www.givaudan.com/" target="_blank" rel="noopener">givaudan.com</a> - {{ isZh ? '技術手冊與產品目錄' : 'Technical manuals & product catalog' }}</li>
           <li>IFF (International Flavors & Fragrances): <a href="https://www.iff.com/" target="_blank" rel="noopener">iff.com</a></li>
           <li>Firmenich: <a href="https://www.firmenich.com/" target="_blank" rel="noopener">firmenich.com</a></li>
           <li>Symrise: <a href="https://www.symrise.com/" target="_blank" rel="noopener">symrise.com</a></li>
@@ -440,39 +475,50 @@
       </div>
 
       <div class="ref-disclaimer">
-        <h3>⚠️ 免責聲明 (Disclaimer)</h3>
+        <h3>⚠️ {{ t('ch10.disclaimer') }}</h3>
         <p>
-          本教材所提供之市售香水配方為基於公開文獻的近似重建，用於教學與學術研究目的。
-          實際商品配方為各品牌商業機密，可能與本資料庫數據存在差異。
-          所有商標、品牌名稱與產品名稱均為其各自所有者之財產。
+          {{ t('ch10.disclaimerP1') }}
         </p>
         <p>
-          配方數據僅供參考，不得用於商業仿製。使用任何香料成分前，請務必查閱最新的安全資料表 (SDS) 並遵守當地法規。
-          部分天然精油與合成香料可能引起過敏反應，使用時應進行適當的安全性評估。
+          {{ t('ch10.disclaimerP2') }}
         </p>
         <p class="ref-update-info">
-          <strong>最後更新：</strong>2026年2月 | <strong>資料版本：</strong>v3.2
+          <strong>{{ t('ch10.lastUpdate') }}:</strong>{{ isZh ? '2026年2月' : 'Feb 2026' }} | <strong>{{ t('ch10.dataVersion') }}:</strong>v3.2
         </p>
       </div>
     </div>
 
     <!-- 底部導航 -->
     <div class="db-footer-nav">
-      <router-link to="/chapter/9" class="nav-btn">← 第9章：香料分子圖鑑</router-link>
+      <router-link to="/chapter/9" class="nav-btn">{{ t('ch10.prevChapter9') }}</router-link>
     </div>
   </div>
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import {
   PERFUME_FORMULAS, FRAGRANCE_FAMILIES, CONCENTRATION_TYPES, BRANDS,
   BRAND_OPTIONS, FAMILY_OPTIONS, CONCENTRATION_OPTIONS, GENDER_OPTIONS
 } from '../data/perfumeFormulas.js'
+import { useLanguage } from '../composables/useLanguage.js'
+import { translateNote, translateRole, DESCRIPTION_EN } from '../data/perfumeTranslations.js'
 
 export default {
   name: 'Chapter10View',
   setup() {
+    const { getLabel, t, isZh, isEn } = useLanguage()
+
+    // Translation helpers for perfume data
+    const tn = (note) => isEn.value ? translateNote(note) : note
+    const tr = (role) => isEn.value ? translateRole(role) : role
+    const desc = (perfume) => isEn.value ? (DESCRIPTION_EN[perfume.id] || perfume.description) : perfume.description
+    const joinNotes = (notes, count) => {
+      const items = count ? notes.slice(0, count) : notes
+      const sep = isZh.value ? '、' : ', '
+      return items.map(tn).join(sep)
+    }
+    
     const searchQuery = ref('')
     const ingredientQuery = ref('')
     const selectedFamilies = ref(new Set())
@@ -480,12 +526,46 @@ export default {
     const selectedGenders = ref(new Set())
     const selectedBrands = ref(new Set())
     const selectedPerfume = ref(null)
+    const brandDropdownOpen = ref(false)
+    const brandSearchQuery = ref('')
+
+    // 點擊外部關閉下拉選單
+    const handleClickOutside = (event) => {
+      if (brandDropdownOpen.value) {
+        const dropdown = event.target.closest('.brand-filter-wrapper')
+        if (!dropdown) {
+          brandDropdownOpen.value = false
+        }
+      }
+    }
+
+    onMounted(() => {
+      document.addEventListener('click', handleClickOutside)
+    })
+
+    onUnmounted(() => {
+      document.removeEventListener('click', handleClickOutside)
+    })
 
     const allPerfumes = PERFUME_FORMULAS
     const familyOptions = FAMILY_OPTIONS
     const concentrationOptions = CONCENTRATION_OPTIONS
     const genderOptions = GENDER_OPTIONS
     const brandOptions = BRAND_OPTIONS
+
+    const filteredBrandOptions = computed(() => {
+      let brands = brandOptions
+      if (brandSearchQuery.value) {
+        const q = brandSearchQuery.value.toLowerCase()
+        brands = brands.filter(b => b.label.toLowerCase().includes(q))
+      }
+      // 按字母順序排序
+      return brands.slice().sort((a, b) => a.label.localeCompare(b.label))
+    })
+
+    function getBrandCount(brandId) {
+      return allPerfumes.filter(p => p.brand === brandId).length
+    }
 
     const hasActiveFilters = computed(() =>
       searchQuery.value ||
@@ -509,6 +589,7 @@ export default {
           
           // 描述
           if (p.description.toLowerCase().includes(q)) return true
+          if (DESCRIPTION_EN[p.id] && DESCRIPTION_EN[p.id].toLowerCase().includes(q)) return true
           
           // 香調分類
           if (getFamilyLabel(p.family).toLowerCase().includes(q)) return true
@@ -527,10 +608,10 @@ export default {
           if (getGenderLabel(p.gender).toLowerCase().includes(q)) return true
           if (getGenderIcon(p.gender).includes(q)) return true
           
-          // 前中後調
-          if (p.topNotes.some(n => n.toLowerCase().includes(q))) return true
-          if (p.heartNotes.some(n => n.toLowerCase().includes(q))) return true
-          if (p.baseNotes.some(n => n.toLowerCase().includes(q))) return true
+          // 前中後調 (search both zh and en)
+          if (p.topNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
+          if (p.heartNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
+          if (p.baseNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
           
           // 成分（包含在searchQuery中，移除獨立的ingredientQuery）
           if (p.ingredients.some(ing => 
@@ -633,26 +714,30 @@ export default {
       selectedConcentrations.value = new Set()
       selectedGenders.value = new Set()
       selectedBrands.value = new Set()
+      brandDropdownOpen.value = false
+      brandSearchQuery.value = ''
     }
 
     function getBrandLabel(id)  { return BRANDS[id]?.label || id }
     function getFamilyColor(id) { return FRAGRANCE_FAMILIES[id]?.color || '#888' }
     function getFamilyIcon(id)  { return FRAGRANCE_FAMILIES[id]?.icon || '·' }
-    function getFamilyLabel(id) { return FRAGRANCE_FAMILIES[id]?.label || id }
+    function getFamilyLabel(id) { return isZh.value ? (FRAGRANCE_FAMILIES[id]?.label || id) : (FRAGRANCE_FAMILIES[id]?.labelEn || id) }
     function getConcColor(id)   { return CONCENTRATION_TYPES[id]?.color || '#888' }
-    function getConcLabel(id)   { return CONCENTRATION_TYPES[id]?.label || id }
+    function getConcLabel(id)   { return isZh.value ? (CONCENTRATION_TYPES[id]?.label || id) : (CONCENTRATION_TYPES[id]?.labelEn || id) }
     function getConcRange(id)   { return CONCENTRATION_TYPES[id]?.range || '' }
     function getGenderIcon(id)  {
       const map = { feminine: '♀', masculine: '♂', unisex: '⚥' }
       return map[id] || '·'
     }
     function getGenderLabel(id) {
-      const map = { feminine: '女香', masculine: '男香', unisex: '中性' }
-      return map[id] || id
+      const mapZh = { feminine: '女香', masculine: '男香', unisex: '中性' }
+      const mapEn = { feminine: 'Feminine', masculine: 'Masculine', unisex: 'Unisex' }
+      return isZh.value ? (mapZh[id] || id) : (mapEn[id] || id)
     }
     function getNoteLabel(note) {
-      const map = { top: '前調', middle: '中調', base: '基調' }
-      return map[note] || note
+      const mapZh = { top: '前調', middle: '中調', base: '基調' }
+      const mapEn = { top: 'Top', middle: 'Heart', base: 'Base' }
+      return isZh.value ? (mapZh[note] || note) : (mapEn[note] || note)
     }
     function getNoteBarColor(note) {
       const map = { top: '#fbbf24', middle: '#f472b6', base: '#8b5cf6' }
@@ -664,12 +749,14 @@ export default {
       selectedFamilies, selectedConcentrations, selectedGenders, selectedBrands,
       selectedPerfume,
       allPerfumes, familyOptions, concentrationOptions, genderOptions, brandOptions,
+      brandDropdownOpen, brandSearchQuery, filteredBrandOptions,
       hasActiveFilters, filteredPerfumes,
       sortedIngredients, maxPct, noteDistribution,
-      toggleFilter, resetFilters,
+      toggleFilter, resetFilters, getBrandCount,
       getBrandLabel, getFamilyColor, getFamilyIcon, getFamilyLabel,
       getConcColor, getConcLabel, getConcRange,
       getGenderIcon, getGenderLabel, getNoteLabel, getNoteBarColor,
+      getLabel, t, tn, tr, desc, joinNotes, isEn, isZh,
     }
   }
 }
@@ -722,6 +809,167 @@ export default {
   font-size: 0.82rem; font-weight: 600; color: var(--text-muted);
   margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 1px;
 }
+.selected-count {
+  color: var(--accent-gold);
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+
+/* ── 品牌下拉選單 ── */
+.brand-filter-wrapper {
+  position: relative;
+}
+.brand-dropdown-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+.brand-dropdown-toggle:hover {
+  border-color: var(--accent-gold);
+  background: rgba(255,255,255,1);
+}
+.selected-brands-preview {
+  flex: 1;
+  text-align: left;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.dropdown-arrow {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  transition: transform var(--transition-fast);
+}
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.brand-dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  z-index: 100;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.brand-search {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.brand-search-input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+.brand-search-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+.brand-options-list {
+  overflow-y: auto;
+  max-height: 280px;
+  padding: 0.4rem;
+}
+.brand-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  font-size: 0.88rem;
+}
+.brand-option:hover {
+  background: rgba(245,211,106,0.08);
+}
+.brand-option input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-gold);
+}
+.brand-option-label {
+  flex: 1;
+  color: var(--text-primary);
+}
+.brand-option-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.brand-dropdown-footer {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-top: 1px solid var(--border-color);
+  background: rgba(248,250,252,0.8);
+}
+.brand-clear-btn,
+.brand-close-btn {
+  flex: 1;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.brand-clear-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+.brand-clear-btn:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background: rgba(59,130,246,0.05);
+}
+.brand-close-btn {
+  background: var(--accent-gold);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.brand-close-btn:hover {
+  background: #d4af37;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(202,164,66,0.3);
+}
+
+/* Dropdown動畫 */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all 0.2s ease;
+}
+.dropdown-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
 .chip-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .chip {
   display: inline-flex; align-items: center; gap: 0.3rem;

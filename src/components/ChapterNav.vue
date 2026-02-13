@@ -7,7 +7,7 @@
     >
       &larr; {{ prev.label }}
     </router-link>
-    <span v-else class="page-btn chapter-btn disabled">&larr; 上一章</span>
+    <span v-else class="page-btn chapter-btn disabled">&larr; {{ t('common.previousChapter') }}</span>
 
     <div class="page-numbers" v-if="sections && sections.length">
       <button
@@ -28,11 +28,13 @@
     >
       {{ next.label }} &rarr;
     </router-link>
-    <span v-else class="page-btn chapter-btn disabled">下一章 &rarr;</span>
+    <span v-else class="page-btn chapter-btn disabled">{{ t('common.nextChapter') }} &rarr;</span>
   </div>
 </template>
 
 <script>
+import { useLanguage } from '../composables/useLanguage.js'
+
 export default {
   name: 'ChapterNav',
   props: {
@@ -42,6 +44,10 @@ export default {
     activeSection: { type: String, default: '' }
   },
   emits: ['update:activeSection'],
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   methods: {
     selectSection(id) {
       this.$emit('update:activeSection', id)

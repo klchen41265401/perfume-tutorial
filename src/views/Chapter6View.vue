@@ -1,45 +1,60 @@
 <template>
   <ChapterLayout
-    title="第6章：分析方法與儀器"
-    :prev="{ to: '/chapter/5', label: '第5章：配方工程' }"
-    :next="{ to: '/chapter/7', label: '第7章：案例研究' }"
+    :title="t('ch6.title')"
+    :prev="{ to: '/chapter/5', label: t('ch6.prev') }"
+    :next="{ to: '/chapter/7', label: t('ch6.next') }"
     :sections="sections"
     :active-section="activeSection"
     @update:activeSection="activeSection = $event"
   >
     <div class="chapter-sections">
       <section v-show="activeSection === 'sec-6-1'" class="chapter-section">
-        <h2 id="sec-6-1">6.1 GC-MS：香料分析的黃金標準</h2>
-        <h3>6.1.1 方法開發原理</h3>
-        <p>氣相色譜-質譜聯用 (GC-MS) 是香料分析最重要的技術：</p>
-        <pre><code>儀器配置：
+        <h2 id="sec-6-1">6.1 {{ t('ch6.sec6_1') }}</h2>
+        <h3>6.1.1 {{ t('ch6.sec6_1_1') }}</h3>
+        <p>{{ isZh ? '氣相色譜-質譜聯用 (GC-MS) 是香料分析最重要的技術：' : 'Gas Chromatography-Mass Spectrometry (GC-MS) is the most important technique for fragrance analysis:' }}</p>
+        <pre v-if="isZh"><code>{{ t('ch6.instrumentConfig') }}
 - GC: Agilent 7890B, MS: 5977A MSD (EI源, 70 eV)
 - 進樣口: Split/Splitless, 250°C
 - 分流比: 20:1 (>1%) 或 1:1 (痕量)
 
-色譜柱選擇：
+{{ t('ch6.columnSelection') }}
 1. HP-5MS (通用) - 5% Phenyl, 30m×0.25mm×0.25μm
 2. DB-WAX (極性) - PEG, 醇/酯/酸
 3. Chirasil-Dex (手性) - β-Cyclodextrin
 
-溫度程序：50°C(2min) → 5°C/min → 280°C(5min)
+{{ t('ch6.temperatureProgram') }}：50°C(2min) → 5°C/min → 280°C(5min)
 載氣：He 1.2 mL/min, 掃描 m/z 35-550</code></pre>
+        <pre v-else><code>{{ t('ch6.instrumentConfig') }}
+- GC: Agilent 7890B, MS: 5977A MSD (EI source, 70 eV)
+- Inlet: Split/Splitless, 250°C
+- Split ratio: 20:1 (>1%) or 1:1 (trace)
+
+{{ t('ch6.columnSelection') }}
+1. HP-5MS (general) - 5% Phenyl, 30m×0.25mm×0.25μm
+2. DB-WAX (polar) - PEG, alcohols/esters/acids
+3. Chirasil-Dex (chiral) - β-Cyclodextrin
+
+{{ t('ch6.temperatureProgram') }}: 50°C(2min) → 5°C/min → 280°C(5min)
+Carrier gas: He 1.2 mL/min, scan m/z 35-550</code></pre>
 
         <div class="chart-container"><canvas ref="chromatogramChart" style="max-height: 320px;"></canvas></div>
 
-        <h3>6.1.2 定量分析策略</h3>
+        <h3>6.1.2 {{ t('ch6.sec6_1_2') }}</h3>
         <div class="attention-box">
-          <h4>📐 內標法 vs 外標法</h4>
-          <pre><code>RF = (A_standard / C_standard) / (A_IS / C_IS)
+          <h4>📐 {{ t('ch6.internalStandard') }}</h4>
+          <pre v-if="isZh"><code>RF = (A_standard / C_standard) / (A_IS / C_IS)
 常用內標：Dodecane (C12), Hexadecane (C16)
 定量公式：Cx = (Ax/AIS) × (CIS/RF)</code></pre>
+          <pre v-else><code>RF = (A_standard / C_standard) / (A_IS / C_IS)
+Common IS: Dodecane (C12), Hexadecane (C16)
+Quantification: Cx = (Ax/AIS) × (CIS/RF)</code></pre>
         </div>
       </section>
 
       <section v-show="activeSection === 'sec-6-2'" class="chapter-section">
-        <h2 id="sec-6-2">6.2 Headspace動態取樣</h2>
-        <h3>6.2.1 SPME (固相微萃取)</h3>
-        <pre><code>纖維選擇：
+        <h2 id="sec-6-2">6.2 {{ t('ch6.sec6_2') }}</h2>
+        <h3>6.2.1 {{ t('ch6.sec6_2_1') }}</h3>
+        <pre v-if="isZh"><code>纖維選擇：
 1. PDMS (100μm) - 非極性 - 萜烯
 2. PDMS/DVB (65μm) - 中極性 - 醇/酯/醛
 3. CAR/PDMS (75μm) - 極性 - 小分子
@@ -47,26 +62,34 @@
 萃取條件：40-60°C, 30-60 min, 500 rpm
 鹽析：NaCl 0-30%
 K_fiber/headspace = C_fiber / C_headspace</code></pre>
+        <pre v-else><code>Fiber selection:
+1. PDMS (100μm) - non-polar - terpenes
+2. PDMS/DVB (65μm) - mid-polar - alcohols/esters/aldehydes
+3. CAR/PDMS (75μm) - polar - small molecules
 
-        <h3>6.2.2 動態頂空 (Purge &amp; Trap)</h3>
+Extraction: 40-60°C, 30-60 min, 500 rpm
+Salting out: NaCl 0-30%
+K_fiber/headspace = C_fiber / C_headspace</code></pre>
+
+        <h3>6.2.2 {{ t('ch6.sec6_2_2') }}</h3>
         <div class="chart-container"><canvas ref="headspaceChart" style="max-height: 320px;"></canvas></div>
       </section>
 
       <section v-show="activeSection === 'sec-6-3'" class="chapter-section">
-        <h2 id="sec-6-3">6.3 HPLC方法驗證</h2>
-        <h3>6.3.1 分析方法驗證參數</h3>
+        <h2 id="sec-6-3">6.3 {{ t('ch6.sec6_3') }}</h2>
+        <h3>6.3.1 {{ t('ch6.sec6_3_1') }}</h3>
         <div class="attention-box">
-          <h4>📋 ICH Q2(R1) 驗證標準</h4>
+          <h4>📋 {{ isZh ? 'ICH Q2(R1) 驗證標準' : 'ICH Q2(R1) Validation Criteria' }}</h4>
           <table>
-            <thead><tr><th>參數</th><th>定義</th><th>接受標準</th></tr></thead>
+            <thead><tr><th>{{ isZh ? '參數' : 'Parameter' }}</th><th>{{ isZh ? '定義' : 'Definition' }}</th><th>{{ isZh ? '接受標準' : 'Acceptance' }}</th></tr></thead>
             <tbody>
-              <tr><td>特異性</td><td>區分目標物與雜質</td><td>R > 2.0</td></tr>
-              <tr><td>線性</td><td>響應與濃度線性</td><td>r² > 0.999</td></tr>
-              <tr><td>範圍</td><td>線性範圍</td><td>80-120%</td></tr>
-              <tr><td>準確度</td><td>測量值接近真值</td><td>回收率 98-102%</td></tr>
-              <tr><td>精密度</td><td>重複測量一致性</td><td>RSD < 2%</td></tr>
-              <tr><td>LOD</td><td>最低檢測濃度</td><td>S/N > 3</td></tr>
-              <tr><td>LOQ</td><td>最低定量濃度</td><td>S/N > 10</td></tr>
+              <tr><td>{{ isZh ? '特異性' : 'Specificity' }}</td><td>{{ isZh ? '區分目標物與雜質' : 'Distinguish analyte from impurities' }}</td><td>R > 2.0</td></tr>
+              <tr><td>{{ isZh ? '線性' : 'Linearity' }}</td><td>{{ isZh ? '響應與濃度線性' : 'Response linear with concentration' }}</td><td>r² > 0.999</td></tr>
+              <tr><td>{{ isZh ? '範圍' : 'Range' }}</td><td>{{ isZh ? '線性範圍' : 'Linear range' }}</td><td>80-120%</td></tr>
+              <tr><td>{{ isZh ? '準確度' : 'Accuracy' }}</td><td>{{ isZh ? '測量值接近真值' : 'Measured value close to true value' }}</td><td>{{ isZh ? '回收率 98-102%' : 'Recovery 98-102%' }}</td></tr>
+              <tr><td>{{ isZh ? '精密度' : 'Precision' }}</td><td>{{ isZh ? '重複測量一致性' : 'Consistency of repeated measurements' }}</td><td>RSD < 2%</td></tr>
+              <tr><td>LOD</td><td>{{ isZh ? '最低檢測濃度' : 'Min. detection concentration' }}</td><td>S/N > 3</td></tr>
+              <tr><td>LOQ</td><td>{{ isZh ? '最低定量濃度' : 'Min. quantification concentration' }}</td><td>S/N > 10</td></tr>
             </tbody>
           </table>
         </div>
@@ -74,8 +97,8 @@ K_fiber/headspace = C_fiber / C_headspace</code></pre>
       </section>
 
       <section v-show="activeSection === 'sec-6-4'" class="chapter-section">
-        <h2 id="sec-6-4">6.4 NMR結構鑑定</h2>
-        <h3>6.4.1 一維NMR解析</h3>
+        <h2 id="sec-6-4">6.4 {{ t('ch6.sec6_4') }}</h2>
+        <h3>6.4.1 {{ t('ch6.sec6_4_1') }}</h3>
         <pre><code>Linalool ¹H-NMR (400 MHz, CDCl₃):
 δ 5.88 (dd, J=17.2,10.8 Hz, 1H) C2-H
 δ 5.17 (d, J=17.2 Hz, 1H) C1-H(trans)
@@ -88,16 +111,20 @@ K_fiber/headspace = C_fiber / C_headspace</code></pre>
 δ 1.29 (s, 6H) C7,8-H₆</code></pre>
         <div class="chart-container"><canvas ref="nmrChart" style="max-height: 320px;"></canvas></div>
 
-        <h3>6.4.2 二維NMR技術</h3>
+        <h3>6.4.2 {{ t('ch6.sec6_4_2') }}</h3>
         <div class="attention-box">
-          <h4>🔍 2D-NMR實驗類型</h4>
-          <pre><code>COSY: ¹H-¹H 相關（鄰近質子偶合）
+          <h4>🔍 {{ isZh ? '2D-NMR實驗類型' : '2D-NMR Experiment Types' }}</h4>
+          <pre v-if="isZh"><code>COSY: ¹H-¹H 相關（鄰近質子偶合）
 HSQC: ¹H-¹³C 直接鍵結
 HMBC: ¹H-¹³C 遠程相關（2-3鍵）
 NOESY: 空間鄰近（<5Å，立體化學）</code></pre>
+          <pre v-else><code>COSY: ¹H-¹H correlation (adjacent proton coupling)
+HSQC: ¹H-¹³C direct bond
+HMBC: ¹H-¹³C long-range (2-3 bonds)
+NOESY: spatial proximity (<5Å, stereochemistry)</code></pre>
         </div>
 
-        <h2>📚 延伸閱讀</h2>
+        <h2>📚 {{ t('ch6.extendedReading') }}</h2>
         <ul>
           <li>Sparkman, O.D. et al. (2011). <em>GC and MS: A Practical Guide</em>. Academic Press.</li>
           <li>Snyder, L.R. et al. (2010). <em>Introduction to Modern LC</em>. Wiley.</li>
@@ -113,11 +140,13 @@ NOESY: 空間鄰近（<5Å，立體化學）</code></pre>
 import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { Chart } from 'chart.js/auto'
 import ChapterLayout from '../components/ChapterLayout.vue'
+import { useLanguage } from '../composables/useLanguage.js'
 
 export default {
   name: 'Chapter6View',
   components: { ChapterLayout },
   setup() {
+    const { isZh, isEn, getLabel, t } = useLanguage()
     const chromatogramChart = ref(null)
     const headspaceChart = ref(null)
     const calibrationChart = ref(null)
@@ -158,8 +187,8 @@ export default {
           data: { labels: time.map(t => t.toFixed(1)), datasets: [{ label: 'TIC', data: tic, borderColor: 'rgb(75,192,192)', backgroundColor: 'rgba(75,192,192,0.1)', borderWidth: 1.5, pointRadius: 0, fill: true }] },
           options: {
             responsive: true, maintainAspectRatio: false, animation: { duration: 2000 },
-            plugins: { title: { display: true, text: 'GC-MS色譜圖 (薰衣草精油)', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
-            scales: { x: { title: { display: true, text: '保留時間 (min)', color: '#cbd5e1' }, ticks: { color: '#94a3b8', maxTicksLimit: 20 }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: '強度', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
+            plugins: { title: { display: true, text: isZh.value ? 'GC-MS色譜圖 (薰衣草精油)' : 'GC-MS Chromatogram (Lavender Essential Oil)', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
+            scales: { x: { title: { display: true, text: isZh.value ? '保留時間 (min)' : 'Retention Time (min)', color: '#cbd5e1' }, ticks: { color: '#94a3b8', maxTicksLimit: 20 }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: isZh.value ? '強度' : 'Intensity', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
           }
         }))
       }
@@ -181,8 +210,8 @@ export default {
           },
           options: {
             responsive: true, maintainAspectRatio: false,
-            plugins: { title: { display: true, text: '頂空濃度動態平衡過程 (40°C)', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
-            scales: { x: { title: { display: true, text: '時間 (min)', color: '#cbd5e1' }, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: '頂空濃度 (μg/mL)', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
+            plugins: { title: { display: true, text: isZh.value ? '頂空濃度動態平衡過程 (40°C)' : 'Headspace Concentration Equilibrium (40°C)', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
+            scales: { x: { title: { display: true, text: isZh.value ? '時間 (min)' : 'Time (min)', color: '#cbd5e1' }, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: isZh.value ? '頂空濃度 (μg/mL)' : 'Headspace Conc. (μg/mL)', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
           }
         }))
       }
@@ -193,14 +222,14 @@ export default {
           type: 'scatter',
           data: {
             datasets: [
-              { label: '實驗數據', data: [{ x: 1, y: 12500 }, { x: 5, y: 62300 }, { x: 10, y: 124800 }, { x: 50, y: 623500 }, { x: 100, y: 1247000 }, { x: 200, y: 2494500 }, { x: 500, y: 6236000 }], backgroundColor: 'rgb(75,192,192)', pointRadius: 8 },
-              { label: '線性擬合 (y=12470x)', data: [{ x: 1, y: 12470 }, { x: 500, y: 6235000 }], type: 'line', borderColor: 'rgb(255,99,132)', borderWidth: 2, borderDash: [5, 5], pointRadius: 0, fill: false }
+              { label: isZh.value ? '實驗數據' : 'Experimental Data', data: [{ x: 1, y: 12500 }, { x: 5, y: 62300 }, { x: 10, y: 124800 }, { x: 50, y: 623500 }, { x: 100, y: 1247000 }, { x: 200, y: 2494500 }, { x: 500, y: 6236000 }], backgroundColor: 'rgb(75,192,192)', pointRadius: 8 },
+              { label: isZh.value ? '線性擬合 (y=12470x)' : 'Linear Fit (y=12470x)', data: [{ x: 1, y: 12470 }, { x: 500, y: 6235000 }], type: 'line', borderColor: 'rgb(255,99,132)', borderWidth: 2, borderDash: [5, 5], pointRadius: 0, fill: false }
             ]
           },
           options: {
             responsive: true, maintainAspectRatio: false,
-            plugins: { title: { display: true, text: 'HPLC校準曲線 (Vanillin) - r² = 0.999998', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
-            scales: { x: { title: { display: true, text: '濃度 (μg/mL)', color: '#cbd5e1' }, type: 'linear', ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: '峰面積 (mAU·s)', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
+            plugins: { title: { display: true, text: isZh.value ? 'HPLC校準曲線 (Vanillin) - r² = 0.999998' : 'HPLC Calibration Curve (Vanillin) - r² = 0.999998', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
+            scales: { x: { title: { display: true, text: isZh.value ? '濃度 (μg/mL)' : 'Concentration (μg/mL)', color: '#cbd5e1' }, type: 'linear', ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: isZh.value ? '峰面積 (mAU·s)' : 'Peak Area (mAU·s)', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
           }
         }))
       }
@@ -222,8 +251,8 @@ export default {
           data: { labels: ppm.map(p => p.toFixed(2)), datasets: [{ label: '¹H-NMR (400 MHz, CDCl₃)', data: spectrum, borderColor: 'rgb(54,162,235)', backgroundColor: 'rgba(54,162,235,0.1)', borderWidth: 1.5, pointRadius: 0, fill: true }] },
           options: {
             responsive: true, maintainAspectRatio: false,
-            plugins: { title: { display: true, text: 'Linalool ¹H-NMR譜圖', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
-            scales: { x: { reverse: true, min: 0, max: 7, title: { display: true, text: 'δ (ppm)', color: '#cbd5e1' }, ticks: { color: '#94a3b8', maxTicksLimit: 15 }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: '相對強度', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
+            plugins: { title: { display: true, text: isZh.value ? 'Linalool ¹H-NMR譜圖' : 'Linalool ¹H-NMR Spectrum', color: '#d4af37', font: { size: 16 } }, legend: { labels: { color: '#cbd5e1' } } },
+            scales: { x: { reverse: true, min: 0, max: 7, title: { display: true, text: 'δ (ppm)', color: '#cbd5e1' }, ticks: { color: '#94a3b8', maxTicksLimit: 15 }, grid: { color: 'rgba(51,65,85,0.3)' } }, y: { title: { display: true, text: isZh.value ? '相對強度' : 'Relative Intensity', color: '#cbd5e1' }, min: 0, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51,65,85,0.3)' } } }
           }
         }))
       }
@@ -234,7 +263,7 @@ export default {
     })
     onUnmounted(() => charts.forEach(c => c.destroy()))
 
-    return { chromatogramChart, headspaceChart, calibrationChart, nmrChart, sections, activeSection }
+    return { chromatogramChart, headspaceChart, calibrationChart, nmrChart, sections, activeSection, isZh, isEn, getLabel, t }
   }
 }
 </script>

@@ -105,34 +105,33 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['五月玫瑰', '茉莉', '鈴蘭', '鳶尾根'],
     baseNotes: ['檀香', '香草', '麝香', '琥珀', '雪松'],
     ingredients: [
-      { name: 'Decanal (醛 C-10)',         cas: '112-31-2',    pct: 0.8,  role: '前調醛香', note: 'top' },
-      { name: 'Undecanal (醛 C-11)',       cas: '112-44-7',    pct: 1.2,  role: '前調醛香', note: 'top' },
-      { name: 'Dodecanal (月桂醛 C-12)',   cas: '112-54-9',    pct: 0.5,  role: '前調醛香', note: 'top' },
-      { name: 'Linalool (芳樟醇)',          cas: '78-70-6',     pct: 8.0,  role: '花香心臟', note: 'middle' },
-      { name: 'Citronellol (香茅醇)',       cas: '106-22-9',    pct: 5.5,  role: '玫瑰香', note: 'middle' },
-      { name: 'Geraniol (香葉醇)',          cas: '106-24-1',    pct: 4.0,  role: '玫瑰天竺葵', note: 'middle' },
-      { name: 'Phenylethyl alcohol (苯乙醇)', cas: '60-12-8',  pct: 6.0,  role: '玫瑰基底', note: 'middle' },
-      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture',   pct: 3.5,  role: '花香豐滿', note: 'middle' },
-      { name: 'Ylang ylang oil (依蘭精油)',  cas: 'mixture',   pct: 2.0,  role: '異國花香', note: 'middle' },
-      { name: 'Rose absolute (玫瑰原精)',    cas: 'mixture',   pct: 3.0,  role: '花香核心', note: 'middle' },
+      { name: 'Decanal (醛 C-10)', cas: '112-31-2', pct: 0.8, role: '前調醛香', note: 'top' },
+      { name: 'Undecanal (醛 C-11)', cas: '112-44-7', pct: 1.2, role: '前調醛香', note: 'top' },
+      { name: 'Dodecanal (月桂醛 C-12)', cas: '112-54-9', pct: 0.5, role: '前調醛香', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 8, role: '花香心臟', note: 'middle' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 5.5, role: '玫瑰香', note: 'middle' },
+      { name: 'Geraniol (香葉醇)', cas: '106-24-1', pct: 4, role: '玫瑰天竺葵', note: 'middle' },
+      { name: 'Phenylethyl alcohol (苯乙醇)', cas: '60-12-8', pct: 6, role: '玫瑰基底', note: 'middle' },
+      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture', pct: 3.5, role: '花香豐滿', note: 'middle' },
+      { name: 'Ylang ylang oil (依蘭精油)', cas: 'mixture', pct: 2, role: '異國花香', note: 'middle' },
+      { name: 'Rose absolute (玫瑰原精)', cas: 'mixture', pct: 3, role: '花香核心', note: 'middle' },
       { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5', pct: 4.5, role: '鈴蘭香', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5.0, role: '鳶尾/紫羅蘭', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',    cas: 'mixture',   pct: 8.0,  role: '木質基底', note: 'base' },
-      { name: 'Vanillin (香草醛)',           cas: '121-33-5',   pct: 2.5,  role: '甜香基底', note: 'base' },
-      { name: 'Coumarin (香豆素)',           cas: '91-64-5',    pct: 3.0,  role: '粉香溫暖', note: 'base' },
-      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4',  pct: 6.0,  role: '定香/溶劑', note: 'base' },
-      { name: 'Musk ketone (酮麝香)',        cas: '81-14-1',    pct: 3.5,  role: '麝香定香', note: 'base' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 5.0, role: '柔和花香', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',   cas: '24851-98-7', pct: 8.0, role: '擴散透明', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',     cas: 'mixture',    pct: 4.0, role: '木質骨架', note: 'base' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5, role: '鳶尾/紫羅蘭', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: 'mixture', pct: 8, role: '木質基底', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 2.5, role: '甜香基底', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 3, role: '粉香溫暖', note: 'base' },
+      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4', pct: 6, role: '定香/溶劑', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 3.5, role: '麝香定香', note: 'base' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 5, role: '柔和花香', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散透明', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 4, role: '木質骨架', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 2. Dior Sauvage (2015)
+  // 2. Sauvage (2015)
   // ────────────────────────────────────────────
   {
     id: 'dior-sauvage',
@@ -149,28 +148,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['Ambroxan', '花椒', '薰衣草', '天竺葵'],
     baseNotes: ['Ambroxan', '雪松', '廣藿香', '榄香脂'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',    cas: 'mixture',    pct: 18.0, role: '柑橘開場', note: 'top' },
-      { name: 'Linalyl acetate (乙酸芳樟酯)', cas: '115-95-7',   pct: 5.0,  role: '佛手柑甜感', note: 'top' },
-      { name: 'Linalool (芳樟醇)',            cas: '78-70-6',    pct: 6.0,  role: '薰衣草花香', note: 'middle' },
-      { name: 'Sichuan Pepper CO2 (花椒萃取)', cas: 'mixture',   pct: 2.0,  role: '粉紅辛香', note: 'top' },
-      { name: 'Ambroxan (龍涎醚)',           cas: '6790-58-5',   pct: 22.0, role: '琥珀木質核心', note: 'base' },
-      { name: 'Iso E Super',                 cas: '54464-57-2',  pct: 10.0, role: '木質天鵝絨', note: 'base' },
-      { name: 'Geraniol (香葉醇)',            cas: '106-24-1',   pct: 3.0,  role: '天竺葵', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',    cas: '24851-98-7', pct: 6.0,  role: '擴散通透', note: 'middle' },
-      { name: 'Cedarwood Virginia (維吉尼亞雪松)', cas: 'mixture', pct: 5.0, role: '乾燥木質', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',    cas: 'mixture',    pct: 3.0,  role: '泥土木質', note: 'base' },
-      { name: 'Elemi resin (榄香脂)',          cas: 'mixture',    pct: 2.0,  role: '樹脂亮度', note: 'base' },
-      { name: 'Limonene (檸檬烯)',            cas: '5989-27-5',  pct: 4.0,  role: '柑橘輔助', note: 'top' },
-      { name: 'Coumarin (香豆素)',            cas: '91-64-5',    pct: 2.5,  role: '甜感過渡', note: 'base' },
-      { name: 'Cashmeran (卡什莫蘭)',         cas: '33704-61-9', pct: 3.0,  role: '麝香木質', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 18, role: '柑橘開場', note: 'top' },
+      { name: 'Linalyl acetate (乙酸芳樟酯)', cas: '115-95-7', pct: 5, role: '佛手柑甜感', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 6, role: '薰衣草花香', note: 'middle' },
+      { name: 'Sichuan Pepper CO2 (花椒萃取)', cas: 'mixture', pct: 2, role: '粉紅辛香', note: 'top' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 22, role: '琥珀木質核心', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 10, role: '木質天鵝絨', note: 'base' },
+      { name: 'Geraniol (香葉醇)', cas: '106-24-1', pct: 3, role: '天竺葵', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '擴散通透', note: 'middle' },
+      { name: 'Cedarwood Virginia (維吉尼亞雪松)', cas: 'mixture', pct: 5, role: '乾燥木質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 3, role: '泥土木質', note: 'base' },
+      { name: 'Elemi resin (榄香脂)', cas: 'mixture', pct: 2, role: '樹脂亮度', note: 'base' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 4, role: '柑橘輔助', note: 'top' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 2.5, role: '甜感過渡', note: 'base' },
+      { name: 'Cashmeran (卡什莫蘭)', cas: '33704-61-9', pct: 3, role: '麝香木質', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 5,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 3. Acqua di Gio (1996)
+  // 3. Acqua di Giò (1996)
   // ────────────────────────────────────────────
   {
     id: 'acqua-di-gio',
@@ -187,28 +185,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['海洋調 (Calone)', '茉莉', '頻那醇', '迷迭香'],
     baseNotes: ['白麝香', '雪松', '琥珀', '廣藿香'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',    cas: 'mixture',     pct: 12.0, role: '柑橘清新', note: 'top' },
-      { name: 'Linalool (芳樟醇)',            cas: '78-70-6',     pct: 8.0,  role: '花香橋樑', note: 'middle' },
-      { name: 'Calone (海洋酮)',              cas: '28940-11-6',  pct: 3.0,  role: '海洋水感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',    cas: '24851-98-7',  pct: 12.0, role: '透明擴散', note: 'middle' },
-      { name: 'Dihydromyrcenol (二氫月桂烯醇)', cas: '18479-58-8', pct: 8.0,  role: '清新金屬', note: 'top' },
-      { name: 'Limonene (檸檬烯)',            cas: '5989-27-5',   pct: 5.0,  role: '柑橘活力', note: 'top' },
-      { name: 'Rosemary oil (迷迭香精油)',     cas: 'mixture',     pct: 2.5,  role: '草本清涼', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',        cas: '1222-05-5',   pct: 8.0,  role: '白麝香', note: 'base' },
-      { name: 'Iso E Super',                  cas: '54464-57-2',  pct: 6.0,  role: '木質溫暖', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',     cas: 'mixture',    pct: 2.0,  role: '泥土基調', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',       cas: 'mixture',    pct: 3.0,  role: '木質骨架', note: 'base' },
-      { name: 'Ethylene brassylate (麝香T)',   cas: '105-95-3',   pct: 4.0,  role: '大環麝香', note: 'base' },
-      { name: 'Citronellol (香茅醇)',          cas: '106-22-9',    pct: 3.0,  role: '花香自然', note: 'middle' },
-      { name: 'Neroli oil (橙花精油)',          cas: 'mixture',    pct: 2.0,  role: '橙花優雅', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 12, role: '柑橘清新', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 8, role: '花香橋樑', note: 'middle' },
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 3, role: '海洋水感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 12, role: '透明擴散', note: 'middle' },
+      { name: 'Dihydromyrcenol (二氫月桂烯醇)', cas: '18479-58-8', pct: 8, role: '清新金屬', note: 'top' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 5, role: '柑橘活力', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: 'mixture', pct: 2.5, role: '草本清涼', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 6, role: '木質溫暖', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 2, role: '泥土基調', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 3, role: '木質骨架', note: 'base' },
+      { name: 'Ethylene brassylate (麝香T)', cas: '105-95-3', pct: 4, role: '大環麝香', note: 'base' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 3, role: '花香自然', note: 'middle' },
+      { name: 'Neroli oil (橙花精油)', cas: 'mixture', pct: 2, role: '橙花優雅', note: 'top' },
     ],
     totalFragrancePct: 8,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 4. Le Labo Santal 33 (2011)
+  // 4. Santal 33 (2011)
   // ────────────────────────────────────────────
   {
     id: 'santal-33',
@@ -225,26 +222,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾根', '阿米香樹 (Amyris)', '乳香'],
     baseNotes: ['檀香', '雪松', '皮革', '麝香', '琥珀'],
     ingredients: [
-      { name: 'Sandalwood Australian (澳洲檀香)', cas: 'mixture',   pct: 15.0, role: '檀香核心', note: 'base' },
-      { name: 'Cardamom oil (小荳蔻精油)',   cas: 'mixture',    pct: 4.0,  role: '辛香開場', note: 'top' },
-      { name: 'Iso E Super',                cas: '54464-57-2',  pct: 12.0, role: '木質絲絨', note: 'base' },
-      { name: 'Violet leaf absolute (紫羅蘭葉)', cas: 'mixture', pct: 2.0,  role: '綠葉質感', note: 'top' },
-      { name: 'Ambroxan (龍涎醚)',           cas: '6790-58-5',  pct: 8.0,  role: '琥珀擴散', note: 'base' },
-      { name: 'Cedarwood Atlas (大西洋雪松)', cas: 'mixture',    pct: 6.0,  role: '木質支撐', note: 'base' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Papyrus (紙莎草)',            cas: 'mixture',     pct: 3.0,  role: '草/皮革', note: 'middle' },
-      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture',  pct: 2.5,  role: '樹脂神秘', note: 'base' },
-      { name: 'Leather accord (皮革調和)',    cas: 'mixture',     pct: 3.0,  role: '皮革質感', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',        cas: '1222-05-5',  pct: 5.0,  role: '麝香柔化', note: 'base' },
-      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4',   pct: 4.0,  role: '定香', note: 'base' },
+      { name: 'Sandalwood Australian (澳洲檀香)', cas: 'mixture', pct: 15, role: '檀香核心', note: 'base' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: 'mixture', pct: 4, role: '辛香開場', note: 'top' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 12, role: '木質絲絨', note: 'base' },
+      { name: 'Violet leaf absolute (紫羅蘭葉)', cas: 'mixture', pct: 2, role: '綠葉質感', note: 'top' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 8, role: '琥珀擴散', note: 'base' },
+      { name: 'Cedarwood Atlas (大西洋雪松)', cas: 'mixture', pct: 6, role: '木質支撐', note: 'base' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Papyrus (紙莎草)', cas: 'mixture', pct: 3, role: '草/皮革', note: 'middle' },
+      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture', pct: 2.5, role: '樹脂神秘', note: 'base' },
+      { name: 'Leather accord (皮革調和)', cas: 'mixture', pct: 3, role: '皮革質感', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '麝香柔化', note: 'base' },
+      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4', pct: 4, role: '定香', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 5. Guerlain Shalimar (1925)
+  // 5. Shalimar (1925)
   // ────────────────────────────────────────────
   {
     id: 'guerlain-shalimar',
@@ -261,27 +257,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '玫瑰', '鳶尾根', '依蘭'],
     baseNotes: ['香草', '焚香/安息香', '零陵香豆', '麝香', '沉香/烏木'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',    cas: 'mixture',    pct: 10.0, role: '柑橘開場', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',          cas: 'mixture',    pct: 3.0,  role: '清新提升', note: 'top' },
-      { name: 'Linalool (芳樟醇)',            cas: '78-70-6',     pct: 5.0,  role: '花香橋樑', note: 'middle' },
-      { name: 'Rose absolute (玫瑰原精)',      cas: 'mixture',    pct: 3.5,  role: '花香溫暖', note: 'middle' },
-      { name: 'Jasmine absolute (茉莉原精)',   cas: 'mixture',    pct: 3.0,  role: '濃郁花香', note: 'middle' },
-      { name: 'Ylang ylang oil (依蘭精油)',    cas: 'mixture',    pct: 2.0,  role: '異國花香', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 4.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Vanillin (香草醛)',             cas: '121-33-5',   pct: 8.0,  role: '甜蜜核心', note: 'base' },
-      { name: 'Ethyl vanillin (乙基香蘭素)',    cas: '121-32-4',   pct: 3.0,  role: '加強甜感', note: 'base' },
-      { name: 'Coumarin (香豆素)',             cas: '91-64-5',    pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Benzoin resin (安息香樹脂)',     cas: 'mixture',    pct: 4.0,  role: '焚香脂感', note: 'base' },
-      { name: 'Benzyl benzoate (苯甲酸苄酯)',   cas: '120-51-4',   pct: 6.0,  role: '定香', note: 'base' },
-      { name: 'Musk ketone (酮麝香)',           cas: '81-14-1',    pct: 3.0,  role: '麝香', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: 'mixture',    pct: 5.0,  role: '木質奶香', note: 'base' },
-      { name: 'Opoponax (甜沒藥)',              cas: 'mixture',    pct: 2.0,  role: '樹脂甜感', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 10, role: '柑橘開場', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: 'mixture', pct: 3, role: '清新提升', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 5, role: '花香橋樑', note: 'middle' },
+      { name: 'Rose absolute (玫瑰原精)', cas: 'mixture', pct: 3.5, role: '花香溫暖', note: 'middle' },
+      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture', pct: 3, role: '濃郁花香', note: 'middle' },
+      { name: 'Ylang ylang oil (依蘭精油)', cas: 'mixture', pct: 2, role: '異國花香', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 4, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '甜蜜核心', note: 'base' },
+      { name: 'Ethyl vanillin (乙基香蘭素)', cas: '121-32-4', pct: 3, role: '加強甜感', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Benzoin resin (安息香樹脂)', cas: 'mixture', pct: 4, role: '焚香脂感', note: 'base' },
+      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4', pct: 6, role: '定香', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 3, role: '麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: 'mixture', pct: 5, role: '木質奶香', note: 'base' },
+      { name: 'Opoponax (甜沒藥)', cas: 'mixture', pct: 2, role: '樹脂甜感', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
   // 6. CK One (1994)
   // ────────────────────────────────────────────
@@ -300,26 +295,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '鈴蘭', '玫瑰', '肉荳蔻', '紫羅蘭'],
     baseNotes: ['白麝香', '雪松', '琥珀', '檀香', '橡苔'],
     ingredients: [
-      { name: 'Limonene (檸檬烯)',             cas: '5989-27-5',   pct: 12.0, role: '柑橘明亮', note: 'top' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',     pct: 10.0, role: '花香清新', note: 'middle' },
-      { name: 'Dihydromyrcenol (二氫月桂烯醇)',  cas: '18479-58-8', pct: 10.0, role: '金屬清新', note: 'top' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 10.0, role: '透明花香', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: 'mixture',    pct: 8.0,  role: '佛手柑', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香', note: 'base' },
-      { name: 'Citronellol (香茅醇)',            cas: '106-22-9',   pct: 3.0,  role: '玫瑰清新', note: 'middle' },
-      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5',   pct: 4.0,  role: '鈴蘭', note: 'middle' },
-      { name: 'Hexyl cinnamic aldehyde (己基肉桂醛)', cas: '101-86-0', pct: 3.0, role: '花香定香', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: 'mixture',    pct: 3.0,  role: '木質基底', note: 'base' },
-      { name: 'Ethylene brassylate (麝香T)',    cas: '105-95-3',   pct: 3.5,  role: '麝香溫暖', note: 'base' },
-      { name: 'Green tea accord (綠茶調和)',     cas: 'mixture',    pct: 2.0,  role: '綠茶清新', note: 'middle' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 12, role: '柑橘明亮', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 10, role: '花香清新', note: 'middle' },
+      { name: 'Dihydromyrcenol (二氫月桂烯醇)', cas: '18479-58-8', pct: 10, role: '金屬清新', note: 'top' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '透明花香', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 8, role: '佛手柑', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 3, role: '玫瑰清新', note: 'middle' },
+      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5', pct: 4, role: '鈴蘭', note: 'middle' },
+      { name: 'Hexyl cinnamic aldehyde (己基肉桂醛)', cas: '101-86-0', pct: 3, role: '花香定香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 3, role: '木質基底', note: 'base' },
+      { name: 'Ethylene brassylate (麝香T)', cas: '105-95-3', pct: 3.5, role: '麝香溫暖', note: 'base' },
+      { name: 'Green tea accord (綠茶調和)', cas: 'mixture', pct: 2, role: '綠茶清新', note: 'middle' },
     ],
     totalFragrancePct: 6,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 7. Tom Ford Oud Wood (2007)
+  // 7. Oud Wood (2007)
   // ────────────────────────────────────────────
   {
     id: 'tf-oud-wood',
@@ -336,27 +330,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['沉香 (Oud)', '玫瑰木', '乳香'],
     baseNotes: ['檀香', '岩蘭草', '東加豆', '琥珀'],
     ingredients: [
-      { name: 'Cardamom oil (小荳蔻精油)',    cas: 'mixture',    pct: 5.0,  role: '辛香開場', note: 'top' },
-      { name: 'Sichuan Pepper CO2 (花椒)',   cas: 'mixture',    pct: 1.5,  role: '粉紅辛香', note: 'top' },
-      { name: 'Guaiacwood oil (癒創木精油)',  cas: 'mixture',    pct: 8.0,  role: '沉香替代', note: 'middle' },
-      { name: 'Oud reconstitution (沉香重組)', cas: 'mixture',   pct: 5.0,  role: '沉香核心', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',     cas: 'mixture',    pct: 10.0, role: '奶質木香', note: 'base' },
-      { name: 'Iso E Super',                 cas: '54464-57-2',  pct: 10.0, role: '木質絲絨', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',      cas: 'mixture',    pct: 4.0,  role: '泥土根部', note: 'base' },
-      { name: 'Coumarin (香豆素)',            cas: '91-64-5',     pct: 3.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Ambroxan (龍涎醚)',            cas: '6790-58-5',   pct: 6.0,  role: '琥珀擴散', note: 'base' },
-      { name: 'Vanillin (香草醛)',             cas: '121-33-5',   pct: 2.0,  role: '甜感調和', note: 'base' },
-      { name: 'Benzyl benzoate (苯甲酸苄酯)',  cas: '120-51-4',   pct: 5.0,  role: '定香', note: 'base' },
-      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture',   pct: 2.5,  role: '神聖煙感', note: 'middle' },
-      { name: 'Rosewood oil (玫瑰木精油)',      cas: 'mixture',    pct: 3.0,  role: '花香木質', note: 'middle' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: 'mixture', pct: 5, role: '辛香開場', note: 'top' },
+      { name: 'Sichuan Pepper CO2 (花椒)', cas: 'mixture', pct: 1.5, role: '粉紅辛香', note: 'top' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: 'mixture', pct: 8, role: '沉香替代', note: 'middle' },
+      { name: 'Oud reconstitution (沉香重組)', cas: 'mixture', pct: 5, role: '沉香核心', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: 'mixture', pct: 10, role: '奶質木香', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 10, role: '木質絲絨', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: 'mixture', pct: 4, role: '泥土根部', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 3, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 6, role: '琥珀擴散', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 2, role: '甜感調和', note: 'base' },
+      { name: 'Benzyl benzoate (苯甲酸苄酯)', cas: '120-51-4', pct: 5, role: '定香', note: 'base' },
+      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture', pct: 2.5, role: '神聖煙感', note: 'middle' },
+      { name: 'Rosewood oil (玫瑰木精油)', cas: 'mixture', pct: 3, role: '花香木質', note: 'middle' },
     ],
     totalFragrancePct: 20,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 8. Thierry Mugler Angel (1992)
+  // 8. Angel (1992)
   // ────────────────────────────────────────────
   {
     id: 'mugler-angel',
@@ -373,25 +366,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蜂蜜', '杏桃', '巧克力', '焦糖', '紅莓'],
     baseNotes: ['廣藿香', '香草', '零陵香豆', '白麝香', '可可'],
     ingredients: [
-      { name: 'Ethyl maltol (乙基麥芽酚)',     cas: '4940-11-8',   pct: 6.0,  role: '棉花糖甜感', note: 'middle' },
-      { name: 'Vanillin (香草醛)',              cas: '121-33-5',    pct: 6.0,  role: '甜食核心', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',      cas: 'mixture',    pct: 10.0, role: '泥土巧克力', note: 'base' },
-      { name: 'Coumarin (香豆素)',              cas: '91-64-5',     pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Chocolate accord (巧克力調和)',   cas: 'mixture',    pct: 3.0,  role: '巧克力', note: 'middle' },
-      { name: 'Caramel accord (焦糖調和)',       cas: 'mixture',    pct: 2.0,  role: '焦糖', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: 'mixture',    pct: 5.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',       cas: '24851-98-7', pct: 6.0,  role: '通透擴散', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 7.0,  role: '白麝香', note: 'base' },
-      { name: 'gamma-Decalactone (gamma-癸內酯)', cas: '706-14-9',  pct: 3.5,  role: '蜜桃奶油', note: 'middle' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)',   cas: '118-58-1',  pct: 4.0,  role: '柔和定香', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',        cas: 'mixture',    pct: 3.0,  role: '木質奶香', note: 'base' },
-      { name: 'Cassis / Blackcurrant accord (黑醋栗)', cas: 'mixture', pct: 2.0, role: '莓果酸甜', note: 'top' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 6, role: '棉花糖甜感', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '甜食核心', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 10, role: '泥土巧克力', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Chocolate accord (巧克力調和)', cas: 'mixture', pct: 3, role: '巧克力', note: 'middle' },
+      { name: 'Caramel accord (焦糖調和)', cas: 'mixture', pct: 2, role: '焦糖', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 5, role: '柑橘開場', note: 'top' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '通透擴散', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 7, role: '白麝香', note: 'base' },
+      { name: 'gamma-Decalactone (gamma-癸內酯)', cas: '706-14-9', pct: 3.5, role: '蜜桃奶油', note: 'middle' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 4, role: '柔和定香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: 'mixture', pct: 3, role: '木質奶香', note: 'base' },
+      { name: 'Cassis / Blackcurrant accord (黑醋栗)', cas: 'mixture', pct: 2, role: '莓果酸甜', note: 'top' },
     ],
     totalFragrancePct: 20,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
   // 9. Bleu de Chanel (2010)
   // ────────────────────────────────────────────
@@ -410,28 +402,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '依蘭', '杉木', '生薑'],
     baseNotes: ['雪松', '檀香', '廣藿香', '麝香', '乳香'],
     ingredients: [
-      { name: 'Grapefruit oil (葡萄柚精油)',   cas: 'mixture',     pct: 6.0,  role: '活力柑橘', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',           cas: 'mixture',     pct: 4.0,  role: '明亮開場', note: 'top' },
-      { name: 'Mint oil (薄荷精油)',            cas: 'mixture',     pct: 3.0,  role: '清涼感', note: 'top' },
-      { name: 'Iso E Super',                   cas: '54464-57-2',  pct: 15.0, role: '木質天鵝絨', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: 'mixture',    pct: 8.0,  role: '乾燥木質', note: 'base' },
-      { name: 'Sandalwood (檀香)',               cas: 'mixture',    pct: 5.0,  role: '奶質木質', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',       cas: '24851-98-7', pct: 8.0,  role: '茉莉透明', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',               cas: '78-70-6',    pct: 5.0,  role: '花香柔和', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',        cas: 'mixture',   pct: 3.0,  role: '深度基調', note: 'base' },
-      { name: 'Ambroxan (龍涎醚)',               cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Ginger oil (生薑精油)',            cas: 'mixture',    pct: 2.0,  role: '辛香溫暖', note: 'middle' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',    pct: 2.5,  role: '甜感過渡', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',            cas: '1222-05-5', pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Olibanum / Frankincense (乳香)',   cas: 'mixture',   pct: 2.0,  role: '焚香深度', note: 'base' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: 'mixture', pct: 6, role: '活力柑橘', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: 'mixture', pct: 4, role: '明亮開場', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: 'mixture', pct: 3, role: '清涼感', note: 'top' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 15, role: '木質天鵝絨', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 8, role: '乾燥木質', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 5, role: '奶質木質', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '茉莉透明', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 5, role: '花香柔和', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 3, role: '深度基調', note: 'base' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Ginger oil (生薑精油)', cas: 'mixture', pct: 2, role: '辛香溫暖', note: 'middle' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 2.5, role: '甜感過渡', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture', pct: 2, role: '焚香深度', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 10. Creed Aventus (2010)
+  // 10. Aventus (2010)
   // ────────────────────────────────────────────
   {
     id: 'creed-aventus',
@@ -448,26 +439,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['樺木', '茉莉', '廣藿香', '玫瑰'],
     baseNotes: ['橡苔', '麝香', '香草', '龍涎香'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',    cas: 'mixture',    pct: 8.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Pineapple accord (鳳梨調和)',  cas: 'mixture',    pct: 4.0,  role: '果香標誌', note: 'top' },
-      { name: 'Apple accord (蘋果調和)',      cas: 'mixture',    pct: 2.0,  role: '綠色果香', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)', cas: 'mixture',   pct: 2.5,  role: '辛香活力', note: 'top' },
-      { name: 'Birch tar (樺木焦油)',          cas: 'mixture',    pct: 3.0,  role: '煙燻皮革', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',     cas: 'mixture',    pct: 6.0,  role: '泥土深度', note: 'base' },
-      { name: 'Iso E Super',                  cas: '54464-57-2',  pct: 10.0, role: '木質基底', note: 'base' },
-      { name: 'Ambroxan (龍涎醚)',            cas: '6790-58-5',   pct: 8.0,  role: '龍涎琥珀', note: 'base' },
-      { name: 'Jasmine absolute (茉莉原精)',   cas: 'mixture',    pct: 2.0,  role: '花香點綴', note: 'middle' },
-      { name: 'Oakmoss absolute (橡苔原精)',   cas: 'mixture',    pct: 1.5,  role: '柑苔基底', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',         cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Linalool (芳樟醇)',             cas: '78-70-6',    pct: 4.0,  role: '花香柔和', note: 'middle' },
-      { name: 'Vanillin (香草醛)',              cas: '121-33-5',   pct: 2.0,  role: '微甜', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',       cas: 'mixture',    pct: 4.0,  role: '木質骨架', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 8, role: '柑橘清新', note: 'top' },
+      { name: 'Pineapple accord (鳳梨調和)', cas: 'mixture', pct: 4, role: '果香標誌', note: 'top' },
+      { name: 'Apple accord (蘋果調和)', cas: 'mixture', pct: 2, role: '綠色果香', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: 'mixture', pct: 2.5, role: '辛香活力', note: 'top' },
+      { name: 'Birch tar (樺木焦油)', cas: 'mixture', pct: 3, role: '煙燻皮革', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 6, role: '泥土深度', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 10, role: '木質基底', note: 'base' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 8, role: '龍涎琥珀', note: 'base' },
+      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture', pct: 2, role: '花香點綴', note: 'middle' },
+      { name: 'Oakmoss absolute (橡苔原精)', cas: 'mixture', pct: 1.5, role: '柑苔基底', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香柔和', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 2, role: '微甜', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 4, role: '木質骨架', note: 'base' },
     ],
     totalFragrancePct: 20,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
   // 11. Chloé Eau de Parfum (2008)
   // ────────────────────────────────────────────
@@ -486,30 +476,29 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '牡丹', '鈴蘭', '木蘭'],
     baseNotes: ['琥珀', '雪松', '麝香'],
     ingredients: [
-      { name: 'Citronellol (香茅醇)',           cas: '106-22-9',   pct: 12.0, role: '玫瑰核心', note: 'middle' },
-      { name: 'Geraniol (香葉醇)',              cas: '106-24-1',   pct: 6.0,  role: '玫瑰甜感', note: 'middle' },
-      { name: 'Phenylethyl alcohol (苯乙醇)',    cas: '60-12-8',    pct: 8.0,  role: '玫瑰蜂蜜', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',     pct: 8.0,  role: '鈴蘭花香', note: 'middle' },
-      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5',   pct: 5.0,  role: '鈴蘭', note: 'middle' },
-      { name: 'Rose oxide (玫瑰氧化物)',         cas: '16409-43-1', pct: 0.3,  role: '荔枝/金屬玫瑰', note: 'top' },
-      { name: 'Freesia accord (小蒼蘭調和)',     cas: 'mixture',    pct: 2.0,  role: '花香清新', note: 'top' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',       cas: '24851-98-7', pct: 10.0, role: '擴散透明', note: 'middle' },
-      { name: 'Ambroxan (龍涎醚)',              cas: '6790-58-5',   pct: 4.0,  role: '琥珀柔和', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: 'mixture',     pct: 3.0,  role: '木質支撐', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 12, role: '玫瑰核心', note: 'middle' },
+      { name: 'Geraniol (香葉醇)', cas: '106-24-1', pct: 6, role: '玫瑰甜感', note: 'middle' },
+      { name: 'Phenylethyl alcohol (苯乙醇)', cas: '60-12-8', pct: 8, role: '玫瑰蜂蜜', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 8, role: '鈴蘭花香', note: 'middle' },
+      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5', pct: 5, role: '鈴蘭', note: 'middle' },
+      { name: 'Rose oxide (玫瑰氧化物)', cas: '16409-43-1', pct: 0.3, role: '荔枝/金屬玫瑰', note: 'top' },
+      { name: 'Freesia accord (小蒼蘭調和)', cas: 'mixture', pct: 2, role: '花香清新', note: 'top' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 5, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散透明', note: 'middle' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀柔和', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 3, role: '木質支撐', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 12. Issey Miyake L'Eau d'Issey (1992)
+  // 12. L'Eau d'Issey (1992)
   // ────────────────────────────────────────────
   {
     id: 'leau-dissey',
-    name: "L'Eau d'Issey",
+    name: 'L\'Eau d\'Issey',
     brand: 'issey',
     year: 1992,
     perfumer: 'Jacques Cavallier',
@@ -522,30 +511,29 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['睡蓮', '牡丹', '康乃馨', '百合'],
     baseNotes: ['木質', '麝香', '琥珀', '檀香', '雪松'],
     ingredients: [
-      { name: 'Calone (海洋酮)',               cas: '28940-11-6', pct: 4.0,  role: '水/海洋', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 15.0, role: '通透擴散', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 6.0,  role: '花香', note: 'middle' },
-      { name: 'Cyclamen aldehyde (仙客來醛)',   cas: '103-95-7',    pct: 3.0,  role: '鈴蘭/花香', note: 'middle' },
-      { name: 'Citronellol (香茅醇)',            cas: '106-22-9',   pct: 4.0,  role: '玫瑰清新', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: 'mixture',    pct: 4.0,  role: '木質基調', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5', pct: 8.0,  role: '白麝香', note: 'base' },
-      { name: 'Iso E Super',                    cas: '54464-57-2', pct: 6.0,  role: '木質絲絨', note: 'base' },
-      { name: 'Lily of valley accord (鈴蘭調和)', cas: 'mixture',  pct: 3.0,  role: '鈴蘭花香', note: 'middle' },
-      { name: 'Ambroxan (龍涎醚)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀', note: 'base' },
-      { name: 'Rose water accord (玫瑰水調和)',  cas: 'mixture',    pct: 2.0,  role: '清澈花香', note: 'top' },
-      { name: 'Limonene (檸檬烯)',              cas: '5989-27-5',  pct: 3.0,  role: '明亮開場', note: 'top' },
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 4, role: '水/海洋', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 15, role: '通透擴散', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 6, role: '花香', note: 'middle' },
+      { name: 'Cyclamen aldehyde (仙客來醛)', cas: '103-95-7', pct: 3, role: '鈴蘭/花香', note: 'middle' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 4, role: '玫瑰清新', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 4, role: '木質基調', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 6, role: '木質絲絨', note: 'base' },
+      { name: 'Lily of valley accord (鈴蘭調和)', cas: 'mixture', pct: 3, role: '鈴蘭花香', note: 'middle' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 3, role: '琥珀', note: 'base' },
+      { name: 'Rose water accord (玫瑰水調和)', cas: 'mixture', pct: 2, role: '清澈花香', note: 'top' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 3, role: '明亮開場', note: 'top' },
     ],
     totalFragrancePct: 8,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 13. YSL La Nuit de L'Homme (2009)
+  // 13. La Nuit de L'Homme (2009)
   // ────────────────────────────────────────────
   {
     id: 'ysl-la-nuit',
-    name: "La Nuit de L'Homme",
+    name: 'La Nuit de L\'Homme',
     brand: 'ysl',
     year: 2009,
     perfumer: 'Anne Flipo, Pierre Wargnye & Dominique Ropion',
@@ -558,25 +546,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['雪松', '廣基斯白松香', '薰衣草'],
     baseNotes: ['岩蘭草', '香豆素', '麝香'],
     ingredients: [
-      { name: 'Cardamom oil (小荳蔻精油)',     cas: 'mixture',     pct: 6.0,  role: '辛香開場', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',      cas: 'mixture',     pct: 5.0,  role: '柑橘活力', note: 'top' },
-      { name: 'Lavender oil (薰衣草精油)',      cas: 'mixture',     pct: 5.0,  role: '草本薰衣草', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',       cas: 'mixture',     pct: 10.0, role: '木質核心', note: 'base' },
-      { name: 'Coumarin (香豆素)',             cas: '91-64-5',     pct: 6.0,  role: '甜感零陵香豆', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',       cas: 'mixture',     pct: 4.0,  role: '泥土根部', note: 'base' },
-      { name: 'Iso E Super',                   cas: '54464-57-2',  pct: 8.0,  role: '木質柔和', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '花香擴散', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5', pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)',  cas: '118-58-1',  pct: 4.0,  role: '柔和花香', note: 'base' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 4.0,  role: '花香柔化', note: 'middle' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: 'mixture', pct: 6, role: '辛香開場', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 5, role: '柑橘活力', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: 'mixture', pct: 5, role: '草本薰衣草', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 10, role: '木質核心', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 6, role: '甜感零陵香豆', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: 'mixture', pct: 4, role: '泥土根部', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 8, role: '木質柔和', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '花香擴散', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 4, role: '柔和花香', note: 'base' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香柔化', note: 'middle' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 14. Byredo Gypsy Water (2008)
+  // 14. Gypsy Water (2008)
   // ────────────────────────────────────────────
   {
     id: 'byredo-gypsy-water',
@@ -593,25 +580,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['松針', '乳香', '鳶尾根'],
     baseNotes: ['檀香', '香草', '琥珀'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',     cas: 'mixture',    pct: 8.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Juniper berry oil (杜松子精油)', cas: 'mixture',   pct: 4.0,  role: '清新綠意', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)',  cas: 'mixture',   pct: 2.0,  role: '辛香活力', note: 'top' },
-      { name: 'Pine needle oil (松針精油)',     cas: 'mixture',   pct: 5.0,  role: '針葉林', note: 'middle' },
-      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture',  pct: 4.0,  role: '焚香深度', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 3.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: 'mixture',   pct: 8.0,  role: '奶質木香', note: 'base' },
-      { name: 'Vanillin (香草醛)',              cas: '121-33-5',   pct: 3.0,  role: '甜感溫暖', note: 'base' },
-      { name: 'Ambroxan (龍涎醚)',             cas: '6790-58-5',  pct: 6.0,  role: '琥珀擴散', note: 'base' },
-      { name: 'Iso E Super',                   cas: '54464-57-2', pct: 8.0,  role: '木質柔和', note: 'base' },
-      { name: 'Linalool (芳樟醇)',             cas: '78-70-6',    pct: 4.0,  role: '花香過渡', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: 'mixture', pct: 8, role: '柑橘清新', note: 'top' },
+      { name: 'Juniper berry oil (杜松子精油)', cas: 'mixture', pct: 4, role: '清新綠意', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: 'mixture', pct: 2, role: '辛香活力', note: 'top' },
+      { name: 'Pine needle oil (松針精油)', cas: 'mixture', pct: 5, role: '針葉林', note: 'middle' },
+      { name: 'Olibanum / Frankincense (乳香)', cas: 'mixture', pct: 4, role: '焚香深度', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 3, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: 'mixture', pct: 8, role: '奶質木香', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 3, role: '甜感溫暖', note: 'base' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 6, role: '琥珀擴散', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 8, role: '木質柔和', note: 'base' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香過渡', note: 'middle' },
     ],
     totalFragrancePct: 18,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 15. D&G Light Blue (2001)
+  // 15. Light Blue (2001)
   // ────────────────────────────────────────────
   {
     id: 'dg-light-blue',
@@ -628,25 +614,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '白玫瑰', '竹子'],
     baseNotes: ['雪松', '琥珀', '白麝香'],
     ingredients: [
-      { name: 'Lemon oil Sicily (西西里檸檬精油)', cas: 'mixture',  pct: 10.0, role: '檸檬開場', note: 'top' },
-      { name: 'Limonene (檸檬烯)',              cas: '5989-27-5',  pct: 8.0,  role: '柑橘活力', note: 'top' },
-      { name: 'Apple accord (蘋果調和)',         cas: 'mixture',    pct: 3.0,  role: '綠色果香', note: 'top' },
-      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5',   pct: 6.0,  role: '鈴蘭清新', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 10.0, role: '茉莉透明', note: 'middle' },
-      { name: 'Citronellol (香茅醇)',            cas: '106-22-9',   pct: 4.0,  role: '玫瑰', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 6.0,  role: '花香柔和', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: 'mixture',    pct: 5.0,  role: '木質骨架', note: 'base' },
-      { name: 'Ambroxan (龍涎醚)',             cas: '6790-58-5',   pct: 4.0,  role: '琥珀', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',          cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Bamboo accord (竹子調和)',       cas: 'mixture',    pct: 2.0,  role: '綠竹清新', note: 'middle' },
+      { name: 'Lemon oil Sicily (西西里檸檬精油)', cas: 'mixture', pct: 10, role: '檸檬開場', note: 'top' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 8, role: '柑橘活力', note: 'top' },
+      { name: 'Apple accord (蘋果調和)', cas: 'mixture', pct: 3, role: '綠色果香', note: 'top' },
+      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5', pct: 6, role: '鈴蘭清新', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '茉莉透明', note: 'middle' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 4, role: '玫瑰', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 6, role: '花香柔和', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 5, role: '木質骨架', note: 'base' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Bamboo accord (竹子調和)', cas: 'mixture', pct: 2, role: '綠竹清新', note: 'middle' },
     ],
     totalFragrancePct: 8,
     sillage: 3,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 16. Versace Eros (2012)
+  // 16. Eros (2012)
   // ────────────────────────────────────────────
   {
     id: 'versace-eros',
@@ -663,27 +648,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['東加豆', '天竺葵', '瑪黛茶'],
     baseNotes: ['廣藿香', '雪松', '岩蘭草', '橡苔', '香草'],
     ingredients: [
-      { name: 'Mint oil (薄荷精油)',           cas: 'mixture',     pct: 6.0,  role: '清涼開場', note: 'top' },
-      { name: 'Apple accord (蘋果調和)',        cas: 'mixture',    pct: 3.0,  role: '青蘋果', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',           cas: 'mixture',    pct: 4.0,  role: '柑橘活力', note: 'top' },
-      { name: 'Coumarin (香豆素)',             cas: '91-64-5',     pct: 6.0,  role: '東加豆甜感', note: 'middle' },
-      { name: 'Geraniol (香葉醇)',             cas: '106-24-1',    pct: 3.0,  role: '天竺葵', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 5.0,  role: '擴散花香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',      cas: 'mixture',    pct: 5.0,  role: '泥土深度', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',       cas: 'mixture',     pct: 5.0,  role: '木質骨架', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: 'mixture',    pct: 3.0,  role: '根部泥土', note: 'base' },
-      { name: 'Vanillin (香草醛)',              cas: '121-33-5',   pct: 3.0,  role: '甜感溫暖', note: 'base' },
-      { name: 'Iso E Super',                   cas: '54464-57-2',  pct: 6.0,  role: '木質天鵝絨', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',          cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Oakmoss absolute (橡苔原精)',    cas: 'mixture',    pct: 1.0,  role: '柑苔基底', note: 'base' },
+      { name: 'Mint oil (薄荷精油)', cas: 'mixture', pct: 6, role: '清涼開場', note: 'top' },
+      { name: 'Apple accord (蘋果調和)', cas: 'mixture', pct: 3, role: '青蘋果', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: 'mixture', pct: 4, role: '柑橘活力', note: 'top' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 6, role: '東加豆甜感', note: 'middle' },
+      { name: 'Geraniol (香葉醇)', cas: '106-24-1', pct: 3, role: '天竺葵', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 5, role: '擴散花香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 5, role: '泥土深度', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: 'mixture', pct: 5, role: '木質骨架', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: 'mixture', pct: 3, role: '根部泥土', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 3, role: '甜感溫暖', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 6, role: '木質天鵝絨', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Oakmoss absolute (橡苔原精)', cas: 'mixture', pct: 1, role: '柑苔基底', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 17. Maison Margiela Replica - By the Fireplace (2015)
+  // 17. Replica - By the Fireplace (2015)
   // ────────────────────────────────────────────
   {
     id: 'mm-fireplace',
@@ -700,26 +684,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['栗子', '愈創木', '煙燻調'],
     baseNotes: ['香草', '秘魯香脂', '白麝香', '喀什米爾木'],
     ingredients: [
-      { name: 'Clove oil (丁香精油)',           cas: 'mixture',    pct: 4.0,  role: '辛香丁香', note: 'top' },
-      { name: 'Pink pepper (粉紅胡椒)',         cas: 'mixture',    pct: 2.0,  role: '辛香活力', note: 'top' },
-      { name: 'Orange oil (柑橘精油)',          cas: 'mixture',    pct: 3.0,  role: '柑橘甜感', note: 'top' },
-      { name: 'Guaiacwood oil (癒創木精油)',    cas: 'mixture',    pct: 8.0,  role: '煙燻木質', note: 'middle' },
-      { name: 'Cashmeran (卡什莫蘭)',          cas: '33704-61-9',  pct: 6.0,  role: '喀什米爾木', note: 'base' },
-      { name: 'Chestnut accord (栗子調和)',    cas: 'mixture',     pct: 3.0,  role: '烤栗子', note: 'middle' },
-      { name: 'Vanillin (香草醛)',             cas: '121-33-5',    pct: 6.0,  role: '甜暖核心', note: 'base' },
-      { name: 'Peru balsam (秘魯香脂)',        cas: 'mixture',     pct: 3.0,  role: '脂感溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',         cas: '1222-05-5',   pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Iso E Super',                  cas: '54464-57-2',   pct: 6.0,  role: '木質包裹', note: 'base' },
-      { name: 'Smoky accord (煙燻調和)',       cas: 'mixture',     pct: 2.5,  role: '篝火煙', note: 'middle' },
-      { name: 'Eugenol (丁香酚)',             cas: '97-53-0',      pct: 2.0,  role: '辛香丁香輔助', note: 'middle' },
+      { name: 'Clove oil (丁香精油)', cas: 'mixture', pct: 4, role: '辛香丁香', note: 'top' },
+      { name: 'Pink pepper (粉紅胡椒)', cas: 'mixture', pct: 2, role: '辛香活力', note: 'top' },
+      { name: 'Orange oil (柑橘精油)', cas: 'mixture', pct: 3, role: '柑橘甜感', note: 'top' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: 'mixture', pct: 8, role: '煙燻木質', note: 'middle' },
+      { name: 'Cashmeran (卡什莫蘭)', cas: '33704-61-9', pct: 6, role: '喀什米爾木', note: 'base' },
+      { name: 'Chestnut accord (栗子調和)', cas: 'mixture', pct: 3, role: '烤栗子', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '甜暖核心', note: 'base' },
+      { name: 'Peru balsam (秘魯香脂)', cas: 'mixture', pct: 3, role: '脂感溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Iso E Super', cas: '54464-57-2', pct: 6, role: '木質包裹', note: 'base' },
+      { name: 'Smoky accord (煙燻調和)', cas: 'mixture', pct: 2.5, role: '篝火煙', note: 'middle' },
+      { name: 'Eugenol (丁香酚)', cas: '97-53-0', pct: 2, role: '辛香丁香輔助', note: 'middle' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 18. Jo Malone English Pear & Freesia (2010)
+  // 18. English Pear & Freesia (2010)
   // ────────────────────────────────────────────
   {
     id: 'jm-pear-freesia',
@@ -736,25 +719,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['小蒼蘭', '玫瑰', '鈴蘭'],
     baseNotes: ['琥珀', '廣藿香', '麝香'],
     ingredients: [
-      { name: 'Pear accord (西洋梨調和)',       cas: 'mixture',    pct: 8.0,  role: '梨果核心', note: 'top' },
-      { name: 'Freesia accord (小蒼蘭調和)',    cas: 'mixture',    pct: 5.0,  role: '清新花香', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',     cas: '24851-98-7',  pct: 8.0,  role: '透明花香', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',             cas: '78-70-6',     pct: 5.0,  role: '花香柔和', note: 'middle' },
-      { name: 'Citronellol (香茅醇)',           cas: '106-22-9',    pct: 4.0,  role: '玫瑰', note: 'middle' },
-      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5',   pct: 3.0,  role: '鈴蘭', note: 'middle' },
-      { name: 'Ambroxan (龍涎醚)',             cas: '6790-58-5',   pct: 4.0,  role: '琥珀', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',      cas: 'mixture',    pct: 2.0,  role: '泥土溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',          cas: '1222-05-5',   pct: 5.0,  role: '白麝香乾淨', note: 'base' },
-      { name: 'Melon accord (哈密瓜調和)',       cas: 'mixture',    pct: 2.0,  role: '果香明亮', note: 'top' },
-      { name: 'Limonene (檸檬烯)',             cas: '5989-27-5',   pct: 3.0,  role: '柑橘清新', note: 'top' },
+      { name: 'Pear accord (西洋梨調和)', cas: 'mixture', pct: 8, role: '梨果核心', note: 'top' },
+      { name: 'Freesia accord (小蒼蘭調和)', cas: 'mixture', pct: 5, role: '清新花香', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '透明花香', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 5, role: '花香柔和', note: 'middle' },
+      { name: 'Citronellol (香茅醇)', cas: '106-22-9', pct: 4, role: '玫瑰', note: 'middle' },
+      { name: 'Hydroxycitronellal (羥基香茅醛)', cas: '107-75-5', pct: 3, role: '鈴蘭', note: 'middle' },
+      { name: 'Ambroxan (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 2, role: '泥土溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香乾淨', note: 'base' },
+      { name: 'Melon accord (哈密瓜調和)', cas: 'mixture', pct: 2, role: '果香明亮', note: 'top' },
+      { name: 'Limonene (檸檬烯)', cas: '5989-27-5', pct: 3, role: '柑橘清新', note: 'top' },
     ],
     totalFragrancePct: 4,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 19. Lancôme La Vie Est Belle (2012)
+  // 19. La Vie Est Belle (2012)
   // ────────────────────────────────────────────
   {
     id: 'lancome-la-vie',
@@ -771,26 +753,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾根', '茉莉', '橙花'],
     baseNotes: ['果仁糖 (Praline)', '香草', '東加豆', '廣藿香', '麝香'],
     ingredients: [
-      { name: 'Blackcurrant accord (黑醋栗調和)', cas: 'mixture',  pct: 3.0,  role: '莓果酸甜', note: 'top' },
-      { name: 'Pear accord (西洋梨調和)',        cas: 'mixture',    pct: 3.0,  role: '果香甜美', note: 'top' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 8.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '茉莉透明', note: 'middle' },
-      { name: 'Jasmine sambac (茉莉原精)',      cas: 'mixture',     pct: 2.0,  role: '濃郁花香', note: 'middle' },
-      { name: 'Praline / Hazelnut accord (果仁糖)', cas: 'mixture', pct: 5.0,  role: '甜食核心', note: 'base' },
-      { name: 'Vanillin (香草醛)',              cas: '121-33-5',    pct: 6.0,  role: '甜蜜溫暖', note: 'base' },
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8',  pct: 3.0,  role: '棉花糖', note: 'base' },
-      { name: 'Coumarin (香豆素)',              cas: '91-64-5',     pct: 4.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: 'mixture',    pct: 4.0,  role: '深度基底', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)',   cas: '118-58-1',  pct: 4.0,  role: '柔和定香', note: 'base' },
+      { name: 'Blackcurrant accord (黑醋栗調和)', cas: 'mixture', pct: 3, role: '莓果酸甜', note: 'top' },
+      { name: 'Pear accord (西洋梨調和)', cas: 'mixture', pct: 3, role: '果香甜美', note: 'top' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 8, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '茉莉透明', note: 'middle' },
+      { name: 'Jasmine sambac (茉莉原精)', cas: 'mixture', pct: 2, role: '濃郁花香', note: 'middle' },
+      { name: 'Praline / Hazelnut accord (果仁糖)', cas: 'mixture', pct: 5, role: '甜食核心', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '甜蜜溫暖', note: 'base' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 3, role: '棉花糖', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: 'mixture', pct: 4, role: '深度基底', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 4, role: '柔和定香', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 20. Gucci Bloom (2017)
+  // 20. Bloom (2017)
   // ────────────────────────────────────────────
   {
     id: 'gucci-bloom',
@@ -807,29 +788,28 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['晚香玉', '茉莉', '蘭花'],
     baseNotes: ['麝香', '檀香'],
     ingredients: [
-      { name: 'Tuberose absolute (晚香玉原精)', cas: 'mixture',    pct: 8.0,  role: '白花核心', note: 'middle' },
-      { name: 'Jasmine sambac (茉莉原精)',      cas: 'mixture',    pct: 6.0,  role: '濃郁花香', note: 'middle' },
-      { name: 'Rangoon Creeper (使君子)',        cas: 'mixture',    pct: 3.0,  role: '花香粉感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 12.0, role: '擴散透明', note: 'middle' },
-      { name: 'Benzyl acetate (乙酸苄酯)',       cas: '140-11-4',  pct: 5.0,  role: '茉莉甜感', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 6.0,  role: '花香柔化', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 4.0, role: '粉質感', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '木質奶香', note: 'base' },
-      { name: 'Indole (吲哚)',                  cas: '120-72-9',   pct: 0.5,  role: '白花深度', note: 'middle' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)',   cas: '118-58-1',  pct: 5.0,  role: '柔和基底', note: 'base' },
+      { name: 'Tuberose absolute (晚香玉原精)', cas: 'mixture', pct: 8, role: '白花核心', note: 'middle' },
+      { name: 'Jasmine sambac (茉莉原精)', cas: 'mixture', pct: 6, role: '濃郁花香', note: 'middle' },
+      { name: 'Rangoon Creeper (使君子)', cas: 'mixture', pct: 3, role: '花香粉感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 12, role: '擴散透明', note: 'middle' },
+      { name: 'Benzyl acetate (乙酸苄酯)', cas: '140-11-4', pct: 5, role: '茉莉甜感', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 6, role: '花香柔化', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (異甲基紫羅蘭酮)', cas: '127-51-5', pct: 4, role: '粉質感', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '木質奶香', note: 'base' },
+      { name: 'Indole (吲哚)', cas: '120-72-9', pct: 0.5, role: '白花深度', note: 'middle' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 5, role: '柔和基底', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 21. Hermès Terre d'Hermès (2006)
+  // 21. Terre d'Hermès (2006)
   // ────────────────────────────────────────────
   {
     id: 'terre-dhermes',
-    name: "Terre d'Hermès",
+    name: 'Terre d\'Hermès',
     brand: 'hermes',
     year: 2006,
     perfumer: 'Jean-Claude Ellena',
@@ -842,28 +822,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '胡椒'],
     baseNotes: ['岩蘭草', '雪松', '安息香'],
     ingredients: [
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 6.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Orange oil sweet (甜橙精油)',     cas: '8008-57-9', pct: 4.0,  role: '甜柑橘', note: 'top' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 18.0, role: '木質核心中樞', note: 'base' },
-      { name: 'Vetiveryl acetate (乙酸岩蘭草酯)', cas: '62563-80-8', pct: 8.0, role: '泥土岩蘭草', note: 'base' },
-      { name: 'Cedrol (雪松醇)',                cas: '77-53-2',   pct: 5.0,  role: '乾燥木質', note: 'base' },
-      { name: 'Geraniol (牻牛兒醇)',            cas: '106-24-1',  pct: 3.0,  role: '天竺葵花感', note: 'middle' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',   pct: 2.0,  role: '辛香活力', note: 'top' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '擴散透明', note: 'middle' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 2.5,  role: '香脂溫暖', note: 'base' },
-      { name: 'Flintstone accord (打火石調)',     cas: 'mixture',    pct: 3.0,  role: '礦物火焰感', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 6, role: '柑橘開場', note: 'top' },
+      { name: 'Orange oil sweet (甜橙精油)', cas: '8008-57-9', pct: 4, role: '甜柑橘', note: 'top' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 18, role: '木質核心中樞', note: 'base' },
+      { name: 'Vetiveryl acetate (乙酸岩蘭草酯)', cas: '62563-80-8', pct: 8, role: '泥土岩蘭草', note: 'base' },
+      { name: 'Cedrol (雪松醇)', cas: '77-53-2', pct: 5, role: '乾燥木質', note: 'base' },
+      { name: 'Geraniol (牻牛兒醇)', cas: '106-24-1', pct: 3, role: '天竺葵花感', note: 'middle' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2, role: '辛香活力', note: 'top' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散透明', note: 'middle' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 2.5, role: '香脂溫暖', note: 'base' },
+      { name: 'Flintstone accord (打火石調)', cas: 'mixture', pct: 3, role: '礦物火焰感', note: 'top' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 22. Dior J'adore (1999)
+  // 22. J'adore (1999)
   // ────────────────────────────────────────────
   {
     id: 'dior-jadore',
-    name: "J'adore",
+    name: 'J\'adore',
     brand: 'dior',
     year: 1999,
     perfumer: 'Calice Becker',
@@ -876,24 +855,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '玫瑰', '鈴蘭', '紫羅蘭'],
     baseNotes: ['麝香', '香草', '雪松', '黑莓'],
     ingredients: [
-      { name: 'Hedione HC (高純度甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 18.0, role: '擴散透明花香', note: 'middle' },
-      { name: 'Jasmine absolute (茉莉原精)',     cas: 'mixture',    pct: 5.0,  role: '濃郁花核', note: 'middle' },
-      { name: 'Rose absolute (玫瑰原精)',        cas: 'mixture',    pct: 4.0,  role: '玫瑰甜感', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.5,  role: '柑橘清新', note: 'top' },
-      { name: 'gamma-Decalactone (桃子內酯)',    cas: '706-14-9',   pct: 3.0,  role: '桃子果香', note: 'top' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 5.0,  role: '花香柔化', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 4.0, role: '粉質紫羅蘭', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 1.5,  role: '甜感基底', note: 'base' },
-      { name: 'Cedryl acetate (乙酸雪松酯)',     cas: '77-54-3',   pct: 4.0,  role: '木質定香', note: 'base' },
+      { name: 'Hedione HC (高純度甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 18, role: '擴散透明花香', note: 'middle' },
+      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture', pct: 5, role: '濃郁花核', note: 'middle' },
+      { name: 'Rose absolute (玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰甜感', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3.5, role: '柑橘清新', note: 'top' },
+      { name: 'gamma-Decalactone (桃子內酯)', cas: '706-14-9', pct: 3, role: '桃子果香', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 5, role: '花香柔化', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 4, role: '粉質紫羅蘭', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 1.5, role: '甜感基底', note: 'base' },
+      { name: 'Cedryl acetate (乙酸雪松酯)', cas: '77-54-3', pct: 4, role: '木質定香', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 23. Chanel Coco Mademoiselle (2001)
+  // 23. Coco Mademoiselle (2001)
   // ────────────────────────────────────────────
   {
     id: 'chanel-coco-mademoiselle',
@@ -910,25 +888,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '茉莉', '荔枝'],
     baseNotes: ['廣藿香', '香草', '白麝香', '零陵香豆'],
     ingredients: [
-      { name: 'Orange oil (柳橙精油)',           cas: '8008-57-9', pct: 5.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘深度', note: 'top' },
-      { name: 'Rose de Mai abs (五月玫瑰原精)',   cas: 'mixture',   pct: 4.0,  role: '玫瑰核心', note: 'middle' },
-      { name: 'Jasmine absolute (茉莉原精)',     cas: 'mixture',    pct: 3.5,  role: '花香奶感', note: 'middle' },
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 2.0,  role: '果香透明', note: 'top' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '泥土木質', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 3.0,  role: '甜感溫暖', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 2.5,  role: '零陵香豆', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 10.0, role: '擴散增強', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 4.0,  role: '花香過渡', note: 'middle' },
+      { name: 'Orange oil (柳橙精油)', cas: '8008-57-9', pct: 5, role: '柑橘開場', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘深度', note: 'top' },
+      { name: 'Rose de Mai abs (五月玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰核心', note: 'middle' },
+      { name: 'Jasmine absolute (茉莉原精)', cas: 'mixture', pct: 3.5, role: '花香奶感', note: 'middle' },
+      { name: 'Lychee accord (荔枝調)', cas: 'mixture', pct: 2, role: '果香透明', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '泥土木質', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 3, role: '甜感溫暖', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 2.5, role: '零陵香豆', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散增強', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香過渡', note: 'middle' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 24. Jean Paul Gaultier Le Male (1995)
+  // 24. Le Male (1995)
   // ────────────────────────────────────────────
   {
     id: 'jpg-le-male',
@@ -945,25 +922,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['肉桂', '橙花', '小茴香'],
     baseNotes: ['香草', '琥珀', '零陵香豆', '檀香', '麝香'],
     ingredients: [
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 10.0, role: '芳香骨架', note: 'top' },
-      { name: 'Menthol (薄荷醇)',               cas: '89-78-1',   pct: 1.5,  role: '清涼感', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Cinnamaldehyde (肉桂醛)',         cas: '104-55-2',  pct: 1.0,  role: '辛香溫暖', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 2.5,  role: '花香柔美', note: 'middle' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 5.0,  role: '甜感核心', note: 'base' },
-      { name: 'Ethyl vanillin (乙基香草醛)',      cas: '121-32-4',  pct: 2.0,  role: '甜感加強', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆感', note: 'base' },
-      { name: 'Amber accord (琥珀調)',           cas: 'mixture',    pct: 4.0,  role: '東方溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '麝香基底', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 3.0,  role: '木質奶香', note: 'base' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 10, role: '芳香骨架', note: 'top' },
+      { name: 'Menthol (薄荷醇)', cas: '89-78-1', pct: 1.5, role: '清涼感', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Cinnamaldehyde (肉桂醛)', cas: '104-55-2', pct: 1, role: '辛香溫暖', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2.5, role: '花香柔美', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 5, role: '甜感核心', note: 'base' },
+      { name: 'Ethyl vanillin (乙基香草醛)', cas: '121-32-4', pct: 2, role: '甜感加強', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆感', note: 'base' },
+      { name: 'Amber accord (琥珀調)', cas: 'mixture', pct: 4, role: '東方溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '麝香基底', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 3, role: '木質奶香', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 25. Tom Ford Black Orchid (2006)
+  // 25. Black Orchid (2006)
   // ────────────────────────────────────────────
   {
     id: 'tf-black-orchid',
@@ -980,25 +956,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蘭花', '蓮花', '辛香'],
     baseNotes: ['廣藿香', '檀香', '香草', '焚香', '黑巧克力'],
     ingredients: [
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 8.0,  role: '泥土核心', note: 'base' },
-      { name: 'Ylang ylang oil (依蘭精油)',      cas: '8006-81-3', pct: 4.0,  role: '奶脂花香', note: 'top' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 3.5,  role: '甜感深度', note: 'base' },
-      { name: 'Ethyl vanillin (乙基香草醛)',      cas: '121-32-4',  pct: 2.0,  role: '甜感加強', note: 'base' },
-      { name: 'Truffle accord (黑松露調)',        cas: 'mixture',    pct: 1.5,  role: '泥土美食', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Incense olibanum (乳香)',         cas: 'mixture',    pct: 3.0,  role: '煙燻神秘', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '奶質木香', note: 'base' },
-      { name: 'Chocolate accord (巧克力調)',      cas: 'mixture',    pct: 2.0,  role: '美食深度', note: 'base' },
-      { name: 'Blackcurrant bud abs (黑加侖芽原精)', cas: 'mixture', pct: 2.0, role: '果香綠感', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '麝香支撐', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '泥土核心', note: 'base' },
+      { name: 'Ylang ylang oil (依蘭精油)', cas: '8006-81-3', pct: 4, role: '奶脂花香', note: 'top' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 3.5, role: '甜感深度', note: 'base' },
+      { name: 'Ethyl vanillin (乙基香草醛)', cas: '121-32-4', pct: 2, role: '甜感加強', note: 'base' },
+      { name: 'Truffle accord (黑松露調)', cas: 'mixture', pct: 1.5, role: '泥土美食', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'Incense olibanum (乳香)', cas: 'mixture', pct: 3, role: '煙燻神秘', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '奶質木香', note: 'base' },
+      { name: 'Chocolate accord (巧克力調)', cas: 'mixture', pct: 2, role: '美食深度', note: 'base' },
+      { name: 'Blackcurrant bud abs (黑加侖芽原精)', cas: 'mixture', pct: 2, role: '果香綠感', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '麝香支撐', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 26. Narciso Rodriguez for Her (2003)
+  // 26. For Her (2003)
   // ────────────────────────────────────────────
   {
     id: 'narciso-for-her',
@@ -1015,23 +990,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['麝香', '橙花', '琥珀'],
     baseNotes: ['廣藿香', '檀香', '岩蘭草', '麝香'],
     ingredients: [
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 12.0, role: '白麝香核心', note: 'base' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 8.0,  role: '潔淨麝香', note: 'base' },
-      { name: 'Ethylene brassylate (麝香T)',     cas: '105-95-3',   pct: 5.0,  role: '粉香麝香', note: 'base' },
-      { name: 'Rose otto (玫瑰精油)',            cas: 'mixture',    pct: 2.5,  role: '花香柔感', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',    pct: 2.0,  role: '花蜜柔美', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '泥土基底', note: 'base' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'gamma-Decalactone (桃子內酯)',    cas: '706-14-9',   pct: 2.0,  role: '果香肌膚感', note: 'top' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '擴散透明', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 12, role: '白麝香核心', note: 'base' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 8, role: '潔淨麝香', note: 'base' },
+      { name: 'Ethylene brassylate (麝香T)', cas: '105-95-3', pct: 5, role: '粉香麝香', note: 'base' },
+      { name: 'Rose otto (玫瑰精油)', cas: 'mixture', pct: 2.5, role: '花香柔感', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2, role: '花蜜柔美', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 3, role: '泥土基底', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'gamma-Decalactone (桃子內酯)', cas: '706-14-9', pct: 2, role: '果香肌膚感', note: 'top' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '擴散透明', note: 'middle' },
     ],
     totalFragrancePct: 17,
     sillage: 3,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 27. Viktor & Rolf Flowerbomb (2005)
+  // 27. Flowerbomb (2005)
   // ────────────────────────────────────────────
   {
     id: 'vr-flowerbomb',
@@ -1048,24 +1022,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '茉莉', '蘭花', '小蒼蘭'],
     baseNotes: ['廣藿香', '麝香', '香草', '焦糖'],
     ingredients: [
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 5.0,  role: '玫瑰主體', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 3.5,  role: '茉莉豐滿', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 4.0, role: '粉質花香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '泥土甜感', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 4.0,  role: '甜感核心', note: 'base' },
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8',  pct: 2.0,  role: '焦糖棉花糖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '擴散花香', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 4.0,  role: '花香連結', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 5, role: '玫瑰主體', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 3.5, role: '茉莉豐滿', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 4, role: '粉質花香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '泥土甜感', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 4, role: '甜感核心', note: 'base' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 2, role: '焦糖棉花糖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散花香', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香連結', note: 'middle' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 28. Tom Ford Tobacco Vanille (2007)
+  // 28. Tobacco Vanille (2007)
   // ────────────────────────────────────────────
   {
     id: 'tf-tobacco-vanille',
@@ -1082,28 +1055,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['零陵香豆', '香草', '可可'],
     baseNotes: ['乾果', '木質協調', '麝香'],
     ingredients: [
-      { name: 'Tobacco absolute (菸草原精)',     cas: 'mixture',    pct: 5.0,  role: '菸草核心', note: 'middle' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 6.0,  role: '香草主體', note: 'base' },
-      { name: 'Ethyl vanillin (乙基香草醛)',      cas: '121-32-4',  pct: 3.0,  role: '甜感增強', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 4.0,  role: '香脂深度', note: 'base' },
-      { name: 'Cocoa abs (可可原精)',            cas: 'mixture',    pct: 2.0,  role: '巧克力感', note: 'middle' },
-      { name: 'Peru balsam (秘魯香脂)',          cas: '8007-00-9', pct: 3.0,  role: '香脂溫暖', note: 'base' },
-      { name: 'Eugenol (丁香酚)',               cas: '97-53-0',    pct: 2.0,  role: '辛香丁香', note: 'middle' },
-      { name: 'Dried fruit accord (乾果調)',     cas: 'mixture',    pct: 2.5,  role: '果乾甜感', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '麝香支撐', note: 'base' },
+      { name: 'Tobacco absolute (菸草原精)', cas: 'mixture', pct: 5, role: '菸草核心', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '香草主體', note: 'base' },
+      { name: 'Ethyl vanillin (乙基香草醛)', cas: '121-32-4', pct: 3, role: '甜感增強', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 4, role: '香脂深度', note: 'base' },
+      { name: 'Cocoa abs (可可原精)', cas: 'mixture', pct: 2, role: '巧克力感', note: 'middle' },
+      { name: 'Peru balsam (秘魯香脂)', cas: '8007-00-9', pct: 3, role: '香脂溫暖', note: 'base' },
+      { name: 'Eugenol (丁香酚)', cas: '97-53-0', pct: 2, role: '辛香丁香', note: 'middle' },
+      { name: 'Dried fruit accord (乾果調)', cas: 'mixture', pct: 2.5, role: '果乾甜感', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '麝香支撐', note: 'base' },
     ],
     totalFragrancePct: 20,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 29. Givenchy L'Interdit (2018)
+  // 29. L'Interdit (2018)
   // ────────────────────────────────────────────
   {
     id: 'givenchy-linterdit',
-    name: "L'Interdit",
+    name: 'L\'Interdit',
     brand: 'givenchy',
     year: 2018,
     perfumer: 'Dominique Ropion, Anne Flipo, Fanny Bal',
@@ -1116,24 +1088,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['橙花', '茉莉', '晚香玉'],
     baseNotes: ['岩蘭草', '廣藿香', '琥珀', '麝香'],
     ingredients: [
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '白花核心', note: 'middle' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 3.0,  role: '濃郁白花', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 3.0,  role: '花香層次', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 6.0,  role: '泥土暗調', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '木質泥土', note: 'base' },
-      { name: 'Pear accord (梨子調)',            cas: 'mixture',    pct: 2.5,  role: '清甜開場', note: 'top' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 10.0, role: '擴散透明', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.5,  role: '柑橘清新', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '白花核心', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 3, role: '濃郁白花', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 3, role: '花香層次', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 6, role: '泥土暗調', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '木質泥土', note: 'base' },
+      { name: 'Pear accord (梨子調)', cas: 'mixture', pct: 2.5, role: '清甜開場', note: 'top' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散透明', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2.5, role: '柑橘清新', note: 'top' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 30. Maison Francis Kurkdjian Baccarat Rouge 540 (2015)
+  // 30. Baccarat Rouge 540 (2015)
   // ────────────────────────────────────────────
   {
     id: 'mfk-br540',
@@ -1150,24 +1121,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['杏仁', '雪松'],
     baseNotes: ['龍涎醚', '檀香', '焦糖', '麝香'],
     ingredients: [
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 10.0, role: '琥珀核心', note: 'base' },
-      { name: 'Cedarwood oil Atlas (雪松精油)',   cas: '8000-27-9', pct: 6.0,  role: '木質骨架', note: 'middle' },
-      { name: 'Saffron CO2 (藏紅花萃取)',        cas: 'mixture',    pct: 1.5,  role: '辛香皮革', note: 'top' },
-      { name: 'Hedione HC (高純度茉莉酸酯)',     cas: '24851-98-7', pct: 8.0,  role: '擴散空氣感', note: 'middle' },
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8',  pct: 3.0,  role: '焦糖棉花糖', note: 'base' },
-      { name: 'Benzaldehyde (苯甲醛)',           cas: '100-52-7',  pct: 1.0,  role: '苦杏仁', note: 'top' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '奶香木質', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 2.5,  role: '花香柔化', note: 'top' },
-      { name: 'Fir balsam abs (冷杉香脂)',       cas: 'mixture',    pct: 2.0,  role: '樹脂質感', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 10, role: '琥珀核心', note: 'base' },
+      { name: 'Cedarwood oil Atlas (雪松精油)', cas: '8000-27-9', pct: 6, role: '木質骨架', note: 'middle' },
+      { name: 'Saffron CO2 (藏紅花萃取)', cas: 'mixture', pct: 1.5, role: '辛香皮革', note: 'top' },
+      { name: 'Hedione HC (高純度茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散空氣感', note: 'middle' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 3, role: '焦糖棉花糖', note: 'base' },
+      { name: 'Benzaldehyde (苯甲醛)', cas: '100-52-7', pct: 1, role: '苦杏仁', note: 'top' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '奶香木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 2.5, role: '花香柔化', note: 'top' },
+      { name: 'Fir balsam abs (冷杉香脂)', cas: 'mixture', pct: 2, role: '樹脂質感', note: 'base' },
     ],
     totalFragrancePct: 20,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 31. Acqua di Parma Colonia (1916)
+  // 31. Colonia (1916)
   // ────────────────────────────────────────────
   {
     id: 'adp-colonia',
@@ -1184,23 +1154,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['薰衣草', '迷迭香', '馬鞭草'],
     baseNotes: ['檀香', '廣藿香', '白麝香'],
     ingredients: [
-      { name: 'Lemon oil (檸檬精油)',           cas: '8008-56-8', pct: 12.0, role: '明亮柑橘', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 10.0, role: '柑橘深度', note: 'top' },
-      { name: 'Sweet orange oil (甜橙精油)',     cas: '8008-57-9', pct: 8.0,  role: '甜柑橘', note: 'top' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 6.0,  role: '草本過渡', note: 'middle' },
-      { name: 'Rosemary oil (迷迭香精油)',       cas: '8000-25-7', pct: 3.0,  role: '芳香草本', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 4.0,  role: '花香柔化', note: 'middle' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 2.0,  role: '木質餘韻', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 1.5,  role: '泥土定香', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 12, role: '明亮柑橘', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '柑橘深度', note: 'top' },
+      { name: 'Sweet orange oil (甜橙精油)', cas: '8008-57-9', pct: 8, role: '甜柑橘', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '草本過渡', note: 'middle' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 3, role: '芳香草本', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香柔化', note: 'middle' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 2, role: '木質餘韻', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 1.5, role: '泥土定香', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 4,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 32. Prada Candy (2011)
+  // 32. Candy (2011)
   // ────────────────────────────────────────────
   {
     id: 'prada-candy',
@@ -1217,19 +1186,18 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['安息香', '麝香'],
     baseNotes: ['香草', '安息香', '白麝香'],
     ingredients: [
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8',  pct: 8.0,  role: '焦糖核心', note: 'top' },
-      { name: 'Benzoin Siam resinoid (暹羅安息香)', cas: 'mixture',  pct: 10.0, role: '香脂甜感', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香肌膚', note: 'base' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 5.0,  role: '潔淨麝香', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 3.0,  role: '香草支撐', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '擴散輕盈', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 2.0,  role: '柔和過渡', note: 'middle' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 8, role: '焦糖核心', note: 'top' },
+      { name: 'Benzoin Siam resinoid (暹羅安息香)', cas: 'mixture', pct: 10, role: '香脂甜感', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香肌膚', note: 'base' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 5, role: '潔淨麝香', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 3, role: '香草支撐', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '擴散輕盈', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 2, role: '柔和過渡', note: 'middle' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
   // 33. Dior Homme (2005)
   // ────────────────────────────────────────────
@@ -1248,57 +1216,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾', '琥珀', '可可'],
     baseNotes: ['岩蘭草', '雪松', '皮革'],
     ingredients: [
-      { name: 'Orris butter (鳶尾純油)',         cas: 'mixture',    pct: 3.0,  role: '粉質花核心', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 8.0, role: '鳶尾粉感替代', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 5.0,  role: '草本清新', note: 'top' },
-      { name: 'Cocoa abs (可可原精)',            cas: 'mixture',    pct: 2.0,  role: '苦甜深度', note: 'middle' },
-      { name: 'Vetiver oil Bourbon (波旁岩蘭草)',  cas: '8016-96-4', pct: 5.0,  role: '泥土乾燥', note: 'base' },
-      { name: 'Cedryl acetate (乙酸雪松酯)',     cas: '77-54-3',   pct: 4.0,  role: '木質骨架', note: 'base' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '擴散透明', note: 'middle' },
-      { name: 'Clary sage oil (快樂鼠尾草精油)',  cas: '8016-63-5', pct: 2.0,  role: '草本芳香', note: 'top' },
+      { name: 'Orris butter (鳶尾純油)', cas: 'mixture', pct: 3, role: '粉質花核心', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 8, role: '鳶尾粉感替代', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 5, role: '草本清新', note: 'top' },
+      { name: 'Cocoa abs (可可原精)', cas: 'mixture', pct: 2, role: '苦甜深度', note: 'middle' },
+      { name: 'Vetiver oil Bourbon (波旁岩蘭草)', cas: '8016-96-4', pct: 5, role: '泥土乾燥', note: 'base' },
+      { name: 'Cedryl acetate (乙酸雪松酯)', cas: '77-54-3', pct: 4, role: '木質骨架', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散透明', note: 'middle' },
+      { name: 'Clary sage oil (快樂鼠尾草精油)', cas: '8016-63-5', pct: 2, role: '草本芳香', note: 'top' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 34. Frédéric Malle Portrait of a Lady (2010)
-  // ────────────────────────────────────────────
-  {
-    id: 'fm-portrait-lady',
-    name: 'Portrait of a Lady',
-    brand: 'fm',
-    year: 2010,
-    perfumer: 'Dominique Ropion',
-    concentration: 'edp',
-    family: 'oriental',
-    subfamilies: ['floral', 'woody'],
-    gender: 'feminine',
-    description: '當代最偉大的東方花香之一。土耳其玫瑰的壯麗花香與廣藿香、乳香的深邃基底交鋒，肉桂和丁香的辛香增添了戲劇性。一幅嗅覺的貴婦肖像。',
-    topNotes: ['玫瑰', '黑加侖', '肉桂', '丁香'],
-    heartNotes: ['玫瑰', '廣藿香', '檀香'],
-    baseNotes: ['安息香', '焚香', '麝香', '琥珀'],
-    ingredients: [
-      { name: 'Rose abs Turkish (土耳其玫瑰原精)', cas: 'mixture',  pct: 8.0,  role: '玫瑰核心', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 10.0, role: '泥土深度', note: 'base' },
-      { name: 'Cinnamaldehyde (肉桂醛)',         cas: '104-55-2',  pct: 1.5,  role: '辛香火焰', note: 'top' },
-      { name: 'Eugenol (丁香酚)',               cas: '97-53-0',    pct: 2.0,  role: '丁香辛香', note: 'top' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 5.0,  role: '香脂甜感', note: 'base' },
-      { name: 'Incense olibanum (乳香)',         cas: 'mixture',    pct: 3.0,  role: '煙燻神秘', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '木質奶感', note: 'base' },
-      { name: 'Blackcurrant bud abs (黑加侖芽原精)', cas: 'mixture', pct: 2.0, role: '果香綠感', note: 'top' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '麝香支撐', note: 'base' },
-    ],
-    totalFragrancePct: 20,
-    sillage: 5,
-    longevity: 5,
-  },
-
-  // ────────────────────────────────────────────
-  // 35. Diptyque Tam Dao (2003)
+  // 34. Tam Dao (2003)
   // ────────────────────────────────────────────
   {
     id: 'diptyque-tam-dao',
@@ -1315,22 +1248,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰木', '檀香'],
     baseNotes: ['檀香', '雪松', '麝香'],
     ingredients: [
-      { name: 'Sandalwood oil Australian (澳洲檀香油)', cas: 'mixture', pct: 10.0, role: '檀香主體', note: 'base' },
-      { name: 'Sandalore (合成檀香)',            cas: '65113-99-7', pct: 8.0,  role: '合成檀香增強', note: 'base' },
-      { name: 'Rosewood oil (玫瑰木精油)',       cas: '8015-77-8', pct: 4.0,  role: '花木香', note: 'middle' },
-      { name: 'Cedryl acetate (乙酸雪松酯)',     cas: '77-54-3',   pct: 5.0,  role: '木質乾燥', note: 'base' },
-      { name: 'Cypress oil (絲柏精油)',          cas: '8013-86-3', pct: 3.0,  role: '針葉清新', note: 'top' },
-      { name: 'Cardamom CO2 (小荳蔻)',           cas: 'mixture',    pct: 1.5,  role: '辛香細微', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '麝香柔化', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 6.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Sandalwood oil Australian (澳洲檀香油)', cas: 'mixture', pct: 10, role: '檀香主體', note: 'base' },
+      { name: 'Sandalore (合成檀香)', cas: '65113-99-7', pct: 8, role: '合成檀香增強', note: 'base' },
+      { name: 'Rosewood oil (玫瑰木精油)', cas: '8015-77-8', pct: 4, role: '花木香', note: 'middle' },
+      { name: 'Cedryl acetate (乙酸雪松酯)', cas: '77-54-3', pct: 5, role: '木質乾燥', note: 'base' },
+      { name: 'Cypress oil (絲柏精油)', cas: '8013-86-3', pct: 3, role: '針葉清新', note: 'top' },
+      { name: 'Cardamom CO2 (小荳蔻)', cas: 'mixture', pct: 1.5, role: '辛香細微', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '麝香柔化', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 6, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 36. YSL Libre (2019)
+  // 35. Libre (2019)
   // ────────────────────────────────────────────
   {
     id: 'ysl-libre',
@@ -1347,23 +1279,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['橙花', '茉莉'],
     baseNotes: ['香草', '雪松', '麝香', '琥珀'],
     ingredients: [
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 8.0,  role: '馥奇骨架', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 5.0,  role: '花蜜核心', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.5,  role: '柑橘清新', note: 'top' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 4.0,  role: '香草溫暖', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '木質支撐', note: 'base' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 3.0,  role: '琥珀光澤', note: 'base' },
-      { name: 'Hedione HC (高純度茉莉酸酯)',     cas: '24851-98-7', pct: 10.0, role: '擴散透明', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Blackcurrant bud abs (黑加侖芽)',  cas: 'mixture',   pct: 1.5,  role: '綠色果香', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '馥奇骨架', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 5, role: '花蜜核心', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3.5, role: '柑橘清新', note: 'top' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 4, role: '香草溫暖', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '木質支撐', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 3, role: '琥珀光澤', note: 'base' },
+      { name: 'Hedione HC (高純度茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散透明', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Blackcurrant bud abs (黑加侖芽)', cas: 'mixture', pct: 1.5, role: '綠色果香', note: 'top' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 37. Guerlain Mon Guerlain (2017)
+  // 36. Mon Guerlain (2017)
   // ────────────────────────────────────────────
   {
     id: 'guerlain-mon-guerlain',
@@ -1380,23 +1311,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '鳶尾'],
     baseNotes: ['檀香', '香草', '零陵香豆', '麝香'],
     ingredients: [
-      { name: 'Lavender oil Carla (薰衣草精油)', cas: '8000-28-0', pct: 5.0,  role: '清新前調', note: 'top' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 4.0,  role: '花香核心', note: 'middle' },
-      { name: 'Sandalwood Australian (澳洲檀香)', cas: 'mixture',   pct: 5.0,  role: '奶質木香', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 4.0,  role: '甜感溫暖', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 3.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '擴散茉莉', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
+      { name: 'Lavender oil Carla (薰衣草精油)', cas: '8000-28-0', pct: 5, role: '清新前調', note: 'top' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 4, role: '花香核心', note: 'middle' },
+      { name: 'Sandalwood Australian (澳洲檀香)', cas: 'mixture', pct: 5, role: '奶質木香', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 4, role: '甜感溫暖', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 3, role: '零陵香豆', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散茉莉', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 38. Bvlgari Omnia Crystalline (2005)
+  // 37. Omnia Crystalline (2005)
   // ────────────────────────────────────────────
   {
     id: 'bvlgari-omnia-crystalline',
@@ -1413,27 +1343,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蓮花', '茶'],
     baseNotes: ['麝香', '番石榴木'],
     ingredients: [
-      { name: 'Calone (西瓜酮)',                cas: '28940-11-6', pct: 2.5,  role: '水生透明', note: 'top' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 5.0,  role: '花香輕盈', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 12.0, role: '擴散透明', note: 'middle' },
-      { name: 'Pear accord (梨子調)',            cas: 'mixture',    pct: 3.0,  role: '水果清甜', note: 'top' },
-      { name: 'Bamboo accord (竹子調)',          cas: 'mixture',    pct: 2.0,  role: '綠色清新', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香基底', note: 'base' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 4.0,  role: '潔淨麝香', note: 'base' },
-      { name: 'Guaiac wood oil (癒創木精油)',     cas: '8016-23-7', pct: 2.0,  role: '木質微煙', note: 'base' },
-      { name: 'Yuzu oil (日本柚子精油)',         cas: 'mixture',    pct: 2.0,  role: '柑橘活力', note: 'top' },
+      { name: 'Calone (西瓜酮)', cas: '28940-11-6', pct: 2.5, role: '水生透明', note: 'top' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 5, role: '花香輕盈', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 12, role: '擴散透明', note: 'middle' },
+      { name: 'Pear accord (梨子調)', cas: 'mixture', pct: 3, role: '水果清甜', note: 'top' },
+      { name: 'Bamboo accord (竹子調)', cas: 'mixture', pct: 2, role: '綠色清新', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香基底', note: 'base' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 4, role: '潔淨麝香', note: 'base' },
+      { name: 'Guaiac wood oil (癒創木精油)', cas: '8016-23-7', pct: 2, role: '木質微煙', note: 'base' },
+      { name: 'Yuzu oil (日本柚子精油)', cas: 'mixture', pct: 2, role: '柑橘活力', note: 'top' },
     ],
     totalFragrancePct: 8,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 39. Kilian Love, Don't Be Shy (2007)
+  // 38. Love, Don't Be Shy (2007)
   // ────────────────────────────────────────────
   {
     id: 'kilian-love',
-    name: "Love, Don't Be Shy",
+    name: 'Love, Don\'t Be Shy',
     brand: 'kilian',
     year: 2007,
     perfumer: 'Calice Becker',
@@ -1446,24 +1375,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾', '茉莉', '玫瑰'],
     baseNotes: ['焦糖', '棉花糖', '香草', '麝香', '蜂蜜'],
     ingredients: [
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8',  pct: 6.0,  role: '棉花糖核心', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 5.0,  role: '白花甜感', note: 'middle' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 5.0,  role: '香草甜暖', note: 'base' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3.0, role: '鳶尾粉質', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '擴散透明', note: 'middle' },
-      { name: 'Honey abs (蜂蜜原精)',            cas: 'mixture',    pct: 2.0,  role: '蜂蜜甜潤', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 3.0,  role: '香脂深度', note: 'base' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 2.0,  role: '花香層次', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘提亮', note: 'top' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 6, role: '棉花糖核心', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 5, role: '白花甜感', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 5, role: '香草甜暖', note: 'base' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '擴散透明', note: 'middle' },
+      { name: 'Honey abs (蜂蜜原精)', cas: 'mixture', pct: 2, role: '蜂蜜甜潤', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 3, role: '香脂深度', note: 'base' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 2, role: '花香層次', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘提亮', note: 'top' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 40. Escentric Molecules Molecule 01 (2006)
+  // 39. Molecule 01 (2006)
   // ────────────────────────────────────────────
   {
     id: 'em-molecule01',
@@ -1473,22 +1401,20 @@ export const PERFUME_FORMULAS = [
     perfumer: 'Geza Schoen',
     concentration: 'edt',
     family: 'woody',
-    subfamilies: [],
     gender: 'unisex',
     description: '史上最極端的極簡香水——只含單一分子 Iso E Super。這個飄渺的木質分子會在皮膚上與體溫互動，時隱時現，每個人聞到的氣味都不同。真正的「分子香水」概念先驅。',
     topNotes: ['Iso E Super'],
     heartNotes: ['Iso E Super'],
     baseNotes: ['Iso E Super'],
     ingredients: [
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 100.0, role: '唯一成分', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 100, role: '唯一成分', note: 'base' },
     ],
     totalFragrancePct: 5,
     sillage: 2,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 41. Chanel Chance Eau Tendre (2010)
+  // 40. Chance Eau Tendre (2010)
   // ────────────────────────────────────────────
   {
     id: 'chanel-chance-tendre',
@@ -1505,23 +1431,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['風信子', '茉莉'],
     baseNotes: ['白麝香', '鳶尾', '雪松', '琥珀'],
     ingredients: [
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 5.0,  role: '柑橘清甜', note: 'top' },
-      { name: 'Hedione HC (甲基二氫茉莉酸酯)',   cas: '24851-98-7', pct: 15.0, role: '擴散茉莉感', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 5.0, role: '鳶尾粉質', note: 'middle' },
-      { name: 'Linalool (芳樟醇)',              cas: '78-70-6',    pct: 4.0,  role: '花香柔化', note: 'middle' },
-      { name: 'Quince accord (榅桲調)',          cas: 'mixture',    pct: 2.0,  role: '水果清甜', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香基底', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '木質乾淨', note: 'base' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 2.0,  role: '琥珀微暖', note: 'base' },
-      { name: 'Benzyl salicylate (水楊酸苄酯)',   cas: '118-58-1',  pct: 4.0,  role: '柔和花基底', note: 'base' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 5, role: '柑橘清甜', note: 'top' },
+      { name: 'Hedione HC (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 15, role: '擴散茉莉感', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 5, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Linalool (芳樟醇)', cas: '78-70-6', pct: 4, role: '花香柔化', note: 'middle' },
+      { name: 'Quince accord (榅桲調)', cas: 'mixture', pct: 2, role: '水果清甜', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香基底', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '木質乾淨', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 2, role: '琥珀微暖', note: 'base' },
+      { name: 'Benzyl salicylate (水楊酸苄酯)', cas: '118-58-1', pct: 4, role: '柔和花基底', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 42. Hermès Un Jardin sur le Nil (2005)
+  // 41. Un Jardin sur le Nil (2005)
   // ────────────────────────────────────────────
   {
     id: 'hermes-jardin-nil',
@@ -1538,23 +1463,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蓮花', '風信子', '薑'],
     baseNotes: ['鳶尾木', '乳香', '麝香'],
     ingredients: [
-      { name: 'Green mango accord (青芒果調)',    cas: 'mixture',    pct: 4.0,  role: '綠色多汁', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 5.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Hedione HC (甲基二氫茉莉酸酯)',   cas: '24851-98-7', pct: 15.0, role: '蓮花透明', note: 'middle' },
-      { name: 'Calone (西瓜酮)',                cas: '28940-11-6', pct: 1.0,  role: '水生微感', note: 'top' },
-      { name: 'Ginger CO2 (薑萃取)',            cas: 'mixture',    pct: 1.5,  role: '辛香活力', note: 'middle' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3.0, role: '鳶尾木粉質', note: 'base' },
-      { name: 'Incense (乳香)',                 cas: 'mixture',    pct: 1.5,  role: '煙燻餘韻', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'cis-3-Hexenyl acetate (樹葉綠)',  cas: '3681-71-8',  pct: 2.0,  role: '綠葉清新', note: 'top' },
+      { name: 'Green mango accord (青芒果調)', cas: 'mixture', pct: 4, role: '綠色多汁', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 5, role: '柑橘明亮', note: 'top' },
+      { name: 'Hedione HC (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 15, role: '蓮花透明', note: 'middle' },
+      { name: 'Calone (西瓜酮)', cas: '28940-11-6', pct: 1, role: '水生微感', note: 'top' },
+      { name: 'Ginger CO2 (薑萃取)', cas: 'mixture', pct: 1.5, role: '辛香活力', note: 'middle' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3, role: '鳶尾木粉質', note: 'base' },
+      { name: 'Incense (乳香)', cas: 'mixture', pct: 1.5, role: '煙燻餘韻', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'cis-3-Hexenyl acetate (樹葉綠)', cas: '3681-71-8', pct: 2, role: '綠葉清新', note: 'top' },
     ],
     totalFragrancePct: 8,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 43. Amouage Jubilation XXV (2007)
+  // 42. Jubilation XXV Man (2007)
   // ────────────────────────────────────────────
   {
     id: 'amouage-jubilation',
@@ -1571,25 +1495,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '鳶尾', '肉桂', '橙花'],
     baseNotes: ['沒藥', '檀香', '橡木苔', '廣藿香', '蜂蜜'],
     ingredients: [
-      { name: 'Frankincense oil (乳香精油)',     cas: 'mixture',    pct: 5.0,  role: '煙燻聖潔', note: 'top' },
-      { name: 'Myrrh oil (沒藥精油)',            cas: 'mixture',    pct: 4.0,  role: '藥草香脂', note: 'base' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 3.0,  role: '花香中心', note: 'middle' },
-      { name: 'Coriander oil (芫荽精油)',        cas: '8008-52-4', pct: 2.0,  role: '辛香清新', note: 'top' },
-      { name: 'Cinnamaldehyde (肉桂醛)',         cas: '104-55-2',  pct: 1.0,  role: '辛香溫暖', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '泥土深度', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '木質奶感', note: 'base' },
-      { name: 'Oakmoss abs (橡木苔原精)',        cas: 'mixture',    pct: 2.5,  role: '柑苔暗調', note: 'base' },
-      { name: 'Honey abs (蜂蜜原精)',            cas: 'mixture',    pct: 1.5,  role: '蜂蜜甜潤', note: 'base' },
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3.0, role: '鳶尾粉感', note: 'middle' },
-      { name: 'Blackberry accord (黑莓調)',      cas: 'mixture',    pct: 2.0,  role: '暗色果香', note: 'top' },
+      { name: 'Frankincense oil (乳香精油)', cas: 'mixture', pct: 5, role: '煙燻聖潔', note: 'top' },
+      { name: 'Myrrh oil (沒藥精油)', cas: 'mixture', pct: 4, role: '藥草香脂', note: 'base' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 3, role: '花香中心', note: 'middle' },
+      { name: 'Coriander oil (芫荽精油)', cas: '8008-52-4', pct: 2, role: '辛香清新', note: 'top' },
+      { name: 'Cinnamaldehyde (肉桂醛)', cas: '104-55-2', pct: 1, role: '辛香溫暖', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '泥土深度', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '木質奶感', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 2.5, role: '柑苔暗調', note: 'base' },
+      { name: 'Honey abs (蜂蜜原精)', cas: 'mixture', pct: 1.5, role: '蜂蜜甜潤', note: 'base' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 3, role: '鳶尾粉感', note: 'middle' },
+      { name: 'Blackberry accord (黑莓調)', cas: 'mixture', pct: 2, role: '暗色果香', note: 'top' },
     ],
     totalFragrancePct: 20,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 44. Serge Lutens Ambre Sultan (1993)
+  // 43. Ambre Sultan (1993)
   // ────────────────────────────────────────────
   {
     id: 'sl-ambre-sultan',
@@ -1606,27 +1529,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['安息香', '龍涎'],
     baseNotes: ['檀香', '廣藿香', '香草', '勞丹脂'],
     ingredients: [
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 10.0, role: '琥珀甜感核心', note: 'base' },
-      { name: 'Labdanum abs (勞丹脂原精)',       cas: 'mixture',    pct: 6.0,  role: '琥珀動物感', note: 'base' },
-      { name: 'Bay leaf oil (月桂精油)',         cas: '8006-78-8', pct: 3.0,  role: '草本辛香', note: 'top' },
-      { name: 'Rosemary oil (迷迭香精油)',       cas: '8000-25-7', pct: 2.0,  role: '清涼草本', note: 'top' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '泥土深度', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '木質奶感', note: 'base' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 2.0,  role: '甜感支撐', note: 'base' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 4.0,  role: '琥珀清透', note: 'base' },
-      { name: 'Angelica root oil (當歸根精油)',   cas: '8015-64-3', pct: 1.5,  role: '辛香泥土', note: 'top' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 10, role: '琥珀甜感核心', note: 'base' },
+      { name: 'Labdanum abs (勞丹脂原精)', cas: 'mixture', pct: 6, role: '琥珀動物感', note: 'base' },
+      { name: 'Bay leaf oil (月桂精油)', cas: '8006-78-8', pct: 3, role: '草本辛香', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 2, role: '清涼草本', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '泥土深度', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '木質奶感', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 2, role: '甜感支撐', note: 'base' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀清透', note: 'base' },
+      { name: 'Angelica root oil (當歸根精油)', cas: '8015-64-3', pct: 1.5, role: '辛香泥土', note: 'top' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 45. Prada L'Homme (2016)
+  // 44. L'Homme Prada (2016)
   // ────────────────────────────────────────────
   {
     id: 'prada-lhomme',
-    name: "L'Homme Prada",
+    name: 'L\'Homme Prada',
     brand: 'prada',
     year: 2016,
     perfumer: 'Daniela Andrier',
@@ -1639,23 +1561,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾', '天竺葵', '琥珀'],
     baseNotes: ['檀香', '麝香', '琥珀', '雪松'],
     ingredients: [
-      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 12.0, role: '鳶尾粉質核心', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 3.0,  role: '白花柔美', note: 'top' },
-      { name: 'Geraniol (牻牛兒醇)',            cas: '106-24-1',  pct: 3.0,  role: '天竺葵花感', note: 'middle' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 4.0,  role: '琥珀乾淨', note: 'base' },
-      { name: 'Sandalore (合成檀香)',            cas: '65113-99-7', pct: 4.0,  role: '木質奶感', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 8.0,  role: '飄渺木質', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 10.0, role: '擴散透明', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘開場', note: 'top' },
+      { name: 'alpha-Isomethyl ionone (紫羅蘭酮)', cas: '127-51-5', pct: 12, role: '鳶尾粉質核心', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 3, role: '白花柔美', note: 'top' },
+      { name: 'Geraniol (牻牛兒醇)', cas: '106-24-1', pct: 3, role: '天竺葵花感', note: 'middle' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀乾淨', note: 'base' },
+      { name: 'Sandalore (合成檀香)', cas: '65113-99-7', pct: 4, role: '木質奶感', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 8, role: '飄渺木質', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散透明', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘開場', note: 'top' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 46. Guerlain Habit Rouge (1965)
+  // 45. Habit Rouge (1965)
   // ────────────────────────────────────────────
   {
     id: 'guerlain-habit-rouge',
@@ -1672,24 +1593,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['肉桂', '康乃馨', '玫瑰', '鳶尾'],
     baseNotes: ['香草', '安息香', '皮革', '檀香', '廣藿香'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 8.0,  role: '古典柑橘', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',           cas: '8008-56-8', pct: 4.0,  role: '明亮柑橘', note: 'top' },
-      { name: 'Cinnamaldehyde (肉桂醛)',         cas: '104-55-2',  pct: 1.5,  role: '辛香溫暖', note: 'middle' },
-      { name: 'Eugenol (丁香酚)',               cas: '97-53-0',    pct: 2.0,  role: '康乃馨辛香', note: 'middle' },
-      { name: 'Vanillin (香草醛)',               cas: '121-33-5',  pct: 5.0,  role: '東方甜感', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 4.0,  role: '香脂深度', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '泥土定香', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 3.0,  role: '木質奶感', note: 'base' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.0,  role: '皮革質感', note: 'base' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 2.0,  role: '花香柔化', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 8, role: '古典柑橘', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '明亮柑橘', note: 'top' },
+      { name: 'Cinnamaldehyde (肉桂醛)', cas: '104-55-2', pct: 1.5, role: '辛香溫暖', note: 'middle' },
+      { name: 'Eugenol (丁香酚)', cas: '97-53-0', pct: 2, role: '康乃馨辛香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 5, role: '東方甜感', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 4, role: '香脂深度', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 3, role: '泥土定香', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 3, role: '木質奶感', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2, role: '皮革質感', note: 'base' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 2, role: '花香柔化', note: 'middle' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 47. Penhaligon's Halfeti (2015)
+  // 46. Halfeti (2015)
   // ────────────────────────────────────────────
   {
     id: 'penhaligons-halfeti',
@@ -1706,25 +1626,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '薰衣草', '肉荳蔻'],
     baseNotes: ['沉香', '雪松', '檀香', '琥珀', '皮革'],
     ingredients: [
-      { name: 'Oud oil (沉香精油)',             cas: 'mixture',    pct: 3.0,  role: '沉香核心', note: 'base' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 4.0,  role: '黑玫瑰', note: 'middle' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 4.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 2.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '暗色木質', note: 'base' },
-      { name: 'Sandalwood (檀香)',              cas: 'mixture',     pct: 4.0,  role: '奶質木香', note: 'base' },
-      { name: 'Nutmeg oil (肉荳蔻精油)',         cas: '8008-45-5', pct: 1.5,  role: '辛香溫暖', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 2.0,  role: '芳香過渡', note: 'middle' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 6.0,  role: '木質飄渺', note: 'base' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 1.5,  role: '皮革深度', note: 'base' },
+      { name: 'Oud oil (沉香精油)', cas: 'mixture', pct: 3, role: '沉香核心', note: 'base' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 4, role: '黑玫瑰', note: 'middle' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '柑橘開場', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 2, role: '柑橘明亮', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '暗色木質', note: 'base' },
+      { name: 'Sandalwood (檀香)', cas: 'mixture', pct: 4, role: '奶質木香', note: 'base' },
+      { name: 'Nutmeg oil (肉荳蔻精油)', cas: '8008-45-5', pct: 1.5, role: '辛香溫暖', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 2, role: '芳香過渡', note: 'middle' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 6, role: '木質飄渺', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 1.5, role: '皮革深度', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 48. Atelier Cologne Orange Sanguine (2010)
+  // 47. Orange Sanguine (2010)
   // ────────────────────────────────────────────
   {
     id: 'atelier-orange-sanguine',
@@ -1741,22 +1660,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '茉莉'],
     baseNotes: ['零陵香豆', '安息香', '麝香'],
     ingredients: [
-      { name: 'Blood orange oil (血橙精油)',     cas: 'mixture',    pct: 15.0, role: '血橙核心', note: 'top' },
-      { name: 'Bitter orange oil (苦橙精油)',    cas: '68916-04-1', pct: 6.0,  role: '苦柑橘', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 5.0,  role: '柑橘深度', note: 'top' },
-      { name: 'Geraniol (牻牛兒醇)',            cas: '106-24-1',  pct: 3.0,  role: '天竺葵花感', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 5.0,  role: '茉莉擴散', note: 'middle' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 2.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 2.0,  role: '香脂甜感', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'Blood orange oil (血橙精油)', cas: 'mixture', pct: 15, role: '血橙核心', note: 'top' },
+      { name: 'Bitter orange oil (苦橙精油)', cas: '68916-04-1', pct: 6, role: '苦柑橘', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '柑橘深度', note: 'top' },
+      { name: 'Geraniol (牻牛兒醇)', cas: '106-24-1', pct: 3, role: '天竺葵花感', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 5, role: '茉莉擴散', note: 'middle' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 2, role: '零陵香豆', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 2, role: '香脂甜感', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 5,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 49. Memo Paris African Leather (2014)
+  // 48. African Leather (2014)
   // ────────────────────────────────────────────
   {
     id: 'memo-african-leather',
@@ -1773,24 +1691,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '皮革'],
     baseNotes: ['沉香', '岩蘭草', '廣藿香', '安息香'],
     ingredients: [
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 3.0,  role: '辛香開場', note: 'top' },
-      { name: 'Saffron CO2 (藏紅花萃取)',        cas: 'mixture',    pct: 1.0,  role: '辛香皮革', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 4.0,  role: '花香骨架', note: 'middle' },
-      { name: 'Isobutyl quinoline (異丁基喹啉)',  cas: '65442-31-1', pct: 1.5,  role: '皮革優雅', note: 'middle' },
-      { name: 'Oud oil (沉香精油)',             cas: 'mixture',    pct: 2.0,  role: '沉香深度', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '泥土乾燥', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '木質泥土', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 3.0,  role: '香脂溫暖', note: 'base' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 1.5,  role: '辛香活力', note: 'top' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 6.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 3, role: '辛香開場', note: 'top' },
+      { name: 'Saffron CO2 (藏紅花萃取)', cas: 'mixture', pct: 1, role: '辛香皮革', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '花香骨架', note: 'middle' },
+      { name: 'Isobutyl quinoline (異丁基喹啉)', cas: '65442-31-1', pct: 1.5, role: '皮革優雅', note: 'middle' },
+      { name: 'Oud oil (沉香精油)', cas: 'mixture', pct: 2, role: '沉香深度', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '泥土乾燥', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '木質泥土', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 3, role: '香脂溫暖', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 1.5, role: '辛香活力', note: 'top' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 6, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 50. Clean Reserve Skin (2016)
+  // 49. Reserve Skin (2016)
   // ────────────────────────────────────────────
   {
     id: 'clean-skin',
@@ -1807,22 +1724,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['巨杉', '鈴蘭'],
     baseNotes: ['白麝香', '檀香', '琥珀'],
     ingredients: [
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 15.0, role: '白麝香核心', note: 'base' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 8.0,  role: '潔淨麝香', note: 'base' },
-      { name: 'Helvetolide (瑞士麝香)',          cas: '141773-73-1', pct: 4.0, role: '果香麝香', note: 'base' },
-      { name: 'Hedione HC (甲基二氫茉莉酸酯)',   cas: '24851-98-7', pct: 10.0, role: '擴散透明', note: 'middle' },
-      { name: 'Sandalore (合成檀香)',            cas: '65113-99-7', pct: 3.0,  role: '奶質木香', note: 'base' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 2.0,  role: '白花柔感', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘提亮', note: 'top' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 2.0,  role: '琥珀肌膚', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 15, role: '白麝香核心', note: 'base' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 8, role: '潔淨麝香', note: 'base' },
+      { name: 'Helvetolide (瑞士麝香)', cas: '141773-73-1', pct: 4, role: '果香麝香', note: 'base' },
+      { name: 'Hedione HC (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 10, role: '擴散透明', note: 'middle' },
+      { name: 'Sandalore (合成檀香)', cas: '65113-99-7', pct: 3, role: '奶質木香', note: 'base' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2, role: '白花柔感', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘提亮', note: 'top' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 2, role: '琥珀肌膚', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 1,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 51. Lancôme La Vie Est Belle (2012)
+  // 50. La Vie Est Belle (2012)
   // ────────────────────────────────────────────
   {
     id: 'lancome-vie-belle',
@@ -1839,87 +1755,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '茉莉', '橙花'],
     baseNotes: ['廣藿香', '香草', '零陵香豆', '焦糖'],
     ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 5.0,  role: '鳶尾核心', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 3.0,  role: '白花優雅', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',    pct: 2.5,  role: '橙花甜美', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '泥土深度', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8', pct: 3.0,  role: '焦糖甜感', note: 'base' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 2.0,  role: '果香開場', note: 'top' },
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 1.5,  role: '果香酸甜', note: 'top' },
-      { name: 'Praline accord (榛果糖)',          cas: 'mixture',   pct: 2.0,  role: '堅果焦糖', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 5, role: '鳶尾核心', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 3, role: '白花優雅', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2.5, role: '橙花甜美', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '泥土深度', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 3, role: '焦糖甜感', note: 'base' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 2, role: '果香開場', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 1.5, role: '果香酸甜', note: 'top' },
+      { name: 'Praline accord (榛果糖)', cas: 'mixture', pct: 2, role: '堅果焦糖', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 52. Versace Eros (2012)
-  // ────────────────────────────────────────────
-  {
-    id: 'versace-eros',
-    name: 'Eros',
-    brand: 'versace',
-    year: 2012,
-    perfumer: 'Aurélien Guichard',
-    concentration: 'edt',
-    family: 'aromatic',
-    subfamilies: ['fresh', 'oriental'],
-    gender: 'masculine',
-    description: '地中海芳香調與東方甜美的結合。薄荷與檸檬的明亮開場，香草和零陵香豆的甜美基底，中間以天竺葵和蘋果過渡。強烈、甜美、年輕。',
-    topNotes: ['薄荷', '檸檬', '蘋果'],
-    heartNotes: ['天竺葵', '苦艾', '零陵香豆'],
-    baseNotes: ['香草', '雪松', '廣藿香', '琥珀'],
-    ingredients: [
-      { name: 'Menthol (薄荷醇)',               cas: '89-78-1',   pct: 4.0,  role: '薄荷清涼', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 3.0,  role: '檸檬明亮', note: 'top' },
-      { name: 'Apple accord (蘋果調)',           cas: 'mixture',    pct: 2.0,  role: '果香甜美', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 5.0,  role: '花香綠意', note: 'middle' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 6.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '木質骨架', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '泥土深度', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-    ],
-    totalFragrancePct: 12,
-    sillage: 5,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 53. Gucci Bloom (2017)
-  // ────────────────────────────────────────────
-  {
-    id: 'gucci-bloom',
-    name: 'Bloom',
-    brand: 'gucci',
-    year: 2017,
-    perfumer: 'Alberto Morillas',
-    concentration: 'edp',
-    family: 'floral',
-    subfamilies: ['white'],
-    gender: 'feminine',
-    description: '白花三重奏的純粹表達。晚香玉、茉莉和卡羅琳茉莉構成主軸，沒有柑橘開場和沉重基底，只有綿延不絕的白花花海。',
-    topNotes: ['晚香玉'],
-    heartNotes: ['茉莉', '卡羅琳茉莉'],
-    baseNotes: ['晚香玉', '檀香'],
-    ingredients: [
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 12.0, role: '晚香玉核心', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 8.0,  role: '白花深度', note: 'middle' },
-      { name: 'Rangoon creeper (卡羅琳茉莉)',     cas: 'mixture',   pct: 6.0,  role: '花香獨特', note: 'middle' },
-      { name: 'Sandalore (合成檀香)',            cas: '65113-99-7', pct: 4.0,  role: '奶質木香', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '茉莉擴散', note: 'middle' },
-      { name: 'Orris (鳶尾根)',                 cas: 'mixture',    pct: 2.0,  role: '粉質優雅', note: 'middle' },
-    ],
-    totalFragrancePct: 16,
-    sillage: 4,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 54. Paco Rabanne 1 Million (2008)
+  // 51. 1 Million (2008)
   // ────────────────────────────────────────────
   {
     id: 'paco-million',
@@ -1936,27 +1788,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['肉桂', '玫瑰', '辛香'],
     baseNotes: ['皮革', '琥珀', '廣藿香', '白木'],
     ingredients: [
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 4.0,  role: '肉桂辛香', note: 'middle' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Blood orange oil (血橙精油)',     cas: 'mixture',    pct: 2.0,  role: '血橙甜美', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 2.5,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 3.0,  role: '皮革深度', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '泥土木質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 3.0,  role: '白木柔軟', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 3.5,  role: '甜美基底', note: 'base' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 4, role: '肉桂辛香', note: 'middle' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Blood orange oil (血橙精油)', cas: 'mixture', pct: 2, role: '血橙甜美', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 2.5, role: '玫瑰花香', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 3, role: '皮革深度', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '泥土木質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 3, role: '白木柔軟', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 3.5, role: '甜美基底', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 5,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 55. Hermès Terre d'Hermès (2006)
+  // 52. Terre d'Hermès (2006)
   // ────────────────────────────────────────────
   {
     id: 'hermes-terre',
-    name: "Terre d'Hermès",
+    name: 'Terre d\'Hermès',
     brand: 'hermes',
     year: 2006,
     perfumer: 'Jean-Claude Ellena',
@@ -1969,23 +1820,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['胡椒', '天竺葵'],
     baseNotes: ['岩蘭草', '雪松', '苦橙葉', '安息香'],
     ingredients: [
-      { name: 'Orange oil (橙精油)',             cas: '8008-57-9', pct: 4.0,  role: '橙明亮', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 3.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.0,  role: '胡椒辛香', note: 'middle' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 2.5,  role: '花香綠意', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 8.0,  role: '泥土核心', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '木質乾燥', note: 'base' },
-      { name: 'Petitgrain oil (苦橙葉精油)',     cas: '8014-17-3', pct: 3.0,  role: '清新木香', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 2.0,  role: '香脂溫暖', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 4.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Orange oil (橙精油)', cas: '8008-57-9', pct: 4, role: '橙明亮', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 3, role: '柑橘清新', note: 'top' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2, role: '胡椒辛香', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 2.5, role: '花香綠意', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 8, role: '泥土核心', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '木質乾燥', note: 'base' },
+      { name: 'Petitgrain oil (苦橙葉精油)', cas: '8014-17-3', pct: 3, role: '清新木香', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 2, role: '香脂溫暖', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 4, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 56. Burberry London for Men (2006)
+  // 53. London for Men (2006)
   // ────────────────────────────────────────────
   {
     id: 'burberry-london-men',
@@ -2002,88 +1852,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['含羞草', '皮革'],
     baseNotes: ['廣藿香', '雪松', '煙草', '安息香'],
     ingredients: [
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 5.0,  role: '薰衣草芳香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 2.0,  role: '肉桂辛香', note: 'top' },
-      { name: 'Mimosa abs (含羞草原精)',         cas: 'mixture',    pct: 3.0,  role: '花香粉質', note: 'middle' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.5,  role: '皮革貴族', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '木質深度', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '木質骨架', note: 'base' },
-      { name: 'Tobacco abs (煙草原精)',          cas: 'mixture',    pct: 2.0,  role: '煙草深邃', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 3.0,  role: '香脂溫暖', note: 'base' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 5, role: '薰衣草芳香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 2, role: '肉桂辛香', note: 'top' },
+      { name: 'Mimosa abs (含羞草原精)', cas: 'mixture', pct: 3, role: '花香粉質', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2.5, role: '皮革貴族', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '木質深度', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '木質骨架', note: 'base' },
+      { name: 'Tobacco abs (煙草原精)', cas: 'mixture', pct: 2, role: '煙草深邃', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 3, role: '香脂溫暖', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 57. Acqua di Parma Colonia (1916)
-  // ────────────────────────────────────────────
-  {
-    id: 'adp-colonia',
-    name: 'Colonia',
-    brand: 'adp',
-    year: 1916,
-    perfumer: 'Unknown',
-    concentration: 'edc',
-    family: 'citrus',
-    subfamilies: ['aromatic'],
-    gender: 'unisex',
-    description: '經典義大利古龍水。柑橘的純粹表達——檸檬、甜橙、佛手柑的和諧交織，薰衣草和迷迭香的芳香過渡，岩蘭草的乾燥基底。清新、優雅、永恆。',
-    topNotes: ['檸檬', '甜橙', '佛手柑', '卡拉布里亞佛手柑'],
-    heartNotes: ['薰衣草', '迷迭香', '玫瑰'],
-    baseNotes: ['岩蘭草', '檀香', '廣藿香'],
-    ingredients: [
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 12.0, role: '檸檬核心', note: 'top' },
-      { name: 'Sweet orange oil (甜橙精油)',     cas: '8008-57-9', pct: 8.0,  role: '甜橙明亮', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 10.0, role: '佛手柑優雅', note: 'top' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 4.0,  role: '薰衣草芳香', note: 'middle' },
-      { name: 'Rosemary oil (迷迭香精油)',       cas: '8000-25-7', pct: 2.0,  role: '迷迭香清新', note: 'middle' },
-      { name: 'Rose otto (玫瑰精油)',            cas: '8007-01-0', pct: 1.0,  role: '玫瑰柔和', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草乾燥', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 2.0,  role: '檀香基底', note: 'base' },
-    ],
-    totalFragrancePct: 4,
-    sillage: 2,
-    longevity: 2,
-  },
-
-  // ────────────────────────────────────────────
-  // 58. Thierry Mugler Angel (1992)
-  // ────────────────────────────────────────────
-  {
-    id: 'mugler-angel',
-    name: 'Angel',
-    brand: 'thierry',
-    year: 1992,
-    perfumer: 'Olivier Cresp, Yves de Chirin',
-    concentration: 'edp',
-    family: 'gourmand',
-    subfamilies: ['oriental', 'woody'],
-    gender: 'feminine',
-    description: '美食調的革命性創造。焦糖、香草和巧克力的甜美與廣藿香的泥土深度形成強烈對比。紅色水果和蜂蜜增添複雜度。濃烈、甜美、極具辨識度。',
-    topNotes: ['棉花糖', '蜂蜜', '紅色水果'],
-    heartNotes: ['杏仁', '焦糖'],
-    baseNotes: ['廣藿香', '香草', '巧克力', '琥珀'],
-    ingredients: [
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8', pct: 8.0,  role: '焦糖棉花糖', note: 'top' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 10.0, role: '香草甜美', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 8.0,  role: '泥土深度', note: 'base' },
-      { name: 'Heliotropin (洋茉莉醛)',          cas: '120-57-0',  pct: 4.0,  role: '杏仁粉質', note: 'middle' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 5.0,  role: '甜美焦糖', note: 'base' },
-      { name: 'Red berries accord (紅色水果)',    cas: 'mixture',   pct: 3.0,  role: '果香酸甜', note: 'top' },
-      { name: 'Chocolate accord (巧克力調)',      cas: 'mixture',   pct: 2.0,  role: '巧克力深邃', note: 'base' },
-      { name: 'Honey accord (蜂蜜調)',           cas: 'mixture',    pct: 2.0,  role: '蜂蜜甜美', note: 'top' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-    ],
-    totalFragrancePct: 18,
-    sillage: 5,
-    longevity: 5,
-  },
-
-  // ────────────────────────────────────────────
-  // 59. Kilian Back to Black (2009)
+  // 54. Back to Black (2009)
   // ────────────────────────────────────────────
   {
     id: 'kilian-back-black',
@@ -2100,22 +1884,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '晚香玉'],
     baseNotes: ['煙草', '廣藿香', '檀香', '麝香'],
     ingredients: [
-      { name: 'Cherry accord (黑櫻桃調)',        cas: 'mixture',    pct: 4.0,  role: '黑櫻桃甜美', note: 'top' },
-      { name: 'Honey accord (蜂蜜調)',           cas: 'mixture',    pct: 3.0,  role: '蜂蜜甜美', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 5.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 4.0,  role: '晚香玉性感', note: 'middle' },
-      { name: 'Tobacco abs (煙草原精)',          cas: 'mixture',    pct: 6.0,  role: '煙草深邃', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '泥土木質', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 4.0,  role: '檀香奶質', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 3.0,  role: '白木柔軟', note: 'base' },
+      { name: 'Cherry accord (黑櫻桃調)', cas: 'mixture', pct: 4, role: '黑櫻桃甜美', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 3, role: '蜂蜜甜美', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 5, role: '玫瑰花香', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 4, role: '晚香玉性感', note: 'middle' },
+      { name: 'Tobacco abs (煙草原精)', cas: 'mixture', pct: 6, role: '煙草深邃', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '泥土木質', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香奶質', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 3, role: '白木柔軟', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 60. Amouage Interlude Man (2012)
+  // 55. Interlude Man (2012)
   // ────────────────────────────────────────────
   {
     id: 'amouage-interlude',
@@ -2132,24 +1915,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['乳香', '沒藥', '安息香'],
     baseNotes: ['沉香', '琥珀', '皮革', '廣藿香', '檀香'],
     ingredients: [
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 8.0,  role: '乳香核心', note: 'middle' },
-      { name: 'Myrrh resinoid (沒藥脂)',         cas: 'mixture',    pct: 6.0,  role: '沒藥煙燻', note: 'middle' },
-      { name: 'Oud oil (沉香精油)',             cas: 'mixture',    pct: 4.0,  role: '沉香深邃', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 4.0,  role: '香脂甜美', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '泥土木質', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 3.0,  role: '檀香奶質', note: 'base' },
-      { name: 'Pepper oil (胡椒精油)',           cas: '8006-82-4', pct: 2.0,  role: '胡椒辛香', note: 'top' },
-      { name: 'Oregano oil (牛至草精油)',        cas: '8007-11-2', pct: 1.5,  role: '草本辛香', note: 'top' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.0,  role: '皮革煙燻', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 8, role: '乳香核心', note: 'middle' },
+      { name: 'Myrrh resinoid (沒藥脂)', cas: 'mixture', pct: 6, role: '沒藥煙燻', note: 'middle' },
+      { name: 'Oud oil (沉香精油)', cas: 'mixture', pct: 4, role: '沉香深邃', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 4, role: '香脂甜美', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '泥土木質', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 3, role: '檀香奶質', note: 'base' },
+      { name: 'Pepper oil (胡椒精油)', cas: '8006-82-4', pct: 2, role: '胡椒辛香', note: 'top' },
+      { name: 'Oregano oil (牛至草精油)', cas: '8007-11-2', pct: 1.5, role: '草本辛香', note: 'top' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2, role: '皮革煙燻', note: 'base' },
     ],
     totalFragrancePct: 19,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 61. Penhaligon's Juniper Sling (2011)
+  // 56. Juniper Sling (2011)
   // ────────────────────────────────────────────
   {
     id: 'penhaligons-juniper',
@@ -2166,22 +1948,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['黑胡椒', '荳蔻'],
     baseNotes: ['雪松', '麝香', '琥珀'],
     ingredients: [
-      { name: 'Juniper berry oil (杜松子精油)',  cas: '8002-68-4', pct: 8.0,  role: '杜松核心', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 4.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Angelica root oil (當歸根精油)',  cas: '8015-64-3', pct: 3.0,  role: '泥土綠意', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 2.5,  role: '胡椒辛香', note: 'middle' },
-      { name: 'Cardamom oil (荳蔻精油)',         cas: '8000-66-6', pct: 2.0,  role: '荳蔻溫暖', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '雪松基底', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 2.5,  role: '琥珀溫暖', note: 'base' },
+      { name: 'Juniper berry oil (杜松子精油)', cas: '8002-68-4', pct: 8, role: '杜松核心', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '柑橘明亮', note: 'top' },
+      { name: 'Angelica root oil (當歸根精油)', cas: '8015-64-3', pct: 3, role: '泥土綠意', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 2.5, role: '胡椒辛香', note: 'middle' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 2, role: '荳蔻溫暖', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松基底', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 2.5, role: '琥珀溫暖', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 62. Escentric Molecules Molecule 01 (2006)
+  // 57. Molecule 01 (2006)
   // ────────────────────────────────────────────
   {
     id: 'escentric-molecule01',
@@ -2191,22 +1972,20 @@ export const PERFUME_FORMULAS = [
     perfumer: 'Geza Schoen',
     concentration: 'edt',
     family: 'woody',
-    subfamilies: [],
     gender: 'unisex',
     description: '單分子香水的極簡主義。100% Iso E Super，木質、飄渺、若有似無。在不同人皮膚上呈現不同氣味，極具個性化的嗅覺體驗。',
     topNotes: ['Iso E Super'],
     heartNotes: ['Iso E Super'],
     baseNotes: ['Iso E Super'],
     ingredients: [
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 100.0, role: '單分子核心', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 100, role: '單分子核心', note: 'base' },
     ],
     totalFragrancePct: 13,
     sillage: 1,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 63. Serge Lutens Chergui (2005)
+  // 58. Chergui (2005)
   // ────────────────────────────────────────────
   {
     id: 'serge-chergui',
@@ -2223,22 +2002,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '乾草'],
     baseNotes: ['琥珀', '麝香', '檀香'],
     ingredients: [
-      { name: 'Tobacco abs (煙草原精)',          cas: 'mixture',    pct: 8.0,  role: '煙草核心', note: 'top' },
-      { name: 'Honey accord (蜂蜜調)',           cas: 'mixture',    pct: 4.0,  role: '蜂蜜甜美', note: 'top' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 5.0,  role: '鳶尾粉質', note: 'middle' },
-      { name: 'Hay absolute (乾草原精)',         cas: 'mixture',    pct: 4.0,  role: '乾草溫暖', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 4.0,  role: '檀香奶質', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 3.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 3.0,  role: '白木麝香', note: 'base' },
+      { name: 'Tobacco abs (煙草原精)', cas: 'mixture', pct: 8, role: '煙草核心', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 4, role: '蜂蜜甜美', note: 'top' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 5, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Hay absolute (乾草原精)', cas: 'mixture', pct: 4, role: '乾草溫暖', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香奶質', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 3, role: '零陵香豆', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 3, role: '白木麝香', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 64. Comme des Garçons Wonderwood (2010)
+  // 59. Wonderwood (2010)
   // ────────────────────────────────────────────
   {
     id: 'cdg-wonderwood',
@@ -2255,22 +2033,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['岩蘭草', '柏木'],
     baseNotes: ['廣藿香', '檀香', '麝香'],
     ingredients: [
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 12.0, role: '雪松核心', note: 'top' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 10.0, role: '岩蘭草泥土', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 8.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 6.0,  role: '檀香奶質', note: 'base' },
-      { name: 'Cypress oil (柏木精油)',          cas: '8013-86-3', pct: 4.0,  role: '柏木清新', note: 'middle' },
-      { name: 'Guaiacwood oil (愈創木精油)',     cas: '8016-23-7', pct: 3.0,  role: '煙燻木質', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 4.0,  role: '白木柔軟', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 5.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松核心', note: 'top' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 10, role: '岩蘭草泥土', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香深度', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Cypress oil (柏木精油)', cas: '8013-86-3', pct: 4, role: '柏木清新', note: 'middle' },
+      { name: 'Guaiacwood oil (愈創木精油)', cas: '8016-23-7', pct: 3, role: '煙燻木質', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 4, role: '白木柔軟', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 5, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 65. Frederic Malle Portrait of a Lady (2010)
+  // 60. Portrait of a Lady (2010)
   // ────────────────────────────────────────────
   {
     id: 'fm-portrait-lady',
@@ -2287,24 +2064,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['土耳其玫瑰', '玫瑰', '廣藿香'],
     baseNotes: ['乳香', '安息香', '檀香', '琥珀', '麝香'],
     ingredients: [
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 15.0, role: '玫瑰核心', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 10.0, role: '廣藿香深度', note: 'middle' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 4.0,  role: '乳香樹脂', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 4.0,  role: '香脂溫暖', note: 'base' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.0,  role: '胡椒辛香', note: 'top' },
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 2.0,  role: '果香酸甜', note: 'top' },
-      { name: 'Raspberry ketone (覆盆子酮)',     cas: '5471-51-2', pct: 1.5,  role: '果香甜美', note: 'top' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 3.0,  role: '檀香奶質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 2.5,  role: '白木麝香', note: 'base' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 15, role: '玫瑰核心', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 10, role: '廣藿香深度', note: 'middle' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 4, role: '乳香樹脂', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 4, role: '香脂溫暖', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2, role: '胡椒辛香', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 2, role: '果香酸甜', note: 'top' },
+      { name: 'Raspberry ketone (覆盆子酮)', cas: '5471-51-2', pct: 1.5, role: '果香甜美', note: 'top' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 3, role: '檀香奶質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 2.5, role: '白木麝香', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 66. Dolce & Gabbana The One (2006)
+  // 61. The One (2006)
   // ────────────────────────────────────────────
   {
     id: 'dolce-the-one',
@@ -2321,22 +2097,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['百合', '鈴蘭', '李子'],
     baseNotes: ['香草', '琥珀', '麝香'],
     ingredients: [
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 3.0,  role: '荔枝果香', note: 'top' },
-      { name: 'Peach accord (桃子調)',           cas: 'mixture',    pct: 3.0,  role: '桃子甜美', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Lily (百合)',                    cas: 'mixture',    pct: 5.0,  role: '百合白花', note: 'middle' },
-      { name: 'Lily of the valley (鈴蘭)',       cas: 'mixture',    pct: 4.0,  role: '鈴蘭清新', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
+      { name: 'Lychee accord (荔枝調)', cas: 'mixture', pct: 3, role: '荔枝果香', note: 'top' },
+      { name: 'Peach accord (桃子調)', cas: 'mixture', pct: 3, role: '桃子甜美', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘開場', note: 'top' },
+      { name: 'Lily (百合)', cas: 'mixture', pct: 5, role: '百合白花', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭)', cas: 'mixture', pct: 4, role: '鈴蘭清新', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 67. Bvlgari Omnia Crystalline (2005)
+  // 62. Omnia Crystalline (2005)
   // ────────────────────────────────────────────
   {
     id: 'bvlgari-omnia',
@@ -2353,25 +2128,24 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蓮花', '鳶尾'],
     baseNotes: ['麝香', '木質'],
     ingredients: [
-      { name: 'Bamboo accord (竹子調)',          cas: 'mixture',    pct: 4.0,  role: '竹子水潤', note: 'top' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 3.0,  role: '梨果香', note: 'top' },
-      { name: 'Lotus accord (蓮花調)',           cas: 'mixture',    pct: 6.0,  role: '蓮花水感', note: 'middle' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 3.0,  role: '鳶尾粉質', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 8.0,  role: '透明擴散', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 2.0,  role: '白木柔軟', note: 'base' },
+      { name: 'Bamboo accord (竹子調)', cas: 'mixture', pct: 4, role: '竹子水潤', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 3, role: '梨果香', note: 'top' },
+      { name: 'Lotus accord (蓮花調)', cas: 'mixture', pct: 6, role: '蓮花水感', note: 'middle' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 3, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 8, role: '透明擴散', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 2, role: '白木柔軟', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 68. Issey Miyake L'Eau d'Issey (1992)
+  // 63. L'Eau d'Issey (1992)
   // ────────────────────────────────────────────
   {
     id: 'issey-leau',
-    name: "L'Eau d'Issey",
+    name: 'L\'Eau d\'Issey',
     brand: 'issey',
     year: 1992,
     perfumer: 'Jacques Cavallier',
@@ -2384,87 +2158,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['牡丹', '百合', '康乃馨'],
     baseNotes: ['岩蘭草', '雪松', '麝香'],
     ingredients: [
-      { name: 'Lotus accord (蓮花調)',           cas: 'mixture',    pct: 6.0,  role: '蓮花水感', note: 'top' },
-      { name: 'Calone (哈密瓜酮)',              cas: '28940-11-6', pct: 4.0,  role: '水生清新', note: 'top' },
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 5.0,  role: '牡丹花香', note: 'middle' },
-      { name: 'Lily (百合)',                    cas: 'mixture',    pct: 4.0,  role: '百合白花', note: 'middle' },
-      { name: 'Carnation (康乃馨)',             cas: 'mixture',    pct: 2.0,  role: '康乃馨辛香', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '岩蘭草基底', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '雪松木質', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
+      { name: 'Lotus accord (蓮花調)', cas: 'mixture', pct: 6, role: '蓮花水感', note: 'top' },
+      { name: 'Calone (哈密瓜酮)', cas: '28940-11-6', pct: 4, role: '水生清新', note: 'top' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 5, role: '牡丹花香', note: 'middle' },
+      { name: 'Lily (百合)', cas: 'mixture', pct: 4, role: '百合白花', note: 'middle' },
+      { name: 'Carnation (康乃馨)', cas: 'mixture', pct: 2, role: '康乃馨辛香', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '岩蘭草基底', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '雪松木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 69. Prada L'Homme (2016)
-  // ────────────────────────────────────────────
-  {
-    id: 'prada-lhomme',
-    name: "L'Homme",
-    brand: 'prada',
-    year: 2016,
-    perfumer: 'Daniela Andrier',
-    concentration: 'edt',
-    family: 'floral',
-    subfamilies: ['woody', 'aromatic'],
-    gender: 'masculine',
-    description: '男士鳶尾花香的現代經典。鳶尾花的粉質優雅，琥珀和香根草的溫暖，柑橘的明亮。優雅、乾淨、充滿都會感。',
-    topNotes: ['書香豆', '黑胡椒', '荳蔻'],
-    heartNotes: ['鳶尾花', '天竺葵'],
-    baseNotes: ['雪松', '琥珀', '廣藿香'],
-    ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 8.0,  role: '鳶尾核心', note: 'middle' },
-      { name: 'Neroli oil (橙花精油)',           cas: '8016-38-4', pct: 3.0,  role: '書香豆柑橘', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 2.0,  role: '胡椒辛香', note: 'top' },
-      { name: 'Cardamom oil (荳蔻精油)',         cas: '8000-66-6', pct: 1.5,  role: '荳蔻溫暖', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '花香綠意', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '廣藿香深度', note: 'base' },
-    ],
-    totalFragrancePct: 11,
-    sillage: 3,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 70. Chloé Eau de Parfum (2008)
-  // ────────────────────────────────────────────
-  {
-    id: 'chloe-edp',
-    name: 'Eau de Parfum',
-    brand: 'chloe',
-    year: 2008,
-    perfumer: 'Amandine Clerc-Marie, Michel Almairac',
-    concentration: 'edp',
-    family: 'floral',
-    subfamilies: ['powdery'],
-    gender: 'feminine',
-    description: '玫瑰花香的柔美詮釋。粉紅牡丹與荔枝的果香開場，玫瑰與木蘭的花香中調，雪松和琥珀的粉質基底。浪漫、女性化、永恆優雅。',
-    topNotes: ['粉紅牡丹', '荔枝', '小蒼蘭'],
-    heartNotes: ['玫瑰', '木蘭', '鈴蘭'],
-    baseNotes: ['雪松', '琥珀', '麝香'],
-    ingredients: [
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 8.0,  role: '玫瑰核心', note: 'middle' },
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 5.0,  role: '粉紅牡丹', note: 'top' },
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 2.5,  role: '荔枝果香', note: 'top' },
-      { name: 'Freesia (小蒼蘭)',               cas: 'mixture',    pct: 3.0,  role: '小蒼蘭清新', note: 'top' },
-      { name: 'Magnolia accord (木蘭調)',        cas: 'mixture',    pct: 4.0,  role: '木蘭花香', note: 'middle' },
-      { name: 'Lily of the valley (鈴蘭)',       cas: 'mixture',    pct: 3.0,  role: '鈴蘭清新', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松粉質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-    ],
-    totalFragrancePct: 15,
-    sillage: 3,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 71. Diptyque Tam Dao (2003)
+  // 64. Tam Dao (2003)
   // ────────────────────────────────────────────
   {
     id: 'diptyque-tamdao',
@@ -2481,20 +2189,19 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['檀香', '雪松'],
     baseNotes: ['檀香', '麝香'],
     ingredients: [
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 18.0, role: '檀香核心', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松乾燥', note: 'middle' },
-      { name: 'Cypress oil (柏木精油)',          cas: '8013-86-3', pct: 4.0,  role: '柏木清新', note: 'top' },
-      { name: 'Rosemary oil (迷迭香精油)',       cas: '8000-25-7', pct: 2.0,  role: '迷迭香芳香', note: 'top' },
-      { name: 'Sandalore (合成檀香)',            cas: '65113-99-7', pct: 6.0,  role: '檀香強化', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 18, role: '檀香核心', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松乾燥', note: 'middle' },
+      { name: 'Cypress oil (柏木精油)', cas: '8013-86-3', pct: 4, role: '柏木清新', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 2, role: '迷迭香芳香', note: 'top' },
+      { name: 'Sandalore (合成檀香)', cas: '65113-99-7', pct: 6, role: '檀香強化', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 2,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 72. Narciso Rodriguez For Her (2003)
+  // 65. For Her (2003)
   // ────────────────────────────────────────────
   {
     id: 'narciso-forher',
@@ -2511,21 +2218,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '麝香'],
     baseNotes: ['廣藿香', '琥珀', '香草'],
     ingredients: [
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 18.0, role: '麝香核心', note: 'middle' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 6.0,  role: '潔淨麝香', note: 'base' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 3.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 2.0,  role: '香草甜美', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 18, role: '麝香核心', note: 'middle' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 6, role: '潔淨麝香', note: 'base' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 3, role: '玫瑰花香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香深度', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 2, role: '香草甜美', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 73. Viktor & Rolf Flowerbomb (2005)
+  // 66. Flowerbomb (2005)
   // ────────────────────────────────────────────
   {
     id: 'viktor-flowerbomb',
@@ -2542,22 +2248,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '橙花', '小蒼蘭', '玫瑰'],
     baseNotes: ['廣藿香', '麝香', '香草'],
     ingredients: [
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 8.0,  role: '茉莉核心', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 6.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Freesia (小蒼蘭)',               cas: 'mixture',    pct: 5.0,  role: '小蒼蘭清新', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 4.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 6.0,  role: '香草甜美', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '茉莉擴散', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉核心', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 6, role: '橙花白花', note: 'middle' },
+      { name: 'Freesia (小蒼蘭)', cas: 'mixture', pct: 5, role: '小蒼蘭清新', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰花香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香深度', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '茉莉擴散', note: 'middle' },
     ],
     totalFragrancePct: 16,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 74. Maison Margiela Replica Jazz Club (2013)
+  // 67. Replica Jazz Club (2013)
   // ────────────────────────────────────────────
   {
     id: 'margiela-jazzclub',
@@ -2574,22 +2279,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蘭姆酒', '爪哇岩蘭草', '雪茄'],
     baseNotes: ['煙草葉', '香草', '零陵香豆', '苔蘚'],
     ingredients: [
-      { name: 'Tobacco abs (煙草原精)',          cas: 'mixture',    pct: 6.0,  role: '煙草核心', note: 'base' },
-      { name: 'Rum accord (蘭姆酒調)',           cas: 'mixture',    pct: 4.0,  role: '蘭姆酒溫暖', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 5.0,  role: '岩蘭草煙燻', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '雪松木質', note: 'base' },
-      { name: 'Oakmoss abs (橡苔原精)',          cas: '9000-50-4', pct: 1.5,  role: '苔蘚深度', note: 'base' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 1.5,  role: '胡椒辛香', note: 'top' },
+      { name: 'Tobacco abs (煙草原精)', cas: 'mixture', pct: 6, role: '煙草核心', note: 'base' },
+      { name: 'Rum accord (蘭姆酒調)', cas: 'mixture', pct: 4, role: '蘭姆酒溫暖', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 5, role: '岩蘭草煙燻', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+      { name: 'Oakmoss abs (橡苔原精)', cas: '9000-50-4', pct: 1.5, role: '苔蘚深度', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 1.5, role: '胡椒辛香', note: 'top' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 75. Jo Malone Wood Sage & Sea Salt (2014)
+  // 68. Wood Sage & Sea Salt (2014)
   // ────────────────────────────────────────────
   {
     id: 'jomalone-woodsage',
@@ -2606,55 +2310,19 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鼠尾草'],
     baseNotes: ['龍涎香', '雪松'],
     ingredients: [
-      { name: 'Sea salt accord (海鹽調)',        cas: 'mixture',    pct: 6.0,  role: '海鹽礦物', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 4.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Sage oil (鼠尾草精油)',           cas: '8016-65-7', pct: 8.0,  role: '鼠尾草芳香', note: 'middle' },
-      { name: 'Ambroxide (龍涎醚)',             cas: '6790-58-5',  pct: 5.0,  role: '龍涎香溫暖', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '雪松木質', note: 'base' },
-      { name: 'Seaweed accord (海藻調)',         cas: 'mixture',    pct: 2.0,  role: '海藻綠意', note: 'middle' },
+      { name: 'Sea salt accord (海鹽調)', cas: 'mixture', pct: 6, role: '海鹽礦物', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 4, role: '柑橘清新', note: 'top' },
+      { name: 'Sage oil (鼠尾草精油)', cas: '8016-65-7', pct: 8, role: '鼠尾草芳香', note: 'middle' },
+      { name: 'Ambroxide (龍涎醚)', cas: '6790-58-5', pct: 5, role: '龍涎香溫暖', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+      { name: 'Seaweed accord (海藻調)', cas: 'mixture', pct: 2, role: '海藻綠意', note: 'middle' },
     ],
     totalFragrancePct: 4,
     sillage: 2,
     longevity: 2,
   },
-
   // ────────────────────────────────────────────
-  // 76. Guerlain Shalimar (1925)
-  // ────────────────────────────────────────────
-  {
-    id: 'guerlain-shalimar',
-    name: 'Shalimar',
-    brand: 'guerlain',
-    year: 1925,
-    perfumer: 'Jacques Guerlain',
-    concentration: 'edp',
-    family: 'oriental',
-    subfamilies: ['gourmand', 'powdery'],
-    gender: 'feminine',
-    description: '東方調香水的永恆經典。柑橘與香草的對比，乳香與零陵香豆的溫暖，麝香和琥珀的性感基底。Jacques Guerlain 的不朽傑作。',
-    topNotes: ['佛手柑', '檸檬', '橙花'],
-    heartNotes: ['鳶尾花', '茉莉', '玫瑰', '廣藿香'],
-    baseNotes: ['香草', '零陵香豆', '乳香', '安息香', '麝香', '琥珀'],
-    ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 12.0, role: '香草核心', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 6.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Ethyl vanillin (乙基香草醛)',     cas: '121-32-4',  pct: 2.0,  role: '香草強化', note: 'base' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 4.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 3.0,  role: '玫瑰優雅', note: 'middle' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 3.0,  role: '鳶尾粉質', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'middle' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 4.0,  role: '香脂溫暖', note: 'base' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 3.0,  role: '琥珀樹脂', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 3.0,  role: '零陵香豆', note: 'base' },
-    ],
-    totalFragrancePct: 18,
-    sillage: 5,
-    longevity: 5,
-  },
-
-  // ────────────────────────────────────────────
-  // 77. Guerlain Mitsouko (1919)
+  // 69. Mitsouko (1919)
   // ────────────────────────────────────────────
   {
     id: 'guerlain-mitsouko',
@@ -2671,24 +2339,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '茉莉', '鈴蘭', '丁香'],
     baseNotes: ['橡苔', '岩蘭草', '廣藿香', '勞丹脂', '肉桂'],
     ingredients: [
-      { name: 'Oakmoss abs (橡苔原精)',          cas: '9000-50-4', pct: 8.0,  role: '橡苔核心', note: 'base' },
-      { name: 'Peach lactone (桃內酯)',          cas: '104-67-6',  pct: 2.0,  role: '桃子果香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 4.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 5.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 4.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 5.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香木質', note: 'base' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 3.0,  role: '勞丹脂樹脂', note: 'base' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 1.0,  role: '肉桂辛香', note: 'base' },
-      { name: 'Clove bud oil (丁香花蕾精油)',    cas: '8000-34-8', pct: 0.5,  role: '丁香辛香', note: 'middle' },
+      { name: 'Oakmoss abs (橡苔原精)', cas: '9000-50-4', pct: 8, role: '橡苔核心', note: 'base' },
+      { name: 'Peach lactone (桃內酯)', cas: '104-67-6', pct: 2, role: '桃子果香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '柑橘明亮', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 5, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 5, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香木質', note: 'base' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 3, role: '勞丹脂樹脂', note: 'base' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 1, role: '肉桂辛香', note: 'base' },
+      { name: 'Clove bud oil (丁香花蕾精油)', cas: '8000-34-8', pct: 0.5, role: '丁香辛香', note: 'middle' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 78. Le Labo Santal 33 (2011)
+  // 70. Santal 33 (2011)
   // ────────────────────────────────────────────
   {
     id: 'lelabo-santal33',
@@ -2705,23 +2372,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '檀香'],
     baseNotes: ['雪松', '皮革', '琥珀', '乳香'],
     ingredients: [
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 15.0, role: '檀香核心', note: 'middle' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 6.0,  role: '鳶尾粉質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '雪松木質', note: 'base' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 2.0,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Violet leaf abs (紫羅蘭葉原精)',   cas: 'mixture',   pct: 1.5,  role: '紫羅蘭綠意', note: 'top' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 3.0,  role: '皮革都會', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香煙燻', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 5.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 15, role: '檀香核心', note: 'middle' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 6, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 2, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Violet leaf abs (紫羅蘭葉原精)', cas: 'mixture', pct: 1.5, role: '紫羅蘭綠意', note: 'top' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 3, role: '皮革都會', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香煙燻', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 5, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 3,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 79. Byredo Gypsy Water (2008)
+  // 71. Gypsy Water (2008)
   // ────────────────────────────────────────────
   {
     id: 'byredo-gypsywater',
@@ -2738,28 +2404,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['松木', '乳香', '鳶尾花'],
     baseNotes: ['檀香', '琥珀', '香草'],
     ingredients: [
-      { name: 'Pine needle oil (松針精油)',       cas: '8023-99-2', pct: 6.0,  role: '松木煙燻', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 8.0,  role: '檀香木質', note: 'base' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 2.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 1.5,  role: '胡椒辛香', note: 'top' },
-      { name: 'Cardamom oil (荳蔻精油)',         cas: '8000-66-6', pct: 1.5,  role: '荳蔻芳香', note: 'top' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 3.0,  role: '乳香樹脂', note: 'middle' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 2.0,  role: '鳶尾柔和', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 3.0,  role: '香草甜美', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
+      { name: 'Pine needle oil (松針精油)', cas: '8023-99-2', pct: 6, role: '松木煙燻', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香木質', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 2, role: '檸檬清新', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 1.5, role: '胡椒辛香', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 1.5, role: '荳蔻芳香', note: 'top' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 3, role: '乳香樹脂', note: 'middle' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 2, role: '鳶尾柔和', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 3, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 80. Byredo Bal d'Afrique (2009)
+  // 72. Bal d'Afrique (2009)
   // ────────────────────────────────────────────
   {
     id: 'byredo-baldafrique',
-    name: "Bal d'Afrique",
+    name: 'Bal d\'Afrique',
     brand: 'byredo',
     year: 2009,
     perfumer: 'Jerome Epinette',
@@ -2772,24 +2437,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['紫羅蘭', '非洲萬壽菊', '茉莉'],
     baseNotes: ['雪松', '岩蘭草', '琥珀', '麝香'],
     ingredients: [
-      { name: 'African marigold oil (非洲萬壽菊)',cas: 'mixture',   pct: 4.0,  role: '萬壽菊花香', note: 'middle' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 5.0,  role: '紫羅蘭粉質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 5.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 2.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 3.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Neroli oil (橙花精油)',           cas: '8016-38-4', pct: 2.0,  role: '橙花優雅', note: 'top' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'African marigold oil (非洲萬壽菊)', cas: 'mixture', pct: 4, role: '萬壽菊花香', note: 'middle' },
+      { name: 'Violet (紫羅蘭)', cas: 'mixture', pct: 5, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 5, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 2, role: '檸檬清新', note: 'top' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 3, role: '茉莉白花', note: 'middle' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 2, role: '橙花優雅', note: 'top' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 81. Acqua di Gio (1996)
+  // 73. Acqua di Gio (1996)
   // ────────────────────────────────────────────
   {
     id: 'armani-acquadgio',
@@ -2806,61 +2470,27 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['海洋調', '茉莉', '迷迭香', '柿子'],
     baseNotes: ['雪松', '岩蘭草', '麝香', '廣藿香'],
     ingredients: [
-      { name: 'Calone (哈密瓜酮)',              cas: '28940-11-6', pct: 6.0,  role: '水生核心', note: 'middle' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 5.0,  role: '檸檬明亮', note: 'top' },
-      { name: 'Orange oil (橙精油)',             cas: '8008-57-9', pct: 3.0,  role: '橙甜美', note: 'top' },
-      { name: 'Lime oil (萊姆精油)',             cas: '8008-26-2', pct: 2.0,  role: '萊姆清新', note: 'top' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '茉莉擴散', note: 'middle' },
-      { name: 'Rosemary oil (迷迭香精油)',       cas: '8000-25-7', pct: 2.0,  role: '迷迭香芳香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '雪松木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 1.0,  role: '廣藿香深度', note: 'base' },
+      { name: 'Calone (哈密瓜酮)', cas: '28940-11-6', pct: 6, role: '水生核心', note: 'middle' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 5, role: '檸檬明亮', note: 'top' },
+      { name: 'Orange oil (橙精油)', cas: '8008-57-9', pct: 3, role: '橙甜美', note: 'top' },
+      { name: 'Lime oil (萊姆精油)', cas: '8008-26-2', pct: 2, role: '萊姆清新', note: 'top' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '茉莉擴散', note: 'middle' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 2, role: '迷迭香芳香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 1, role: '廣藿香深度', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 82. Dior Sauvage (2015)
-  // ────────────────────────────────────────────
-  {
-    id: 'dior-sauvage',
-    name: 'Sauvage',
-    brand: 'dior',
-    year: 2015,
-    perfumer: 'François Demachy',
-    concentration: 'edt',
-    family: 'aromatic',
-    subfamilies: ['fresh', 'woody'],
-    gender: 'masculine',
-    description: '現代男香的銷售冠軍。卡拉布里亞佛手柑的強烈柑橘，胡椒的辛香，琥珀木的清涼木質。清新、強烈、極具魅力。',
-    topNotes: ['卡拉布里亞佛手柑', '胡椒'],
-    heartNotes: ['四川花椒', '天竺葵', '薰衣草', '粉紅胡椒', '榄香脂'],
-    baseNotes: ['琥珀木', '雪松', '岩蘭草'],
-    ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 8.0,  role: '佛手柑核心', note: 'top' },
-      { name: 'Ambrofix (琥珀木)',              cas: '67416-75-9', pct: 10.0, role: '琥珀木清涼', note: 'base' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 3.0,  role: '胡椒辛香', note: 'top' },
-      { name: 'Sichuan pepper oil (四川花椒)',   cas: 'mixture',    pct: 1.5,  role: '花椒麻辣', note: 'middle' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.0,  role: '粉紅胡椒', note: 'middle' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 2.5,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 2.0,  role: '薰衣草芳香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '雪松木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草泥土', note: 'base' },
-    ],
-    totalFragrancePct: 12,
-    sillage: 5,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 83. Yves Saint Laurent La Nuit de l'Homme (2009)
+  // 74. La Nuit de l'Homme (2009)
   // ────────────────────────────────────────────
   {
     id: 'ysl-lanuit',
-    name: "La Nuit de l'Homme",
+    name: 'La Nuit de l\'Homme',
     brand: 'ysl',
     year: 2009,
     perfumer: 'Anne Flipo, Pierre Wargnye, Dominique Ropion',
@@ -2873,22 +2503,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['雪松', '薰衣草'],
     baseNotes: ['岩蘭草', '香豆素', '癒創木'],
     ingredients: [
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 4.0,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松木質', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 4.0,  role: '薰衣草芳香', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 6.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 5.0,  role: '香豆素甜美', note: 'base' },
-      { name: 'Guaiacwood oil (癒創木精油)',     cas: '8016-23-7', pct: 3.0,  role: '癒創木煙燻', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 4.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 4, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 4, role: '薰衣草芳香', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 6, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 5, role: '香豆素甜美', note: 'base' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 3, role: '癒創木煙燻', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 4, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 84. Jean Paul Gaultier Le Male (1995)
+  // 75. Le Male (1995)
   // ────────────────────────────────────────────
   {
     id: 'jpm-lemale',
@@ -2905,23 +2534,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['肉桂', '橙花', '小茴香'],
     baseNotes: ['香草', '零陵香豆', '檀香', '雪松'],
     ingredients: [
-      { name: 'Menthol (薄荷醇)',               cas: '89-78-1',   pct: 3.0,  role: '薄荷清涼', note: 'top' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 6.0,  role: '薰衣草芳香', note: 'top' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 3.0,  role: '肉桂辛香', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 6.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 2.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 1.5,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 3.0,  role: '檀香木質', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '雪松木質', note: 'base' },
+      { name: 'Menthol (薄荷醇)', cas: '89-78-1', pct: 3, role: '薄荷清涼', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '薰衣草芳香', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 3, role: '肉桂辛香', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 6, role: '零陵香豆', note: 'base' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2, role: '橙花白花', note: 'middle' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 1.5, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 3, role: '檀香木質', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '雪松木質', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 5,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 85. Maison Francis Kurkdjian Baccarat Rouge 540 (2015)
+  // 76. Baccarat Rouge 540 (2015)
   // ────────────────────────────────────────────
   {
     id: 'mfk-baccarat540',
@@ -2938,57 +2566,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['琥珀木', '雪松'],
     baseNotes: ['冷杉樹脂', '麝香'],
     ingredients: [
-      { name: 'Ambrofix (琥珀木)',              cas: '67416-75-9', pct: 12.0, role: '琥珀木核心', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 6.0,  role: '茉莉花香', note: 'top' },
-      { name: 'Saffron CO2 (藏紅花萃取)',        cas: 'mixture',    pct: 2.0,  role: '藏紅花辛香', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'middle' },
-      { name: 'Fir balsam abs (冷杉樹脂)',       cas: 'mixture',    pct: 3.0,  role: '樹脂甜美', note: 'base' },
-      { name: 'Ethyl maltol (乙基麥芽酚)',       cas: '4940-11-8', pct: 2.0,  role: '棉花糖甜感', note: 'base' },
-      { name: 'Habanolide (環十五烯內酯)',        cas: '34902-57-3', pct: 6.0,  role: '麝香光亮', note: 'base' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 4.0,  role: '透明擴散', note: 'middle' },
+      { name: 'Ambrofix (琥珀木)', cas: '67416-75-9', pct: 12, role: '琥珀木核心', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 6, role: '茉莉花香', note: 'top' },
+      { name: 'Saffron CO2 (藏紅花萃取)', cas: 'mixture', pct: 2, role: '藏紅花辛香', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'middle' },
+      { name: 'Fir balsam abs (冷杉樹脂)', cas: 'mixture', pct: 3, role: '樹脂甜美', note: 'base' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 2, role: '棉花糖甜感', note: 'base' },
+      { name: 'Habanolide (環十五烯內酯)', cas: '34902-57-3', pct: 6, role: '麝香光亮', note: 'base' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 4, role: '透明擴散', note: 'middle' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 86. Creed Aventus (2010)
-  // ────────────────────────────────────────────
-  {
-    id: 'creed-aventus',
-    name: 'Aventus',
-    brand: 'creed',
-    year: 2010,
-    perfumer: 'Olivier Creed, Erwin Creed',
-    concentration: 'edp',
-    family: 'chypre',
-    subfamilies: ['fruity', 'woody'],
-    gender: 'masculine',
-    description: '現代男香的標竿之作。鳳梨與黑醋栗的果香開場，樺木與麝香的煙燻木質，橡苔的深度基底。強烈、果香、充滿自信。',
-    topNotes: ['鳳梨', '黑醋栗', '蘋果', '佛手柑'],
-    heartNotes: ['樺木', '廣藿香', '茉莉', '玫瑰'],
-    baseNotes: ['橡苔', '麝香', '香草', '龍涎香'],
-    ingredients: [
-      { name: 'Pineapple accord (鳳梨調)',       cas: 'mixture',    pct: 4.0,  role: '鳳梨果香', note: 'top' },
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 3.0,  role: '黑醋栗酸甜', note: 'top' },
-      { name: 'Apple accord (蘋果調)',           cas: 'mixture',    pct: 2.0,  role: '蘋果果香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Birch tar (樺木焦油)',            cas: '8001-88-5', pct: 6.0,  role: '樺木煙燻', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香泥土', note: 'middle' },
-      { name: 'Oakmoss abs (橡苔原精)',          cas: '9000-50-4', pct: 4.0,  role: '橡苔深度', note: 'base' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 2.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '龍涎香溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 3.0,  role: '香草甜美', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-    ],
-    totalFragrancePct: 18,
-    sillage: 5,
-    longevity: 5,
-  },
-
-  // ────────────────────────────────────────────
-  // 87. Creed Silver Mountain Water (1995)
+  // 77. Silver Mountain Water (1995)
   // ────────────────────────────────────────────
   {
     id: 'creed-silvermountain',
@@ -3005,22 +2597,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['黑醋栗', '綠茶'],
     baseNotes: ['檀香', '麝香', '廣藿香'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 5.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 4.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Mandarin oil (橘子精油)',         cas: '8008-31-9', pct: 2.0,  role: '橘子甜美', note: 'top' },
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 4.0,  role: '黑醋栗果香', note: 'middle' },
-      { name: 'Green tea accord (綠茶調)',       cas: 'mixture',    pct: 3.0,  role: '綠茶清新', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 6.0,  role: '檀香木質', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 2.0,  role: '廣藿香深度', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '柑橘明亮', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '檸檬清新', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 2, role: '橘子甜美', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗果香', note: 'middle' },
+      { name: 'Green tea accord (綠茶調)', cas: 'mixture', pct: 3, role: '綠茶清新', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 2, role: '廣藿香深度', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 88. Montblanc Explorer (2019)
+  // 78. Explorer (2019)
   // ────────────────────────────────────────────
   {
     id: 'montblanc-explorer',
@@ -3037,23 +2628,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '皮革'],
     baseNotes: ['海地岩蘭草', '印尼廣藿香', '琥珀', '可可'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 4.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.0,  role: '粉紅胡椒', note: 'top' },
-      { name: 'Clary sage oil (快樂鼠尾草)',     cas: '8016-63-5', pct: 3.0,  role: '鼠尾草芳香', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.5,  role: '皮革深度', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 6.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香木質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Cacao abs (可可原精)',            cas: 'mixture',    pct: 1.5,  role: '可可深邃', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '柑橘開場', note: 'top' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2, role: '粉紅胡椒', note: 'top' },
+      { name: 'Clary sage oil (快樂鼠尾草)', cas: '8016-63-5', pct: 3, role: '鼠尾草芳香', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2.5, role: '皮革深度', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 6, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '廣藿香木質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Cacao abs (可可原精)', cas: 'mixture', pct: 1.5, role: '可可深邃', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 89. Givenchy Gentleman (2017)
+  // 79. Gentleman (2017) (2017)
   // ────────────────────────────────────────────
   {
     id: 'givenchy-gentleman2017',
@@ -3070,22 +2660,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '天竺葵'],
     baseNotes: ['廣藿香', '黑香草', '零陵香豆'],
     ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 6.0,  role: '鳶尾核心', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 5.0,  role: '薰衣草芳香', note: 'top' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 2.0,  role: '梨果香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.5,  role: '柑橘明亮', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '廣藿香木質', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '黑香草', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 6, role: '鳶尾核心', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 5, role: '薰衣草芳香', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 2, role: '梨果香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2.5, role: '柑橘明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香木質', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '黑香草', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 90. Hermes Un Jardin sur le Nil (2005)
+  // 80. Un Jardin sur le Nil (2005)
   // ────────────────────────────────────────────
   {
     id: 'hermes-jardinnil',
@@ -3102,23 +2691,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['蓮花', '橙花', '牡丹'],
     baseNotes: ['香根草', '麝香', '肉桂'],
     ingredients: [
-      { name: 'Green mango accord (青芒果調)',   cas: 'mixture',    pct: 4.0,  role: '青芒果水潤', note: 'top' },
-      { name: 'Tomato leaf abs (番茄葉原精)',    cas: 'mixture',    pct: 2.0,  role: '番茄葉綠意', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 3.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Lotus accord (蓮花調)',           cas: 'mixture',    pct: 4.0,  role: '蓮花水感', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 2.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 2.0,  role: '牡丹花香', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '香根草泥土', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 0.5,  role: '肉桂點綴', note: 'base' },
+      { name: 'Green mango accord (青芒果調)', cas: 'mixture', pct: 4, role: '青芒果水潤', note: 'top' },
+      { name: 'Tomato leaf abs (番茄葉原精)', cas: 'mixture', pct: 2, role: '番茄葉綠意', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 3, role: '柑橘清新', note: 'top' },
+      { name: 'Lotus accord (蓮花調)', cas: 'mixture', pct: 4, role: '蓮花水感', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2, role: '橙花白花', note: 'middle' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 2, role: '牡丹花香', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '香根草泥土', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 0.5, role: '肉桂點綴', note: 'base' },
     ],
     totalFragrancePct: 9,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 91. Hermès Eau des Merveilles (2004)
+  // 81. Eau des Merveilles (2004)
   // ────────────────────────────────────────────
   {
     id: 'hermes-merveilles',
@@ -3135,26 +2723,25 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['琥珀', '粉紅胡椒', '紫羅蘭'],
     baseNotes: ['雪松', '冷杉', '橡木苔'],
     ingredients: [
-      { name: 'Orange oil (橙精油)',             cas: '8008-57-9', pct: 4.0,  role: '橙明亮', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 2.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 8.0,  role: '琥珀核心', note: 'middle' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.0,  role: '粉紅胡椒', note: 'middle' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 2.0,  role: '紫羅蘭粉質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '雪松木質', note: 'base' },
-      { name: 'Fir balsam abs (冷杉樹脂)',       cas: 'mixture',    pct: 3.0,  role: '冷杉針葉', note: 'base' },
-      { name: 'Oakmoss abs (橡木苔原精)',        cas: '9000-50-4', pct: 2.0,  role: '橡木苔深度', note: 'base' },
+      { name: 'Orange oil (橙精油)', cas: '8008-57-9', pct: 4, role: '橙明亮', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 2, role: '檸檬清新', note: 'top' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀核心', note: 'middle' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2, role: '粉紅胡椒', note: 'middle' },
+      { name: 'Violet (紫羅蘭)', cas: 'mixture', pct: 2, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+      { name: 'Fir balsam abs (冷杉樹脂)', cas: 'mixture', pct: 3, role: '冷杉針葉', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: '9000-50-4', pct: 2, role: '橡木苔深度', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 92. Givenchy L'Interdit (2018)
+  // 82. L'Interdit (2018) (2018)
   // ────────────────────────────────────────────
   {
     id: 'givenchy-interdit2018',
-    name: "L'Interdit (2018)",
+    name: 'L\'Interdit (2018)',
     brand: 'givenchy',
     year: 2018,
     perfumer: 'Dominique Ropion, Anne Flipo, Fanny Bal',
@@ -3167,23 +2754,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['晚香玉', '橙花', '茉莉'],
     baseNotes: ['廣藿香', '岩蘭草', '琥珀', '香草'],
     ingredients: [
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 8.0,  role: '晚香玉核心', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 6.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 5.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 2.0,  role: '梨果香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香深色', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 3.0,  role: '香草甜美', note: 'base' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 8, role: '晚香玉核心', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 6, role: '橙花白花', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉花香', note: 'middle' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 2, role: '梨果香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘開場', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '廣藿香深色', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 3, role: '香草甜美', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 93. Chanel Coco Mademoiselle (2001)
+  // 83. Coco Mademoiselle (2001)
   // ────────────────────────────────────────────
   {
     id: 'chanel-cocomademoiselle',
@@ -3200,24 +2786,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '茉莉', '荔枝'],
     baseNotes: ['廣藿香', '香草', '零陵香豆', '白麝香'],
     ingredients: [
-      { name: 'Orange oil (橙精油)',             cas: '8008-57-9', pct: 3.0,  role: '橙明亮', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 2.0,  role: '橙花優雅', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 2.0,  role: '荔枝果香', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 3.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
+      { name: 'Orange oil (橙精油)', cas: '8008-57-9', pct: 3, role: '橙明亮', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘清新', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 2, role: '橙花優雅', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Lychee accord (荔枝調)', cas: 'mixture', pct: 2, role: '荔枝果香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香深度', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 3, role: '零陵香豆', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 94. Chanel Chance Eau Tendre (2010)
+  // 84. Chance Eau Tendre (2010)
   // ────────────────────────────────────────────
   {
     id: 'chanel-chancetendre',
@@ -3234,22 +2819,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['風信子', '茉莉', '玫瑰'],
     baseNotes: ['白麝香', '柚木', '鳶尾花'],
     ingredients: [
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 4.0,  role: '葡萄柚清新', note: 'top' },
-      { name: 'Quince accord (溫柏調)',          cas: 'mixture',    pct: 2.0,  role: '溫柏果香', note: 'top' },
-      { name: 'Hyacinth (風信子)',              cas: 'mixture',    pct: 4.0,  role: '風信子花香', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 3.0,  role: '玫瑰柔和', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香核心', note: 'base' },
-      { name: 'Teakwood accord (柚木調)',        cas: 'mixture',    pct: 2.0,  role: '柚木溫暖', note: 'base' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 2.0,  role: '鳶尾粉質', note: 'base' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 4, role: '葡萄柚清新', note: 'top' },
+      { name: 'Quince accord (溫柏調)', cas: 'mixture', pct: 2, role: '溫柏果香', note: 'top' },
+      { name: 'Hyacinth (風信子)', cas: 'mixture', pct: 4, role: '風信子花香', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 3, role: '玫瑰柔和', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香核心', note: 'base' },
+      { name: 'Teakwood accord (柚木調)', cas: 'mixture', pct: 2, role: '柚木溫暖', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 2, role: '鳶尾粉質', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 95. Thierry Mugler Alien (2005)
+  // 85. Alien (2005)
   // ────────────────────────────────────────────
   {
     id: 'mugler-alien',
@@ -3266,21 +2850,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '木質調', '辛香料'],
     baseNotes: ['琥珀', '白琥珀', '香草'],
     ingredients: [
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 15.0, role: '茉莉核心', note: 'middle' },
-      { name: 'Cashmeran (開司米麝香)',          cas: '33704-61-9', pct: 8.0,  role: '白木質', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 8.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 1.0,  role: '肉桂辛香', note: 'middle' },
-      { name: 'Cumin oil (孜然精油)',            cas: '8014-13-9', pct: 0.5,  role: '孜然辛香', note: 'middle' },
-      { name: 'Hedione (甲基二氫茉莉酸酯)',      cas: '24851-98-7', pct: 6.0,  role: '茉莉擴散', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 15, role: '茉莉核心', note: 'middle' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 8, role: '白木質', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 1, role: '肉桂辛香', note: 'middle' },
+      { name: 'Cumin oil (孜然精油)', cas: '8014-13-9', pct: 0.5, role: '孜然辛香', note: 'middle' },
+      { name: 'Hedione (甲基二氫茉莉酸酯)', cas: '24851-98-7', pct: 6, role: '茉莉擴散', note: 'middle' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 96. Burberry Brit for Men (2004)
+  // 86. Brit for Men (2004)
   // ────────────────────────────────────────────
   {
     id: 'burberry-britmen',
@@ -3297,24 +2880,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['雪松', '肉荳蔻'],
     baseNotes: ['廣藿香', '零陵香豆', '灰琥珀', '麝香'],
     ingredients: [
-      { name: 'Green almond accord (綠扁桃調)', cas: 'mixture',    pct: 2.0,  role: '綠扁桃清新', note: 'top' },
-      { name: 'Ginger oil (生薑精油)',           cas: '8007-08-7', pct: 2.0,  role: '生薑辛香', note: 'top' },
-      { name: 'Lime oil (青檸精油)',             cas: '8008-26-2', pct: 2.0,  role: '青檸清新', note: 'top' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 1.5,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松木質', note: 'middle' },
-      { name: 'Nutmeg oil (肉荳蔻精油)',         cas: '8008-45-5', pct: 1.5,  role: '肉荳蔻溫暖', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '灰琥珀', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'Green almond accord (綠扁桃調)', cas: 'mixture', pct: 2, role: '綠扁桃清新', note: 'top' },
+      { name: 'Ginger oil (生薑精油)', cas: '8007-08-7', pct: 2, role: '生薑辛香', note: 'top' },
+      { name: 'Lime oil (青檸精油)', cas: '8008-26-2', pct: 2, role: '青檸清新', note: 'top' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 1.5, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Nutmeg oil (肉荳蔻精油)', cas: '8008-45-5', pct: 1.5, role: '肉荳蔻溫暖', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '廣藿香深度', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '灰琥珀', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 97. Calvin Klein Obsession (1985)
+  // 87. Obsession (1985)
   // ────────────────────────────────────────────
   {
     id: 'ck-obsession',
@@ -3331,24 +2913,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '玫瑰', '橙花', '香根草'],
     baseNotes: ['琥珀', '麝香', '檀香', '乳香'],
     ingredients: [
-      { name: 'Mandarin oil (柑橘精油)',         cas: '8008-31-9', pct: 2.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 8.0,  role: '茉莉濃郁', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '香根草泥土', note: 'middle' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 6.0,  role: '琥珀樹脂', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 4.0,  role: '檀香木質', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香樹脂', note: 'base' },
+      { name: 'Mandarin oil (柑橘精油)', cas: '8008-31-9', pct: 2, role: '柑橘開場', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘明亮', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉濃郁', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '香根草泥土', note: 'middle' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 6, role: '琥珀樹脂', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香木質', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香樹脂', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 98. Estée Lauder Bronze Goddess (2008)
+  // 88. Bronze Goddess (2008)
   // ────────────────────────────────────────────
   {
     id: 'esteelauder-bronzegoddess',
@@ -3365,24 +2946,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['晚香玉', '茉莉', '玉蘭花'],
     baseNotes: ['琥珀', '香草', '檀香', '岩蘭草'],
     ingredients: [
-      { name: 'Coconut accord (椰子調)',         cas: 'mixture',    pct: 5.0,  role: '椰子熱帶', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘陽光', note: 'top' },
-      { name: 'Orange oil (橙精油)',             cas: '8008-57-9', pct: 2.0,  role: '橙甜美', note: 'top' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 6.0,  role: '晚香玉性感', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Magnolia (玉蘭花)',              cas: 'mixture',    pct: 3.0,  role: '玉蘭花優雅', note: 'middle' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 4.0,  role: '香草甜美', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 3.0,  role: '檀香木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 2.0,  role: '岩蘭草深度', note: 'base' },
+      { name: 'Coconut accord (椰子調)', cas: 'mixture', pct: 5, role: '椰子熱帶', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘陽光', note: 'top' },
+      { name: 'Orange oil (橙精油)', cas: '8008-57-9', pct: 2, role: '橙甜美', note: 'top' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 6, role: '晚香玉性感', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Magnolia (玉蘭花)', cas: 'mixture', pct: 3, role: '玉蘭花優雅', note: 'middle' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 4, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 3, role: '檀香木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 2, role: '岩蘭草深度', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 99. Maison Margiela Replica By the Fireplace (2015)
+  // 89. Replica By the Fireplace (2015)
   // ────────────────────────────────────────────
   {
     id: 'margiela-fireplace',
@@ -3399,24 +2979,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['栗子', '愈創木', '雪松', '秘魯香脂'],
     baseNotes: ['香草', '零陵香豆', '麝香', '焦糖'],
     ingredients: [
-      { name: 'Chestnut accord (栗子調)',        cas: 'mixture',    pct: 4.0,  role: '栗子甜美', note: 'middle' },
-      { name: 'Guaiacwood oil (癒創木精油)',     cas: '8016-23-7', pct: 6.0,  role: '愈創木煙燻', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'middle' },
-      { name: 'Peru balsam (秘魯香脂)',          cas: '8007-00-9', pct: 5.0,  role: '秘魯香脂', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 6.0,  role: '香草甜美', note: 'base' },
-      { name: 'Coumarin (香豆素)',               cas: '91-64-5',   pct: 4.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 1.5,  role: '粉紅胡椒', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 1.5,  role: '橙花柔和', note: 'top' },
-      { name: 'Clary sage oil (快樂鼠尾草)',     cas: '8016-63-5', pct: 1.0,  role: '鼠尾草芳香', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'Chestnut accord (栗子調)', cas: 'mixture', pct: 4, role: '栗子甜美', note: 'middle' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 6, role: '愈創木煙燻', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'middle' },
+      { name: 'Peru balsam (秘魯香脂)', cas: '8007-00-9', pct: 5, role: '秘魯香脂', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 1.5, role: '粉紅胡椒', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 1.5, role: '橙花柔和', note: 'top' },
+      { name: 'Clary sage oil (快樂鼠尾草)', cas: '8016-63-5', pct: 1, role: '鼠尾草芳香', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 100. Maison Margiela Replica Sailing Day (2017)
+  // 90. Replica Sailing Day (2017)
   // ────────────────────────────────────────────
   {
     id: 'margiela-sailingday',
@@ -3433,23 +3012,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['水中玫瑰', '水中鳶尾'],
     baseNotes: ['海鹽', '琥珀木', '麝香'],
     ingredients: [
-      { name: 'Red seaweed accord (紅海藻調)',   cas: 'mixture',    pct: 4.0,  role: '紅海藻水生', note: 'top' },
-      { name: 'Blood orange oil (血橙精油)',     cas: 'mixture',    pct: 3.0,  role: '血橙柑橘', note: 'top' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 1.5,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Aquatic rose accord (水中玫瑰)',  cas: 'mixture',    pct: 4.0,  role: '水中玫瑰', note: 'middle' },
-      { name: 'Aquatic iris accord (水中鳶尾)',  cas: 'mixture',    pct: 3.0,  role: '水中鳶尾', note: 'middle' },
-      { name: 'Sea salt accord (海鹽調)',        cas: 'mixture',    pct: 5.0,  role: '海鹽礦物', note: 'base' },
-      { name: 'Ambrofix (琥珀木)',              cas: '67416-75-9', pct: 4.0,  role: '琥珀木清涼', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Calone (哈密瓜酮)',              cas: '28940-11-6', pct: 2.5,  role: '水生清新', note: 'middle' },
+      { name: 'Red seaweed accord (紅海藻調)', cas: 'mixture', pct: 4, role: '紅海藻水生', note: 'top' },
+      { name: 'Blood orange oil (血橙精油)', cas: 'mixture', pct: 3, role: '血橙柑橘', note: 'top' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 1.5, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Aquatic rose accord (水中玫瑰)', cas: 'mixture', pct: 4, role: '水中玫瑰', note: 'middle' },
+      { name: 'Aquatic iris accord (水中鳶尾)', cas: 'mixture', pct: 3, role: '水中鳶尾', note: 'middle' },
+      { name: 'Sea salt accord (海鹽調)', cas: 'mixture', pct: 5, role: '海鹽礦物', note: 'base' },
+      { name: 'Ambrofix (琥珀木)', cas: '67416-75-9', pct: 4, role: '琥珀木清涼', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Calone (哈密瓜酮)', cas: '28940-11-6', pct: 2.5, role: '水生清新', note: 'middle' },
     ],
     totalFragrancePct: 9,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 101. Le Labo Rose 31 (2006)
+  // 91. Rose 31 (2006)
   // ────────────────────────────────────────────
   {
     id: 'lelabo-rose31',
@@ -3466,22 +3044,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '香根草', '雪松'],
     baseNotes: ['麝香', '琥珀', '癒創木'],
     ingredients: [
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 10.0, role: '玫瑰核心', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 10.0, role: '雪松木質', note: 'middle' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 2.0,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Cumin oil (孜然精油)',            cas: '8014-13-9', pct: 1.0,  role: '孜然辛香', note: 'top' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 5.0,  role: '香根草泥土', note: 'middle' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Guaiacwood oil (癒創木精油)',     cas: '8016-23-7', pct: 2.0,  role: '癒創木煙燻', note: 'base' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 10, role: '玫瑰核心', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 2, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Cumin oil (孜然精油)', cas: '8014-13-9', pct: 1, role: '孜然辛香', note: 'top' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 5, role: '香根草泥土', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 2, role: '癒創木煙燻', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 102. Le Labo Bergamote 22 (2006)
+  // 92. Bergamote 22 (2006)
   // ────────────────────────────────────────────
   {
     id: 'lelabo-bergamote22',
@@ -3498,22 +3075,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '鼠尾草'],
     baseNotes: ['雪松', '岩蘭草', '琥珀'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 12.0, role: '佛手柑核心', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 4.0,  role: '葡萄柚清新', note: 'top' },
-      { name: 'Petitgrain oil (苦橙葉精油)',     cas: '8014-17-3', pct: 3.0,  role: '苦橙葉綠意', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Sage oil (鼠尾草精油)',           cas: '8016-65-7', pct: 2.0,  role: '鼠尾草芳香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 12, role: '佛手柑核心', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 4, role: '葡萄柚清新', note: 'top' },
+      { name: 'Petitgrain oil (苦橙葉精油)', cas: '8014-17-3', pct: 3, role: '苦橙葉綠意', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Sage oil (鼠尾草精油)', cas: '8016-65-7', pct: 2, role: '鼠尾草芳香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 103. Byredo Mojave Ghost (2014)
+  // 93. Mojave Ghost (2014)
   // ────────────────────────────────────────────
   {
     id: 'byredo-mojave',
@@ -3530,22 +3106,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['木蘭', '晚香玉', '紫羅蘭'],
     baseNotes: ['沙漠雪松', '檀香', '琥珀', '麝香'],
     ingredients: [
-      { name: 'Magnolia accord (木蘭調)',        cas: 'mixture',    pct: 6.0,  role: '木蘭花香', note: 'middle' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 5.0,  role: '晚香玉白花', note: 'middle' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 3.0,  role: '紫羅蘭粉質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '沙漠雪松', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 5.0,  role: '檀香木質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 1.5,  role: '牙買加胡椒', note: 'top' },
+      { name: 'Magnolia accord (木蘭調)', cas: 'mixture', pct: 6, role: '木蘭花香', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 5, role: '晚香玉白花', note: 'middle' },
+      { name: 'Violet (紫羅蘭)', cas: 'mixture', pct: 3, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '沙漠雪松', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香木質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 1.5, role: '牙買加胡椒', note: 'top' },
     ],
     totalFragrancePct: 16,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 104. Diptyque Philosykos (1996)
+  // 94. Philosykos (1996)
   // ────────────────────────────────────────────
   {
     id: 'diptyque-philosykos',
@@ -3562,19 +3137,18 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['無花果', '椰子'],
     baseNotes: ['無花果木', '雪松'],
     ingredients: [
-      { name: 'Fig leaf abs (無花果葉原精)',     cas: 'mixture',    pct: 8.0,  role: '無花果葉綠意', note: 'top' },
-      { name: 'Fig accord (無花果調)',           cas: 'mixture',    pct: 10.0, role: '無花果果實', note: 'middle' },
-      { name: 'Coconut accord (椰子調)',         cas: 'mixture',    pct: 3.0,  role: '椰子奶質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '無花果木質', note: 'base' },
-      { name: 'Iso E Super (突破木質)',          cas: '54464-57-2', pct: 4.0,  role: '木質飄渺', note: 'base' },
+      { name: 'Fig leaf abs (無花果葉原精)', cas: 'mixture', pct: 8, role: '無花果葉綠意', note: 'top' },
+      { name: 'Fig accord (無花果調)', cas: 'mixture', pct: 10, role: '無花果果實', note: 'middle' },
+      { name: 'Coconut accord (椰子調)', cas: 'mixture', pct: 3, role: '椰子奶質', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '無花果木質', note: 'base' },
+      { name: 'Iso E Super (突破木質)', cas: '54464-57-2', pct: 4, role: '木質飄渺', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 105. Diptyque Do Son (2005)
+  // 95. Do Son (2005)
   // ────────────────────────────────────────────
   {
     id: 'diptyque-doson',
@@ -3591,21 +3165,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['晚香玉', '橙花', '玫瑰'],
     baseNotes: ['麝香', '鳶尾花'],
     ingredients: [
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 12.0, role: '晚香玉核心', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 2.0,  role: '玫瑰柔和', note: 'middle' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 1.0,  role: '粉紅胡椒', note: 'top' },
-      { name: 'Orange leaf abs (橙葉原精)',      cas: 'mixture',    pct: 1.0,  role: '橙葉綠意', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 2.0,  role: '鳶尾粉質', note: 'base' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 12, role: '晚香玉核心', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 2, role: '玫瑰柔和', note: 'middle' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 1, role: '粉紅胡椒', note: 'top' },
+      { name: 'Orange leaf abs (橙葉原精)', cas: 'mixture', pct: 1, role: '橙葉綠意', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 2, role: '鳶尾粉質', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 106. Chanel Bleu de Chanel (2010)
+  // 96. Bleu de Chanel (2010)
   // ────────────────────────────────────────────
   {
     id: 'chanel-bleu',
@@ -3622,24 +3195,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['薑', '茉莉', '荳蔻'],
     baseNotes: ['雪松', '檀香', '琥珀', '乳香'],
     ingredients: [
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 5.0,  role: '檸檬明亮', note: 'top' },
-      { name: 'Mint oil (薄荷精油)',             cas: '8006-90-4', pct: 2.0,  role: '薄荷清涼', note: 'top' },
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 2.5,  role: '粉紅胡椒', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 3.0,  role: '葡萄柚清新', note: 'top' },
-      { name: 'Ginger oil (生薑精油)',           cas: '8007-08-7', pct: 2.0,  role: '薑辛香', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 3.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松木質', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 5.0,  role: '檀香溫暖', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀現代', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香深度', note: 'base' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 5, role: '檸檬明亮', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: '8006-90-4', pct: 2, role: '薄荷清涼', note: 'top' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 2.5, role: '粉紅胡椒', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 3, role: '葡萄柚清新', note: 'top' },
+      { name: 'Ginger oil (生薑精油)', cas: '8007-08-7', pct: 2, role: '薑辛香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 3, role: '茉莉花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香溫暖', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀現代', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香深度', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 107. Dior Homme Intense (2011)
+  // 97. Dior Homme Intense (2011)
   // ────────────────────────────────────────────
   {
     id: 'dior-hommeintense',
@@ -3656,23 +3228,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '橙花', '茉莉'],
     baseNotes: ['雪松', '岩蘭草', '皮革'],
     ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 15.0, role: '鳶尾核心', note: 'middle' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 4.0,  role: '薰衣草芳香', note: 'top' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 2.0,  role: '梨果香', note: 'top' },
-      { name: 'Clary sage oil (快樂鼠尾草)',     cas: '8016-63-5', pct: 2.0,  role: '鼠尾草芳香', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 3.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 2.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.0,  role: '皮革深度', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 15, role: '鳶尾核心', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 4, role: '薰衣草芳香', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 2, role: '梨果香', note: 'top' },
+      { name: 'Clary sage oil (快樂鼠尾草)', cas: '8016-63-5', pct: 2, role: '鼠尾草芳香', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 3, role: '橙花白花', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 2, role: '茉莉花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2, role: '皮革深度', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 108. Dior Poison (1985)
+  // 98. Poison (1985)
   // ────────────────────────────────────────────
   {
     id: 'dior-poison',
@@ -3689,23 +3260,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['晚香玉', '橙花', '玫瑰', '肉桂'],
     baseNotes: ['琥珀', '香草', '麝香', '安息香'],
     ingredients: [
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 10.0, role: '晚香玉濃郁', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 6.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Wild berries accord (野梅調)',    cas: 'mixture',    pct: 3.0,  role: '野梅果香', note: 'top' },
-      { name: 'Coriander oil (芫荽精油)',        cas: '8008-52-4', pct: 2.0,  role: '芫荽辛香', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 4.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 2.0,  role: '肉桂辛香', note: 'middle' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 6.0,  role: '琥珀樹脂', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 3.0,  role: '安息香溫暖', note: 'base' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 10, role: '晚香玉濃郁', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 6, role: '橙花白花', note: 'middle' },
+      { name: 'Wild berries accord (野梅調)', cas: 'mixture', pct: 3, role: '野梅果香', note: 'top' },
+      { name: 'Coriander oil (芫荽精油)', cas: '8008-52-4', pct: 2, role: '芫荽辛香', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰花香', note: 'middle' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 2, role: '肉桂辛香', note: 'middle' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 6, role: '琥珀樹脂', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 3, role: '安息香溫暖', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 109. Tom Ford Black Orchid (2006)
+  // 99. Black Orchid (2006)
   // ────────────────────────────────────────────
   {
     id: 'tomford-blackorchid',
@@ -3722,23 +3292,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['黑蘭花', '水果調', '茉莉', '辛香料'],
     baseNotes: ['廣藿香', '檀香', '香草', '乳香', '岩蘭草'],
     ingredients: [
-      { name: 'Black orchid accord (黑蘭花調)', cas: 'mixture',    pct: 8.0,  role: '黑蘭花核心', note: 'middle' },
-      { name: 'Ylang ylang oil (依蘭精油)',      cas: '8006-81-3', pct: 6.0,  role: '依蘭濃郁', note: 'top' },
-      { name: 'Black truffle accord (黑松露調)', cas: 'mixture',    pct: 2.0,  role: '黑松露泥土', note: 'top' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 10.0, role: '廣藿香深色', note: 'base' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 6.0,  role: '香草甜美', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 4.0,  role: '檀香木質', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Incense (乳香)',                 cas: 'mixture',    pct: 2.0,  role: '乳香煙燻', note: 'base' },
+      { name: 'Black orchid accord (黑蘭花調)', cas: 'mixture', pct: 8, role: '黑蘭花核心', note: 'middle' },
+      { name: 'Ylang ylang oil (依蘭精油)', cas: '8006-81-3', pct: 6, role: '依蘭濃郁', note: 'top' },
+      { name: 'Black truffle accord (黑松露調)', cas: 'mixture', pct: 2, role: '黑松露泥土', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 10, role: '廣藿香深色', note: 'base' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香木質', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Incense (乳香)', cas: 'mixture', pct: 2, role: '乳香煙燻', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 110. Tom Ford Tobacco Vanille (2007)
+  // 100. Tobacco Vanille (2007)
   // ────────────────────────────────────────────
   {
     id: 'tomford-tobaccovanille',
@@ -3755,22 +3324,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['零陵香豆', '煙草花', '香草', '可可'],
     baseNotes: ['乾果', '木質調'],
     ingredients: [
-      { name: 'Tobacco leaf abs (煙草葉原精)',  cas: 'mixture',    pct: 8.0,  role: '煙草核心', note: 'top' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 12.0, role: '香草濃郁', note: 'middle' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 8.0,  role: '零陵香豆', note: 'middle' },
-      { name: 'Cacao abs (可可原精)',            cas: 'mixture',    pct: 3.0,  role: '可可深邃', note: 'middle' },
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 2.0,  role: '肉桂辛香', note: 'top' },
-      { name: 'Clove bud oil (丁香花蕾精油)',    cas: '8000-34-8', pct: 1.0,  role: '丁香辛香', note: 'top' },
-      { name: 'Dried fruits accord (乾果調)',    cas: 'mixture',    pct: 3.0,  role: '乾果甜美', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '雪松木質', note: 'base' },
+      { name: 'Tobacco leaf abs (煙草葉原精)', cas: 'mixture', pct: 8, role: '煙草核心', note: 'top' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 12, role: '香草濃郁', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 8, role: '零陵香豆', note: 'middle' },
+      { name: 'Cacao abs (可可原精)', cas: 'mixture', pct: 3, role: '可可深邃', note: 'middle' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 2, role: '肉桂辛香', note: 'top' },
+      { name: 'Clove bud oil (丁香花蕾精油)', cas: '8000-34-8', pct: 1, role: '丁香辛香', note: 'top' },
+      { name: 'Dried fruits accord (乾果調)', cas: 'mixture', pct: 3, role: '乾果甜美', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '雪松木質', note: 'base' },
     ],
     totalFragrancePct: 20,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 111. Tom Ford Oud Wood (2007)
+  // 101. Oud Wood (2007)
   // ────────────────────────────────────────────
   {
     id: 'tomford-oudwood',
@@ -3787,54 +3355,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['沉香', '檀香', '岩蘭草'],
     baseNotes: ['零陵香豆', '香草', '琥珀'],
     ingredients: [
-      { name: 'Oud accord (沉香調)',             cas: 'mixture',    pct: 10.0, role: '沉香核心', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 8.0,  role: '檀香木質', note: 'middle' },
-      { name: 'Sichuan pepper oil (四川花椒)',   cas: 'mixture',    pct: 1.5,  role: '花椒辛香', note: 'top' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 2.0,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 4.0,  role: '岩蘭草泥土', note: 'middle' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 4.0,  role: '香草甜美', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
+      { name: 'Oud accord (沉香調)', cas: 'mixture', pct: 10, role: '沉香核心', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香木質', note: 'middle' },
+      { name: 'Sichuan pepper oil (四川花椒)', cas: 'mixture', pct: 1.5, role: '花椒辛香', note: 'top' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 2, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 4, role: '岩蘭草泥土', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 4, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 112. Viktor & Rolf Flowerbomb (2005)
-  // ────────────────────────────────────────────
-  {
-    id: 'vr-flowerbomb',
-    name: 'Flowerbomb',
-    brand: 'gucci',
-    year: 2005,
-    perfumer: 'Olivier Polge, Carlos Benaim, Domitille Michalon',
-    concentration: 'edp',
-    family: 'floral',
-    subfamilies: ['oriental', 'gourmand'],
-    gender: 'feminine',
-    description: '花束炸彈的極致花香。茉莉與玫瑰的濃郁花香，蘭花與小蒼蘭的優雅，廣藿香與香草的甜美基底。強烈、甜美、極具女性魅力。',
-    topNotes: ['茶', '佛手柑'],
-    heartNotes: ['茉莉', '蘭花', '小蒼蘭', '玫瑰'],
-    baseNotes: ['廣藿香', '麝香', '香草'],
-    ingredients: [
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 10.0, role: '茉莉濃郁', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 8.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Orchid accord (蘭花調)',          cas: 'mixture',    pct: 6.0,  role: '蘭花優雅', note: 'middle' },
-      { name: 'Freesia (小蒼蘭)',               cas: 'mixture',    pct: 4.0,  role: '小蒼蘭清新', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 6.0,  role: '香草甜美', note: 'base' },
-      { name: 'Tea accord (茶調)',               cas: 'mixture',    pct: 2.0,  role: '茶清新', note: 'top' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-    ],
-    totalFragrancePct: 17,
-    sillage: 5,
-    longevity: 5,
-  },
-
-  // ────────────────────────────────────────────
-  // 113. YSL Mon Paris (2016)
+  // 102. Mon Paris (2016)
   // ────────────────────────────────────────────
   {
     id: 'ysl-monparis',
@@ -3851,23 +3386,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['牡丹', '茉莉', '橙花'],
     baseNotes: ['廣藿香', '白麝香', '香草', '琥珀'],
     ingredients: [
-      { name: 'Strawberry accord (草莓調)',      cas: 'mixture',    pct: 4.0,  role: '草莓甜美', note: 'top' },
-      { name: 'Raspberry accord (覆盆子調)',     cas: 'mixture',    pct: 3.0,  role: '覆盆子果香', note: 'top' },
-      { name: 'Pear accord (梨調)',              cas: 'mixture',    pct: 2.0,  role: '梨果香', note: 'top' },
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 6.0,  role: '牡丹花香', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 3.0,  role: '橙花優雅', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 3.0,  role: '香草甜美', note: 'base' },
+      { name: 'Strawberry accord (草莓調)', cas: 'mixture', pct: 4, role: '草莓甜美', note: 'top' },
+      { name: 'Raspberry accord (覆盆子調)', cas: 'mixture', pct: 3, role: '覆盆子果香', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 2, role: '梨果香', note: 'top' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 6, role: '牡丹花香', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 3, role: '橙花優雅', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '廣藿香深度', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 3, role: '香草甜美', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 114. YSL Opium (1977)
+  // 103. Opium (1977)
   // ────────────────────────────────────────────
   {
     id: 'ysl-opium',
@@ -3884,23 +3418,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '玫瑰', '依蘭', '百合'],
     baseNotes: ['琥珀', '香草', '廣藿香', '乳香', '麝香'],
     ingredients: [
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 8.0,  role: '茉莉濃郁', note: 'middle' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Ylang ylang oil (依蘭精油)',      cas: '8006-81-3', pct: 4.0,  role: '依蘭異國', note: 'middle' },
-      { name: 'Clove bud oil (丁香花蕾精油)',    cas: '8000-34-8', pct: 2.0,  role: '丁香辛香', note: 'top' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 1.5,  role: '胡椒辛香', note: 'top' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 8.0,  role: '琥珀樹脂', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 6.0,  role: '香草甜美', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 5.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香煙燻', note: 'base' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉濃郁', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Ylang ylang oil (依蘭精油)', cas: '8006-81-3', pct: 4, role: '依蘭異國', note: 'middle' },
+      { name: 'Clove bud oil (丁香花蕾精油)', cas: '8000-34-8', pct: 2, role: '丁香辛香', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 1.5, role: '胡椒辛香', note: 'top' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 8, role: '琥珀樹脂', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 5, role: '廣藿香深度', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香煙燻', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 5,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 115. YSL Y (2017)
+  // 104. Y (2017)
   // ────────────────────────────────────────────
   {
     id: 'ysl-y',
@@ -3917,23 +3450,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '鼠尾草'],
     baseNotes: ['雪松', '廣藿香', '乳香', '琥珀'],
     ingredients: [
-      { name: 'Apple accord (蘋果調)',           cas: 'mixture',    pct: 4.0,  role: '蘋果清新', note: 'top' },
-      { name: 'Ginger oil (生薑精油)',           cas: '8007-08-7', pct: 2.5,  role: '薑辛香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 4.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Sage oil (鼠尾草精油)',           cas: '8016-65-7', pct: 3.0,  role: '鼠尾草芳香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 8.0,  role: '雪松木質', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香煙燻', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀現代', note: 'base' },
+      { name: 'Apple accord (蘋果調)', cas: 'mixture', pct: 4, role: '蘋果清新', note: 'top' },
+      { name: 'Ginger oil (生薑精油)', cas: '8007-08-7', pct: 2.5, role: '薑辛香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Sage oil (鼠尾草精油)', cas: '8016-65-7', pct: 3, role: '鼠尾草芳香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香深度', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香煙燻', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀現代', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 116. Giorgio Armani Sì (2013)
+  // 105. Sì (2013)
   // ────────────────────────────────────────────
   {
     id: 'armani-si',
@@ -3950,23 +3482,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '小蒼蘭', '橙花'],
     baseNotes: ['廣藿香', '香草', '麝香', '琥珀'],
     ingredients: [
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 4.0,  role: '黑醋栗果香', note: 'top' },
-      { name: 'Peach accord (蜜桃調)',           cas: 'mixture',    pct: 3.0,  role: '蜜桃甜美', note: 'top' },
-      { name: 'Rose de Mai abs (五月玫瑰原精)',  cas: 'mixture',    pct: 8.0,  role: '玫瑰優雅', note: 'middle' },
-      { name: 'Freesia (小蒼蘭)',               cas: 'mixture',    pct: 4.0,  role: '小蒼蘭清新', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 3.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 6.0,  role: '廣藿香核心', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 4.0,  role: '香草溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀現代', note: 'base' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗果香', note: 'top' },
+      { name: 'Peach accord (蜜桃調)', cas: 'mixture', pct: 3, role: '蜜桃甜美', note: 'top' },
+      { name: 'Rose de Mai abs (五月玫瑰原精)', cas: 'mixture', pct: 8, role: '玫瑰優雅', note: 'middle' },
+      { name: 'Freesia (小蒼蘭)', cas: 'mixture', pct: 4, role: '小蒼蘭清新', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 3, role: '橙花白花', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香核心', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 4, role: '香草溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀現代', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 117. Giorgio Armani Code (2004)
+  // 106. Armani Code (2004)
   // ────────────────────────────────────────────
   {
     id: 'armani-code',
@@ -3983,89 +3514,26 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['橙花', '八角', '煙草'],
     baseNotes: ['零陵香豆', '雪松', '皮革'],
     ingredients: [
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 4.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Olive flower accord (橄欖花調)',  cas: 'mixture',    pct: 2.0,  role: '橄欖花地中海', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'middle' },
-      { name: 'Star anise oil (八角精油)',       cas: '8007-70-3', pct: 1.5,  role: '八角辛香', note: 'middle' },
-      { name: 'Tobacco accord (煙草調)',         cas: 'mixture',    pct: 3.0,  role: '煙草溫暖', note: 'middle' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 6.0,  role: '零陵香豆甜美', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'base' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 2.0,  role: '皮革深度', note: 'base' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '檸檬清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Olive flower accord (橄欖花調)', cas: 'mixture', pct: 2, role: '橄欖花地中海', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Star anise oil (八角精油)', cas: '8007-70-3', pct: 1.5, role: '八角辛香', note: 'middle' },
+      { name: 'Tobacco accord (煙草調)', cas: 'mixture', pct: 3, role: '煙草溫暖', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 6, role: '零陵香豆甜美', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 2, role: '皮革深度', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 118. Prada Candy (2011)
-  // ────────────────────────────────────────────
-  {
-    id: 'prada-candy',
-    name: 'Candy',
-    brand: 'prada',
-    year: 2011,
-    perfumer: 'Daniela Andrier',
-    concentration: 'edp',
-    family: 'oriental',
-    subfamilies: ['gourmand'],
-    gender: 'feminine',
-    description: '糖果般的甜美誘惑。焦糖與麝香的甜美開場，安息香的樹脂溫暖，香草的奶油基底。甜美、簡單、極具成癮性。',
-    topNotes: ['焦糖', '麝香'],
-    heartNotes: ['安息香'],
-    baseNotes: ['香草', '零陵香豆'],
-    ingredients: [
-      { name: 'Caramel accord (焦糖調)',         cas: 'mixture',    pct: 8.0,  role: '焦糖甜美', note: 'top' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 10.0, role: '安息香樹脂', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 10.0, role: '香草奶油', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 6.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 8.0,  role: '白麝香核心', note: 'top' },
-    ],
-    totalFragrancePct: 18,
-    sillage: 4,
-    longevity: 4,
-  },
-
-  // ────────────────────────────────────────────
-  // 119. Prada L'Homme (2016)
-  // ────────────────────────────────────────────
-  {
-    id: 'prada-lhomme',
-    name: "L'Homme",
-    brand: 'prada',
-    year: 2016,
-    perfumer: 'Daniela Andrier',
-    concentration: 'edt',
-    family: 'aromatic',
-    subfamilies: ['floral', 'woody'],
-    gender: 'masculine',
-    description: 'Prada男士的優雅詮釋。鳶尾花與琥珀的粉質優雅，橙花與天竺葵的花香，雪松和廣藿香的木質基底。優雅、柔和、現代紳士。',
-    topNotes: ['橙花', '黑胡椒', '小荳蔻'],
-    heartNotes: ['鳶尾花', '天竺葵', '紫羅蘭'],
-    baseNotes: ['雪松', '琥珀', '廣藿香'],
-    ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 8.0,  role: '鳶尾核心', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 5.0,  role: '橙花白花', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 1.5,  role: '黑胡椒辛香', note: 'top' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 1.5,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 2.0,  role: '紫羅蘭粉質', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'base' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '廣藿香深度', note: 'base' },
-    ],
-    totalFragrancePct: 13,
-    sillage: 3,
-    longevity: 3,
-  },
-
-  // ────────────────────────────────────────────
-  // 120. Prada Infusion d'Iris (2007)
+  // 107. Infusion d'Iris (2007)
   // ────────────────────────────────────────────
   {
     id: 'prada-infusioniris',
-    name: "Infusion d'Iris",
+    name: 'Infusion d\'Iris',
     brand: 'prada',
     year: 2007,
     perfumer: 'Daniela Andrier',
@@ -4078,22 +3546,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '茉莉', '乳香'],
     baseNotes: ['雪松', '安息香', '岩蘭草'],
     ingredients: [
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 12.0, role: '鳶尾核心', note: 'middle' },
-      { name: 'Mandarin oil (柑橘精油)',         cas: '8008-31-9', pct: 3.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'top' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 3.0,  role: '茉莉花香', note: 'middle' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 2.0,  role: '乳香樹脂', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 4.0,  role: '雪松木質', note: 'base' },
-      { name: 'Benzoin resinoid (安息香脂)',     cas: 'mixture',    pct: 2.0,  role: '安息香柔和', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 2.0,  role: '岩蘭草泥土', note: 'base' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 12, role: '鳶尾核心', note: 'middle' },
+      { name: 'Mandarin oil (柑橘精油)', cas: '8008-31-9', pct: 3, role: '柑橘清新', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 3, role: '茉莉花香', note: 'middle' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 2, role: '乳香樹脂', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 2, role: '安息香柔和', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 2, role: '岩蘭草泥土', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 121. Dolce & Gabbana The One (2006)
+  // 108. The One (2006)
   // ────────────────────────────────────────────
   {
     id: 'dg-theone',
@@ -4110,23 +3577,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '百合', '鈴蘭'],
     baseNotes: ['香草', '琥珀', '麝香', '零陵香豆'],
     ingredients: [
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 4.0,  role: '荔枝果香', note: 'top' },
-      { name: 'Peach accord (桃子調)',           cas: 'mixture',    pct: 3.0,  role: '桃子甜美', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Lily (Madonna) (百合)',          cas: 'mixture',    pct: 4.0,  role: '百合優雅', note: 'middle' },
-      { name: 'Lily of the valley (鈴蘭)',      cas: 'mixture',    pct: 2.0,  role: '鈴蘭清新', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 7.0,  role: '香草甜美', note: 'base' },
-      { name: 'Labdanum abs (岩玫瑰原精)',       cas: 'mixture',    pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 3.0,  role: '零陵香豆', note: 'base' },
+      { name: 'Lychee accord (荔枝調)', cas: 'mixture', pct: 4, role: '荔枝果香', note: 'top' },
+      { name: 'Peach accord (桃子調)', cas: 'mixture', pct: 3, role: '桃子甜美', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘明亮', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Lily (Madonna) (百合)', cas: 'mixture', pct: 4, role: '百合優雅', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭)', cas: 'mixture', pct: 2, role: '鈴蘭清新', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 7, role: '香草甜美', note: 'base' },
+      { name: 'Labdanum abs (岩玫瑰原精)', cas: 'mixture', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 3, role: '零陵香豆', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 122. Dolce & Gabbana Light Blue (2001)
+  // 109. Light Blue (2001)
   // ────────────────────────────────────────────
   {
     id: 'dg-lightblue',
@@ -4143,23 +3609,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '白玫瑰', '竹子'],
     baseNotes: ['雪松', '琥珀', '麝香'],
     ingredients: [
-      { name: 'Lemon oil Sicily (西西里檸檬)',   cas: '8008-56-8', pct: 5.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Green apple accord (青蘋果調)',   cas: 'mixture',    pct: 4.0,  role: '青蘋果果香', note: 'top' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 6.0,  role: '雪松木質', note: 'top' },
-      { name: 'Bluebell accord (風鈴草調)',      cas: 'mixture',    pct: 2.0,  role: '風鈴草清新', note: 'top' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 4.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'White rose accord (白玫瑰調)',    cas: 'mixture',    pct: 3.0,  role: '白玫瑰花香', note: 'middle' },
-      { name: 'Bamboo accord (竹子調)',          cas: 'mixture',    pct: 2.0,  role: '竹子綠意', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 3.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
+      { name: 'Lemon oil Sicily (西西里檸檬)', cas: '8008-56-8', pct: 5, role: '檸檬清新', note: 'top' },
+      { name: 'Green apple accord (青蘋果調)', cas: 'mixture', pct: 4, role: '青蘋果果香', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'top' },
+      { name: 'Bluebell accord (風鈴草調)', cas: 'mixture', pct: 2, role: '風鈴草清新', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'White rose accord (白玫瑰調)', cas: 'mixture', pct: 3, role: '白玫瑰花香', note: 'middle' },
+      { name: 'Bamboo accord (竹子調)', cas: 'mixture', pct: 2, role: '竹子綠意', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 3, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 123. Versace Bright Crystal (2006)
+  // 110. Bright Crystal (2006)
   // ────────────────────────────────────────────
   {
     id: 'versace-brightcrystal',
@@ -4176,22 +3641,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['牡丹', '蓮花', '木蘭'],
     baseNotes: ['琥珀', '麝香', '桃花心木'],
     ingredients: [
-      { name: 'Pomegranate accord (石榴調)',     cas: 'mixture',    pct: 3.0,  role: '石榴果香', note: 'top' },
-      { name: 'Yuzu oil (柚子精油)',             cas: 'mixture',    pct: 3.0,  role: '柚子清新', note: 'top' },
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 6.0,  role: '牡丹花香', note: 'middle' },
-      { name: 'Lotus accord (蓮花調)',           cas: 'mixture',    pct: 4.0,  role: '蓮花水潤', note: 'middle' },
-      { name: 'Magnolia accord (木蘭調)',        cas: 'mixture',    pct: 3.0,  role: '木蘭優雅', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 4.0,  role: '白麝香', note: 'base' },
-      { name: 'Mahogany accord (桃花心木調)',    cas: 'mixture',    pct: 2.0,  role: '桃花心木', note: 'base' },
+      { name: 'Pomegranate accord (石榴調)', cas: 'mixture', pct: 3, role: '石榴果香', note: 'top' },
+      { name: 'Yuzu oil (柚子精油)', cas: 'mixture', pct: 3, role: '柚子清新', note: 'top' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 6, role: '牡丹花香', note: 'middle' },
+      { name: 'Lotus accord (蓮花調)', cas: 'mixture', pct: 4, role: '蓮花水潤', note: 'middle' },
+      { name: 'Magnolia accord (木蘭調)', cas: 'mixture', pct: 3, role: '木蘭優雅', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Mahogany accord (桃花心木調)', cas: 'mixture', pct: 2, role: '桃花心木', note: 'base' },
     ],
     totalFragrancePct: 10,
     sillage: 2,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 124. Versace Pour Homme (2008)
+  // 111. Pour Homme (2008)
   // ────────────────────────────────────────────
   {
     id: 'versace-pourhomme',
@@ -4208,23 +3672,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['天竺葵', '雪松', '鼠尾草'],
     baseNotes: ['琥珀', '麝香', '零陵香豆'],
     ingredients: [
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 5.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 4.0,  role: '橙花白花', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘明亮', note: 'top' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 4.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 5.0,  role: '雪松木質', note: 'middle' },
-      { name: 'Clary sage oil (快樂鼠尾草)',     cas: '8016-63-5', pct: 2.0,  role: '鼠尾草芳香', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 4.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 3.0,  role: '白麝香', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 2.0,  role: '零陵香豆', note: 'base' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 5, role: '檸檬清新', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'middle' },
+      { name: 'Clary sage oil (快樂鼠尾草)', cas: '8016-63-5', pct: 2, role: '鼠尾草芳香', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 3, role: '白麝香', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 2, role: '零陵香豆', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 125. Burberry Her (2018)
+  // 112. Her (2018)
   // ────────────────────────────────────────────
   {
     id: 'burberry-her',
@@ -4241,22 +3704,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '紫羅蘭'],
     baseNotes: ['琥珀', '麝香', '乾木'],
     ingredients: [
-      { name: 'Red berries accord (紅莓調)',     cas: 'mixture',    pct: 5.0,  role: '紅莓果香', note: 'top' },
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 4.0,  role: '黑醋栗酸甜', note: 'top' },
-      { name: 'Strawberry accord (草莓調)',      cas: 'mixture',    pct: 3.0,  role: '草莓甜美', note: 'top' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 6.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 4.0,  role: '紫羅蘭粉質', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
-      { name: 'Dry woods accord (乾木調)',       cas: 'mixture',    pct: 3.0,  role: '乾木基底', note: 'base' },
+      { name: 'Red berries accord (紅莓調)', cas: 'mixture', pct: 5, role: '紅莓果香', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗酸甜', note: 'top' },
+      { name: 'Strawberry accord (草莓調)', cas: 'mixture', pct: 3, role: '草莓甜美', note: 'top' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'middle' },
+      { name: 'Violet (紫羅蘭)', cas: 'mixture', pct: 4, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Dry woods accord (乾木調)', cas: 'mixture', pct: 3, role: '乾木基底', note: 'base' },
     ],
     totalFragrancePct: 15,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 126. Burberry London for Men (2006)
+  // 113. London for Men (2006)
   // ────────────────────────────────────────────
   {
     id: 'burberry-londonmen',
@@ -4273,23 +3735,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['含羞草', '皮革'],
     baseNotes: ['煙草葉', '零陵香豆', '廣藿香', '愈創木'],
     ingredients: [
-      { name: 'Cinnamon bark oil (肉桂皮精油)',  cas: '8015-91-6', pct: 3.0,  role: '肉桂辛香', note: 'top' },
-      { name: 'Lavender oil (薰衣草精油)',       cas: '8000-28-0', pct: 4.0,  role: '薰衣草芳香', note: 'top' },
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 2.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Mimosa abs (含羞草原精)',         cas: 'mixture',    pct: 4.0,  role: '含羞草蜜感', note: 'middle' },
-      { name: 'Leather accord (皮革調)',         cas: 'mixture',    pct: 3.0,  role: '皮革深度', note: 'middle' },
-      { name: 'Tobacco leaf abs (煙草葉原精)',  cas: 'mixture',    pct: 5.0,  role: '煙草溫暖', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 3.0,  role: '廣藿香泥土', note: 'base' },
-      { name: 'Guaiacwood oil (癒創木精油)',     cas: '8016-23-7', pct: 2.0,  role: '癒創木煙燻', note: 'base' },
+      { name: 'Cinnamon bark oil (肉桂皮精油)', cas: '8015-91-6', pct: 3, role: '肉桂辛香', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 4, role: '薰衣草芳香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 2, role: '柑橘開場', note: 'top' },
+      { name: 'Mimosa abs (含羞草原精)', cas: 'mixture', pct: 4, role: '含羞草蜜感', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 3, role: '皮革深度', note: 'middle' },
+      { name: 'Tobacco leaf abs (煙草葉原精)', cas: 'mixture', pct: 5, role: '煙草溫暖', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 3, role: '廣藿香泥土', note: 'base' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 2, role: '癒創木煙燻', note: 'base' },
     ],
     totalFragrancePct: 12,
     sillage: 3,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 127. Lancôme Hypnôse (2005)
+  // 114. Hypnôse (2005)
   // ────────────────────────────────────────────
   {
     id: 'lancome-hypnose',
@@ -4306,21 +3767,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['茉莉', '百合'],
     baseNotes: ['香草', '零陵香豆', '岩蘭草', '雪松'],
     ingredients: [
-      { name: 'Passion fruit accord (西番蓮調)', cas: 'mixture',    pct: 3.0,  role: '西番蓮果香', note: 'top' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 8.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Lily (百合)',                    cas: 'mixture',    pct: 4.0,  role: '百合優雅', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 5.0,  role: '零陵香豆', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草泥土', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '雪松木質', note: 'base' },
+      { name: 'Passion fruit accord (西番蓮調)', cas: 'mixture', pct: 3, role: '西番蓮果香', note: 'top' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉白花', note: 'middle' },
+      { name: 'Lily (百合)', cas: 'mixture', pct: 4, role: '百合優雅', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '岩蘭草泥土', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '雪松木質', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 4,
     longevity: 4,
   },
-
   // ────────────────────────────────────────────
-  // 128. Lancôme La Nuit Trésor (2015)
+  // 115. La Nuit Trésor (2015)
   // ────────────────────────────────────────────
   {
     id: 'lancome-nuittresor',
@@ -4337,23 +3797,22 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '茉莉', '香草蘭'],
     baseNotes: ['香草', '廣藿香', '咖啡', '乳香'],
     ingredients: [
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 4.0,  role: '荔枝果香', note: 'top' },
-      { name: 'Raspberry accord (覆盆子調)',     cas: 'mixture',    pct: 3.0,  role: '覆盆子甜美', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Jasmine sambac abs (茉莉原精)',   cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Vanilla orchid abs (香草蘭原精)', cas: 'mixture',    pct: 4.0,  role: '香草蘭甜美', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草濃郁', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Coffee accord (咖啡調)',          cas: 'mixture',    pct: 2.0,  role: '咖啡深邃', note: 'base' },
-      { name: 'Frankincense oil (乳香精油)',     cas: '8016-36-2', pct: 1.0,  role: '乳香煙燻', note: 'base' },
+      { name: 'Lychee accord (荔枝調)', cas: 'mixture', pct: 4, role: '荔枝果香', note: 'top' },
+      { name: 'Raspberry accord (覆盆子調)', cas: 'mixture', pct: 3, role: '覆盆子甜美', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine sambac abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Vanilla orchid abs (香草蘭原精)', cas: 'mixture', pct: 4, role: '香草蘭甜美', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草濃郁', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香深度', note: 'base' },
+      { name: 'Coffee accord (咖啡調)', cas: 'mixture', pct: 2, role: '咖啡深邃', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 1, role: '乳香煙燻', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 129. Chanel Gabrielle (2017)
+  // 116. Gabrielle (2017)
   // ────────────────────────────────────────────
   {
     id: 'chanel-gabrielle',
@@ -4370,22 +3829,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['伊蘭', '茉莉', '橙花', '晚香玉'],
     baseNotes: ['檀香', '麝香'],
     ingredients: [
-      { name: 'Ylang ylang oil (伊蘭精油)',      cas: '8006-81-3', pct: 8.0,  role: '伊蘭濃郁', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 8.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 6.0,  role: '橙花優雅', note: 'middle' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 6.0,  role: '晚香玉性感', note: 'middle' },
-      { name: 'Mandarin oil (柑橘精油)',         cas: '8008-31-9', pct: 2.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Grapefruit oil (葡萄柚精油)',    cas: '8016-20-4', pct: 2.0,  role: '葡萄柚清新', note: 'top' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 5.0,  role: '檀香柔和', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 5.0,  role: '白麝香', note: 'base' },
+      { name: 'Ylang ylang oil (伊蘭精油)', cas: '8006-81-3', pct: 8, role: '伊蘭濃郁', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉白花', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 6, role: '橙花優雅', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 6, role: '晚香玉性感', note: 'middle' },
+      { name: 'Mandarin oil (柑橘精油)', cas: '8008-31-9', pct: 2, role: '柑橘開場', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 2, role: '葡萄柚清新', note: 'top' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香柔和', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 130. Chanel Chance (2002)
+  // 117. Chance (2002)
   // ────────────────────────────────────────────
   {
     id: 'chanel-chance',
@@ -4402,22 +3860,21 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['風信子', '茉莉'],
     baseNotes: ['鳶尾花', '麝香', '香草', '廣藿香'],
     ingredients: [
-      { name: 'Pink pepper CO2 (粉紅胡椒)',      cas: 'mixture',    pct: 3.0,  role: '粉紅胡椒', note: 'top' },
-      { name: 'Lemon oil (檸檬精油)',            cas: '8008-56-8', pct: 4.0,  role: '檸檬清新', note: 'top' },
-      { name: 'Hyacinth accord (風信子調)',      cas: 'mixture',    pct: 5.0,  role: '風信子花香', note: 'middle' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 5.0,  role: '茉莉白花', note: 'middle' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 4.0,  role: '鳶尾粉質', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 2.0,  role: '香草柔和', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 2.0,  role: '廣藿香深度', note: 'base' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 3, role: '粉紅胡椒', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '檸檬清新', note: 'top' },
+      { name: 'Hyacinth accord (風信子調)', cas: 'mixture', pct: 5, role: '風信子花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 4, role: '鳶尾粉質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 2, role: '香草柔和', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 2, role: '廣藿香深度', note: 'base' },
     ],
     totalFragrancePct: 11,
     sillage: 3,
     longevity: 3,
   },
-
   // ────────────────────────────────────────────
-  // 131. Dior Joy (2018)
+  // 118. Joy (2018)
   // ────────────────────────────────────────────
   {
     id: 'dior-joy',
@@ -4434,21 +3891,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['格拉斯五月玫瑰', '茉莉'],
     baseNotes: ['檀香', '白麝香'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 5.0,  role: '佛手柑明亮', note: 'top' },
-      { name: 'Mandarin oil (柑橘精油)',         cas: '8008-31-9', pct: 3.0,  role: '柑橘清新', note: 'top' },
-      { name: 'Rose de Mai abs (五月玫瑰原精)',  cas: 'mixture',    pct: 12.0, role: '格拉斯玫瑰', note: 'middle' },
-      { name: 'Jasmine grandiflorum abs (大花茉莉)',cas: 'mixture', pct: 10.0, role: '格拉斯茉莉', note: 'middle' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 6.0,  role: '檀香柔和', note: 'base' },
-      { name: 'Galaxolide (佳樂麝香)',           cas: '1222-05-5',  pct: 6.0,  role: '白麝香', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑明亮', note: 'top' },
+      { name: 'Mandarin oil (柑橘精油)', cas: '8008-31-9', pct: 3, role: '柑橘清新', note: 'top' },
+      { name: 'Rose de Mai abs (五月玫瑰原精)', cas: 'mixture', pct: 12, role: '格拉斯玫瑰', note: 'middle' },
+      { name: 'Jasmine grandiflorum abs (大花茉莉)', cas: 'mixture', pct: 10, role: '格拉斯茉莉', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香柔和', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
     ],
     totalFragrancePct: 18,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 132. Dior Addict (2002)
-  // ── ──────────────────────────────────────────
+  // 119. Addict (2002)
+  // ────────────────────────────────────────────
   {
     id: 'dior-addict',
     name: 'Addict',
@@ -4464,21 +3920,20 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['玫瑰', '晚香玉'],
     baseNotes: ['香草', '檀香', '零陵香豆'],
     ingredients: [
-      { name: 'Orange blossom abs (橙花原精)',    cas: 'mixture',   pct: 8.0,  role: '橙花白花', note: 'top' },
-      { name: 'Jasmine abs (茉莉原精)',          cas: 'mixture',    pct: 8.0,  role: '茉莉濃郁', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 6.0,  role: '玫瑰花香', note: 'middle' },
-      { name: 'Tuberose abs (晚香玉原精)',       cas: 'mixture',    pct: 5.0,  role: '晚香玉性感', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草甜美', note: 'base' },
-      { name: 'Sandalwood oil (檀香精油)',       cas: '8006-87-9', pct: 5.0,  role: '檀香木質', note: 'base' },
-      { name: 'Tonka bean abs (零陵香豆原精)',   cas: 'mixture',    pct: 4.0,  role: '零陵香豆', note: 'base' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 8, role: '橙花白花', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉濃郁', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 5, role: '晚香玉性感', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香木質', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆原精)', cas: 'mixture', pct: 4, role: '零陵香豆', note: 'base' },
     ],
     totalFragrancePct: 17,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 133. Tom Ford Noir (2012)
+  // 120. Noir (2012)
   // ────────────────────────────────────────────
   {
     id: 'tomford-noir',
@@ -4495,24 +3950,23 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['鳶尾花', '天竺葵', '黑胡椒'],
     baseNotes: ['琥珀', '香草', '廣藿香', '岩蘭草'],
     ingredients: [
-      { name: 'Bergamot oil (佛手柑精油)',       cas: '8007-75-8', pct: 3.0,  role: '柑橘開場', note: 'top' },
-      { name: 'Violet (紫羅蘭)',                 cas: 'mixture',    pct: 4.0,  role: '紫羅蘭粉質', note: 'top' },
-      { name: 'Iris pallida abs (鳶尾花原精)',    cas: 'mixture',    pct: 6.0,  role: '鳶尾優雅', note: 'middle' },
-      { name: 'Geranium oil (天竺葵精油)',       cas: '8000-46-2', pct: 3.0,  role: '天竺葵花香', note: 'middle' },
-      { name: 'Black pepper oil (黑胡椒精油)',   cas: '8006-82-4', pct: 2.0,  role: '黑胡椒辛香', note: 'middle' },
-      { name: 'Cardamom oil (小荳蔻精油)',       cas: '8000-66-6', pct: 1.5,  role: '小荳蔻辛香', note: 'top' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 6.0,  role: '琥珀溫暖', note: 'base' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 5.0,  role: '香草甜美', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'base' },
-      { name: 'Vetiver oil (岩蘭草精油)',        cas: '8016-96-4', pct: 3.0,  role: '岩蘭草泥土', note: 'base' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 3, role: '柑橘開場', note: 'top' },
+      { name: 'Violet (紫羅蘭)', cas: 'mixture', pct: 4, role: '紫羅蘭粉質', note: 'top' },
+      { name: 'Iris pallida abs (鳶尾花原精)', cas: 'mixture', pct: 6, role: '鳶尾優雅', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 2, role: '黑胡椒辛香', note: 'middle' },
+      { name: 'Cardamom oil (小荳蔻精油)', cas: '8000-66-6', pct: 1.5, role: '小荳蔻辛香', note: 'top' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香深度', note: 'base' },
+      { name: 'Vetiver oil (岩蘭草精油)', cas: '8016-96-4', pct: 3, role: '岩蘭草泥土', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
     longevity: 5,
   },
-
   // ────────────────────────────────────────────
-  // 134. Valentino Donna Born in Roma (2019)
+  // 121. Donna Born in Roma (2019)
   // ────────────────────────────────────────────
   {
     id: 'valentino-borninroma',
@@ -4529,13 +3983,13 @@ export const PERFUME_FORMULAS = [
     heartNotes: ['香草蘭', '三葉草'],
     baseNotes: ['香草', '廣藿香', '波本香草'],
     ingredients: [
-      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture',   pct: 4.0,  role: '黑醋栗果香', note: 'top' },
-      { name: 'Jasmine grandiflorum abs (大花茉莉)',cas: 'mixture', pct: 6.0,  role: '茉莉白花', note: 'top' },
-      { name: 'Vanilla orchid abs (香草蘭原精)', cas: 'mixture',    pct: 8.0,  role: '香草蘭甜美', note: 'middle' },
-      { name: 'Clover accord (三葉草調)',        cas: 'mixture',    pct: 3.0,  role: '三葉草清新', note: 'middle' },
-      { name: 'Vanilla abs (香草原精)',          cas: 'mixture',    pct: 8.0,  role: '香草濃郁', note: 'base' },
-      { name: 'Bourbon vanilla abs (波本香草)',  cas: 'mixture',    pct: 5.0,  role: '波本香草', note: 'base' },
-      { name: 'Patchouli oil (廣藿香精油)',       cas: '8014-09-3', pct: 4.0,  role: '廣藿香深度', note: 'base' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗果香', note: 'top' },
+      { name: 'Jasmine grandiflorum abs (大花茉莉)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'top' },
+      { name: 'Vanilla orchid abs (香草蘭原精)', cas: 'mixture', pct: 8, role: '香草蘭甜美', note: 'middle' },
+      { name: 'Clover accord (三葉草調)', cas: 'mixture', pct: 3, role: '三葉草清新', note: 'middle' },
+      { name: 'Vanilla abs (香草原精)', cas: 'mixture', pct: 8, role: '香草濃郁', note: 'base' },
+      { name: 'Bourbon vanilla abs (波本香草)', cas: 'mixture', pct: 5, role: '波本香草', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香深度', note: 'base' },
     ],
     totalFragrancePct: 16,
     sillage: 4,
@@ -4543,46 +3997,2601 @@ export const PERFUME_FORMULAS = [
   },
 
   // ────────────────────────────────────────────
-  // 135. Chloé Eau de Parfum (2008)
+  // 122. L\'Heure Bleue (1912)
   // ────────────────────────────────────────────
   {
-    id: 'chloe-edp',
-    name: 'Chloé Eau de Parfum',
-    brand: 'gucci',
-    year: 2008,
-    perfumer: 'Amandine Clerc-Marie, Michel Almairac',
+    id: 'guerlain-lheure-bleue',
+    name: 'L\'Heure Bleue',
+    brand: 'guerlain',
+    year: 1912,
+    perfumer: 'Jacques Guerlain',
     concentration: 'edp',
-    family: 'floral',
-    subfamilies: ['powdery', 'fresh'],
+    family: 'oriental',
+    subfamilies: ['floral', 'powdery'],
     gender: 'feminine',
-    description: '法式玫瑰花園的優雅。牡丹與荔枝的果香花香開場，玫瑰與木蘭的花香核心，琥珀和雪松的粉質基底。優雅、浪漫、充滿法式風情。',
-    topNotes: ['牡丹', '荔枝', '小蒼蘭'],
-    heartNotes: ['玫瑰', '木蘭', '鈴蘭'],
-    baseNotes: ['琥珀', '雪松'],
+    description: '香水史上最偉大的醛香花香之一。茴香和玫瑰的開場，鳶尾和康乃馨的粉質花香，香草和零陵香豆的甜美基底。優雅、憂鬱、永恆經典。',
+    topNotes: ['茴香', '玫瑰', '檸檬'],
+    heartNotes: ['鳶尾', '康乃馨', '橙花', '紫羅蘭'],
+    baseNotes: ['香草', '零陵香豆', '安息香', '麝香'],
     ingredients: [
-      { name: 'Peony accord (牡丹調)',           cas: 'mixture',    pct: 6.0,  role: '牡丹花香', note: 'top' },
-      { name: 'Lychee accord (荔枝調)',          cas: 'mixture',    pct: 3.0,  role: '荔枝果香', note: 'top' },
-      { name: 'Freesia (小蒼蘭)',               cas: 'mixture',    pct: 3.0,  role: '小蒼蘭清新', note: 'top' },
-      { name: 'Rose abs (玫瑰原精)',             cas: 'mixture',    pct: 10.0, role: '玫瑰核心', note: 'middle' },
-      { name: 'Magnolia accord (木蘭調)',        cas: 'mixture',    pct: 4.0,  role: '木蘭優雅', note: 'middle' },
-      { name: 'Lily of the valley (鈴蘭)',      cas: 'mixture',    pct: 2.0,  role: '鈴蘭清新', note: 'middle' },
-      { name: 'Ambroxan (琥珀烷)',              cas: '6790-58-5',  pct: 5.0,  role: '琥珀粉質', note: 'base' },
-      { name: 'Cedarwood oil (雪松精油)',        cas: '8000-27-9', pct: 3.0,  role: '雪松木質', note: 'base' },
+      { name: 'Anisaldehyde (茴香醛)', cas: '123-11-5', pct: 2.5, role: '茴香辛香', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 8, role: '玫瑰花香', note: 'top' },
+      { name: 'Iris concrete (鳶尾根浸膏)', cas: 'mixture', pct: 12, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Carnation absolute (康乃馨原精)', cas: 'mixture', pct: 5, role: '康乃馨辛香', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 6, role: '零陵香豆', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 4, role: '樹脂溫暖', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 3, role: '麝香柔和', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 123. Pour Un Homme (1934)
+  // ────────────────────────────────────────────
+  {
+    id: 'caron-pour-un-homme',
+    name: 'Pour Un Homme',
+    brand: 'caron',
+    year: 1934,
+    perfumer: 'Ernest Daltroff',
+    concentration: 'edt',
+    family: 'fougere',
+    subfamilies: ['aromatic', 'powdery'],
+    gender: 'masculine',
+    description: '經典馥奇香的標杆之作。薰衣草的芳香開場，香草的甜美中調，零陵香豆和麝香的粉質基底。優雅、柔和、永不過時。',
+    topNotes: ['薰衣草', '迷迭香', '佛手柑'],
+    heartNotes: ['天竺葵', '丁香', '香草'],
+    baseNotes: ['零陵香豆', '麝香', '檀香', '雪松'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 15, role: '薰衣草核心', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 3, role: '迷迭香綠意', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '柑橘明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 5, role: '天竺葵花香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 7, role: '零陵香豆', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 3, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 124. Eau d\'Hadrien (1981)
+  // ────────────────────────────────────────────
+  {
+    id: 'goutal-eau-hadrien',
+    name: 'Eau d\'Hadrien',
+    brand: 'goutal',
+    year: 1981,
+    perfumer: 'Annick Goutal',
+    concentration: 'edt',
+    family: 'citrus',
+    subfamilies: ['fresh', 'aromatic'],
+    gender: 'unisex',
+    description: '地中海柑橘的純粹表達。西西里檸檬和葡萄柚的清新開場，絲柏的綠色中調，西洋杉的木質基底。明亮、清爽、夏日經典。',
+    topNotes: ['檸檬', '葡萄柚', '橘子'],
+    heartNotes: ['絲柏', '羅勒'],
+    baseNotes: ['西洋杉', '白麝香'],
+    ingredients: [
+      { name: 'Lemon oil Sicily (西西里檸檬)', cas: '8008-56-8', pct: 25, role: '檸檬核心', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 15, role: '葡萄柚清新', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 8, role: '橘子甜美', note: 'top' },
+      { name: 'Cypress oil (絲柏精油)', cas: '8013-86-3', pct: 4, role: '絲柏綠意', note: 'middle' },
+      { name: 'Basil oil (羅勒精油)', cas: '8015-73-4', pct: 2, role: '羅勒草本', note: 'middle' },
+      { name: 'Cedarwood Atlas (西洋杉)', cas: '92201-55-3', pct: 3, role: '雪松木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 2, role: '白麝香', note: 'base' },
+    ],
+    totalFragrancePct: 8,
+    sillage: 2,
+    longevity: 3,
+  },
+
+  // ────────────────────────────────────────────
+  // 125. Eau Duelle (2010)
+  // ────────────────────────────────────────────
+  {
+    id: 'diptyque-eau-duelle',
+    name: 'Eau Duelle',
+    brand: 'diptyque',
+    year: 2010,
+    perfumer: 'Fabrice Pellegrin',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['woody', 'gourmand'],
+    gender: 'unisex',
+    description: '香草與木質的二重奏。粉紅胡椒和荳蔻的辛香開場，香草的甜美核心，安息香和廣大利亞香脂的樹脂基底。溫暖、甜美、東西合璧。',
+    topNotes: ['粉紅胡椒', '荳蔻', '杜松子'],
+    heartNotes: ['香草', '雪松'],
+    baseNotes: ['安息香', '廣大利亞香脂', '乳香'],
+    ingredients: [
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 3, role: '粉紅胡椒', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 2, role: '荳蔻辛香', note: 'top' },
+      { name: 'Vanilla abs Madagascar (馬達加斯加香草)', cas: 'mixture', pct: 15, role: '香草核心', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Benzoin Siam (暹羅安息香)', cas: 'mixture', pct: 6, role: '安息香樹脂', note: 'base' },
+      { name: 'Copaiba balsam (廣大利亞香脂)', cas: '8001-61-4', pct: 4, role: '香脂溫暖', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 3, role: '乳香煙燻', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 126. Silver Mountain Water (1995)
+  // ────────────────────────────────────────────
+  {
+    id: 'creed-silver-mountain',
+    name: 'Silver Mountain Water',
+    brand: 'creed',
+    year: 1995,
+    perfumer: 'Olivier Creed',
+    concentration: 'edp',
+    family: 'fresh',
+    subfamilies: ['aromatic', 'citrus'],
+    gender: 'unisex',
+    description: '阿爾卑斯山的清新空氣。佛手柑和柑橘的明亮開場，綠茶和黑醋栗的清新中調，麝香和檀香的溫和基底。清爽、乾淨、高山氣息。',
+    topNotes: ['佛手柑', '柑橘', '檸檬'],
+    heartNotes: ['綠茶', '黑醋栗'],
+    baseNotes: ['麝香', '檀香', '雪松'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 12, role: '佛手柑清新', note: 'top' },
+      { name: 'Mandarin oil (柑橘精油)', cas: '8008-31-9', pct: 8, role: '柑橘明亮', note: 'top' },
+      { name: 'Green tea accord (綠茶調)', cas: 'mixture', pct: 6, role: '綠茶清新', note: 'middle' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗果香', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香木質', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 127. Blenheim Bouquet (1902)
+  // ────────────────────────────────────────────
+  {
+    id: 'penhaligons-blenheim',
+    name: 'Blenheim Bouquet',
+    brand: 'penhaligons',
+    year: 1902,
+    perfumer: 'Unknown',
+    concentration: 'edt',
+    family: 'citrus',
+    subfamilies: ['aromatic'],
+    gender: 'masculine',
+    description: '英式古典柑橘芳香。檸檬和萊姆的清新開場，黑胡椒和松針的辛香中調，麝香的柔和基底。傳統、紳士、經典英倫。',
+    topNotes: ['檸檬', '萊姆', '佛手柑'],
+    heartNotes: ['黑胡椒', '松針', '杜松子'],
+    baseNotes: ['麝香', '橡木苔'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 20, role: '檸檬核心', note: 'top' },
+      { name: 'Lime oil (萊姆精油)', cas: '8008-26-2', pct: 12, role: '萊姆清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 8, role: '佛手柑明亮', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 4, role: '黑胡椒辛香', note: 'middle' },
+      { name: 'Pine needle oil (松針精油)', cas: '8021-29-2', pct: 3, role: '松針綠意', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 4, role: '白麝香', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 2, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 8,
+    sillage: 2,
+    longevity: 3,
+  },
+
+  // ────────────────────────────────────────────
+  // 128. Legend (2011)
+  // ────────────────────────────────────────────
+  {
+    id: 'montblanc-legend',
+    name: 'Legend',
+    brand: 'montblanc',
+    year: 2011,
+    perfumer: 'Olivier Pescheux',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fresh', 'woody'],
+    gender: 'masculine',
+    description: '現代芳香馥奇的優雅詮釋。薰衣草和佛手柑的清新開場，橡木苔和香豆素的中調，檀香和零陵香豆的溫暖基底。清爽、優雅、現代經典。',
+    topNotes: ['薰衣草', '佛手柑', '鳳梨葉'],
+    heartNotes: ['橡木苔', '香豆素', '玫瑰'],
+    baseNotes: ['檀香', '零陵香豆', '雪松'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 10, role: '薰衣草芳香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Pineapple leaf accord (鳳梨葉調)', cas: 'mixture', pct: 3, role: '鳳梨葉綠意', note: 'top' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 5, role: '橡木苔土壤', note: 'middle' },
+      { name: 'Coumarin (香豆素)', cas: '91-64-5', pct: 6, role: '香豆素甜美', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 129. Invictus (2013)
+  // ────────────────────────────────────────────
+  {
+    id: 'paco-invictus',
+    name: 'Invictus',
+    brand: 'paco',
+    year: 2013,
+    perfumer: 'Veronique Nyberg, Olivier Polge, Dominique Ropion',
+    concentration: 'edt',
+    family: 'fresh',
+    subfamilies: ['aquatic', 'woody'],
+    gender: 'masculine',
+    description: '勝利的海洋木質香。葡萄柚和海洋調的清新開場，月桂葉的芳香中調，癒創木和琥珀的木質基底。運動、清新、充滿活力。',
+    topNotes: ['葡萄柚', '海洋調', '橘子'],
+    heartNotes: ['月桂葉', '茉莉'],
+    baseNotes: ['癒創木', '琥珀', '橡木苔'],
+    ingredients: [
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 10, role: '葡萄柚清新', note: 'top' },
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 5, role: '海洋水感', note: 'top' },
+      { name: 'Bay leaf oil (月桂葉精油)', cas: '8006-78-8', pct: 4, role: '月桂葉芳香', note: 'middle' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 3, role: '茉莉白花', note: 'middle' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 8, role: '癒創木煙燻', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 3, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 13,
+    sillage: 4,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 130. Mr. Burberry (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'burberry-mr-burberry',
+    name: 'Mr. Burberry',
+    brand: 'burberry',
+    year: 2016,
+    perfumer: 'Francis Kurkdjian',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'fresh'],
+    gender: 'masculine',
+    description: '英倫紳士的現代詮釋。葡萄柚和龍蒿的清新開場，樺木葉和癒創木的木質中調，雪松和安息香的溫暖基底。優雅、經典、倫敦精神。',
+    topNotes: ['葡萄柚', '龍蒿', '荳蔻'],
+    heartNotes: ['樺木葉', '癒創木'],
+    baseNotes: ['雪松', '安息香', '檀香'],
+    ingredients: [
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 8, role: '葡萄柚清新', note: 'top' },
+      { name: 'Tarragon oil (龍蒿精油)', cas: '8016-88-4', pct: 3, role: '龍蒿草本', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 2, role: '荳蔻辛香', note: 'top' },
+      { name: 'Birch leaf abs (樺木葉原精)', cas: 'mixture', pct: 6, role: '樺木葉綠意', note: 'middle' },
+      { name: 'Guaiacwood oil (癒創木精油)', cas: '8016-23-7', pct: 7, role: '癒創木煙燻', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 5, role: '安息香樹脂', note: 'base' },
+    ],
+    totalFragrancePct: 13,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 131. Uomo (2014)
+  // ────────────────────────────────────────────
+  {
+    id: 'valentino-uomo',
+    name: 'Uomo',
+    brand: 'valentino',
+    year: 2014,
+    perfumer: 'Olivier Polge, Sonia Constant',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['woody'],
+    gender: 'masculine',
+    description: '義式優雅的木質東方香。佛手柑和榛果的開場，咖啡和雪松的中調，可可和皮革的基底。精緻、優雅、意大利風情。',
+    topNotes: ['佛手柑', '桃金孃', '榛果'],
+    heartNotes: ['咖啡', '雪松'],
+    baseNotes: ['可可', '皮革'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 8, role: '佛手柑清新', note: 'top' },
+      { name: 'Hazelnut accord (榛果調)', cas: 'mixture', pct: 4, role: '榛果堅果', note: 'top' },
+      { name: 'Coffee absolute (咖啡原精)', cas: 'mixture', pct: 6, role: '咖啡濃郁', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Cacao absolute (可可原精)', cas: 'mixture', pct: 5, role: '可可甜美', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 4, role: '皮革煙燻', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 132. Luna Rossa (2012)
+  // ────────────────────────────────────────────
+  {
+    id: 'prada-luna-rossa',
+    name: 'Luna Rossa',
+    brand: 'prada',
+    year: 2012,
+    perfumer: 'Daniela Andrier',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fresh', 'citrus'],
+    gender: 'masculine',
+    description: '帆船競賽的清新芳香。薰衣草和橙花的芳香開場，丁香和龍蒿的辛香中調，琥珀和麝香的溫暖基底。運動、清新、極簡現代。',
+    topNotes: ['薰衣草', '橙花', '佛手柑'],
+    heartNotes: ['丁香', '龍蒿', '鼠尾草'],
+    baseNotes: ['琥珀', '麝香'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 12, role: '薰衣草芳香', note: 'top' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 6, role: '橙花白花', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Clove bud oil (丁香精油)', cas: '8000-34-8', pct: 2, role: '丁香辛香', note: 'middle' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 4, role: '鼠尾草草本', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 133. Gentleman Cologne (2019)
+  // ────────────────────────────────────────────
+  {
+    id: 'givenchy-gentleman-cologne',
+    name: 'Gentleman Cologne',
+    brand: 'givenchy',
+    year: 2019,
+    perfumer: 'Olivier Cresp, Nathalie Lorson',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['citrus', 'floral'],
+    gender: 'masculine',
+    description: '經典紳士香的清新演繹。檸檬和佛手柑的柑橘開場，鳶尾和天竺葵的花香中調，香根草和麝香的優雅基底。清爽、優雅、紳士風範。',
+    topNotes: ['檸檬', '佛手柑'],
+    heartNotes: ['鳶尾', '天竺葵'],
+    baseNotes: ['香根草', '麝香'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 15, role: '檸檬清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '佛手柑明亮', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 8, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 5, role: '天竺葵花香', note: 'middle' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+    ],
+    totalFragrancePct: 10,
+    sillage: 3,
+    longevity: 3,
+  },
+
+  // ────────────────────────────────────────────
+  // 134. K by Dolce & Gabbana (2019)
+  // ────────────────────────────────────────────
+  {
+    id: 'dg-k',
+    name: 'K',
+    brand: 'dolce',
+    year: 2019,
+    perfumer: 'Daphne Bugey, Nathalie Lorson',
+    concentration: 'edp',
+    family: 'aromatic',
+    subfamilies: ['fresh', 'woody'],
+    gender: 'masculine',
+    description: '國王的芳香木質香。血橙和檸檬的柑橘開場，鼠尾草和天竺葵的芳香中調，雪松和廣藿香的木質基底。現代、清新、王者氣質。',
+    topNotes: ['血橙', '檸檬', '荳蔻'],
+    heartNotes: ['鼠尾草', '天竺葵', '薰衣草'],
+    baseNotes: ['雪松', '廣藿香', '香根草'],
+    ingredients: [
+      { name: 'Blood orange oil (血橙精油)', cas: 'mixture', pct: 10, role: '血橙果香', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 6, role: '檸檬清新', note: 'top' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 6, role: '鼠尾草草本', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 5, role: '香根草綠意', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 135. L\'Homme (2006)
+  // ────────────────────────────────────────────
+  {
+    id: 'ysl-lhomme',
+    name: 'L\'Homme',
+    brand: 'ysl',
+    year: 2006,
+    perfumer: 'Anne Flipo, Pierre Wargnye, Dominique Ropion',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'fresh'],
+    gender: 'masculine',
+    description: '現代男性的清新木質香。檸檬和薑的清新開場，紫羅蘭葉和羅勒的綠色中調，雪松和香根草的木質基底。清爽、優雅、現代經典。',
+    topNotes: ['檸檬', '薑', '佛手柑'],
+    heartNotes: ['紫羅蘭葉', '羅勒', '白胡椒'],
+    baseNotes: ['雪松', '香根草', '零陵香豆'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 8, role: '檸檬清新', note: 'top' },
+      { name: 'Ginger oil (薑精油)', cas: '8007-08-7', pct: 3, role: '薑辛香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑明亮', note: 'top' },
+      { name: 'Violet leaf abs (紫羅蘭葉原精)', cas: 'mixture', pct: 6, role: '紫羅蘭綠意', note: 'middle' },
+      { name: 'Basil oil (羅勒精油)', cas: '8015-73-4', pct: 2, role: '羅勒草本', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
     ],
     totalFragrancePct: 14,
     sillage: 3,
     longevity: 4,
   },
+
+  // ────────────────────────────────────────────
+  // 136. Boss Bottled Intense (2015)
+  // ────────────────────────────────────────────
+  {
+    id: 'boss-bottled-intense',
+    name: 'Boss Bottled Intense',
+    brand: 'boss',
+    year: 2015,
+    perfumer: 'Olivier Polge, Annick Menardo',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['oriental', 'spicy'],
+    gender: 'masculine',
+    description: '經典BOSS的濃郁版本。橙花和蘋果的果香開場，肉桂和丁香的辛香中調，檀香和香根草的木質基底。濃烈、溫暖、成熟魅力。',
+    topNotes: ['橙花', '蘋果', '柑橘'],
+    heartNotes: ['肉桂', '丁香', '橙花'],
+    baseNotes: ['檀香', '香根草', '雪松'],
+    ingredients: [
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 8, role: '橙花白花', note: 'top' },
+      { name: 'Apple accord (蘋果調)', cas: 'mixture', pct: 5, role: '蘋果果香', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 4, role: '肉桂辛香', note: 'middle' },
+      { name: 'Clove bud oil (丁香精油)', cas: '8000-34-8', pct: 3, role: '丁香辛香', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 10, role: '檀香奶質', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 137. Cool Water (1988)
+  // ────────────────────────────────────────────
+  {
+    id: 'davidoff-cool-water',
+    name: 'Cool Water',
+    brand: 'davidoff',
+    year: 1988,
+    perfumer: 'Pierre Bourdon',
+    concentration: 'edt',
+    family: 'aquatic',
+    subfamilies: ['aromatic', 'fresh'],
+    gender: 'masculine',
+    description: '水生香調的開創之作。薰衣草和薄荷的芳香開場，Calone的海洋氣息，檀香和麝香的溫暖基底。清爽、海洋、永恆經典。',
+    topNotes: ['薰衣草', '薄荷', '海洋調'],
+    heartNotes: ['茉莉', '天竺葵', '橙花'],
+    baseNotes: ['檀香', '麝香', '琥珀', '橡木苔'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 12, role: '薰衣草芳香', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: '8006-90-4', pct: 5, role: '薄荷清涼', note: 'top' },
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 6, role: '海洋水感', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香奶質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 2, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 138. H24 (2021)
+  // ────────────────────────────────────────────
+  {
+    id: 'hermes-h24',
+    name: 'H24',
+    brand: 'hermes',
+    year: 2021,
+    perfumer: 'Christine Nagel',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fresh', 'woody'],
+    gender: 'masculine',
+    description: '未來主義的綠色芳香。鼠尾草和迷迭香的草本開場，合成分子Sclarene的金屬綠意，雪松和麝香的現代基底。創新、清新、未來感。',
+    topNotes: ['鼠尾草', '迷迭香'],
+    heartNotes: ['Sclarene', '水仙'],
+    baseNotes: ['雪松', '麝香'],
+    ingredients: [
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 10, role: '鼠尾草草本', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 5, role: '迷迭香綠意', note: 'top' },
+      { name: 'Sclarene (合成鼠尾草酯)', cas: '564-20-5', pct: 8, role: '金屬綠意', note: 'middle' },
+      { name: 'Narcissus abs (水仙原精)', cas: 'mixture', pct: 4, role: '水仙花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 139. Allure Homme Sport (2004)
+  // ────────────────────────────────────────────
+  {
+    id: 'chanel-allure-sport',
+    name: 'Allure Homme Sport',
+    brand: 'chanel',
+    year: 2004,
+    perfumer: 'Jacques Polge',
+    concentration: 'edt',
+    family: 'fresh',
+    subfamilies: ['citrus', 'woody'],
+    gender: 'masculine',
+    description: '運動男性的清新木質香。橙子和海洋調的清新開場，胡椒和雪松的辛香中調，零陵香豆和香根草的溫暖基底。清爽、運動、充滿活力。',
+    topNotes: ['橙子', '海洋調', '橘子'],
+    heartNotes: ['胡椒', '雪松', '橙花'],
+    baseNotes: ['零陵香豆', '香根草', '琥珀'],
+    ingredients: [
+      { name: 'Orange oil (橙子精油)', cas: '8008-57-9', pct: 10, role: '橙子清新', note: 'top' },
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 4, role: '海洋水感', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 6, role: '橘子甜美', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 3, role: '黑胡椒辛香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 6, role: '香根草土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 140. Fahrenheit (1988)
+  // ────────────────────────────────────────────
+  {
+    id: 'dior-fahrenheit',
+    name: 'Fahrenheit',
+    brand: 'dior',
+    year: 1988,
+    perfumer: 'Jean-Louis Sieuzac, Michel Almairac',
+    concentration: 'edt',
+    family: 'leather',
+    subfamilies: ['woody', 'aromatic'],
+    gender: 'masculine',
+    description: '革命性的皮革木質香。紫羅蘭和皮革的獨特開場，雪松和荳蔻的木質中調，廣藿香和麝香的溫暖基底。獨特、強烈、極具辨識度。',
+    topNotes: ['紫羅蘭', '皮革', '橘子'],
+    heartNotes: ['雪松', '荳蔻', '肉豆蔻'],
+    baseNotes: ['廣藿香', '麝香', '香根草'],
+    ingredients: [
+      { name: 'Violet leaf abs (紫羅蘭葉原精)', cas: 'mixture', pct: 8, role: '紫羅蘭綠意', note: 'top' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 6, role: '皮革煙燻', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 4, role: '橘子清新', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'middle' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 3, role: '荳蔻辛香', note: 'middle' },
+      { name: 'Nutmeg oil (肉豆蔻精油)', cas: '8008-45-5', pct: 2, role: '肉豆蔻溫暖', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 6, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 141. Grey Vetiver (2009)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-grey-vetiver',
+    name: 'Grey Vetiver',
+    brand: 'tomford',
+    year: 2009,
+    perfumer: 'Harry Fremont',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['aromatic', 'citrus'],
+    gender: 'masculine',
+    description: '經典優雅的香根草詮釋。柑橘和鼠尾草的清新開場，鳶尾和橙花的花香中調，香根草和雪松的木質基底。優雅、清爽、紳士風範。',
+    topNotes: ['葡萄柚', '橙子', '鼠尾草'],
+    heartNotes: ['鳶尾', '橙花'],
+    baseNotes: ['香根草', '雪松', '橡木苔'],
+    ingredients: [
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 10, role: '葡萄柚清新', note: 'top' },
+      { name: 'Orange oil (橙子精油)', cas: '8008-57-9', pct: 6, role: '橙子明亮', note: 'top' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 5, role: '鼠尾草草本', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 6, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Vetiver oil Haiti (海地香根草)', cas: '8016-96-4', pct: 15, role: '香根草核心', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 3, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 142. Acqua di Giò Profumo (2015)
+  // ────────────────────────────────────────────
+  {
+    id: 'armani-adg-profumo',
+    name: 'Acqua di Giò Profumo',
+    brand: 'armani',
+    year: 2015,
+    perfumer: 'Alberto Morillas, François Demachy',
+    concentration: 'edp',
+    family: 'aquatic',
+    subfamilies: ['aromatic', 'woody'],
+    gender: 'masculine',
+    description: '經典ADG的濃郁版本。海洋調和佛手柑的清新開場，迷迭香和鼠尾草的芳香中調，乳香和廣藿香的深邃基底。深沉、海洋、更加濃郁。',
+    topNotes: ['海洋調', '佛手柑'],
+    heartNotes: ['迷迭香', '鼠尾草', '天竺葵'],
+    baseNotes: ['乳香', '廣藿香', '琥珀'],
+    ingredients: [
+      { name: 'Calone (海洋酮)', cas: '28940-11-6', pct: 8, role: '海洋水感', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 8, role: '佛手柑清新', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 6, role: '迷迭香綠意', note: 'middle' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 5, role: '鼠尾草草本', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Incense oil (乳香精油)', cas: '8016-36-2', pct: 8, role: '乳香煙燻', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 143. Dylan Blue (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'versace-dylan-blue',
+    name: 'Dylan Blue',
+    brand: 'versace',
+    year: 2016,
+    perfumer: 'Alberto Morillas',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fresh', 'fougere'],
+    gender: 'masculine',
+    description: '地中海的芳香馥奇。佛手柑和葡萄柚的柑橘開場，無花果葉和紫羅蘭的綠色中調，麝香和零陵香豆的溫暖基底。清爽、優雅、地中海風情。',
+    topNotes: ['佛手柑', '葡萄柚', '無花果葉'],
+    heartNotes: ['紫羅蘭', '番紅花', '天竺葵'],
+    baseNotes: ['麝香', '零陵香豆', '乳香'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '佛手柑清新', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 6, role: '葡萄柚酸甜', note: 'top' },
+      { name: 'Fig leaf accord (無花果葉調)', cas: 'mixture', pct: 5, role: '無花果葉綠意', note: 'top' },
+      { name: 'Violet abs (紫羅蘭原精)', cas: 'mixture', pct: 4, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Saffron abs (番紅花原精)', cas: 'mixture', pct: 2, role: '番紅花辛香', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 3, role: '天竺葵花香', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 3, role: '乳香樹脂', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 4,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 144. Bad Boy (2019)
+  // ────────────────────────────────────────────
+  {
+    id: 'ch-bad-boy',
+    name: 'Bad Boy',
+    brand: 'ch',
+    year: 2019,
+    perfumer: 'Louise Turner, Nathalie Gracia-Cetto, Antoine Maisondieu',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['aromatic', 'spicy'],
+    gender: 'masculine',
+    description: '壞男孩的辛香東方調。胡椒和佛手柑的辛香開場，鼠尾草和雪松的芳香中調，可可和零陵香豆的甜美基底。性感、大膽、充滿魅力。',
+    topNotes: ['胡椒', '佛手柑'],
+    heartNotes: ['鼠尾草', '雪松'],
+    baseNotes: ['可可', '零陵香豆', '琥珀'],
+    ingredients: [
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 5, role: '黑胡椒辛香', note: 'top' },
+      { name: 'White pepper oil (白胡椒精油)', cas: '8006-85-7', pct: 3, role: '白胡椒清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑明亮', note: 'top' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 6, role: '鼠尾草草本', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Cacao absolute (可可原精)', cas: 'mixture', pct: 6, role: '可可甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 6, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 145. Wanted (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'azzaro-wanted',
+    name: 'Wanted',
+    brand: 'azzaro',
+    year: 2016,
+    perfumer: 'Fabrice Pellegrin',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['woody', 'spicy'],
+    gender: 'masculine',
+    description: '通緝令的辛香木質香。檸檬和薄荷的清新開場，荳蔻和杜松子的辛香中調，零陵香豆和香根草的溫暖基底。大膽、性感、充滿誘惑。',
+    topNotes: ['檸檬', '薄荷', '薰衣草'],
+    heartNotes: ['荳蔻', '杜松子', '蘋果'],
+    baseNotes: ['零陵香豆', '香根草', '琥珀'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 10, role: '檸檬清新', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: '8006-90-4', pct: 5, role: '薄荷清涼', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '薰衣草芳香', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 4, role: '荳蔻辛香', note: 'middle' },
+      { name: 'Juniper berry oil (杜松子精油)', cas: '8002-68-4', pct: 3, role: '杜松子綠意', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 8, role: '零陵香豆', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 6, role: '香根草土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 13,
+    sillage: 4,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 146. Ultra Male (2015)
+  // ────────────────────────────────────────────
+  {
+    id: 'jpg-ultra-male',
+    name: 'Ultra Male',
+    brand: 'jpg',
+    year: 2015,
+    perfumer: 'Francis Kurkdjian',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['fresh', 'aromatic'],
+    gender: 'masculine',
+    description: 'Le Male的加強版本。梨和薄荷的清新開場，肉桂和薰衣草的芳香中調，香草和琥珀的甜美基底。性感、甜美、超級濃郁。',
+    topNotes: ['梨', '薄荷', '黑醋栗'],
+    heartNotes: ['肉桂', '薰衣草', '鼠尾草'],
+    baseNotes: ['香草', '琥珀', '雪松'],
+    ingredients: [
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 8, role: '梨果香', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: '8006-90-4', pct: 6, role: '薄荷清涼', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 4, role: '黑醋栗果香', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 5, role: '肉桂辛香', note: 'middle' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '薰衣草芳香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 10, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 5,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 147. 1 Million Lucky (2018)
+  // ────────────────────────────────────────────
+  {
+    id: 'paco-million-lucky',
+    name: '1 Million Lucky',
+    brand: 'paco',
+    year: 2018,
+    perfumer: 'Christophe Raynaud, Michel Girard',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'fruity'],
+    gender: 'masculine',
+    description: '幸運百萬的果香木質。榛果和檸檬的開場，雪松和橙花的中調，廣藿香和琥珀的基底。甜美、木質、幸運氣息。',
+    topNotes: ['榛果', '檸檬', '葡萄柚'],
+    heartNotes: ['雪松', '橙花'],
+    baseNotes: ['廣藿香', '琥珀', '橡木苔'],
+    ingredients: [
+      { name: 'Hazelnut accord (榛果調)', cas: 'mixture', pct: 8, role: '榛果堅果', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 6, role: '檸檬清新', note: 'top' },
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 5, role: '葡萄柚酸甜', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 3, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 4,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 148. Pi (1998)
+  // ────────────────────────────────────────────
+  {
+    id: 'givenchy-pi',
+    name: 'Pi',
+    brand: 'givenchy',
+    year: 1998,
+    perfumer: 'Alberto Morillas',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['woody', 'vanilla'],
+    gender: 'masculine',
+    description: '數學般精確的東方木質香。橘子和龍蒿的開場，茴香和天竺葵的中調，香草和零陵香豆的甜美基底。溫暖、甜美、舒適包圍。',
+    topNotes: ['橘子', '龍蒿', '迷迭香'],
+    heartNotes: ['茴香', '天竺葵', '荳蔻'],
+    baseNotes: ['香草', '零陵香豆', '安息香'],
+    ingredients: [
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 8, role: '橘子清新', note: 'top' },
+      { name: 'Tarragon oil (龍蒿精油)', cas: '8016-88-4', pct: 3, role: '龍蒿草本', note: 'top' },
+      { name: 'Anise oil (茴香精油)', cas: '8007-70-3', pct: 4, role: '茴香辛香', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 12, role: '香草甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 8, role: '零陵香豆', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 6, role: '安息香樹脂', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 149. Encre Noire Sport (2013)
+  // ────────────────────────────────────────────
+  {
+    id: 'lalique-encre-noire-sport',
+    name: 'Encre Noire Sport',
+    brand: 'lalique',
+    year: 2013,
+    perfumer: 'Nathalie Lorson',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'fresh'],
+    gender: 'masculine',
+    description: '黑墨水的運動版本。葡萄柚和薰衣草的清新開場，香根草和柏木的綠色中調，麝香和雪松的基底。清爽、綠意、運動感。',
+    topNotes: ['葡萄柚', '薰衣草', '柏木'],
+    heartNotes: ['香根草', '水仙'],
+    baseNotes: ['麝香', '雪松', '開司米麝香'],
+    ingredients: [
+      { name: 'Grapefruit oil (葡萄柚精油)', cas: '8016-20-4', pct: 10, role: '葡萄柚清新', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '薰衣草芳香', note: 'top' },
+      { name: 'Cypress oil (柏木精油)', cas: '8013-86-3', pct: 5, role: '柏木綠意', note: 'top' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 15, role: '香根草核心', note: 'middle' },
+      { name: 'Narcissus abs (水仙原精)', cas: 'mixture', pct: 3, role: '水仙花香', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+      { name: 'Cashmeran (開司米麝香)', cas: '33704-61-9', pct: 4, role: '白木麝香', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 150. Lost Cherry (2018)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-lost-cherry',
+    name: 'Lost Cherry',
+    brand: 'tomford',
+    year: 2018,
+    perfumer: 'Louise Turner',
+    concentration: 'edp',
+    family: 'gourmand',
+    subfamilies: ['oriental', 'fruity'],
+    gender: 'unisex',
+    description: '禁忌的櫻桃甜香。櫻桃和杏仁的果香開場，茉莉和玫瑰的花香中調，零陵香豆和檀香的溫暖基底。甜美、性感、禁忌誘惑。',
+    topNotes: ['櫻桃', '杏仁', '櫻桃酒'],
+    heartNotes: ['茉莉', '玫瑰', '秘魯香脂'],
+    baseNotes: ['零陵香豆', '檀香', '雪松', '香根草'],
+    ingredients: [
+      { name: 'Cherry accord (櫻桃調)', cas: 'mixture', pct: 12, role: '櫻桃果香', note: 'top' },
+      { name: 'Bitter almond oil (苦杏仁精油)', cas: '8007-69-0', pct: 5, role: '杏仁堅果', note: 'top' },
+      { name: 'Maraschino cherry (櫻桃酒調)', cas: 'mixture', pct: 4, role: '櫻桃酒甜美', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'middle' },
+      { name: 'Turkish rose abs (土耳其玫瑰)', cas: 'mixture', pct: 5, role: '玫瑰花香', note: 'middle' },
+      { name: 'Peru balsam (秘魯香脂)', cas: '8007-00-9', pct: 5, role: '秘魯香脂', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 8, role: '零陵香豆', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 151. Velvet Orchid (2014)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-velvet-orchid',
+    name: 'Velvet Orchid',
+    brand: 'tomford',
+    year: 2014,
+    perfumer: 'Yann Vasnier, Calice Becker, Shyamala Srinivasan',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['oriental', 'woody'],
+    gender: 'feminine',
+    description: 'Black Orchid的姊妹篇。蜂蜜和朗姆酒的甜美開場，蘭花和玫瑰的花香中調，檀香和麝香的溫暖基底。優雅、甜美、絲絨質感。',
+    topNotes: ['蜂蜜', '朗姆酒', '佛手柑'],
+    heartNotes: ['蘭花', '玫瑰', '紫丁香'],
+    baseNotes: ['檀香', '秘魯香脂', '麝香', '琥珀'],
+    ingredients: [
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 6, role: '蜂蜜甜美', note: 'top' },
+      { name: 'Rum accord (朗姆酒調)', cas: 'mixture', pct: 4, role: '朗姆酒溫暖', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Orchid accord (蘭花調)', cas: 'mixture', pct: 8, role: '蘭花花香', note: 'middle' },
+      { name: 'Rose abs Turkey (土耳其玫瑰)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Lilac accord (紫丁香調)', cas: 'mixture', pct: 4, role: '紫丁香花香', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 10, role: '檀香奶質', note: 'base' },
+      { name: 'Peru balsam (秘魯香脂)', cas: '8007-00-9', pct: 6, role: '秘魯香脂', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 5, role: '動物麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 152. No. 22 (1922)
+  // ────────────────────────────────────────────
+  {
+    id: 'chanel-no22',
+    name: 'No. 22',
+    brand: 'chanel',
+    year: 1922,
+    perfumer: 'Ernest Beaux',
+    concentration: 'edp',
+    family: 'aldehyde',
+    subfamilies: ['floral', 'powdery'],
+    gender: 'feminine',
+    description: 'Chanel第二號作品，醛香花香傑作。醛香和佛手柑的明亮開場，茉莉和玫瑰的花香中調，鳶尾和香草的粉質基底。優雅、經典、粉質芳香。',
+    topNotes: ['醛香', '佛手柑', '橙花'],
+    heartNotes: ['茉莉', '玫瑰', '鈴蘭'],
+    baseNotes: ['鳶尾', '香草', '零陵香豆'],
+    ingredients: [
+      { name: 'Aldehyde C-10 (癸醛)', cas: '112-31-2', pct: 3, role: '醛香明亮', note: 'top' },
+      { name: 'Aldehyde C-11 (十一醛)', cas: '112-44-7', pct: 2.5, role: '醛香脂肪', note: 'top' },
+      { name: 'Aldehyde C-12 (月桂醛)', cas: '112-54-9', pct: 2, role: '醛香柑橘', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 4, role: '橙花白花', note: 'top' },
+      { name: 'Jasmine Grasse abs (格拉斯茉莉)', cas: 'mixture', pct: 8, role: '茉莉白花', note: 'middle' },
+      { name: 'Rose de Mai abs (五月玫瑰)', cas: 'mixture', pct: 7, role: '玫瑰花香', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 5, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 8, role: '鳶尾粉質', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 153. Arpège (1927)
+  // ────────────────────────────────────────────
+  {
+    id: 'lanvin-arpege',
+    name: 'Arpège',
+    brand: 'lanvin',
+    year: 1927,
+    perfumer: 'André Fraysse, Paul Vacher',
+    concentration: 'edp',
+    family: 'aldehyde',
+    subfamilies: ['floral', 'powdery'],
+    gender: 'feminine',
+    description: '經典的醛香花香香水。醛香和橙花的璀璨開場，茉莉玫瑰鈴蘭的豐富花束中調，香草和檀香的柔軟基底。優雅、複雜、永恆經典。',
+    topNotes: ['醛香', '橙花', '香檸檬'],
+    heartNotes: ['茉莉', '玫瑰', '鈴蘭', '依蘭'],
+    baseNotes: ['香草', '檀香', '廣藿香'],
+    ingredients: [
+      { name: 'Aldehyde C-10 (癸醛)', cas: '112-31-2', pct: 3.5, role: '醛香明亮', note: 'top' },
+      { name: 'Aldehyde C-11 (十一醛)', cas: '112-44-7', pct: 3, role: '醛香脂肪', note: 'top' },
+      { name: 'Aldehyde C-12 (月桂醛)', cas: '112-54-9', pct: 2.5, role: '醛香柑橘', note: 'top' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 5, role: '橙花白花', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '佛手柑清新', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 10, role: '茉莉白花', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 8, role: '玫瑰花香', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 6, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Ylang-ylang oil (依蘭精油)', cas: '8006-81-3', pct: 5, role: '依蘭花香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香奶質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 4, role: '廣藿香土壤', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 154. White Linen (1978)
+  // ────────────────────────────────────────────
+  {
+    id: 'estee-white-linen',
+    name: 'White Linen',
+    brand: 'estee',
+    year: 1978,
+    perfumer: 'Sophia Grojsman',
+    concentration: 'edp',
+    family: 'aldehyde',
+    subfamilies: ['floral', 'fresh'],
+    gender: 'feminine',
+    description: '清新的醛香花香。醛香和佛手柑的清新開場，茉莉玫瑰的白花中調，琥珀和香根草的基底。清新、乾淨、如白色亞麻。',
+    topNotes: ['醛香', '佛手柑', '桃子'],
+    heartNotes: ['茉莉', '玫瑰', '鈴蘭', '橙花'],
+    baseNotes: ['琥珀', '香根草', '橡木苔'],
+    ingredients: [
+      { name: 'Aldehyde C-10 (癸醛)', cas: '112-31-2', pct: 4, role: '醛香明亮', note: 'top' },
+      { name: 'Aldehyde C-11 (十一醛)', cas: '112-44-7', pct: 3, role: '醛香脂肪', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Peach aldehyde (桃醛)', cas: '104-67-6', pct: 3, role: '桃子果香', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 8, role: '茉莉白花', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 5, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 4, role: '橙花白花', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 3, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 155. Knowing (1988)
+  // ────────────────────────────────────────────
+  {
+    id: 'estee-knowing',
+    name: 'Knowing',
+    brand: 'estee',
+    year: 1988,
+    perfumer: 'Jean Kerléo',
+    concentration: 'edp',
+    family: 'chypre',
+    subfamilies: ['floral', 'woody'],
+    gender: 'feminine',
+    description: '知性女性的馥奇香。玫瑰和晚香玉的花香開場，廣藿香和香根草的木質中調，橡木苔和琥珀的基底。成熟、優雅、知性魅力。',
+    topNotes: ['玫瑰', '晚香玉', '含羞草'],
+    heartNotes: ['廣藿香', '香根草', '鳶尾'],
+    baseNotes: ['橡木苔', '琥珀', '麝香'],
+    ingredients: [
+      { name: 'Rose de Mai abs (五月玫瑰)', cas: 'mixture', pct: 8, role: '玫瑰花香', note: 'top' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 6, role: '晚香玉白花', note: 'top' },
+      { name: 'Mimosa abs (含羞草原精)', cas: 'mixture', pct: 4, role: '含羞草花香', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 10, role: '廣藿香土壤', note: 'middle' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'middle' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 5, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 8, role: '橡木苔核心', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 4, role: '動物麝香', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 156. Nuit de Cellophane (2009)
+  // ────────────────────────────────────────────
+  {
+    id: 'guerlain-nuit-cellophane',
+    name: 'Nuit de Cellophane',
+    brand: 'guerlain',
+    year: 2009,
+    perfumer: 'Thierry Wasser',
+    concentration: 'edt',
+    family: 'aldehyde',
+    subfamilies: ['floral', 'green'],
+    gender: 'feminine',
+    description: '現代醛香綠意花香。醛香和茉莉的明亮開場，玉蘭和風信子的白花中調，麝香的清新基底。清新、現代、優雅透明。',
+    topNotes: ['醛香', '茉莉', '香檸檬'],
+    heartNotes: ['玉蘭', '風信子', '紫丁香'],
+    baseNotes: ['麝香', '鳶尾'],
+    ingredients: [
+      { name: 'Aldehyde C-12 (月桂醛)', cas: '112-54-9', pct: 4, role: '醛香明亮', note: 'top' },
+      { name: 'Aldehyde C-14 (肉豆蔻醛)', cas: '104-67-6', pct: 3, role: '醛香桃香', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 8, role: '茉莉白花', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Magnolia accord (玉蘭調)', cas: 'mixture', pct: 8, role: '玉蘭花香', note: 'middle' },
+      { name: 'Hyacinth accord (風信子調)', cas: 'mixture', pct: 5, role: '風信子綠意', note: 'middle' },
+      { name: 'Lilac accord (紫丁香調)', cas: 'mixture', pct: 4, role: '紫丁香花香', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 4, role: '鳶尾粉質', note: 'base' },
+    ],
+    totalFragrancePct: 14,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 157. Cuir de Russie (1924)
+  // ────────────────────────────────────────────
+  {
+    id: 'chanel-cuir-russie',
+    name: 'Cuir de Russie',
+    brand: 'chanel',
+    year: 1924,
+    perfumer: 'Ernest Beaux',
+    concentration: 'edt',
+    family: 'leather',
+    subfamilies: ['chypre', 'floral'],
+    gender: 'unisex',
+    description: '俄羅斯皮革的經典詮釋。佛手柑和橘子的柑橘開場，鳶尾和茉莉的花香中調，樺木焦油和橡木苔的皮革基底。優雅、皮革、經典馥奇。',
+    topNotes: ['佛手柑', '橘子', '橙花'],
+    heartNotes: ['鳶尾', '茉莉', '依蘭'],
+    baseNotes: ['樺木焦油', '橡木苔', '麝香', '香根草'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '佛手柑清新', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 6, role: '橘子甜美', note: 'top' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 4, role: '橙花白花', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 8, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'middle' },
+      { name: 'Ylang-ylang oil (依蘭精油)', cas: '8006-81-3', pct: 4, role: '依蘭花香', note: 'middle' },
+      { name: 'Birch tar (樺木焦油)', cas: '8001-88-5', pct: 10, role: '皮革煙燻', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 8, role: '橡木苔土壤', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 5, role: '動物麝香', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 158. Tuscan Leather (2007)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-tuscan-leather',
+    name: 'Tuscan Leather',
+    brand: 'tomford',
+    year: 2007,
+    perfumer: 'Harry Fremont',
+    concentration: 'edp',
+    family: 'leather',
+    subfamilies: ['woody', 'spicy'],
+    gender: 'unisex',
+    description: '托斯卡納皮革的奢華詮釋。番紅花和樹莓的開場，皮革和茉莉的中調，琥珀和木質的基底。奢華、強烈、極具個性。',
+    topNotes: ['番紅花', '樹莓', '百里香'],
+    heartNotes: ['皮革', '茉莉', '木蘭'],
+    baseNotes: ['琥珀', '檀香', '雪松'],
+    ingredients: [
+      { name: 'Saffron abs (番紅花原精)', cas: 'mixture', pct: 5, role: '番紅花辛香', note: 'top' },
+      { name: 'Raspberry ketone (覆盆子酮)', cas: '5471-51-2', pct: 4, role: '樹莓果香', note: 'top' },
+      { name: 'Thyme oil (百里香精油)', cas: '8007-46-3', pct: 3, role: '百里香草本', note: 'top' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 12, role: '皮革煙燻', note: 'middle' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Olibanum (乳香樹脂)', cas: '8016-36-2', pct: 8, role: '乳香煙燻', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 159. Bois d\'Armenie (1999)
+  // ────────────────────────────────────────────
+  {
+    id: 'guerlain-bois-armenie',
+    name: 'Bois d\'Arménie',
+    brand: 'guerlain',
+    year: 1999,
+    perfumer: 'Annick Menardo',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'smoky'],
+    gender: 'unisex',
+    description: '亞美尼亞紙的煙燻木質。安息香和蜂蜜的開場，乳香和雪松的煙燻中調，琥珀和麝香的基底。煙燻、神秘、冥想氛圍。',
+    topNotes: ['安息香', '蜂蜜'],
+    heartNotes: ['乳香', '雪松', '廣藿香'],
+    baseNotes: ['琥珀', '麝香', '香根草'],
+    ingredients: [
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 12, role: '安息香樹脂', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 5, role: '蜂蜜甜美', note: 'top' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 10, role: '乳香煙燻', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 160. Ombre Leather (2018)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-ombre-leather',
+    name: 'Ombre Leather',
+    brand: 'tomford',
+    year: 2018,
+    perfumer: 'Sonia Constant, Louise Turner',
+    concentration: 'edp',
+    family: 'leather',
+    subfamilies: ['woody', 'amber'],
+    gender: 'unisex',
+    description: '沙漠皮革的現代詮釋。荳蔻和茉莉的開場，皮革和琥珀的中調，廣藿香和苔蘚的基底。強烈、野性、沙漠風情。',
+    topNotes: ['荳蔻', '茉莉'],
+    heartNotes: ['皮革', '琥珀', '荔枝'],
+    baseNotes: ['廣藿香', '苔蘚', '香根草'],
+    ingredients: [
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 5, role: '荳蔻辛香', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'top' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 15, role: '皮革煙燻', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 10, role: '琥珀溫暖', note: 'middle' },
+      { name: 'Litchi accord (荔枝調)', cas: 'mixture', pct: 3, role: '荔枝果香', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Evernyl (依芙尼)', cas: '103694-68-4', pct: 4, role: '苔蘚土壤', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 5, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 161. Memoir (1991)
+  // ────────────────────────────────────────────
+  {
+    id: 'amouage-memoir',
+    name: 'Memoir Woman',
+    brand: 'amouage',
+    year: 2010,
+    perfumer: 'Daniel Maurel',
+    concentration: 'edp',
+    family: 'chypre',
+    subfamilies: ['floral', 'woody'],
+    gender: 'feminine',
+    description: '回憶錄的馥奇花香。艾草和粉紅胡椒的開場，茉莉和玫瑰的花香中調，橡木苔和廣藿香的馥奇基底。復古、優雅、經典馥奇。',
+    topNotes: ['艾草', '粉紅胡椒', '荳蔻'],
+    heartNotes: ['茉莉', '玫瑰', '乳香'],
+    baseNotes: ['橡木苔', '廣藿香', '琥珀', '麝香'],
+    ingredients: [
+      { name: 'Wormwood oil (艾草精油)', cas: '8008-93-3', pct: 4, role: '艾草苦香', note: 'top' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 3, role: '粉紅胡椒', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 3, role: '荳蔻辛香', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 10, role: '茉莉白花', note: 'middle' },
+      { name: 'Rose de Mai abs (五月玫瑰)', cas: 'mixture', pct: 8, role: '玫瑰花香', note: 'middle' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 6, role: '乳香煙燻', note: 'middle' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 10, role: '橡木苔核心', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 4, role: '動物麝香', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 162. Intense Café (2000)
+  // ────────────────────────────────────────────
+  {
+    id: 'montale-intense-cafe',
+    name: 'Intense Café',
+    brand: 'montale',
+    year: 2000,
+    perfumer: 'Pierre Montale',
+    concentration: 'edp',
+    family: 'gourmand',
+    subfamilies: ['oriental', 'spicy'],
+    gender: 'unisex',
+    description: '濃郁咖啡的美食調香水。咖啡和玫瑰的獨特開場，香草和廣藿香的甜美中調，琥珀和麝香的溫暖基底。甜美、咖啡、極具特色。',
+    topNotes: ['咖啡', '玫瑰', '荳蔻'],
+    heartNotes: ['香草', '廣藿香', '乳香'],
+    baseNotes: ['琥珀', '麝香', '零陵香豆'],
+    ingredients: [
+      { name: 'Coffee absolute (咖啡原精)', cas: 'mixture', pct: 12, role: '咖啡核心', note: 'top' },
+      { name: 'Rose abs Turkey (土耳其玫瑰)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 3, role: '荳蔻辛香', note: 'top' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 12, role: '香草甜美', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'middle' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 4, role: '乳香煙燻', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 5, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 163. Delina (2017)
+  // ────────────────────────────────────────────
+  {
+    id: 'parfums-delina',
+    name: 'Delina',
+    brand: 'parfums',
+    year: 2017,
+    perfumer: 'Quentin Bisch',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['fruity', 'powdery'],
+    gender: 'feminine',
+    description: '粉紅色的玫瑰花香。荔枝和大黃的果香開場，土耳其玫瑰的豐富中調，香草和麝香的柔軟基底。優雅、粉紅、奢華細膩。',
+    topNotes: ['荔枝', '大黃', '佛手柑'],
+    heartNotes: ['土耳其玫瑰', '牡丹', '天竺葵'],
+    baseNotes: ['香草', '麝香', '雪松'],
+    ingredients: [
+      { name: 'Litchi accord (荔枝調)', cas: 'mixture', pct: 8, role: '荔枝果香', note: 'top' },
+      { name: 'Rhubarb accord (大黃調)', cas: 'mixture', pct: 5, role: '大黃酸甜', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Rose abs Turkey (土耳其玫瑰)', cas: 'mixture', pct: 15, role: '玫瑰核心', note: 'middle' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 6, role: '牡丹花香', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 164. Enigma (2013)
+  // ────────────────────────────────────────────
+  {
+    id: 'roja-enigma',
+    name: 'Enigma Pour Homme',
+    brand: 'roja',
+    year: 2013,
+    perfumer: 'Roja Dove',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['woody', 'spicy'],
+    gender: 'masculine',
+    description: '謎語般的辛香東方調。佛手柑和薰衣草的開場，天竺葵和玫瑰的花香中調，檀香和廣藿香的木質基底。奢華、神秘、複雜層次。',
+    topNotes: ['佛手柑', '薰衣草', '荳蔻'],
+    heartNotes: ['天竺葵', '玫瑰', '茉莉'],
+    baseNotes: ['檀香', '廣藿香', '琥珀', '香根草'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 8, role: '佛手柑清新', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '薰衣草芳香', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 4, role: '荳蔻辛香', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 6, role: '天竺葵花香', note: 'middle' },
+      { name: 'Rose abs Bulgaria (保加利亞玫瑰)', cas: 'mixture', pct: 5, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Sandalwood oil Mysore (邁索爾檀香)', cas: '8006-87-9', pct: 12, role: '檀香奶質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 5, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 7,
+  },
+
+  // ────────────────────────────────────────────
+  // 165. Naxos (2015)
+  // ────────────────────────────────────────────
+  {
+    id: 'xerjoff-naxos',
+    name: 'Naxos',
+    brand: 'xerjoff',
+    year: 2015,
+    perfumer: 'Chris Maurice',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['woody', 'gourmand'],
+    gender: 'unisex',
+    description: '納克索斯島的蜂蜜詮釋。薰衣草和檸檬的開場，蜂蜜和肉桂的甜美中調，零陵香豆和煙草的溫暖基底。甜美、蜂蜜、奢華享受。',
+    topNotes: ['薰衣草', '檸檬', '佛手柑'],
+    heartNotes: ['蜂蜜', '肉桂', '茉莉'],
+    baseNotes: ['零陵香豆', '煙草', '香根草'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 10, role: '薰衣草芳香', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 6, role: '檸檬清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑明亮', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 12, role: '蜂蜜核心', note: 'middle' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 5, role: '肉桂辛香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 12, role: '零陵香豆', note: 'base' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 8, role: '煙草溫暖', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 5, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 7,
+  },
+
+  // ────────────────────────────────────────────
+  // 166. Ani (2019)
+  // ────────────────────────────────────────────
+  {
+    id: 'nishane-ani',
+    name: 'Ani',
+    brand: 'nishane',
+    year: 2019,
+    perfumer: 'Cécile Zarokian',
+    concentration: 'extrait',
+    family: 'gourmand',
+    subfamilies: ['oriental', 'spicy'],
+    gender: 'unisex',
+    description: '土耳其的辛香甜美香水。粉紅胡椒和佛手柑的開場，綠荳蔻和肉桂的辛香中調，香草和安息香的甜美基底。濃郁、甜美、奢華享受。',
+    topNotes: ['粉紅胡椒', '佛手柑', '檸檬'],
+    heartNotes: ['綠荳蔻', '肉桂', '薑'],
+    baseNotes: ['香草', '安息香', '零陵香豆', '檀香'],
+    ingredients: [
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 5, role: '粉紅胡椒', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '檸檬明亮', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 6, role: '綠荳蔻辛香', note: 'middle' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 6, role: '肉桂辛香', note: 'middle' },
+      { name: 'Ginger oil (薑精油)', cas: '8007-08-7', pct: 4, role: '薑辛香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 15, role: '香草核心', note: 'base' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 10, role: '安息香樹脂', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 8, role: '零陵香豆', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 22,
+    sillage: 5,
+    longevity: 8,
+  },
+
+  // ────────────────────────────────────────────
+  // 167. Side Effect (2020)
+  // ────────────────────────────────────────────
+  {
+    id: 'initio-side-effect',
+    name: 'Side Effect',
+    brand: 'initio',
+    year: 2020,
+    perfumer: 'Alberto Morillas',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['gourmand', 'boozy'],
+    gender: 'unisex',
+    description: '副作用的朗姆酒甜香。朗姆酒和肉桂的辛香開場，煙草和香草的甜美中調，檀香和雪松的木質基底。性感、甜美、令人上癮。',
+    topNotes: ['朗姆酒', '肉桂', '荳蔻'],
+    heartNotes: ['煙草', '香草', '花香'],
+    baseNotes: ['檀香', '雪松', '琥珀'],
+    ingredients: [
+      { name: 'Rum accord (朗姆酒調)', cas: 'mixture', pct: 10, role: '朗姆酒核心', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 6, role: '肉桂辛香', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 4, role: '荳蔻辛香', note: 'top' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 10, role: '煙草溫暖', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 12, role: '香草甜美', note: 'middle' },
+      { name: 'Hedione (伊蒂酮)', cas: '24851-98-7', pct: 4, role: '透明花香', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香奶質', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 7,
+  },
+
+  // ────────────────────────────────────────────
+  // 168. Eau de Rhubarbe Écarlate (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'hermes-rhubarbe',
+    name: 'Eau de Rhubarbe Écarlate',
+    brand: 'hermes',
+    year: 2016,
+    perfumer: 'Christine Nagel',
+    concentration: 'edc',
+    family: 'fresh',
+    subfamilies: ['citrus', 'fruity'],
+    gender: 'unisex',
+    description: '緋紅大黃的清新香水。大黃和紅莓的酸甜開場，白麝香的清新中調，木質的基底。清新、酸甜、春天氣息。',
+    topNotes: ['大黃', '紅莓'],
+    heartNotes: ['白麝香', '粉紅胡椒'],
+    baseNotes: ['雪松', '白麝香'],
+    ingredients: [
+      { name: 'Rhubarb accord (大黃調)', cas: 'mixture', pct: 15, role: '大黃酸甜', note: 'top' },
+      { name: 'Red berries accord (紅莓調)', cas: 'mixture', pct: 8, role: '紅莓果香', note: 'top' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 10, role: '白麝香', note: 'middle' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 3, role: '粉紅胡椒', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 12,
+    sillage: 2,
+    longevity: 3,
+  },
+
+  // ────────────────────────────────────────────
+  // 169. Spicebomb (2012)
+  // ────────────────────────────────────────────
+  {
+    id: 'vr-spicebomb',
+    name: 'Spicebomb',
+    brand: 'vr',
+    year: 2012,
+    perfumer: 'Olivier Polge, Dominique Ropion',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['spicy', 'woody'],
+    gender: 'masculine',
+    description: '辛香炸彈的爆炸性香水。粉紅胡椒和佛手柑的開場，肉桂和番紅花的辛香中調，煙草和香根草的溫暖基底。強烈、辛香、爆炸性魅力。',
+    topNotes: ['粉紅胡椒', '佛手柑', '檸檬'],
+    heartNotes: ['肉桂', '番紅花', '辣椒'],
+    baseNotes: ['煙草', '香根草', '雪松'],
+    ingredients: [
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 6, role: '粉紅胡椒', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 8, role: '肉桂辛香', note: 'middle' },
+      { name: 'Saffron abs (番紅花原精)', cas: 'mixture', pct: 4, role: '番紅花辛香', note: 'middle' },
+      { name: 'Chili pepper accord (辣椒調)', cas: 'mixture', pct: 3, role: '辣椒辛辣', note: 'middle' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 10, role: '煙草溫暖', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 5,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 170. Coromandel (2007)
+  // ────────────────────────────────────────────
+  {
+    id: 'chanel-coromandel',
+    name: 'Coromandel',
+    brand: 'chanel',
+    year: 2007,
+    perfumer: 'Jacques Polge',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['woody', 'amber'],
+    gender: 'feminine',
+    description: '科羅曼德的東方木質香。白琥珀和廣藿香的開場，乳香和安息香的樹脂中調，香草和白麝香的基底。溫暖、東方、奢華氣質。',
+    topNotes: ['白琥珀', '廣藿香'],
+    heartNotes: ['乳香', '安息香', '玫瑰'],
+    baseNotes: ['香草', '白麝香', '檀香'],
+    ingredients: [
+      { name: 'White Amber (白琥珀)', cas: 'mixture', pct: 10, role: '白琥珀溫暖', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 12, role: '廣藿香土壤', note: 'top' },
+      { name: 'Frankincense oil (乳香精油)', cas: '8016-36-2', pct: 8, role: '乳香煙燻', note: 'middle' },
+      { name: 'Benzoin resinoid (安息香脂)', cas: 'mixture', pct: 8, role: '安息香樹脂', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰花香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 10, role: '香草甜美', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 171. Amarige (1991)
+  // ────────────────────────────────────────────
+  {
+    id: 'givenchy-amarige',
+    name: 'Amarige',
+    brand: 'givenchy',
+    year: 1991,
+    perfumer: 'Dominique Ropion',
+    concentration: 'edt',
+    family: 'floral',
+    subfamilies: ['fruity', 'powdery'],
+    gender: 'feminine',
+    description: '幸福的花香香水。橙花和橘子的明亮開場，依蘭和玫瑰的豐富花香中調，琥珀和麝香的溫暖基底。歡樂、明亮、幸福氛圍。',
+    topNotes: ['橙花', '橘子', '木蘭'],
+    heartNotes: ['依蘭', '玫瑰', '晚香玉', '紫羅蘭'],
+    baseNotes: ['琥珀', '麝香', '香草', '檀香'],
+    ingredients: [
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 10, role: '橙花白花', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 6, role: '橘子清新', note: 'top' },
+      { name: 'Magnolia accord (木蘭調)', cas: 'mixture', pct: 5, role: '木蘭花香', note: 'top' },
+      { name: 'Ylang-ylang oil (依蘭精油)', cas: '8006-81-3', pct: 12, role: '依蘭核心', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 8, role: '玫瑰花香', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 6, role: '晚香玉白花', note: 'middle' },
+      { name: 'Violet abs (紫羅蘭原精)', cas: 'mixture', pct: 4, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 5, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 172. Vetiver Intense (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'hermes-vetiver-intense',
+    name: 'Terre d\'Hermès Eau Intense Vétiver',
+    brand: 'hermes',
+    year: 2016,
+    perfumer: 'Jean-Claude Ellena',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['citrus', 'aromatic'],
+    gender: 'masculine',
+    description: '大地的濃郁香根草版本。佛手柑和橙子的柑橘開場，天竺葵的花香中調，香根草的濃郁基底。清爽、綠意、大地氣息。',
+    topNotes: ['佛手柑', '橙子'],
+    heartNotes: ['天竺葵', '胡椒'],
+    baseNotes: ['香根草', '雪松', '橡木苔'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '佛手柑清新', note: 'top' },
+      { name: 'Orange oil (橙子精油)', cas: '8008-57-9', pct: 6, role: '橙子明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 5, role: '天竺葵花香', note: 'middle' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 3, role: '黑胡椒辛香', note: 'middle' },
+      { name: 'Vetiver oil Haiti (海地香根草)', cas: '8016-96-4', pct: 18, role: '香根草核心', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 6, role: '雪松木質', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 4, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 173. Dior Homme Intense (2007)
+  // ────────────────────────────────────────────
+  {
+    id: 'dior-homme-intense',
+    name: 'Dior Homme Intense',
+    brand: 'dior',
+    year: 2007,
+    perfumer: 'François Demachy',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['powdery', 'woody'],
+    gender: 'masculine',
+    description: 'Dior Homme的濃郁版本。鳶尾和薰衣草的粉質開場，梨和雪松的中調，香根草的基底。粉質、優雅、濃郁迷人。',
+    topNotes: ['鳶尾', '薰衣草'],
+    heartNotes: ['梨', '雪松', '杏仁'],
+    baseNotes: ['香根草', '皮革'],
+    ingredients: [
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 15, role: '鳶尾核心', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 6, role: '薰衣草芳香', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 5, role: '梨果香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Bitter almond oil (苦杏仁精油)', cas: '8007-69-0', pct: 3, role: '杏仁堅果', note: 'middle' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 5, role: '皮革煙燻', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 174. Beautiful (1985)
+  // ────────────────────────────────────────────
+  {
+    id: 'estee-beautiful',
+    name: 'Beautiful',
+    brand: 'estee',
+    year: 1985,
+    perfumer: 'Sophia Grojsman',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['aldehyde', 'powdery'],
+    gender: 'feminine',
+    description: '美麗的花香香水。玫瑰和茉莉的花香開場，鈴蘭和百合的白花中調，麝香和檀香的柔軟基底。優雅、浪漫、永恆美麗。',
+    topNotes: ['玫瑰', '茉莉', '橙花'],
+    heartNotes: ['鈴蘭', '百合', '晚香玉'],
+    baseNotes: ['麝香', '檀香', '香根草'],
+    ingredients: [
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 12, role: '玫瑰核心', note: 'top' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 10, role: '茉莉白花', note: 'top' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 5, role: '橙花白花', note: 'top' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 8, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Lily accord (百合調)', cas: 'mixture', pct: 6, role: '百合花香', note: 'middle' },
+      { name: 'Tuberose abs (晚香玉原精)', cas: 'mixture', pct: 5, role: '晚香玉白花', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 175. Guilty Absolute (2017)
+  // ────────────────────────────────────────────
+  {
+    id: 'gucci-guilty-absolute',
+    name: 'Guilty Absolute',
+    brand: 'gucci',
+    year: 2017,
+    perfumer: 'Alberto Morillas',
+    concentration: 'edp',
+    family: 'leather',
+    subfamilies: ['woody', 'aromatic'],
+    gender: 'masculine',
+    description: '絕對罪愛的皮革詮釋。皮革和柏木的開場，廣藿香和玫瑰的中調，香根草的基底。深沉、皮革、極具男性魅力。',
+    topNotes: ['皮革', '柏木'],
+    heartNotes: ['廣藿香', '玫瑰'],
+    baseNotes: ['香根草', '香根草'],
+    ingredients: [
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 15, role: '皮革核心', note: 'top' },
+      { name: 'Cypress oil (柏木精油)', cas: '8013-86-3', pct: 6, role: '柏木綠意', note: 'top' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 12, role: '廣藿香土壤', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 4, role: '玫瑰花香', note: 'middle' },
+      { name: 'Vetiver oil Haiti (海地香根草)', cas: '8016-96-4', pct: 15, role: '香根草核心', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 176. Antaeus (1981)
+  // ────────────────────────────────────────────
+  {
+    id: 'chanel-antaeus',
+    name: 'Antaeus',
+    brand: 'chanel',
+    year: 1981,
+    perfumer: 'Jacques Polge',
+    concentration: 'edt',
+    family: 'leather',
+    subfamilies: ['chypre', 'aromatic'],
+    gender: 'masculine',
+    description: '安泰俄斯的皮革馥奇。薰衣草和鼠尾草的芳香開場，玫瑰和茉莉的花香中調，皮革和橡木苔的馥奇基底。陽剛、經典、力量象徵。',
+    topNotes: ['薰衣草', '鼠尾草', '柑橘'],
+    heartNotes: ['玫瑰', '茉莉', '羅勒'],
+    baseNotes: ['皮革', '橡木苔', '廣藿香', '勞丹脂'],
+    ingredients: [
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '薰衣草芳香', note: 'top' },
+      { name: 'Clary sage oil (鼠尾草精油)', cas: '8016-63-5', pct: 5, role: '鼠尾草草本', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Basil oil (羅勒精油)', cas: '8015-73-4', pct: 3, role: '羅勒草本', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 10, role: '皮革煙燻', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 10, role: '橡木苔核心', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'base' },
+      { name: 'Labdanum resinoid (勞丹脂)', cas: 'mixture', pct: 5, role: '勞丹脂樹脂', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 177. Noir de Noir (2007)
+  // ────────────────────────────────────────────
+  {
+    id: 'tf-noir-de-noir',
+    name: 'Noir de Noir',
+    brand: 'tomford',
+    year: 2007,
+    perfumer: 'Yann Vasnier',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['oriental', 'spicy'],
+    gender: 'unisex',
+    description: '黑色的黑玫瑰。玫瑰和番紅花的開場，松露和黑茶的奢華中調，廣藿香和香草的基底。神秘、奢華、暗黑魅力。',
+    topNotes: ['玫瑰', '番紅花', '佛手柑'],
+    heartNotes: ['松露', '黑茶', '茉莉'],
+    baseNotes: ['廣藿香', '香草', '烏木'],
+    ingredients: [
+      { name: 'Rose abs Turkey (土耳其玫瑰)', cas: 'mixture', pct: 15, role: '玫瑰核心', note: 'top' },
+      { name: 'Saffron abs (番紅花原精)', cas: 'mixture', pct: 5, role: '番紅花辛香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 4, role: '佛手柑清新', note: 'top' },
+      { name: 'Truffle accord (松露調)', cas: 'mixture', pct: 6, role: '松露土壤', note: 'middle' },
+      { name: 'Black tea accord (黑茶調)', cas: 'mixture', pct: 5, role: '黑茶煙燻', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 10, role: '廣藿香土壤', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Ebony wood accord (烏木調)', cas: 'mixture', pct: 5, role: '烏木深沉', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 178. Aqua Universalis (2009)
+  // ────────────────────────────────────────────
+  {
+    id: 'mfk-aqua-universalis',
+    name: 'Aqua Universalis',
+    brand: 'mfk',
+    year: 2009,
+    perfumer: 'Francis Kurkdjian',
+    concentration: 'edt',
+    family: 'fresh',
+    subfamilies: ['citrus', 'floral'],
+    gender: 'unisex',
+    description: '普世之水的清新花香。佛手柑和檸檬的柑橘開場，鈴蘭和茉莉的白花中調，白麝香和木質的基底。清新、純淨、普世之美。',
+    topNotes: ['佛手柑', '檸檬', '西西里檸檬'],
+    heartNotes: ['鈴蘭', '茉莉'],
+    baseNotes: ['白麝香', '雪松', '紫檀木'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 12, role: '佛手柑清新', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 10, role: '檸檬明亮', note: 'top' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 8, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 6, role: '茉莉白花', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 10, role: '白麝香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+      { name: 'Iso E Super (異丁香酚)', cas: '54464-57-2', pct: 5, role: '紫檀木質', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 179. Green Irish Tweed (1985)
+  // ────────────────────────────────────────────
+  {
+    id: 'creed-green-irish',
+    name: 'Green Irish Tweed',
+    brand: 'creed',
+    year: 1985,
+    perfumer: 'Olivier Creed',
+    concentration: 'edp',
+    family: 'fougere',
+    subfamilies: ['fresh', 'woody'],
+    gender: 'masculine',
+    description: '愛爾蘭綠呢的清新馥奇。檸檬和紫羅蘭葉的綠色開場，鳶尾的花香中調，檀香和琥珀的基底。清新、綠意、優雅紳士。',
+    topNotes: ['檸檬', '紫羅蘭葉', '薄荷'],
+    heartNotes: ['鳶尾', '天竺葵'],
+    baseNotes: ['檀香', '琥珀', '雪松'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 10, role: '檸檬清新', note: 'top' },
+      { name: 'Violet leaf abs (紫羅蘭葉原精)', cas: 'mixture', pct: 8, role: '紫羅蘭綠意', note: 'top' },
+      { name: 'Mint oil (薄荷精油)', cas: '8006-90-4', pct: 4, role: '薄荷清涼', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 8, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 5, role: '天竺葵花香', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 10, role: '檀香奶質', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 5, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 180. Voyage d\'Hermès (2010)
+  // ────────────────────────────────────────────
+  {
+    id: 'hermes-voyage',
+    name: 'Voyage d\'Hermès',
+    brand: 'hermes',
+    year: 2010,
+    perfumer: 'Jean-Claude Ellena',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['fresh', 'citrus'],
+    gender: 'unisex',
+    description: '愛馬仕的旅行之香。柑橘和香料的清新開場，綠意和花香的中調，雪松和麝香的基底。清新、優雅、旅行氣息。',
+    topNotes: ['柑橘', '荳蔻', '薑'],
+    heartNotes: ['綠意', '茶葉', '香料'],
+    baseNotes: ['雪松', '麝香', '琥珀'],
+    ingredients: [
+      { name: 'Citrus accord (柑橘調)', cas: 'mixture', pct: 10, role: '柑橘清新', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 5, role: '荳蔻辛香', note: 'top' },
+      { name: 'Ginger oil (薑精油)', cas: '8007-08-7', pct: 3, role: '薑辛香', note: 'top' },
+      { name: 'Green tea accord (綠茶調)', cas: 'mixture', pct: 6, role: '茶葉清新', note: 'middle' },
+      { name: 'Hedione (伊蒂酮)', cas: '24851-98-7', pct: 4, role: '透明花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 15,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 181. Dune (1991)
+  // ────────────────────────────────────────────
+  {
+    id: 'dior-dune',
+    name: 'Dune',
+    brand: 'dior',
+    year: 1991,
+    perfumer: 'Jean-Louis Sieuzac, Nejla Barbir, Dominique Ropion',
+    concentration: 'edt',
+    family: 'floral',
+    subfamilies: ['woody', 'oceanic'],
+    gender: 'feminine',
+    description: '沙丘的海洋花香。醛香和佛手柑的開場，百合和玫瑰的花香中調，琥珀和麝香的基底。海洋、溫暖、夢幻氛圍。',
+    topNotes: ['醛香', '佛手柑', '桃子'],
+    heartNotes: ['百合', '玫瑰', '茉莉', '依蘭'],
+    baseNotes: ['琥珀', '麝香', '檀香', '香根草'],
+    ingredients: [
+      { name: 'Aldehyde C-11 (十一醛)', cas: '112-44-7', pct: 3, role: '醛香明亮', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Peach aldehyde (桃醛)', cas: '104-67-6', pct: 4, role: '桃子果香', note: 'top' },
+      { name: 'Lily accord (百合調)', cas: 'mixture', pct: 8, role: '百合花香', note: 'middle' },
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 6, role: '玫瑰花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Ylang-ylang oil (依蘭精油)', cas: '8006-81-3', pct: 4, role: '依蘭花香', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 4, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 182. Trésor (1990)
+  // ────────────────────────────────────────────
+  {
+    id: 'lancome-tresor',
+    name: 'Trésor',
+    brand: 'lancome',
+    year: 1990,
+    perfumer: 'Sophia Grojsman',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['fruity', 'powdery'],
+    gender: 'feminine',
+    description: '寶藏的花香蜜桃。玫瑰和鳶尾的粉質開場，百合和杏桃的甜美中調，檀香和香草的溫暖基底。甜美、優雅、珍貴寶藏。',
+    topNotes: ['玫瑰', '鳶尾', '杏桃'],
+    heartNotes: ['百合', '桃子', '鈴蘭'],
+    baseNotes: ['檀香', '香草', '琥珀', '麝香'],
+    ingredients: [
+      { name: 'Rose abs (玫瑰原精)', cas: 'mixture', pct: 10, role: '玫瑰花香', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 6, role: '鳶尾粉質', note: 'top' },
+      { name: 'Apricot accord (杏桃調)', cas: 'mixture', pct: 5, role: '杏桃果香', note: 'top' },
+      { name: 'Lily accord (百合調)', cas: 'mixture', pct: 8, role: '百合花香', note: 'middle' },
+      { name: 'Peach aldehyde (桃醛)', cas: '104-67-6', pct: 5, role: '桃子果香', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 4, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香奶質', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 6, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 183. Xeryus (1986)
+  // ────────────────────────────────────────────
+  {
+    id: 'givenchy-xeryus',
+    name: 'Xeryus',
+    brand: 'givenchy',
+    year: 1986,
+    perfumer: 'Firmenich',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fougere', 'woody'],
+    gender: 'masculine',
+    description: '經典的芳香馥奇。艾蒿和柑橘的綠色開場，天竺葵和肉桂的辛香中調，雪松和橡木苔的馥奇基底。經典、優雅、80年代風格。',
+    topNotes: ['艾蒿', '柑橘', '香檸檬'],
+    heartNotes: ['天竺葵', '肉桂', '康乃馨'],
+    baseNotes: ['雪松', '橡木苔', '琥珀'],
+    ingredients: [
+      { name: 'Artemisia oil (艾蒿精油)', cas: '8008-93-3', pct: 6, role: '艾蒿苦香', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 6, role: '檸檬清新', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑明亮', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 6, role: '天竺葵花香', note: 'middle' },
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 4, role: '肉桂辛香', note: 'middle' },
+      { name: 'Carnation abs (康乃馨原精)', cas: 'mixture', pct: 3, role: '康乃馨花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 8, role: '橡木苔土壤', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 184. Opium Pour Homme (1995)
+  // ────────────────────────────────────────────
+  {
+    id: 'ysl-opium-homme',
+    name: 'Opium Pour Homme',
+    brand: 'ysl',
+    year: 1995,
+    perfumer: 'Jacques Cavallier',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['spicy', 'woody'],
+    gender: 'masculine',
+    description: '男士鴉片的辛香東方調。柑橘和香料的開場，雪松和沒藥的中調，香草和零陵香豆的基底。辛香、溫暖、神秘魅力。',
+    topNotes: ['柑橘', '荳蔻', '胡椒'],
+    heartNotes: ['雪松', '沒藥', '丁香'],
+    baseNotes: ['香草', '零陵香豆', '琥珀'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 5, role: '荳蔻辛香', note: 'top' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 4, role: '黑胡椒辛香', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'middle' },
+      { name: 'Myrrh oil (沒藥精油)', cas: '8016-37-3', pct: 6, role: '沒藥樹脂', note: 'middle' },
+      { name: 'Clove bud oil (丁香精油)', cas: '8000-34-8', pct: 3, role: '丁香辛香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 6, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 185. Vetiver (1959)
+  // ────────────────────────────────────────────
+  {
+    id: 'guerlain-vetiver',
+    name: 'Vetiver',
+    brand: 'guerlain',
+    year: 1959,
+    perfumer: 'Jean-Paul Guerlain',
+    concentration: 'edt',
+    family: 'woody',
+    subfamilies: ['aromatic', 'citrus'],
+    gender: 'masculine',
+    description: '經典的香根草詮釋。檸檬和橘子的柑橘開場，煙草和香料的中調，香根草的核心基底。清新、木質、優雅紳士。',
+    topNotes: ['檸檬', '橘子', '佛手柑', '胡荽'],
+    heartNotes: ['煙草', '荳蔻', '肉荳蔻'],
+    baseNotes: ['香根草', '零陵香豆', '胡椒'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 8, role: '檸檬清新', note: 'top' },
+      { name: 'Mandarin oil (橘子精油)', cas: '8008-31-9', pct: 6, role: '橘子甜美', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑明亮', note: 'top' },
+      { name: 'Coriander oil (胡荽精油)', cas: '8008-52-4', pct: 3, role: '胡荽辛香', note: 'top' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 5, role: '煙草溫暖', note: 'middle' },
+      { name: 'Cardamom oil (荳蔻精油)', cas: '8000-66-6', pct: 3, role: '荳蔻辛香', note: 'middle' },
+      { name: 'Nutmeg oil (肉荳蔻精油)', cas: '8008-45-5', pct: 2, role: '肉荳蔻溫暖', note: 'middle' },
+      { name: 'Vetiver oil Haiti (海地香根草)', cas: '8016-96-4', pct: 18, role: '香根草核心', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Black pepper oil (黑胡椒精油)', cas: '8006-82-4', pct: 2, role: '黑胡椒辛香', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 3,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 186. London (2006)
+  // ────────────────────────────────────────────
+  {
+    id: 'burberry-london',
+    name: 'Burberry London',
+    brand: 'burberry',
+    year: 2006,
+    perfumer: 'Beatrice Piquet',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['spicy', 'woody'],
+    gender: 'masculine',
+    description: '倫敦的辛香木質香。肉桂和佛手柑的辛香開場，含羞草和皮革的中調，煙草和廣藿香的溫暖基底。經典、紳士、倫敦風情。',
+    topNotes: ['肉桂', '佛手柑', '薰衣草'],
+    heartNotes: ['含羞草', '皮革', '葡萄酒'],
+    baseNotes: ['煙草', '廣藿香', '橡木苔'],
+    ingredients: [
+      { name: 'Cinnamon bark oil (肉桂精油)', cas: '8015-91-6', pct: 6, role: '肉桂辛香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 4, role: '薰衣草芳香', note: 'top' },
+      { name: 'Mimosa abs (含羞草原精)', cas: 'mixture', pct: 6, role: '含羞草花香', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 5, role: '皮革煙燻', note: 'middle' },
+      { name: 'Wine accord (葡萄酒調)', cas: 'mixture', pct: 4, role: '葡萄酒香', note: 'middle' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 10, role: '煙草溫暖', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 5, role: '橡木苔土壤', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 187. Pour Homme (1973)
+  // ────────────────────────────────────────────
+  {
+    id: 'paco-pour-homme',
+    name: 'Paco Rabanne Pour Homme',
+    brand: 'paco',
+    year: 1973,
+    perfumer: 'Jean Martel, Michel Durand',
+    concentration: 'edt',
+    family: 'fougere',
+    subfamilies: ['aromatic', 'woody'],
+    gender: 'masculine',
+    description: '經典的芳香馥奇。迷迭香和薰衣草的芳香開場，天竺葵和雪松的中調，橡木苔和零陵香豆的馥奇基底。經典、優雅、永恆魅力。',
+    topNotes: ['迷迭香', '薰衣草', '檸檬'],
+    heartNotes: ['天竺葵', '雪松', '茉莉'],
+    baseNotes: ['橡木苔', '零陵香豆', '琥珀'],
+    ingredients: [
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 8, role: '迷迭香綠意', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '薰衣草芳香', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 5, role: '檸檬清新', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 6, role: '天竺葵花香', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 8, role: '雪松木質', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 3, role: '茉莉白花', note: 'middle' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 10, role: '橡木苔核心', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 6, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 188. Pour Homme Azzaro (1978)
+  // ────────────────────────────────────────────
+  {
+    id: 'azzaro-pour-homme',
+    name: 'Azzaro Pour Homme',
+    brand: 'azzaro',
+    year: 1978,
+    perfumer: 'Gérard Anthony, Richard Wirtz, Martin Heiddenreich',
+    concentration: 'edt',
+    family: 'aromatic',
+    subfamilies: ['fougere', 'citrus'],
+    gender: 'masculine',
+    description: '地中海的芳香馥奇。茴香和薰衣草的芳香開場，羅勒和雪松的綠色中調，橡木苔和琥珀的馥奇基底。清新、芳香、地中海風情。',
+    topNotes: ['茴香', '薰衣草', '檸檬'],
+    heartNotes: ['羅勒', '雪松', '康乃馨'],
+    baseNotes: ['橡木苔', '琥珀', '麝香'],
+    ingredients: [
+      { name: 'Anise oil (茴香精油)', cas: '8007-70-3', pct: 6, role: '茴香辛香', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '薰衣草芳香', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 6, role: '檸檬清新', note: 'top' },
+      { name: 'Basil oil (羅勒精油)', cas: '8015-73-4', pct: 5, role: '羅勒草本', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'middle' },
+      { name: 'Carnation abs (康乃馨原精)', cas: 'mixture', pct: 3, role: '康乃馨花香', note: 'middle' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 10, role: '橡木苔核心', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Musk ketone (酮麝香)', cas: '81-14-1', pct: 4, role: '動物麝香', note: 'base' },
+    ],
+    totalFragrancePct: 16,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 189. The One (2006)
+  // ────────────────────────────────────────────
+  {
+    id: 'dg-the-one',
+    name: 'The One',
+    brand: 'dg',
+    year: 2006,
+    perfumer: 'Olivier Polge',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['floral', 'amber'],
+    gender: 'feminine',
+    description: '唯一的東方花香。荔枝和桃子的果香開場，茉莉和鈴蘭的花香中調，香草和琥珀的溫暖基底。性感、優雅、迷人魅力。',
+    topNotes: ['荔枝', '桃子', '佛手柑'],
+    heartNotes: ['茉莉', '鈴蘭', '李子'],
+    baseNotes: ['香草', '琥珀', '麝香', '檀香'],
+    ingredients: [
+      { name: 'Litchi accord (荔枝調)', cas: 'mixture', pct: 8, role: '荔枝果香', note: 'top' },
+      { name: 'Peach aldehyde (桃醛)', cas: '104-67-6', pct: 6, role: '桃子果香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 10, role: '茉莉白花', note: 'middle' },
+      { name: 'Lily of the valley (鈴蘭調)', cas: 'mixture', pct: 6, role: '鈴蘭綠意', note: 'middle' },
+      { name: 'Plum accord (李子調)', cas: 'mixture', pct: 4, role: '李子果香', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 12, role: '香草甜美', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 190. Chergui (2005)
+  // ────────────────────────────────────────────
+  {
+    id: 'lutens-chergui',
+    name: 'Chergui',
+    brand: 'lutens',
+    year: 2005,
+    perfumer: 'Christopher Sheldrake',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['tobacco', 'woody'],
+    gender: 'unisex',
+    description: '契爾吉風的煙草蜂蜜。煙草葉和蜂蜜的甜美開場，鳶尾和香草的中調，琥珀和麝香的溫暖基底。煙燻、甜美、沙漠風情。',
+    topNotes: ['煙草葉', '蜂蜜'],
+    heartNotes: ['鳶尾', '香草', '乾草'],
+    baseNotes: ['琥珀', '麝香', '檀香'],
+    ingredients: [
+      { name: 'Tobacco leaf abs (煙草葉原精)', cas: 'mixture', pct: 12, role: '煙草核心', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 8, role: '蜂蜜甜美', note: 'top' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 6, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'middle' },
+      { name: 'Hay accord (乾草調)', cas: 'mixture', pct: 5, role: '乾草溫暖', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 10, role: '琥珀溫暖', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 7,
+  },
+
+  // ────────────────────────────────────────────
+  // 191. Equipage (1970)
+  // ────────────────────────────────────────────
+  {
+    id: 'hermes-equipage',
+    name: 'Equipage',
+    brand: 'hermes',
+    year: 1970,
+    perfumer: 'Guy Robert',
+    concentration: 'edt',
+    family: 'chypre',
+    subfamilies: ['aromatic', 'woody'],
+    gender: 'masculine',
+    description: '裝備的經典馥奇。佛手柑和迷迭香的開場，康乃馨和茉莉的花香中調，橡木苔和香根草的馥奇基底。經典、優雅、騎士風範。',
+    topNotes: ['佛手柑', '迷迭香', '檸檬'],
+    heartNotes: ['康乃馨', '茉莉', '百里香'],
+    baseNotes: ['橡木苔', '香根草', '零陵香豆', '琥珀'],
+    ingredients: [
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 10, role: '佛手柑清新', note: 'top' },
+      { name: 'Rosemary oil (迷迭香精油)', cas: '8000-25-7', pct: 6, role: '迷迭香綠意', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 5, role: '檸檬明亮', note: 'top' },
+      { name: 'Carnation abs (康乃馨原精)', cas: 'mixture', pct: 6, role: '康乃馨花香', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 4, role: '茉莉白花', note: 'middle' },
+      { name: 'Thyme oil (百里香精油)', cas: '8007-46-3', pct: 3, role: '百里香草本', note: 'middle' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 12, role: '橡木苔核心', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 4, role: '零陵香豆', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 4, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 192. Brit (2003)
+  // ────────────────────────────────────────────
+  {
+    id: 'burberry-brit',
+    name: 'Burberry Brit',
+    brand: 'burberry',
+    year: 2003,
+    perfumer: 'Nathalie Gracia-Cetto',
+    concentration: 'edt',
+    family: 'floral',
+    subfamilies: ['fruity', 'fresh'],
+    gender: 'feminine',
+    description: '英倫的清新花香。青檸和梨的果香開場，牡丹和甘草的花香中調，琥珀和香草的溫暖基底。清新、甜美、英倫風情。',
+    topNotes: ['青檸', '梨', '杏仁'],
+    heartNotes: ['牡丹', '甘草', '糖'],
+    baseNotes: ['琥珀', '香草', '麝香', '零陵香豆'],
+    ingredients: [
+      { name: 'Lime oil (青檸精油)', cas: '8008-26-2', pct: 8, role: '青檸清新', note: 'top' },
+      { name: 'Pear accord (梨調)', cas: 'mixture', pct: 8, role: '梨果香', note: 'top' },
+      { name: 'Bitter almond oil (苦杏仁精油)', cas: '8007-69-0', pct: 3, role: '杏仁堅果', note: 'top' },
+      { name: 'Peony accord (牡丹調)', cas: 'mixture', pct: 8, role: '牡丹花香', note: 'middle' },
+      { name: 'Glycyrrhiza accord (甘草調)', cas: 'mixture', pct: 4, role: '甘草甜美', note: 'middle' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 4, role: '糖果甜美', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 8, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 5, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 3,
+    longevity: 4,
+  },
+
+  // ────────────────────────────────────────────
+  // 193. Thé Noir 29 (2012)
+  // ────────────────────────────────────────────
+  {
+    id: 'lelabo-the-noir',
+    name: 'Thé Noir 29',
+    brand: 'lelabo',
+    year: 2012,
+    perfumer: 'Frank Voelkl',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['aromatic', 'chypre'],
+    gender: 'unisex',
+    description: '黑茶29的木質香調。黑茶和無花果的開場，雪松和香根草的木質中調，麝香和琥珀的基底。優雅、木質、茶香氛圍。',
+    topNotes: ['黑茶', '無花果', '佛手柑'],
+    heartNotes: ['雪松', '香根草', '鳶尾'],
+    baseNotes: ['麝香', '琥珀', '乾草'],
+    ingredients: [
+      { name: 'Black tea accord (黑茶調)', cas: 'mixture', pct: 10, role: '黑茶核心', note: 'top' },
+      { name: 'Fig accord (無花果調)', cas: 'mixture', pct: 6, role: '無花果綠意', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 5, role: '佛手柑清新', note: 'top' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'middle' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 8, role: '香根草土壤', note: 'middle' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 5, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 8, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 6, role: '琥珀溫暖', note: 'base' },
+      { name: 'Hay accord (乾草調)', cas: 'mixture', pct: 4, role: '乾草溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 194. Bal d\'Afrique (2009)
+  // ────────────────────────────────────────────
+  {
+    id: 'byredo-bal-afrique',
+    name: 'Bal d\'Afrique',
+    brand: 'byredo',
+    year: 2009,
+    perfumer: 'Jérôme Epinette',
+    concentration: 'edp',
+    family: 'floral',
+    subfamilies: ['woody', 'amber'],
+    gender: 'unisex',
+    description: '非洲舞會的花香木質。檸檬和橙花的開場，紫羅蘭和茉莉的花香中調，琥珀和香根草的基底。充滿活力、溫暖、非洲風情。',
+    topNotes: ['檸檬', '橙花', '非洲萬壽菊'],
+    heartNotes: ['紫羅蘭', '茉莉', '天竺葵'],
+    baseNotes: ['琥珀', '香根草', '麝香', '雪松'],
+    ingredients: [
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 8, role: '檸檬清新', note: 'top' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 6, role: '橙花白花', note: 'top' },
+      { name: 'African marigold abs (非洲萬壽菊)', cas: 'mixture', pct: 4, role: '萬壽菊花香', note: 'top' },
+      { name: 'Violet abs (紫羅蘭原精)', cas: 'mixture', pct: 6, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Jasmine abs (茉莉原精)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 4, role: '天竺葵花香', note: 'middle' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 10, role: '琥珀溫暖', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 6, role: '香根草土壤', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 5, role: '白麝香', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 4, role: '雪松木質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 5,
+  },
+
+  // ────────────────────────────────────────────
+  // 195. Jazz Club (2013)
+  // ────────────────────────────────────────────
+  {
+    id: 'mm-jazz-club',
+    name: 'Jazz Club',
+    brand: 'mm',
+    year: 2013,
+    perfumer: 'Jacques Cavallier',
+    concentration: 'edt',
+    family: 'oriental',
+    subfamilies: ['woody', 'boozy'],
+    gender: 'masculine',
+    description: '爵士俱樂部的煙燻木質。朗姆酒和粉紅胡椒的開場，雪茄和香草的中調，檀香和香根草的基底。溫暖、煙燻、爵士氛圍。',
+    topNotes: ['朗姆酒', '粉紅胡椒', '檸檬'],
+    heartNotes: ['雪茄菸草', '香草', '鳶尾'],
+    baseNotes: ['檀香', '香根草', '零陵香豆'],
+    ingredients: [
+      { name: 'Rum accord (朗姆酒調)', cas: 'mixture', pct: 8, role: '朗姆酒溫暖', note: 'top' },
+      { name: 'Pink pepper CO2 (粉紅胡椒)', cas: 'mixture', pct: 4, role: '粉紅胡椒', note: 'top' },
+      { name: 'Lemon oil (檸檬精油)', cas: '8008-56-8', pct: 4, role: '檸檬清新', note: 'top' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 12, role: '雪茄煙燻', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'middle' },
+      { name: 'Iris butter (鳶尾根浸膏)', cas: 'mixture', pct: 4, role: '鳶尾粉質', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 10, role: '檀香奶質', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 6, role: '香根草土壤', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 6, role: '零陵香豆', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 196. Black Phantom (2017)
+  // ────────────────────────────────────────────
+  {
+    id: 'kilian-black-phantom',
+    name: 'Black Phantom',
+    brand: 'kilian',
+    year: 2017,
+    perfumer: 'Olfactive Studio',
+    concentration: 'edp',
+    family: 'gourmand',
+    subfamilies: ['oriental', 'woody'],
+    gender: 'unisex',
+    description: '黑色幻影的朗姆甜香。朗姆酒和咖啡的開場，杏仁和香草的甜美中調，檀香和廣藿香的木質基底。甜美、煙燻、令人上癮。',
+    topNotes: ['朗姆酒', '咖啡', '杏仁'],
+    heartNotes: ['香草', '糖'],
+    baseNotes: ['檀香', '廣藿香', '香根草'],
+    ingredients: [
+      { name: 'Rum accord (朗姆酒調)', cas: 'mixture', pct: 10, role: '朗姆酒核心', note: 'top' },
+      { name: 'Coffee absolute (咖啡原精)', cas: 'mixture', pct: 8, role: '咖啡香濃', note: 'top' },
+      { name: 'Bitter almond oil (苦杏仁精油)', cas: '8007-69-0', pct: 5, role: '杏仁堅果', note: 'top' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 15, role: '香草核心', note: 'middle' },
+      { name: 'Ethyl maltol (乙基麥芽酚)', cas: '4940-11-8', pct: 6, role: '糖果甜美', note: 'middle' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 8, role: '檀香奶質', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 7,
+  },
+
+  // ────────────────────────────────────────────
+  // 197. Cedrat Boise (2011)
+  // ────────────────────────────────────────────
+  {
+    id: 'mancera-cedrat-boise',
+    name: 'Cedrat Boise',
+    brand: 'mancera',
+    year: 2011,
+    perfumer: 'Pierre Montale',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['citrus', 'aromatic'],
+    gender: 'unisex',
+    description: '香檸木質的清新香水。香檸和黑醋栗的果香開場，茉莉和廣藿香的中調，皮革和雪松的木質基底。清新、木質、現代優雅。',
+    topNotes: ['香檸', '黑醋栗', '西西里檸檬'],
+    heartNotes: ['茉莉', '廣藿香', '果香'],
+    baseNotes: ['皮革', '雪松', '橡木苔', '香根草'],
+    ingredients: [
+      { name: 'Citron oil (香檸精油)', cas: '8008-54-4', pct: 12, role: '香檸清新', note: 'top' },
+      { name: 'Black currant bud abs (黑醋栗芽)', cas: 'mixture', pct: 6, role: '黑醋栗果香', note: 'top' },
+      { name: 'Lemon oil Sicily (西西里檸檬)', cas: '8008-56-8', pct: 6, role: '檸檬明亮', note: 'top' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 8, role: '廣藿香土壤', note: 'middle' },
+      { name: 'Leather accord (皮革調)', cas: 'mixture', pct: 6, role: '皮革煙燻', note: 'base' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 10, role: '雪松木質', note: 'base' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 5, role: '橡木苔土壤', note: 'base' },
+      { name: 'Vetiver oil (香根草精油)', cas: '8016-96-4', pct: 4, role: '香根草土壤', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 198. Layton (2016)
+  // ────────────────────────────────────────────
+  {
+    id: 'parfums-layton',
+    name: 'Layton',
+    brand: 'parfums',
+    year: 2016,
+    perfumer: 'Hamid Merati-Kashani',
+    concentration: 'edp',
+    family: 'oriental',
+    subfamilies: ['aromatic', 'floral'],
+    gender: 'masculine',
+    description: '雷頓的芳香花香東方調。蘋果和薰衣草的開場，天竺葵和茉莉的花香中調，香草和廣藿香的基底。優雅、甜美、奢華享受。',
+    topNotes: ['蘋果', '薰衣草', '佛手柑'],
+    heartNotes: ['天竺葵', '茉莉', '紫羅蘭'],
+    baseNotes: ['香草', '廣藿香', '檀香', '荳蔻'],
+    ingredients: [
+      { name: 'Apple accord (蘋果調)', cas: 'mixture', pct: 8, role: '蘋果果香', note: 'top' },
+      { name: 'Lavender oil (薰衣草精油)', cas: '8000-28-0', pct: 8, role: '薰衣草芳香', note: 'top' },
+      { name: 'Bergamot oil (佛手柑精油)', cas: '8007-75-8', pct: 6, role: '佛手柑清新', note: 'top' },
+      { name: 'Geranium oil (天竺葵精油)', cas: '8000-46-2', pct: 6, role: '天竺葵花香', note: 'middle' },
+      { name: 'Jasmine Sambac abs (小花茉莉)', cas: 'mixture', pct: 5, role: '茉莉白花', note: 'middle' },
+      { name: 'Violet abs (紫羅蘭原精)', cas: 'mixture', pct: 4, role: '紫羅蘭粉質', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 12, role: '香草甜美', note: 'base' },
+      { name: 'Patchouli oil (廣藿香精油)', cas: '8014-09-3', pct: 6, role: '廣藿香土壤', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 5, role: '檀香奶質', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 5,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 199. Memoirs of a Trespasser (2012)
+  // ────────────────────────────────────────────
+  {
+    id: 'imaginary-memoirs',
+    name: 'Memoirs of a Trespasser',
+    brand: 'imaginary',
+    year: 2012,
+    perfumer: 'Josh Meyer',
+    concentration: 'edp',
+    family: 'woody',
+    subfamilies: ['aromatic', 'green'],
+    gender: 'unisex',
+    description: '闖入者的回憶錄。橡木和苔蘚的綠色開場，香草和煙草的中調，雪松和麝香的基底。綠意、木質、故事氛圍。',
+    topNotes: ['橡木', '苔蘚', '松木'],
+    heartNotes: ['香草', '煙草', '乾草'],
+    baseNotes: ['雪松', '麝香', '琥珀'],
+    ingredients: [
+      { name: 'Oak accord (橡木調)', cas: 'mixture', pct: 10, role: '橡木綠意', note: 'top' },
+      { name: 'Oakmoss abs (橡木苔原精)', cas: 'mixture', pct: 8, role: '苔蘚土壤', note: 'top' },
+      { name: 'Pine needle oil (松針精油)', cas: '8023-99-2', pct: 5, role: '松木清新', note: 'top' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 8, role: '香草甜美', note: 'middle' },
+      { name: 'Tobacco absolute (煙草原精)', cas: 'mixture', pct: 6, role: '煙草溫暖', note: 'middle' },
+      { name: 'Hay accord (乾草調)', cas: 'mixture', pct: 4, role: '乾草溫暖', note: 'middle' },
+      { name: 'Cedarwood oil (雪松精油)', cas: '8000-27-9', pct: 12, role: '雪松木質', note: 'base' },
+      { name: 'Galaxolide (佳樂麝香)', cas: '1222-05-5', pct: 6, role: '白麝香', note: 'base' },
+      { name: 'Ambroxan (琥珀烷)', cas: '6790-58-5', pct: 5, role: '琥珀溫暖', note: 'base' },
+    ],
+    totalFragrancePct: 18,
+    sillage: 4,
+    longevity: 6,
+  },
+
+  // ────────────────────────────────────────────
+  // 200. Bee (2014)
+  // ────────────────────────────────────────────
+  {
+    id: 'zoologist-bee',
+    name: 'Bee',
+    brand: 'zoologist',
+    year: 2014,
+    perfumer: 'Chris Bartlett',
+    concentration: 'edp',
+    family: 'gourmand',
+    subfamilies: ['floral', 'oriental'],
+    gender: 'unisex',
+    description: '蜜蜂的蜂蜜花香。橙花和蜂蜜的甜美開場，杏桃和含羞草的花香中調，香草和檀香的溫暖基底。甜美、蜂蜜、自然氣息。',
+    topNotes: ['橙花', '蜂蜜', '薑'],
+    heartNotes: ['杏桃', '含羞草', '橙花油'],
+    baseNotes: ['香草', '檀香', '零陵香豆', '蜂蠟'],
+    ingredients: [
+      { name: 'Orange blossom abs (橙花原精)', cas: 'mixture', pct: 10, role: '橙花白花', note: 'top' },
+      { name: 'Honey accord (蜂蜜調)', cas: 'mixture', pct: 12, role: '蜂蜜核心', note: 'top' },
+      { name: 'Ginger oil (薑精油)', cas: '8007-08-7', pct: 3, role: '薑辛香', note: 'top' },
+      { name: 'Apricot accord (杏桃調)', cas: 'mixture', pct: 6, role: '杏桃果香', note: 'middle' },
+      { name: 'Mimosa abs (含羞草原精)', cas: 'mixture', pct: 6, role: '含羞草花香', note: 'middle' },
+      { name: 'Neroli oil (橙花精油)', cas: '8016-38-4', pct: 4, role: '橙花清新', note: 'middle' },
+      { name: 'Vanillin (香草醛)', cas: '121-33-5', pct: 10, role: '香草甜美', note: 'base' },
+      { name: 'Sandalwood oil (檀香精油)', cas: '8006-87-9', pct: 6, role: '檀香奶質', note: 'base' },
+      { name: 'Tonka bean abs (零陵香豆)', cas: '8024-04-2', pct: 5, role: '零陵香豆', note: 'base' },
+      { name: 'Beeswax abs (蜂蠟原精)', cas: 'mixture', pct: 4, role: '蜂蠟蜂蜜', note: 'base' },
+    ],
+    totalFragrancePct: 20,
+    sillage: 5,
+    longevity: 6,
+  },
+
 ]
 
+// ============================================================
+// 輔助選項數組（用於 UI 篩選器和下拉選單）
+// Helper Option Arrays (for UI filters and dropdowns)
+// ============================================================
+
 /**
- * Helpers
+ * 品牌選項數組
  */
 export const BRAND_OPTIONS = Object.values(BRANDS)
+
+/**
+ * 香調家族選項數組
+ */
 export const FAMILY_OPTIONS = Object.values(FRAGRANCE_FAMILIES)
+
+/**
+ * 濃度選項數組
+ */
 export const CONCENTRATION_OPTIONS = Object.values(CONCENTRATION_TYPES)
+
+/**
+ * 性別選項數組
+ */
 export const GENDER_OPTIONS = [
-  { id: 'feminine',  label: '女香', icon: '♀' },
-  { id: 'masculine', label: '男香', icon: '♂' },
-  { id: 'unisex',    label: '中性', icon: '⚥' },
+  { id: 'male', label: '男性', labelEn: 'Male', icon: '♂' },
+  { id: 'female', label: '女性', labelEn: 'Female', icon: '♀' },
+  { id: 'unisex', label: '中性', labelEn: 'Unisex', icon: '⚥' },
 ]

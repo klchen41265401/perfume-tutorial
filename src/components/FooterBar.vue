@@ -1,9 +1,21 @@
 <template>
   <footer class="footer">
-    <p>© 2024 香料化學教學 | 為研發者準備的分子級深度教學</p>
-    <p class="footer-sub">使用 Vue 3 + Vite 構建 | 響應式設計 | 最後更新：2024年12月</p>
+    <p>{{ t('common.footerCopyright') }}</p>
+    <p class="footer-sub">{{ t('common.footerSub') }}</p>
   </footer>
 </template>
+
+<script>
+import { useLanguage } from '../composables/useLanguage.js'
+
+export default {
+  name: 'FooterBar',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  }
+}
+</script>
 
 <style scoped>
 .footer {

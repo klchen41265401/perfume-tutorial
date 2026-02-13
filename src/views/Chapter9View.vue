@@ -1,8 +1,8 @@
 <template>
   <div class="encyclopedia">
     <div class="enc-header">
-      <h1>第9章：香料分子圖鑑</h1>
-      <p class="enc-subtitle">市售主要香料化學品百科 — 從感性描述到配方實戰</p>
+      <h1>{{ t('ch9.title') }}</h1>
+      <p class="enc-subtitle">{{ t('ch9.subtitle') }}</p>
     </div>
 
     <!-- 搜尋與篩選 -->
@@ -12,17 +12,17 @@
         <input
           v-model="searchQuery"
           type="text"
-          placeholder="全域搜尋：分子名稱、氣味、CAS、分類標籤、天然來源..."
+          :placeholder="t('ch9.searchPlaceholder')"
           class="search-input"
         />
         <button v-if="searchQuery" class="clear-btn" @click="searchQuery = ''">✕</button>
       </div>
       <div class="search-hint">
-        💡 提示：可搜尋任何可見文字，包括分子名稱（中英文）、CAS號、氣味描述、關鍵字、嗅覺家族、官能基分類、香調位置、分子家族、天然來源、應用範例、物理性質數值等
+        {{ t('ch9.searchHint') }}
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">嗅覺家族</div>
+        <div class="filter-label">{{ t('ch9.olfactoryFamily') }}</div>
         <div class="chip-group">
           <button
             v-for="cat in categoryOptions"
@@ -33,13 +33,13 @@
             @click="toggleCategory(cat.id)"
           >
             <span class="chip-icon">{{ cat.icon }}</span>
-            <span>{{ cat.label }}</span>
+            <span>{{ getLabel(cat) }}</span>
           </button>
         </div>
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">化學結構分類</div>
+        <div class="filter-label">{{ t('ch9.chemicalStructure') }}</div>
         <div class="chip-group">
           <button
             v-for="fg in functionalGroupOptions"
@@ -50,13 +50,13 @@
             @click="toggleFunctionalGroup(fg.id)"
           >
             <span class="chip-chem">⬡</span>
-            <span>{{ fg.label }}</span>
+            <span>{{ getLabel(fg) }}</span>
           </button>
         </div>
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">分子家族（生合成來源）</div>
+        <div class="filter-label">{{ t('ch9.moleculeFamily') }}</div>
         <div class="chip-group">
           <button
             v-for="mf in moleculeFamilyOptions"
@@ -67,13 +67,13 @@
             @click="toggleMoleculeFamily(mf.id)"
           >
             <span class="chip-icon">{{ mf.icon }}</span>
-            <span>{{ mf.label }}</span>
+            <span>{{ getLabel(mf) }}</span>
           </button>
         </div>
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">香調位置</div>
+        <div class="filter-label">{{ t('ch9.notePosition') }}</div>
         <div class="chip-group">
           <button
             v-for="note in noteOptions"
@@ -83,23 +83,23 @@
             :style="selectedNotes.has(note.id) ? { background: note.color + '22', borderColor: note.color, color: note.color } : {}"
             @click="toggleNote(note.id)"
           >
-            {{ note.label }} {{ note.labelEn }}
+            {{ getLabel(note) }}
           </button>
         </div>
       </div>
 
       <!-- 物化性質範圍篩選 -->
       <div class="filter-section">
-        <div class="filter-label">物化性質篩選</div>
+        <div class="filter-label">{{ t('ch9.physicalProperties') }}</div>
         <div class="range-filters">
           <div class="range-row">
-            <span class="range-name">沸點 (°C)</span>
+            <span class="range-name">{{ t('ch9.boilingPoint') }}</span>
             <input type="number" v-model.number="bpMin" :placeholder="bpBounds.min + ''" class="range-input" />
             <span class="range-sep">~</span>
             <input type="number" v-model.number="bpMax" :placeholder="bpBounds.max + ''" class="range-input" />
           </div>
           <div class="range-row">
-            <span class="range-name">分子量</span>
+            <span class="range-name">{{ t('ch9.molecularWeight') }}</span>
             <input type="number" v-model.number="mwMin" :placeholder="mwBounds.min + ''" class="range-input" />
             <span class="range-sep">~</span>
             <input type="number" v-model.number="mwMax" :placeholder="mwBounds.max + ''" class="range-input" />
@@ -114,8 +114,8 @@
       </div>
 
       <div class="filter-meta">
-        <span>顯示 <strong>{{ filteredMolecules.length }}</strong> / {{ allMolecules.length }} 個分子</span>
-        <button v-if="hasActiveFilters" class="reset-btn" @click="resetFilters">清除篩選</button>
+        <span>{{ t('ch9.showing') }} <strong>{{ filteredMolecules.length }}</strong> / {{ allMolecules.length }} {{ t('ch9.molecules') }}</span>
+        <button v-if="hasActiveFilters" class="reset-btn" @click="resetFilters">{{ t('ch9.clearFilters') }}</button>
       </div>
     </div>
 
@@ -165,22 +165,22 @@
               {{ getMfIcon(mol.moleculeFamily) }} {{ getMfLabel(mol.moleculeFamily) }}
             </span>
           </div>
-          <div class="mol-card-name">{{ mol.name }}</div>
-          <div class="mol-card-name-en">{{ mol.nameEn }}</div>
+          <div class="mol-card-name">{{ isZh ? mol.name : mol.nameEn }}</div>
+          <div class="mol-card-name-en">{{ isZh ? mol.nameEn : mol.name }}</div>
           <div class="mol-card-keywords">
             <span v-for="kw in mol.scentProfile.keywords" :key="kw" class="kw-tag">{{ kw }}</span>
           </div>
           <div class="mol-card-bars">
-            <div class="mini-bar" title="氣味強度">
-              <span class="mini-label">強度</span>
+            <div class="mini-bar" :title="t('ch9.odorIntensity')">
+              <span class="mini-label">{{ t('ch9.intensity') }}</span>
               <div class="mini-track"><div class="mini-fill" :style="{ width: (mol.scentProfile.intensity / 5 * 100) + '%', background: '#f59e0b' }"></div></div>
             </div>
-            <div class="mini-bar" title="持久力">
-              <span class="mini-label">持久</span>
+            <div class="mini-bar" :title="t('ch9.tenacity')">
+              <span class="mini-label">{{ t('ch9.tenacity') }}</span>
               <div class="mini-track"><div class="mini-fill" :style="{ width: (mol.scentProfile.tenacity / 5 * 100) + '%', background: '#8b5cf6' }"></div></div>
             </div>
-            <div class="mini-bar" title="擴散力">
-              <span class="mini-label">擴散</span>
+            <div class="mini-bar" :title="t('ch9.diffusion')">
+              <span class="mini-label">{{ t('ch9.diffusion') }}</span>
               <div class="mini-track"><div class="mini-fill" :style="{ width: (mol.scentProfile.diffusion / 5 * 100) + '%', background: '#06b6d4' }"></div></div>
             </div>
           </div>
@@ -191,8 +191,8 @@
     <!-- 空狀態 -->
     <div v-if="filteredMolecules.length === 0" class="empty-state">
       <div class="empty-icon">🧪</div>
-      <p>找不到符合條件的分子</p>
-      <button class="reset-btn" @click="resetFilters">清除所有篩選</button>
+      <p>{{ t('ch9.emptyState') }}</p>
+      <button class="reset-btn" @click="resetFilters">{{ t('ch9.clearAll') }}</button>
     </div>
 
     <!-- 分子詳情 Modal -->
@@ -204,8 +204,8 @@
 
             <div class="detail-header">
               <div>
-                <h2 class="detail-name">{{ selectedMol.name }}</h2>
-                <div class="detail-name-en">{{ selectedMol.nameEn }}</div>
+                <h2 class="detail-name">{{ isZh ? selectedMol.name : selectedMol.nameEn }}</h2>
+                <div class="detail-name-en">{{ isZh ? selectedMol.nameEn : selectedMol.name }}</div>
                 <div class="detail-badges">
                   <span class="mol-category-badge" :style="{ background: getCategoryColor(selectedMol.category) + '22', color: getCategoryColor(selectedMol.category) }">
                     {{ getCategoryIcon(selectedMol.category) }} {{ getCategoryLabel(selectedMol.category) }}
@@ -237,21 +237,21 @@
 
             <!-- 感性描述 -->
             <div class="detail-section">
-              <h3>🌬️ 氣味描述</h3>
+              <h3>🌬️ {{ t('ch9.odorDescription') }}</h3>
               <p class="scent-description">{{ selectedMol.scentProfile.description }}</p>
               <div class="scent-bars">
                 <div class="scent-bar-row">
-                  <span class="bar-label">氣味強度</span>
+                  <span class="bar-label">{{ t('ch9.odorIntensity') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: (selectedMol.scentProfile.intensity / 5 * 100) + '%', background: 'linear-gradient(90deg, #fbbf24, #f59e0b)' }"></div></div>
                   <span class="bar-value">{{ selectedMol.scentProfile.intensity }}/5</span>
                 </div>
                 <div class="scent-bar-row">
-                  <span class="bar-label">持久力</span>
+                  <span class="bar-label">{{ t('ch9.tenacity') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: (selectedMol.scentProfile.tenacity / 5 * 100) + '%', background: 'linear-gradient(90deg, #c084fc, #8b5cf6)' }"></div></div>
                   <span class="bar-value">{{ selectedMol.scentProfile.tenacity }}/5</span>
                 </div>
                 <div class="scent-bar-row">
-                  <span class="bar-label">擴散力</span>
+                  <span class="bar-label">{{ t('ch9.diffusion') }}</span>
                   <div class="bar-track"><div class="bar-fill" :style="{ width: (selectedMol.scentProfile.diffusion / 5 * 100) + '%', background: 'linear-gradient(90deg, #67e8f9, #06b6d4)' }"></div></div>
                   <span class="bar-value">{{ selectedMol.scentProfile.diffusion }}/5</span>
                 </div>
@@ -263,24 +263,24 @@
 
             <!-- 物化性質 -->
             <div class="detail-section">
-              <h3>⚗️ 物化性質</h3>
+              <h3>⚗️ {{ t('ch9.physicalProps') }}</h3>
               <table class="prop-table">
                 <tbody>
-                  <tr v-if="selectedMol.properties.mw"><td>分子量 (MW)</td><td>{{ selectedMol.properties.mw }} g/mol</td></tr>
-                  <tr v-if="selectedMol.properties.bp"><td>沸點 (BP)</td><td>{{ selectedMol.properties.bp }} °C</td></tr>
+                  <tr v-if="selectedMol.properties.mw"><td>{{ t('ch9.molecularWeightFull') }}</td><td>{{ selectedMol.properties.mw }} g/mol</td></tr>
+                  <tr v-if="selectedMol.properties.bp"><td>{{ t('ch9.boilingPointFull') }}</td><td>{{ selectedMol.properties.bp }} °C</td></tr>
                   <tr v-if="selectedMol.properties.logP"><td>Log P</td><td>{{ selectedMol.properties.logP }}</td></tr>
-                  <tr v-if="selectedMol.properties.density"><td>密度</td><td>{{ selectedMol.properties.density }} g/mL</td></tr>
-                  <tr v-if="selectedMol.properties.vaporPressure"><td>蒸氣壓 (25°C)</td><td>{{ selectedMol.properties.vaporPressure }} Pa</td></tr>
-                  <tr v-if="selectedMol.properties.appearance"><td>外觀</td><td>{{ selectedMol.properties.appearance }}</td></tr>
-                  <tr><td>化學分類</td><td>{{ getFgLabel(selectedMol.functionalGroup) }} ({{ getFgLabelEn(selectedMol.functionalGroup) }})</td></tr>
-                  <tr v-if="selectedMol.moleculeFamily"><td>分子家族</td><td>{{ getMfIcon(selectedMol.moleculeFamily) }} {{ getMfLabel(selectedMol.moleculeFamily) }} ({{ getMfLabelEn(selectedMol.moleculeFamily) }})</td></tr>
+                  <tr v-if="selectedMol.properties.density"><td>{{ t('ch9.density') }}</td><td>{{ selectedMol.properties.density }} g/mL</td></tr>
+                  <tr v-if="selectedMol.properties.vaporPressure"><td>{{ t('ch9.vaporPressure') }}</td><td>{{ selectedMol.properties.vaporPressure }} Pa</td></tr>
+                  <tr v-if="selectedMol.properties.appearance"><td>{{ t('ch9.appearance') }}</td><td>{{ selectedMol.properties.appearance }}</td></tr>
+                  <tr><td>{{ t('ch9.chemicalClass') }}</td><td>{{ getFgLabel(selectedMol.functionalGroup) }} ({{ getFgLabelEn(selectedMol.functionalGroup) }})</td></tr>
+                  <tr v-if="selectedMol.moleculeFamily"><td>{{ t('ch9.moleculeFamilyLabel') }}</td><td>{{ getMfIcon(selectedMol.moleculeFamily) }} {{ getMfLabel(selectedMol.moleculeFamily) }} ({{ getMfLabelEn(selectedMol.moleculeFamily) }})</td></tr>
                 </tbody>
               </table>
             </div>
 
             <!-- 天然來源 -->
             <div class="detail-section" v-if="selectedMol.naturalSources && selectedMol.naturalSources.length">
-              <h3>🌿 天然來源</h3>
+              <h3>🌿 {{ t('ch9.naturalSources') }}</h3>
               <div class="source-tags">
                 <span v-for="src in selectedMol.naturalSources" :key="src" class="source-tag">{{ src }}</span>
               </div>
@@ -288,25 +288,25 @@
 
             <!-- 調香使用 -->
             <div class="detail-section">
-              <h3>🧴 調香實戰</h3>
+              <h3>🧴 {{ t('ch9.perfumeryUse') }}</h3>
               <table class="prop-table">
                 <tbody>
-                  <tr><td>典型用量</td><td>{{ selectedMol.usage.concentration }}</td></tr>
-                  <tr><td>常見搭配</td><td>{{ selectedMol.usage.pairings.join('、') }}</td></tr>
-                  <tr><td>經典香水</td><td>{{ selectedMol.usage.perfumes.join('、') }}</td></tr>
-                  <tr><td>應用領域</td><td>{{ selectedMol.usage.applications.join('、') }}</td></tr>
+                  <tr><td>{{ t('ch9.typicalDosage') }}</td><td>{{ selectedMol.usage.concentration }}</td></tr>
+                  <tr><td>{{ t('ch9.commonPairings') }}</td><td>{{ selectedMol.usage.pairings.join('、') }}</td></tr>
+                  <tr><td>{{ t('ch9.classicPerfumes') }}</td><td>{{ selectedMol.usage.perfumes.join('、') }}</td></tr>
+                  <tr><td>{{ t('ch9.applicationFields') }}</td><td>{{ selectedMol.usage.applications.join('、') }}</td></tr>
                 </tbody>
               </table>
             </div>
 
             <!-- 安全資訊 -->
             <div class="detail-section" v-if="selectedMol.safety">
-              <h3>⚠️ 安全與法規</h3>
+              <h3>⚠️ {{ t('ch9.safetyInfo') }}</h3>
               <table class="prop-table">
                 <tbody>
-                  <tr><td>IFRA 限制</td><td>{{ selectedMol.safety.ifra }}</td></tr>
-                  <tr><td>EU 過敏原</td><td>{{ selectedMol.safety.allergen ? '✅ 是（需標示）' : '❌ 否' }}</td></tr>
-                  <tr v-if="selectedMol.safety.note"><td>備註</td><td>{{ selectedMol.safety.note }}</td></tr>
+                  <tr><td>{{ t('ch9.ifraLimit') }}</td><td>{{ selectedMol.safety.ifra }}</td></tr>
+                  <tr><td>{{ t('ch9.euAllergen') }}</td><td>{{ selectedMol.safety.allergen ? t('ch9.yes') : t('ch9.no') }}</td></tr>
+                  <tr v-if="selectedMol.safety.note"><td>{{ t('ch9.notes') }}</td><td>{{ selectedMol.safety.note }}</td></tr>
                 </tbody>
               </table>
             </div>
@@ -317,8 +317,8 @@
 
     <!-- 底部導航 -->
     <div class="enc-footer-nav">
-      <router-link to="/chapter/8" class="nav-btn">← 第8章：進階主題</router-link>
-      <router-link to="/chapter/10" class="nav-btn">第10章：市售配方解析 →</router-link>
+      <router-link to="/chapter/8" class="nav-btn">{{ t('ch9.prevChapter8') }}</router-link>
+      <router-link to="/chapter/10" class="nav-btn">{{ t('ch9.nextChapter10') }}</router-link>
     </div>
   </div>
 </template>
@@ -327,11 +327,14 @@
 import { ref, computed } from 'vue'
 import MoleculeRenderer from '../components/MoleculeRenderer.vue'
 import { ENCYCLOPEDIA, CATEGORY_OPTIONS, NOTE_OPTIONS, FUNCTIONAL_GROUP_OPTIONS, MOLECULE_FAMILY_OPTIONS, OLFACTORY_FAMILIES, NOTE_POSITIONS, FUNCTIONAL_GROUPS, MOLECULE_FAMILIES } from '../data/encyclopedia.js'
+import { useLanguage } from '../composables/useLanguage.js'
 
 export default {
   name: 'Chapter9View',
   components: { MoleculeRenderer },
   setup() {
+    const { getLabel, t, isZh } = useLanguage()
+    
     const searchQuery = ref('')
     const selectedCategories = ref(new Set())
     const selectedNotes = ref(new Set())
@@ -493,15 +496,15 @@ export default {
 
     function getCategoryColor(id) { return OLFACTORY_FAMILIES[id]?.color || '#888' }
     function getCategoryIcon(id) { return OLFACTORY_FAMILIES[id]?.icon || '·' }
-    function getCategoryLabel(id) { return OLFACTORY_FAMILIES[id]?.label || id }
+    function getCategoryLabel(id) { return isZh.value ? (OLFACTORY_FAMILIES[id]?.label || id) : (OLFACTORY_FAMILIES[id]?.labelEn || id) }
     function getNoteColor(id) { return NOTE_POSITIONS[id]?.color || '#888' }
-    function getNoteLabel(id) { return NOTE_POSITIONS[id]?.label || id }
+    function getNoteLabel(id) { return isZh.value ? (NOTE_POSITIONS[id]?.label || id) : (NOTE_POSITIONS[id]?.labelEn || id) }
     function getFgColor(id) { return FUNCTIONAL_GROUPS[id]?.color || '#888' }
-    function getFgLabel(id) { return FUNCTIONAL_GROUPS[id]?.label || id }
+    function getFgLabel(id) { return isZh.value ? (FUNCTIONAL_GROUPS[id]?.label || id) : (FUNCTIONAL_GROUPS[id]?.labelEn || id) }
     function getFgLabelEn(id) { return FUNCTIONAL_GROUPS[id]?.labelEn || id }
     function getMfColor(id) { return MOLECULE_FAMILIES[id]?.color || '#888' }
     function getMfIcon(id) { return MOLECULE_FAMILIES[id]?.icon || '·' }
-    function getMfLabel(id) { return MOLECULE_FAMILIES[id]?.label || id }
+    function getMfLabel(id) { return isZh.value ? (MOLECULE_FAMILIES[id]?.label || id) : (MOLECULE_FAMILIES[id]?.labelEn || id) }
     function getMfLabelEn(id) { return MOLECULE_FAMILIES[id]?.labelEn || id }
 
     return {
@@ -515,6 +518,7 @@ export default {
       getNoteColor, getNoteLabel,
       getFgColor, getFgLabel, getFgLabelEn,
       getMfColor, getMfIcon, getMfLabel, getMfLabelEn,
+      getLabel, t,
     }
   }
 }

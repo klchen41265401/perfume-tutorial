@@ -1,11 +1,11 @@
 <template>
   <nav class="nav-rail" :class="{ collapsed }">
-    <button class="collapse-toggle" @click="$emit('toggle')" :title="collapsed ? '展開側邊欄' : '收合側邊欄'">
+    <button class="collapse-toggle" @click="$emit('toggle')" :title="collapsed ? t('common.expandSidebar') : t('common.collapseSidebar')">
       <span class="toggle-icon">{{ collapsed ? '▸' : '◂' }}</span>
     </button>
     <div class="nav-brand">
       <div class="brand-title">{{ collapsed ? 'S·S' : 'SYLVAN SANCTUM' }}</div>
-      <div v-if="!collapsed" class="brand-sub">香料化學課程</div>
+      <div v-if="!collapsed" class="brand-sub">{{ t('common.subtitle') }}</div>
     </div>
     <div class="nav-group">
       <router-link
@@ -14,12 +14,19 @@
         :to="item.to"
         class="nav-item"
         :class="{ active: $route.path === item.to }"
-        :title="collapsed ? item.label : ''"
+        :title="collapsed ? t(item.labelKey) : ''"
       >
         <span class="nav-ornament">{{ item.icon }}</span>
-        <span v-if="!collapsed" class="nav-label">{{ item.label }}</span>
+        <span v-if="!collapsed" class="nav-label">{{ t(item.labelKey) }}</span>
       </router-link>
     </div>
+
+    <!-- 語言切換按鈕 -->
+    <button class="lang-toggle" @click="toggleLanguage" :title="isZh ? t('common.switchToEnglish') : t('common.switchToChinese')">
+      <span class="lang-icon">{{ language.icon }}</span>
+      <span v-if="!collapsed" class="lang-label">{{ isZh ? '中文' : 'EN' }}</span>
+    </button>
+
     <div v-if="!collapsed" class="nav-foot">
       <span class="nav-foot-line">Forest Lab Edition</span>
     </div>
@@ -27,26 +34,32 @@
 </template>
 
 <script>
+import { useLanguage } from '../composables/useLanguage.js'
+
 export default {
   name: 'NavBar',
   props: {
     collapsed: { type: Boolean, default: false }
   },
   emits: ['toggle'],
+  setup() {
+    const { language, isZh, isEn, toggleLanguage, t } = useLanguage()
+    return { language, isZh, isEn, toggleLanguage, t }
+  },
   data() {
     return {
       navItems: [
-        { to: '/', label: '首頁 · Realm Overview', icon: '🏠' },
-        { to: '/chapter/1', label: '第1章 · 量子化學', icon: '⚛️' },
-        { to: '/chapter/2', label: '第2章 · 熱力學', icon: '🔥' },
-        { to: '/chapter/3', label: '第3章 · SAR', icon: '🔗' },
-        { to: '/chapter/4', label: '第4章 · 合成', icon: '⚗️' },
-        { to: '/chapter/5', label: '第5章 · 配方', icon: '📋' },
-        { to: '/chapter/6', label: '第6章 · 分析', icon: '📊' },
-        { to: '/chapter/7', label: '第7章 · 案例', icon: '🌹' },
-        { to: '/chapter/8', label: '第8章 · 進階', icon: '🧬' },
-        { to: '/chapter/9', label: '第9章 · 分子圖鑑', icon: '📖' },
-        { to: '/chapter/10', label: '第10章 · 市售配方', icon: '🧴' }
+        { to: '/', labelKey: 'common.homeLabel', icon: '🏠' },
+        { to: '/chapter/1', labelKey: 'common.chapter1Label', icon: '⚛️' },
+        { to: '/chapter/2', labelKey: 'common.chapter2Label', icon: '🔥' },
+        { to: '/chapter/3', labelKey: 'common.chapter3Label', icon: '🔗' },
+        { to: '/chapter/4', labelKey: 'common.chapter4Label', icon: '⚗️' },
+        { to: '/chapter/5', labelKey: 'common.chapter5Label', icon: '📋' },
+        { to: '/chapter/6', labelKey: 'common.chapter6Label', icon: '📊' },
+        { to: '/chapter/7', labelKey: 'common.chapter7Label', icon: '🌹' },
+        { to: '/chapter/8', labelKey: 'common.chapter8Label', icon: '🧬' },
+        { to: '/chapter/9', labelKey: 'common.chapter9Label', icon: '📖' },
+        { to: '/chapter/10', labelKey: 'common.chapter10Label', icon: '🧴' }
       ]
     }
   }
@@ -143,6 +156,46 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+/* ── 語言切換按鈕 ── */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 230, 207, 0.4);
+  background: linear-gradient(135deg, rgba(168, 230, 207, 0.15), rgba(20, 45, 25, 0.2));
+  color: var(--leaf-light);
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(168, 230, 207, 0.1);
+}
+
+.collapsed .lang-toggle {
+  padding: 0.55rem;
+}
+
+.lang-toggle:hover {
+  border-color: rgba(168, 230, 207, 0.7);
+  background: linear-gradient(135deg, rgba(168, 230, 207, 0.25), rgba(20, 45, 25, 0.3));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 230, 207, 0.2);
+}
+
+.lang-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.lang-label {
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav-item {
@@ -266,6 +319,15 @@ export default {
     transform: translateY(-1px);
   }
 
+  /* 語言切換按鈕 - 平板 */
+  .lang-toggle {
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+
   .nav-foot {
     display: none;
   }
@@ -298,6 +360,20 @@ export default {
 
   .nav-ornament {
     font-size: 1.1rem;
+  }
+
+  /* 語言切換按鈕 - 手機 */
+  .lang-toggle {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.78rem;
+  }
+
+  .lang-label {
+    display: none;
+  }
+
+  .lang-icon {
+    font-size: 1.2rem;
   }
 }
 
