@@ -366,6 +366,13 @@ export const NOTE_EN = {
   '浮木': 'Driftwood',
   '百葉玫瑰': 'Centifolia rose',
   '鷹爪豆': 'Fenugreek',
+  // ── batch 321-340 ──
+  '樹脂': 'Resin',
+  '沉香(烏木)': 'Oud (agarwood)',
+  '淡紫丁香': 'Lilac',
+  '紅莓果': 'Red berries',
+  '紙張': 'Paper',
+  '醛': 'Aldehyde',
 }
 
 // ─────────────────────────────────────────
@@ -580,6 +587,14 @@ const ROLE_DIRECT = {
   '漂流木調': 'Driftwood accent',
   '綠色芳香': 'Green aromatic',
   '花果蜜香': 'Floral-fruity nectar',
+  // ── batch 321-340 ──
+  '紙墨書香': 'Papery bookish',
+  '美食甜蜜': 'Gourmand sweet',
+  '茶香深沉': 'Deep tea',
+  '茶香清雅': 'Elegant tea',
+  '草本舒緩': 'Herbal soothing',
+  '草本酸甜': 'Herbal bittersweet',
+  '龍涎香深沉': 'Ambergris deep',
 }
 
 // Material prefixes for decomposition
@@ -1077,4 +1092,25 @@ export const DESCRIPTION_EN = {
   'atelier-clementine': 'A Californian clementine grove at golden hour. Clementine-cardamom-pepper sparkle, white flowers-iris add delicate depth, and musk-cedar-tonka provide a warm woody-citrus glow. Sun-drenched optimism from Atelier Cologne\'s Joie de Vivre collection.',
   'kilian-goodgirlgonebad': 'A good girl\'s descent into floral narcosis. May rose-tuberose-jasmine sambac form a hypnotic white-floral cloud pushed to excess, amber-cedar-cashmeran anchor the indulgence, and osmanthus adds a peachy-apricot wink. Addictively transgressive.',
   'sergelutens-feminiteduois': 'The fragrance that invented the "woody" genre for women. Plum-violet-peach open vintage-soft, rose-clove-honey build a spiced floral heart, and cedarwood-cardamom-dried fruit create a warm, resinous base. A 1992 revolution that still inspires.',
+  // ── batch 321-340 ──
+  'chanel-chance-eauvive': 'The liveliest Chance — a burst of citrus energy. Grapefruit-blood orange fizz with sparkling vitality, jasmine-white musk form a sheer floral heart, and cedar-iris root settle into a clean, luminous finish. Spontaneous joy, bottled.',
+  'dior-missdior-blooming': 'Miss Dior reimagined as a spring bouquet. Peony-Damascena rose open in tender bloom, blood orange adds a fruity wink, and white musk-almond create a soft, powdery landing. The fragrance equivalent of a fresh flower arrangement.',
+  'ysl-paris': 'The quintessential Parisian rose — romantic yet never saccharine. Centifolia rose-lily-of-the-valley open classic, violet-iris-mimosa build a powdery floral heart, and sandalwood-amber-musk wrap everything in Left Bank warmth. Eternal feminine elegance.',
+  'guerlain-petiterobe': 'A little black dress in fragrance form. Almond-red berries add a playful cherry-noir sweetness, rose-tea-peony form a refined floral heart, and patchouli-vanilla-black tea create a sophisticated, slightly smoky drydown. Guerlain\'s modern coquette.',
+  'hermes-caleche': 'Hermès\' first women\'s fragrance — a 1961 masterpiece of chypre elegance. Aldehyde-bergamot sparkle opens, iris-rose-jasmine form a classic floral heart, and oakmoss-sandalwood-cedar create the distinguished carriage ride its name evokes.',
+  'givenchy-ysatis': 'A grand chypre statement from the golden age. Aldehyde-coriander-bergamot open bright, rose-jasmine-iris weave a sumptuous floral tapestry, and oakmoss-sandalwood-amber anchor with vintage warmth. Opulent femininity without apology.',
+  'dolce-pourfemme': 'Dolce & Gabbana\'s ode to Italian femininity. Raspberry-citrus-neroli open with sunny sweetness, jasmine-lily-orange blossom bloom generously, and marshmallow-sandalwood-vanilla create a warm, confectionery embrace. La dolce vita in perfume form.',
+  'tomford-oudfleur': 'A rose-oud duet of extraordinary refinement. Rose-saffron-bergamot open luminous, oud-rose absolute-resin form an opulent Eastern heart, and sandalwood-amber-musk create a deep, velvety finish. Tom Ford\'s most elegant oud.',
+  'creed-originalsantal': 'A majestic sandalwood symphony. Lavender-bergamot-juniper open aromatic-fresh, cinnamon-jasmine-ginger add spicy warmth, and a massive sandalwood-vanilla-cedar base delivers creamy, woody luxury. The definitive gentleman\'s sandalwood.',
+  'mfk-petitmatin': 'The first light of a Parisian morning. Lemon-lilac-freesia capture dawn\'s freshness, rose-iris-jasmine unfold as the day brightens, and white musk-sandalwood-amber provide a luminous, skin-like warmth. Pure daylight in a bottle.',
+  'byredo-bibliotheque': 'A library\'s atmosphere captured in fragrance. Peach-violet-bergamot evoke sun through old windows, leather-paper-plum recreate the scent of aged volumes, and patchouli-vanilla-vetiver are the dark wooden shelves. Intellectual comfort.',
+  'lelabo-iris39': 'Florence\'s orris root elevated to art. Iris-cardamom-pink pepper open powdery-spicy, orris butter-rose-patchouli create a luxuriously velvety heart, and musk-amber-sandalwood settle into a skin-intimate embrace. The ultimate iris.',
+  'diptyque-fleurdepeau': 'A flower that blooms on skin, not in soil. Pink pepper-iris-bergamot open textured, orris-musk-Turkish rose form a tactile, almost touchable heart, and ambergris-white musk-sandalwood create an intimate, second-skin finish. Essentially you, perfumed.',
+  'amouage-interludewoman': 'Harmony born from chaos. Frankincense-saffron-bergamot blaze the opening, rose-frankincense-jasmine swirl in an incense-laden heart, and amber-oud-ambergris create a profoundly deep, temple-like base. Omani grandeur at its most dramatic.',
+  'jm-pomegranatenoir': 'The dark side of pomegranate. Pomegranate-raspberry-pink pepper sparkle with jewel-red brilliance, saffron-rose-lily-of-the-valley add mysterious warmth, and patchouli-frankincense-sandalwood create a smoky, opulent base. Jo Malone\'s boldest statement.',
+  'prada-lunarossa-ocean': 'Luna Rossa reimagined as an oceanic voyage. Bergamot-sage-petitgrain capture the sea breeze, iris-lavender-rosemary form an aromatic-aquatic heart, and tonka-musk-cedar provide a warm, woody anchor. Modern masculine freshness with Italian polish.',
+  'thierry-aura': 'Mugler\'s first botanical fragrance — green, wild, untamed. Petitgrain-bergamot-rhubarb open with verdant intensity, orange blossom-jasmine-iris add floral dimension, and bourbon vanilla-patchouli-ambergris create an animalic, earthy base. Nature\'s raw beauty.',
+  'rochas-femme': 'One of perfumery\'s oldest masterpieces (1944). Plum-peach-bergamot open with vintage fruit richness, rose-jasmine-violet weave a classic floral heart, and oakmoss-amber-musk are the quintessential chypre foundation. Historical elegance, still relevant.',
+  'clinique-aromaticselixir': 'The bold intellectual\'s fragrance. Sage-chamomile-bergamot open with herbal austerity, rose-jasmine-ylang form a dense floral heart, and patchouli-oakmoss-vetiver create one of perfumery\'s most profound chypre bases. Unapologetically complex since 1971.',
+  'cartier-lenvol': 'A fragrance that takes flight. Lavender-bergamot-grapefruit lift off with bright clarity, honey-iris-violet hover in a golden, luminous heart, and oud-tonka-musk land with deep, enveloping warmth. Cartier\'s poetic ode to soaring ambition.',
 }

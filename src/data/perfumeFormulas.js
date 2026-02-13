@@ -73,6 +73,7 @@ export const BRANDS = {
   penhaligons: { id: 'penhaligons', label: "Penhaligon's" },
   escentric: { id: 'escentric', label: 'Escentric Molecules' },
   serge:     { id: 'serge',     label: 'Serge Lutens' },
+  clinique: { id: 'clinique', label: 'Clinique' },
   cdg:       { id: 'cdg',       label: 'Comme des Garçons' },
   clean:     { id: 'clean',     label: 'Clean Reserve' },
   replica:   { id: 'replica',   label: 'Replica (Margiela)' },
@@ -81,6 +82,7 @@ export const BRANDS = {
   cartier:   { id: 'cartier',   label: 'Cartier' },
   ch:        { id: 'ch',        label: 'Carolina Herrera' },
   mj:       { id: 'mj',       label: 'Marc Jacobs' },
+  rochas: { id: 'rochas', label: 'Rochas' },
   rl:       { id: 'rl',       label: 'Ralph Lauren' },
   bdk:      { id: 'bdk',      label: 'BDK Parfums' },
   initio:   { id: 'initio',   label: 'Initio Parfums Privés' },
@@ -10487,6 +10489,487 @@ export const PERFUME_FORMULAS = [
     totalFragrancePct: 34,
     sillage: 3,
     longevity: 5,
+  },
+
+  {
+    id: 'chanel-chance-eauvive',
+    name: 'Chance Eau Vive',
+    brand: 'chanel',
+    year: 2015,
+    concentration: 'edt',
+    family: 'citrus',
+    description: '活潑清新的柑橘花香調，以葡萄柚和血橙開場，茉莉與白麝香構成輕盈花心，雪松和鳶尾根收尾。',
+    topNotes: [
+      { name: '葡萄柚', percentage: 12, role: '柑橘明亮' },
+      { name: '血橙', percentage: 10, role: '柑橘甜美' },
+      { name: '粉紅胡椒', percentage: 3, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '白麝香', percentage: 12, role: '麝香柔和' },
+      { name: '鳶尾花', percentage: 8, role: '花香粉質' }
+    ],
+    baseNotes: [
+      { name: '雪松', percentage: 15, role: '木質沉穩' },
+      { name: '鳶尾根', percentage: 10, role: '粉質優雅' },
+      { name: '白麝香', percentage: 15, role: '麝香乾淨' }
+    ]
+  },
+  {
+    id: 'dior-missdior-blooming',
+    name: 'Miss Dior Blooming Bouquet',
+    brand: 'dior',
+    year: 2014,
+    concentration: 'edt',
+    family: 'floral',
+    description: '嬌嫩花束般的花果香調，牡丹與大馬士革玫瑰交織出春日花園的浪漫氣息。',
+    topNotes: [
+      { name: '牡丹', percentage: 15, role: '花香嬌嫩' },
+      { name: '大馬士革玫瑰', percentage: 10, role: '玫瑰經典' },
+      { name: '血橙', percentage: 5, role: '柑橘甜美' }
+    ],
+    heartNotes: [
+      { name: '牡丹', percentage: 20, role: '花香主調' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '白麝香', percentage: 8, role: '麝香柔和' }
+    ],
+    baseNotes: [
+      { name: '白麝香', percentage: 18, role: '麝香乾淨' },
+      { name: '杏仁', percentage: 7, role: '堅果溫潤' },
+      { name: '琥珀', percentage: 5, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'ysl-paris',
+    name: 'Paris',
+    brand: 'ysl',
+    year: 1983,
+    concentration: 'edp',
+    family: 'floral',
+    description: '經典浪漫玫瑰花香，以百葉玫瑰與紫羅蘭為核心，檀香與琥珀帶來溫柔基底。',
+    topNotes: [
+      { name: '百葉玫瑰', percentage: 15, role: '玫瑰經典' },
+      { name: '鈴蘭', percentage: 8, role: '花香清新' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '紫羅蘭', percentage: 15, role: '花香粉質' },
+      { name: '鳶尾花', percentage: 12, role: '花香優雅' },
+      { name: '含羞草', percentage: 8, role: '花香蜜甜' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 12, role: '檀香溫柔' },
+      { name: '琥珀', percentage: 10, role: '琥珀溫暖' },
+      { name: '麝香', percentage: 13, role: '麝香柔和' }
+    ]
+  },
+  {
+    id: 'guerlain-petiterobe',
+    name: 'La Petite Robe Noire',
+    brand: 'guerlain',
+    year: 2012,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '如同一件經典小黑裙，杏仁與紅莓果帶來甜美開場，玫瑰與茶交織花果心香，廣藿香和香草提供深沉基調。',
+    topNotes: [
+      { name: '杏仁', percentage: 10, role: '堅果溫潤' },
+      { name: '紅莓果', percentage: 8, role: '果香甜酸' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '茶', percentage: 10, role: '茶香清雅' },
+      { name: '牡丹', percentage: 10, role: '花香嬌嫩' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 12, role: '廣藿香沉穩' },
+      { name: '香草', percentage: 15, role: '香草甜美' },
+      { name: '黑茶', percentage: 13, role: '茶香深沉' }
+    ]
+  },
+  {
+    id: 'hermes-caleche',
+    name: 'Calèche',
+    brand: 'hermes',
+    year: 1961,
+    concentration: 'edp',
+    family: 'chypre',
+    description: '經典綠意西普調，醛香與佛手柑開場，鳶尾花、玫瑰和茉莉構成花香心臟，橡木苔與檀香收尾。',
+    topNotes: [
+      { name: '醛', percentage: 8, role: '前調醛香' },
+      { name: '佛手柑', percentage: 10, role: '柑橘清新' },
+      { name: '柑橘', percentage: 7, role: '柑橘明亮' }
+    ],
+    heartNotes: [
+      { name: '鳶尾花', percentage: 15, role: '花香優雅' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '橡木苔', percentage: 12, role: '苔蘚沉穩' },
+      { name: '檀香', percentage: 13, role: '檀香溫柔' },
+      { name: '雪松', percentage: 13, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'givenchy-ysatis',
+    name: 'Ysatis',
+    brand: 'givenchy',
+    year: 1984,
+    concentration: 'edt',
+    family: 'chypre',
+    description: '濃郁華麗的西普花香調，醛香與芫荽為前調，玫瑰茉莉構成豐滿花心，橡木苔與檀香打造溫暖基底。',
+    topNotes: [
+      { name: '醛', percentage: 8, role: '前調醛香' },
+      { name: '芫荽', percentage: 5, role: '辛香草本' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '鳶尾花', percentage: 10, role: '花香優雅' }
+    ],
+    baseNotes: [
+      { name: '橡木苔', percentage: 12, role: '苔蘚沉穩' },
+      { name: '檀香', percentage: 13, role: '檀香溫柔' },
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'dolce-pourfemme',
+    name: 'Pour Femme',
+    brand: 'dolce',
+    year: 2012,
+    concentration: 'edp',
+    family: 'floral',
+    description: '溫暖甜美的花香調，覆盆子和橙花輕快開場，茉莉和百合在心香綻放，棉花糖和檀香帶來柔軟餘韻。',
+    topNotes: [
+      { name: '覆盆子', percentage: 10, role: '果香甜酸' },
+      { name: '柑橘', percentage: 8, role: '柑橘明亮' },
+      { name: '橙花', percentage: 7, role: '橙花清甜' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '百合', percentage: 12, role: '花香純淨' },
+      { name: '橙花', percentage: 10, role: '橙花柔美' }
+    ],
+    baseNotes: [
+      { name: '棉花糖', percentage: 12, role: '美食甜蜜' },
+      { name: '檀香', percentage: 13, role: '檀香溫柔' },
+      { name: '香草', percentage: 13, role: '香草甜美' }
+    ]
+  },
+  {
+    id: 'tomford-oudfleur',
+    name: 'Oud Fleur',
+    brand: 'tomford',
+    year: 2015,
+    concentration: 'edp',
+    family: 'woody',
+    description: '玫瑰與沉香的奢華對話，番紅花點綴異域色彩，檀香與琥珀提供深邃基底。',
+    topNotes: [
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '番紅花', percentage: 5, role: '辛香珍貴' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '沉香(烏木)', percentage: 18, role: '沉香深邃' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰基底' },
+      { name: '樹脂', percentage: 7, role: '樹脂溫暖' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 15, role: '檀香溫柔' },
+      { name: '琥珀', percentage: 12, role: '琥珀溫暖' },
+      { name: '麝香', percentage: 11, role: '麝香柔和' }
+    ]
+  },
+  {
+    id: 'creed-originalsantal',
+    name: 'Original Santal',
+    brand: 'creed',
+    year: 2005,
+    concentration: 'edp',
+    family: 'woody',
+    description: '高雅檀香木為核心的東方木質調，薰衣草和杜松帶來草本開場，肉桂和薑增添辛香暖意。',
+    topNotes: [
+      { name: '薰衣草', percentage: 10, role: '薰衣草安撫' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' },
+      { name: '杜松', percentage: 7, role: '木質清涼' }
+    ],
+    heartNotes: [
+      { name: '肉桂', percentage: 10, role: '辛香溫暖' },
+      { name: '茉莉', percentage: 8, role: '花香心臟' },
+      { name: '薑', percentage: 7, role: '辛香溫暖' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 20, role: '檀香主調' },
+      { name: '香草', percentage: 10, role: '香草甜美' },
+      { name: '雪松', percentage: 20, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'mfk-petitmatin',
+    name: 'Petit Matin',
+    brand: 'mfk',
+    year: 2019,
+    concentration: 'edp',
+    family: 'floral',
+    description: '清晨第一道光線般的花香調，檸檬與丁香花帶來清新明亮，鳶尾花和茉莉柔美過渡，白麝香收尾。',
+    topNotes: [
+      { name: '檸檬', percentage: 12, role: '柑橘清新' },
+      { name: '淡紫丁香', percentage: 10, role: '花香清甜' },
+      { name: '小蒼蘭', percentage: 8, role: '花香清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '鳶尾花', percentage: 10, role: '花香優雅' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '白麝香', percentage: 18, role: '麝香乾淨' },
+      { name: '檀香', percentage: 12, role: '檀香溫柔' },
+      { name: '琥珀', percentage: 8, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'byredo-bibliotheque',
+    name: 'Bibliothèque',
+    brand: 'byredo',
+    year: 2017,
+    concentration: 'edp',
+    family: 'woody',
+    description: '一座古老圖書館的嗅覺重現——桃子與紫羅蘭交織果香花韻，皮革與紙張營造書卷氣息，廣藿香和香草收尾。',
+    topNotes: [
+      { name: '桃子', percentage: 10, role: '果香甜美' },
+      { name: '紫羅蘭', percentage: 8, role: '花香粉質' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '皮革', percentage: 12, role: '皮革質感' },
+      { name: '紙張', percentage: 8, role: '紙墨書香' },
+      { name: '李子', percentage: 8, role: '果香甜濃' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '香草', percentage: 15, role: '香草甜美' },
+      { name: '岩蘭草', percentage: 17, role: '岩蘭草煙燻' }
+    ]
+  },
+  {
+    id: 'lelabo-iris39',
+    name: 'Iris 39',
+    brand: 'lelabo',
+    year: 2012,
+    concentration: 'edp',
+    family: 'floral',
+    description: '以佛羅倫薩鳶尾根為核心的粉質花香——麝香與琥珀圍繞鳶尾花，創造柔美而持久的肌膚感。',
+    topNotes: [
+      { name: '鳶尾花', percentage: 15, role: '花香優雅' },
+      { name: '小荳蔻', percentage: 5, role: '辛香清新' },
+      { name: '粉紅胡椒', percentage: 5, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '鳶尾根', percentage: 20, role: '粉質優雅' },
+      { name: '玫瑰', percentage: 10, role: '玫瑰香' },
+      { name: '廣藿香', percentage: 7, role: '廣藿香沉穩' }
+    ],
+    baseNotes: [
+      { name: '麝香', percentage: 15, role: '麝香柔和' },
+      { name: '琥珀', percentage: 10, role: '琥珀溫暖' },
+      { name: '檀香', percentage: 13, role: '檀香溫柔' }
+    ]
+  },
+  {
+    id: 'diptyque-fleurdepeau',
+    name: 'Fleur de Peau',
+    brand: 'diptyque',
+    year: 2018,
+    concentration: 'edp',
+    family: 'floral',
+    description: '麝香花般的肌膚之花——鳶尾花與麝香交織出如絲般柔軟的質感，粉紅胡椒帶來微辣點綴。',
+    topNotes: [
+      { name: '粉紅胡椒', percentage: 8, role: '辛香點綴' },
+      { name: '鳶尾花', percentage: 10, role: '花香優雅' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '鳶尾根', percentage: 18, role: '粉質優雅' },
+      { name: '麝香', percentage: 15, role: '麝香柔和' },
+      { name: '土耳其玫瑰', percentage: 7, role: '玫瑰經典' }
+    ],
+    baseNotes: [
+      { name: '龍涎香', percentage: 15, role: '龍涎香深沉' },
+      { name: '白麝香', percentage: 12, role: '麝香乾淨' },
+      { name: '檀香', percentage: 8, role: '檀香溫柔' }
+    ]
+  },
+  {
+    id: 'amouage-interludewoman',
+    name: 'Interlude Woman',
+    brand: 'amouage',
+    year: 2012,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '混亂中的和諧——乳香與番紅花帶來濃烈楔子，玫瑰與龍涎香在心香交纏，琥珀和沉香營造深沉尾韻。',
+    topNotes: [
+      { name: '乳香', percentage: 10, role: '樹脂神聖' },
+      { name: '番紅花', percentage: 5, role: '辛香珍貴' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '乳香', percentage: 10, role: '樹脂溫暖' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '沉香(烏木)', percentage: 10, role: '沉香深邃' },
+      { name: '龍涎香', percentage: 20, role: '龍涎香深沉' }
+    ]
+  },
+  {
+    id: 'jm-pomegranatenoir',
+    name: 'Pomegranate Noir',
+    brand: 'jm',
+    year: 2005,
+    concentration: 'cologne',
+    family: 'oriental',
+    description: '紅石榴般的深邃果香——石榴與覆盆子帶來莓果酸甜，檀香和廣藿香營造煙燻神秘的基底。',
+    topNotes: [
+      { name: '石榴', percentage: 12, role: '果香甜酸' },
+      { name: '覆盆子', percentage: 10, role: '果香甜美' },
+      { name: '粉紅胡椒', percentage: 5, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '番紅花', percentage: 8, role: '辛香珍貴' },
+      { name: '玫瑰', percentage: 10, role: '玫瑰香' },
+      { name: '鈴蘭', percentage: 8, role: '花香清新' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '乳香', percentage: 12, role: '樹脂溫暖' },
+      { name: '檀香', percentage: 20, role: '檀香溫柔' }
+    ]
+  },
+  {
+    id: 'prada-lunarossa-ocean',
+    name: 'Luna Rossa Ocean',
+    brand: 'prada',
+    year: 2021,
+    concentration: 'edt',
+    family: 'aromatic',
+    description: '海洋清新的芳香蕨調——佛手柑和鼠尾草帶來水感前調，鳶尾花與薰衣草展開芳香心臟，乾燥木質和麝香收尾。',
+    topNotes: [
+      { name: '佛手柑', percentage: 12, role: '柑橘清新' },
+      { name: '鼠尾草', percentage: 8, role: '草本芳香' },
+      { name: '苦橙葉', percentage: 5, role: '綠色芳香' }
+    ],
+    heartNotes: [
+      { name: '鳶尾花', percentage: 12, role: '花香優雅' },
+      { name: '薰衣草', percentage: 10, role: '薰衣草安撫' },
+      { name: '迷迭香', percentage: 8, role: '草本清新' }
+    ],
+    baseNotes: [
+      { name: '零陵香豆', percentage: 15, role: '零陵香豆溫暖' },
+      { name: '麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '雪松', percentage: 15, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'thierry-aura',
+    name: 'Aura',
+    brand: 'thierry',
+    year: 2017,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '綠色與動物性的碰撞——苦橙葉帶來大膽綠意，橙花和波本香草交織中調，廣藿香和龍涎香建構深沉基底。',
+    topNotes: [
+      { name: '苦橙葉', percentage: 10, role: '綠色芳香' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' },
+      { name: '大黃', percentage: 5, role: '草本酸甜' }
+    ],
+    heartNotes: [
+      { name: '橙花', percentage: 12, role: '橙花清甜' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' },
+      { name: '鳶尾花', percentage: 8, role: '花香優雅' }
+    ],
+    baseNotes: [
+      { name: '波本香草', percentage: 15, role: '香草濃郁' },
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '龍涎香', percentage: 17, role: '龍涎香深沉' }
+    ]
+  },
+  {
+    id: 'rochas-femme',
+    name: 'Femme Rochas',
+    brand: 'rochas',
+    year: 1944,
+    concentration: 'edt',
+    family: 'chypre',
+    description: '法國經典西普果香——李子與桃子帶來豐熟果韻，玫瑰與茉莉構成花香心臟，橡木苔與琥珀沉穩收尾。',
+    topNotes: [
+      { name: '李子', percentage: 10, role: '果香甜濃' },
+      { name: '桃子', percentage: 8, role: '果香甜美' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '茉莉', percentage: 12, role: '花香心臟' },
+      { name: '紫羅蘭', percentage: 8, role: '花香粉質' }
+    ],
+    baseNotes: [
+      { name: '橡木苔', percentage: 12, role: '苔蘚沉穩' },
+      { name: '琥珀', percentage: 13, role: '琥珀溫暖' },
+      { name: '麝香', percentage: 15, role: '麝香柔和' }
+    ]
+  },
+  {
+    id: 'clinique-aromaticselixir',
+    name: 'Aromatics Elixir',
+    brand: 'clinique',
+    year: 1971,
+    concentration: 'edp',
+    family: 'chypre',
+    description: '大膽知性的西普經典——鼠尾草與洋甘菊揭開芳香序幕，玫瑰與茉莉構成豐滿花心，廣藿香與橡木苔建構深沉基底。',
+    topNotes: [
+      { name: '鼠尾草', percentage: 8, role: '草本芳香' },
+      { name: '洋甘菊', percentage: 7, role: '草本舒緩' },
+      { name: '佛手柑', percentage: 5, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '茉莉', percentage: 12, role: '花香心臟' },
+      { name: '依蘭', percentage: 10, role: '依蘭濃郁' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '橡木苔', percentage: 12, role: '苔蘚沉穩' },
+      { name: '岩蘭草', percentage: 16, role: '岩蘭草煙燻' }
+    ]
+  },
+  {
+    id: 'cartier-lenvol',
+    name: 'L\'Envol',
+    brand: 'cartier',
+    year: 2016,
+    concentration: 'edp',
+    family: 'woody',
+    description: '翱翔天際的木質蜜香——薰衣草與佛手柑清新起飛，蜂蜜與鳶尾花交織中調，沉香和零陵香豆深沉著陸。',
+    topNotes: [
+      { name: '薰衣草', percentage: 10, role: '薰衣草安撫' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' },
+      { name: '葡萄柚', percentage: 7, role: '柑橘明亮' }
+    ],
+    heartNotes: [
+      { name: '蜂蜜', percentage: 12, role: '美食甜蜜' },
+      { name: '鳶尾花', percentage: 10, role: '花香優雅' },
+      { name: '紫羅蘭', percentage: 8, role: '花香粉質' }
+    ],
+    baseNotes: [
+      { name: '沉香(烏木)', percentage: 15, role: '沉香深邃' },
+      { name: '零陵香豆', percentage: 15, role: '零陵香豆溫暖' },
+      { name: '麝香', percentage: 15, role: '麝香柔和' }
+    ]
   },
 ]
 
