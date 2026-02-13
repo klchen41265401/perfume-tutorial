@@ -362,6 +362,10 @@ export const NOTE_EN = {
   '藍風鈴': 'Bluebell',
   '蜜瓜': 'Melon',
   '豆蔻': 'Nutmeg',
+  // ── batch 301-320 ──
+  '浮木': 'Driftwood',
+  '百葉玫瑰': 'Centifolia rose',
+  '鷹爪豆': 'Fenugreek',
 }
 
 // ─────────────────────────────────────────
@@ -571,6 +575,11 @@ const ROLE_DIRECT = {
   '辛香清新': 'Spicy fresh',
   '辛香珍貴': 'Spicy precious',
   '果香清新': 'Fruity fresh',
+  // ── batch 301-320 ──
+  '堅果溫潤': 'Nutty warm',
+  '漂流木調': 'Driftwood accent',
+  '綠色芳香': 'Green aromatic',
+  '花果蜜香': 'Floral-fruity nectar',
 }
 
 // Material prefixes for decomposition
@@ -1047,4 +1056,25 @@ export const DESCRIPTION_EN = {
   'mfk-gentlefluiditygold': 'The golden half of Kurkdjian\'s "gender fluidity" duo. Juniper-nutmeg-coriander open aromatic-spicy, amber-benzoin-musk flow with honeyed warmth, and vanilla-sandalwood-tonka create a liquid-gold base. Warm, enveloping, universally elegant.',
   'creed-springflower': 'Created for Audrey Hepburn\'s son. Melon-apple-peach cascade with spring freshness, rose-jasmine-lily-of-the-valley bloom like an English garden, and white musk-amber-cedar settle into a gentle, breezy finale. Effortless springtime charm.',
   'ysl-tuxedo': 'The olfactory black tuxedo. Black pepper strikes a sharp opening note, massive patchouli and cardamom build the dark fabric of the heart, and cedar-benzoin-musk are the impeccable satin lining. Midnight elegance for any gender.',
+  // ── batch 301-320 ──
+  'hermes-merveilles-bleue': 'The blue edition of Eau des Merveilles — an oceanic twist on the salty-amber original. Driftwood-sea-salt open briny and breezy, blue freesia-lily capture coastal wildflowers, and amber-cedarwood finish with the warmth of sun-bleached wood. A Normandy seascape in a bottle.',
+  'tomford-tobaccooud': 'A dark collision of two luxury materials — rich tobacco leaf and precious oud. Spicy whiskey-cinnamon top notes lead into a smoky, leathery heart of tobacco absolute and agarwood, grounded in sandalwood-benzoin warmth. Opulence for the bold.',
+  'tomford-whitepatchouli': 'Patchouli stripped of its bohemian darkness and reimagined in luminous white. Bergamot-coriander sparkle over peony-jasmine-rose, while patchouli-vetiver provide an earthy but clean foundation. Sophisticated hippie-chic with a couture edge.',
+  'initio-musktherapy': 'The healing power of musk laid bare. Clean musks of varying textures layered with rose-iris softness and amber-sandalwood warmth create a second-skin fragrance of extraordinary intimacy. Minimal, meditative, profoundly soothing.',
+  'givenchy-gentleman-boisee': 'Gentleman refined through precious wood. Cardamom-grapefruit open with a debonair smile, iris-cocoa form a suave heart, and patchouli-sandalwood-cedarwood create the distinguished woody accord that gives it its name. Modern gentleman, redefined.',
+  'burberry-herelixir': 'Her Elixir amplifies the original\'s fruity-gourmand allure to maximum intensity. Dark berries-mandarin open rich, jasmine-tuberose bloom opulently, and tonka-benzoin-amber deliver a deep, enveloping warmth. Irresistible nocturnal magnetism.',
+  'kenzo-flower': 'The iconic powdery-floral that launched a thousand imitators. Bulgarian rose towers at the heart, backed by violet-hawthorn, parsley seed adds a green-herbal surprise top, and vanilla-white musk finish powdery-soft. Poetic urban femininity.',
+  'versace-erospourfemme': 'Eros\'s feminine counterpart — the goddess of love. Lemon-pomegranate-Calabrian bergamot sparkle, lemon blossom-jasmine-peony bloom with Mediterranean warmth, and sandalwood-musk-ambroxan trail with seductive softness. Powerful yet graceful.',
+  'diptyque-eaurose': 'A deconstructed rose garden by Diptyque. Damask rose, centifolia rose, and rose essence layer seven different facets of the flower — dewy, green, honeyed, spicy — with a lychee-bergamot lift and a white musk-cedar transparency. The thinking person\'s rose.',
+  'amouage-honourwoman': 'A dramatic, incense-laden floral from Oman\'s most prestigious house. Pepper-frankincense blaze the opening, tuberose-jasmine-gardenia create a white-floral wall of opulence, and vetiver-oakmoss-cedar ground the composition in austere elegance.',
+  'byredo-rosenomansland': 'Rose in its most defiant form — born from desert hardship. Pink pepper-Turkish rose petals open raw and honest, raspberry-papyrus add an unexpected berry-paper dryness, and white amber-musk settle like desert sand at dusk. Beauty from resilience.',
+  'cartier-baiservolé': 'A "stolen kiss" translated into lily. Green galax leaves and mandarin tease the opening, cathedral lily-orange blossom form a pure, radiant heart, and white musk-sheer cedar linger like the memory of lips on skin. Elegant Paris simplicity.',
+  'penhaligons-halfetileather': 'The darkness of Halfeti amplified through leather. Saffron-cardamom-grapefruit ignite, rose absolute-oud-cypress smolder in the heart, and leather-amber-sandalwood create an animalic, smoky base. English eccentricity meets Silk Road mystique.',
+  'bdk-rougesmoking': 'The crimson lipstick on a tuxedo collar. Raspberry-saffron leave a vivid mark, rose-cinnamon-jasmine swirl with intoxicating warmth, and benzoin-sandalwood-cashmeran create a suede-soft, smoky-sweet drydown. Androgynous seduction.',
+  'mfk-lhommealrose': 'A man with a rose — Kurkdjian\'s vision of masculine florality. Grapefruit-clary sage open fresh, Damascena rose-magnolia bloom without sweetness, and ambroxan-cedar-fir balsam keep things resolutely woody. Proof that rose is genderless.',
+  'memo-marfa': 'Named after the tiny Texan art-town. Sagebrush-cassis capture the desert-meets-gallery spirit, freesia-Egyptian jasmine add floral wanderlust, and leather-guaiac wood-musk echo the vast, sunbaked landscape. Creative nomadism bottled.',
+  'nishane-hundredsilentways': 'A hundred silent ways to express love. Plum-bergamot open softly, tonka-rose-oud interweave with tender complexity, and vanilla-sandalwood-patchouli create a deep, meditative embrace. Quiet luxury that speaks volumes in whispers.',
+  'atelier-clementine': 'A Californian clementine grove at golden hour. Clementine-cardamom-pepper sparkle, white flowers-iris add delicate depth, and musk-cedar-tonka provide a warm woody-citrus glow. Sun-drenched optimism from Atelier Cologne\'s Joie de Vivre collection.',
+  'kilian-goodgirlgonebad': 'A good girl\'s descent into floral narcosis. May rose-tuberose-jasmine sambac form a hypnotic white-floral cloud pushed to excess, amber-cedar-cashmeran anchor the indulgence, and osmanthus adds a peachy-apricot wink. Addictively transgressive.',
+  'sergelutens-feminiteduois': 'The fragrance that invented the "woody" genre for women. Plum-violet-peach open vintage-soft, rose-clove-honey build a spiced floral heart, and cedarwood-cardamom-dried fruit create a warm, resinous base. A 1992 revolution that still inspires.',
 }
