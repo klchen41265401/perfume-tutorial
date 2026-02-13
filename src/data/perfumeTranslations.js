@@ -356,6 +356,12 @@ export const NOTE_EN = {
   '荷花': 'Lotus',
   '香橙': 'Orange',
   '麂皮': 'Suede',
+  // ── batch 281-300 ──
+  '奇異果': 'Kiwi',
+  '粉紅小蒼蘭': 'Pink freesia',
+  '藍風鈴': 'Bluebell',
+  '蜜瓜': 'Melon',
+  '豆蔻': 'Nutmeg',
 }
 
 // ─────────────────────────────────────────
@@ -550,6 +556,21 @@ const ROLE_DIRECT = {
   '皮革優雅': 'Leather elegant',
   '綠色清涼': 'Green cool',
   '琥珀海洋': 'Amber oceanic',
+  // ── batch 281-300 ──
+  '水果清爽': 'Fruity refreshing',
+  '芳香開場': 'Aromatic opening',
+  '草本清新': 'Herbal fresh',
+  '辛辣強烈': 'Spicy bold',
+  '琥珀核心': 'Amber core',
+  '香草濃郁': 'Rich vanilla',
+  '皮革核心': 'Leather core',
+  '沈香深邂': 'Oud deep',
+  '柔美花香': 'Soft floral',
+  '玉瑰草本': 'Rose herbal',
+  '柑橘苦甜': 'Citrus bittersweet',
+  '辛香清新': 'Spicy fresh',
+  '辛香珍貴': 'Spicy precious',
+  '果香清新': 'Fruity fresh',
 }
 
 // Material prefixes for decomposition
@@ -1006,4 +1027,24 @@ export const DESCRIPTION_EN = {
   'bottega-bottegaveneta': 'Italian leather-craft translated into fragrance. Bergamot-pink pepper spark, jasmine-iris-rose smell like a bouquet wrapped in soft nappa, and patchouli-leather-oakmoss are the master workshop\'s signature. Discreet luxury for the cognoscenti.',
   'loewe-001woman': 'The morning after. Bergamot-cardamom-lemon catch the first light, jasmine-lily-violet leaf evoke the softness of lingering warmth, and sandalwood-musk-cedar settle like sheets still holding the imprint of closeness. Intimacy bottled.',
   'valentino-valentina': 'A Roman holiday in a bottle. White truffle\'s opulent earthiness, blood orange brightness, a bold orange blossom-jasmine-tuberose heart, and a patchouli-musk-amber base of sun-warmed stone. Couture elegance with Italian joie de vivre.',
+  // ── batch 281-300 ──
+  'dior-fahrenheit-leparfum': 'The ultimate Fahrenheit — elevated to pure parfum concentration. Lavender and leather collide with frankincense smoke, cedarwood and amber glow like molten metal. A monument to raw masculine power.',
+  'hermes-twilly-ginger': 'A ginger-spiked twist on Twilly. Fresh ginger root ignites the opening, peony and jasmine bloom with feminine softness in the heart, and sandalwood-tonka-musk settles into a warm oriental embrace. Youthful audacity meets Hermès refinement.',
+  'hermes-24faubourg': 'Named after the legendary Hermès address on rue du Faubourg Saint-Honoré. Orange blossom-iris-ylang create an haute couture floral, amber-sandalwood-vanilla add vintage warmth. A fragrance of Parisian grandeur and golden sunlight.',
+  'ninaricci-lairdtemps': 'A post-war symbol of hope and peace. Carnation-rose-jasmine form a classic floral heart spiced with clove nuances, sage-rosemary add herbal freshness, and sandalwood-musk provide a clean powder finish. Timeless feminine grace.',
+  'prada-amber': 'Prada\'s signature amber oriental — minimalist luxury in liquid form. Bergamot-neroli open clean, patchouli-rose-benzoin build a chic soapy-amber heart, and a vanilla-musk base wraps everything in quiet opulence. Understated Milanese sophistication.',
+  'gucci-guilty': 'A rebellious floral oriental for the bold woman. Pink pepper and mandarin spark with energy, lilac-geranium-peach form a daring heart, and patchouli-amber-musk leave a lasting trail of unapologetic sensuality.',
+  'guerlain-monguerlain-intense': 'Mon Guerlain amplified to maximum warmth. Lavender-bergamot open familiar, jasmine-iris-rose maintain the floral core, but doubled vanilla, tonka, and benzoin push the base into deep gourmand territory. An evening-worthy intensification.',
+  'dolce-limperatrice': 'A fruity-floral summer empress. Watermelon and kiwi burst with juicy fun, lily and raspberry create a pink-tinged heart, and white musk-cedar finish clean and light. The ultimate warm-weather feminine crowd-pleaser.',
+  'thierry-angelnova': 'Angel reborn as a luminous nova. Raspberry-lychee replace the original\'s dark fruits with berry brightness, rose-jasmine bring floral radiance, and amber-benzoin-cashmeran retain Angel\'s iconic gourmand depth in a lighter key.',
+  'ysl-blackopium': 'The addictive coffee-vanilla blockbuster. Pink pepper-pear open bright, coffee and jasmine-orange blossom create an intoxicating heart, and vanilla-cedar-patchouli-musk build a deep, sweet, nightlife-ready base. The ultimate "going-out" scent.',
+  'adp-oud': 'Italian citrus elegance meets Arabian oud mystique. Bergamot-neroli-cardamom provide a sunny Mediterranean opening, oud-leather-rose form a sophisticated East-meets-West heart, and amber-patchouli-musk anchor with warmth.',
+  'versace-pourhomme': 'Mediterranean masculinity distilled. Lemon-bergamot-neroli open bright and coastal, sage-cedar-bluebell create an aromatic-woody heart, and amber-musk finish with understated warmth. The quintessential Italian summer gentleman.',
+  'guerlain-pera-granita': 'A pear granita on a Sicilian terrace. Crisp pear and citrus cascade with icy freshness, basil and lily-of-the-valley add aromatic-floral sparkle, and white musk-cedar maintain the sheer, thirst-quenching transparency. Summer\'s simplest pleasure.',
+  'givenchy-angeoudemon': 'The angel-or-demon duality in one bottle. Lily\'s celestial purity and saffron\'s forbidden intrigue open together, jasmine-iris-ylang weave a mysterious floral heart, and oud-sandalwood-amber descend into dark, sensual depths.',
+  'lancome-tresor-midnightrose': 'Trésor\'s midnight daughter. Raspberry-blackcurrant sparkle like evening jewels, rose-jasmine-peony bloom under moonlight, and vanilla-musk-cedar-vetiver trail like a whispered love letter. Parisian romance at its sweetest.',
+  'lelabo-tonka25': 'Le Labo\'s gourmand masterpiece. Orange blossom provides a brief floral dawn before tonka bean, benzoin, and caramel take center stage in an enveloping sweet cloud. Cedar-musk-amber anchor the sweetness with woody depth. Addictively comforting.',
+  'mfk-gentlefluiditygold': 'The golden half of Kurkdjian\'s "gender fluidity" duo. Juniper-nutmeg-coriander open aromatic-spicy, amber-benzoin-musk flow with honeyed warmth, and vanilla-sandalwood-tonka create a liquid-gold base. Warm, enveloping, universally elegant.',
+  'creed-springflower': 'Created for Audrey Hepburn\'s son. Melon-apple-peach cascade with spring freshness, rose-jasmine-lily-of-the-valley bloom like an English garden, and white musk-amber-cedar settle into a gentle, breezy finale. Effortless springtime charm.',
+  'ysl-tuxedo': 'The olfactory black tuxedo. Black pepper strikes a sharp opening note, massive patchouli and cardamom build the dark fabric of the heart, and cedar-benzoin-musk are the impeccable satin lining. Midnight elegance for any gender.',
 }
