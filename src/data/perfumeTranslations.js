@@ -328,6 +328,15 @@ export const NOTE_EN = {
   '西瓜': 'Watermelon',
   '開心果': 'Pistachio',
   '魚子醬': 'Caviar',
+  // ── batch 241-260 ──
+  '太妃糖': 'Toffee',
+  '干邑白蘭地': 'Cognac',
+  '水蜜桃': 'Peach',
+  '玫瑰胡椒': 'Rose pepper',
+  '紅辣椒': 'Red pepper',
+  '綠色調': 'Green accord',
+  '雞蛋花': 'Frangipani',
+  '非洲橙花': 'African neroli',
 }
 
 // ─────────────────────────────────────────
@@ -474,6 +483,27 @@ const ROLE_DIRECT = {
   '菸草煙燻': 'Tobacco smoky',
   '蠟質質感': 'Waxy texture',
   '鹹鮮突破': 'Salty-savory break',
+  // ── batch 241-260 ──
+  '暗黑木質': 'Dark woody',
+  '木桶醇香': 'Oak-barrel richness',
+  '異國白花': 'Exotic white floral',
+  '綠色柑橘': 'Green citrus',
+  '花木溫潤': 'Floral-woody warmth',
+  '芳香清涼': 'Aromatic coolness',
+  '辛甜溫暖': 'Spicy-sweet warmth',
+  '辛辣點綴': 'Spicy accent',
+  '酒香豪邁': 'Boozy boldness',
+  '酒香醇厚': 'Boozy richness',
+  '雪松核心': 'Cedar core',
+  '蜜桃甜潤': 'Peach sweetness',
+  '煙燻神聖': 'Smoky sacred',
+  '樹脂深邃': 'Resinous depth',
+  '樹脂甜暖': 'Resinous sweetness',
+  '香根草柔和': 'Vetiver soft',
+  '草本清涼': 'Herbal cool',
+  '杏桃果甜': 'Apricot fruity-sweet',
+  '甜感強化': 'Sweetness enhancer',
+  '白花濃郁': 'Lush white floral',
 }
 
 // Material prefixes for decomposition
@@ -889,4 +919,24 @@ export const DESCRIPTION_EN = {
   'diptyque-orpheon': 'Inspired by 1960s Parisian jazz cafés on Saint-Germain-des-Prés. Juniper and black pepper open brisk, jasmine-geranium add a floral middle, and cedar-patchouli-tobacco form a smoky, café-like woody base.',
   'nishane-hacivat': 'Nishane\'s best-seller, often compared to Aventus. Pineapple-grapefruit tropical opening, oakmoss-birch mossy-leather heart, and dry cedar-patchouli-ambergris finish — greener, mossier, and longer-lasting than its famous rival.',
   'guerlain-mandarine-basilic': 'The most beloved Aqua Allegoria. Lush Italian mandarin meets aromatic basil for a sun-drenched Mediterranean garden scene. Light, joyful, effortless — the ultimate spring-summer citrus-herbal cologne.',
+  // ── batch 241-260 ──
+  'armani-my-way': 'A "new-gen" floral built on sustainably sourced flowers. Frangipani and a jasmine trio (Indian, Egyptian, South African) create a globe-trotting floral voyage, while white musk and cedar deliver a clean, effortless wear. Inspired by saying "yes" to the world.',
+  'valentino-yellow-dream': 'A Mediterranean floral inspired by Italian lemon groves. Bright lemon and orange blossom sunshine, soft jasmine-peony heart, and a sheer musk-cedar base — perfectly capturing "a youthful dream under Roman sunlight."',
+  'dior-hypnotic-poison': 'The most beloved "Poison" flanker. Bitter almond and coconut open with hallucinatory sweetness, jasmine sambac and rosewood warm the heart, and vanilla-musk base is an irresistibly sticky trap. A defining gourmand-oriental.',
+  'issey-nuit': 'The dark self-portrait of L\'Eau d\'Issey\'s creator. A brief bergamot-grapefruit dawn plunges into black leather, patchouli, and tobacco night. Frankincense and tonka-bean smoke form the heavy shadow of a nightwalker.',
+  'hermes-jardin-mediterranee': 'The origin of Hermès\' Garden series — a Mediterranean villa\'s fig grove. The entire fig tree, from leaf to fruit, is faithfully rendered: green fig leaves, sweet fig flesh, framed by simple citrus and cedar. A masterclass in Ellena\'s minimalism.',
+  'chloe-nomade': 'A modern floral-chypre for the "nomadic woman." Peach and lemon open sweet-fresh, freesia and rose form a soft heart, and oakmoss with white musk delivers a clean new-gen chypre base — a woman with a suitcase, free in the world.',
+  'ysl-nuit-bleu-electrique': 'The electric-blue upgrade of La Nuit de L\'Homme. Cardamom\'s bright spice replaces the original\'s lavender prelude, but the powdery iris-cedar core remains, now reinforced with extra amber and Ambroxan for warmer, longer-lasting modern power.',
+  'tf-neroli-portofino': 'The ultimate vacation scent from Tom Ford Private Blend. Generous neroli oil and bergamot recreate a sunny Portofino morning. Lavender and rosemary add Mediterranean herbaceous cool; an amber base drifts away like a sea breeze. A luxury eau de cologne.',
+  'viktor-spicebomb-extreme': 'Spicebomb dialed to maximum heat. Explosive black pepper and cardamom, scorching cinnamon and saffron mids, tobacco-vanilla base like mulled wine by the fireplace — the ultimate winter-night warmth "bomb."',
+  'creed-aventus-cologne': 'A fresher, streamlined Aventus. The original\'s pineapple-apple DNA remains but smoky birch is replaced by ample citrus, ginger, and marine notes. The result: a cleaner, more approachable, everyday-wearable "Aventus Light."',
+  'narciso-bleu-noir': 'A deep woody-aromatic with "electric blue night" imagery. Brief bergamot-cardamom brightness plunges into massive iris, musk, and cedar blue depths. Ebony wood and amber add a bottomless, mysterious, ultra-skin-close "deep blue" aura.',
+  'jm-myrrh-tonka': 'The crown jewel of Jo Malone London\'s Cologne Intense line. Almond and lavender open sweetly aromatic, myrrh and tonka bean build a luxurious resinous-gourmand core, and vanilla-musk base wraps like velvet. The brand\'s warmest, longest-lasting creation.',
+  'kilian-angels-share': 'Inspired by the "angel\'s share" — whiskey naturally evaporating in barrels. Cognac richness, cinnamon-oak spice, and toffee-vanilla warmth recall the lingering finish of a fine single malt. A gourmand-oriental for connoisseurs.',
+  'prada-luna-rossa-carbon': 'Prada\'s "carbon fiber" masculine. A clean fougère opening of lavender and bergamot, then massive Ambroxan builds a transparent amber cloud base. An ultra-minimalist lavender + Ambroxan duet — yet exceptionally long-lasting and clean.',
+  'givenchy-irresistible': 'Inspired by "an irresistible smile" — a joyful floral-fruity scent. Pear and almond open sweet, rose-iris-lily form a powdery-soft heart, and musk-cedar base adds gentle wearability. A genuine "happy fragrance."',
+  'mm-whispers-library': 'An old library brought to life — leather-bound books, cedar shelves, beeswax floors. Pepper and lavender add a hint of life, cedar-patchouli build the bookcase\'s woody depth, and vanilla-tonka are the sweet smell of yellowed pages.',
+  'bvlgari-man-in-black': 'A bold spicy-leather oriental for the "man in black." Rum and cardamom open audaciously, iris and leather provide a dark heart, and amber-tonka base gleams like freshly waxed black shoes. A fragrance of unmistakable presence.',
+  'amouage-reflection-man': 'Widely praised as "the most elegant masculine floral." Rosemary and petitgrain open herbal-fresh, jasmine and rose deliver uncommonly generous florals for a men\'s scent, and sandalwood-musk base is silk-smooth. Envision a gentleman in a white linen suit.',
+  'byredo-super-cedar': 'Byredo\'s ultimate ode to cedarwood. Brief bergamot-pepper brightness gives way to a Virginia-Atlas cedar duet, vetiver adds a smoky underpinning, and musk finishes like fresh forest air. Pure, dry, unadulterated "Super Cedar."',
 }
