@@ -373,6 +373,14 @@ export const NOTE_EN = {
   '紅莓果': 'Red berries',
   '紙張': 'Paper',
   '醛': 'Aldehyde',
+  // ── batch 341-360 ──
+  '印度珊瑚茉莉': 'Indian coral jasmine',
+  '甜檸檬': 'Sweet lemon',
+  '甜豌豆': 'Sweet pea',
+  '苦杏仁': 'Bitter almond',
+  '茴芹': 'Anise',
+  '金雀花': 'Broom',
+  '黑醋栗芽': 'Blackcurrant bud',
 }
 
 // ─────────────────────────────────────────
@@ -595,6 +603,10 @@ const ROLE_DIRECT = {
   '草本舒緩': 'Herbal soothing',
   '草本酸甜': 'Herbal bittersweet',
   '龍涎香深沉': 'Ambergris deep',
+  // ── batch 341-360 ──
+  '堅果苦甜': 'Nutty bittersweet',
+  '綠色果香': 'Green fruity',
+  '草本甜潤': 'Herbal sweet',
 }
 
 // Material prefixes for decomposition
@@ -1113,4 +1125,25 @@ export const DESCRIPTION_EN = {
   'rochas-femme': 'One of perfumery\'s oldest masterpieces (1944). Plum-peach-bergamot open with vintage fruit richness, rose-jasmine-violet weave a classic floral heart, and oakmoss-amber-musk are the quintessential chypre foundation. Historical elegance, still relevant.',
   'clinique-aromaticselixir': 'The bold intellectual\'s fragrance. Sage-chamomile-bergamot open with herbal austerity, rose-jasmine-ylang form a dense floral heart, and patchouli-oakmoss-vetiver create one of perfumery\'s most profound chypre bases. Unapologetically complex since 1971.',
   'cartier-lenvol': 'A fragrance that takes flight. Lavender-bergamot-grapefruit lift off with bright clarity, honey-iris-violet hover in a golden, luminous heart, and oud-tonka-musk land with deep, enveloping warmth. Cartier\'s poetic ode to soaring ambition.',
+  // ── batch 341-360 ──
+  'chanel-allure-sensuelle': 'The sensual side of Allure — deeper, warmer, more intimate. Blackcurrant-peach open with fruity richness, jasmine-rose-iris weave a velvet floral heart, and amber-vanilla-white musk leave a seductive, skin-warming trail. Evening Allure at its finest.',
+  'dior-sauvage-elixir': 'Sauvage distilled to its most potent essence. Cinnamon-grapefruit-nutmeg ignite a spicy blaze, lavender-licorice-cardamom form an aromatic core of extraordinary density, and sandalwood-amber-patchouli create a base of monumental depth and longevity.',
+  'dior-poisongirl': 'Poison\'s rebellious daughter. Bitter orange-lemon-pink pepper spark with youthful energy, Grasse rose-orange blossom bloom with addictive sweetness, and tonka-vanilla-sandalwood create a gourmand base that\'s impossible to resist. Dior\'s modern temptress.',
+  'guerlain-apreslondee': 'A 1906 masterpiece capturing the moment after a rain shower. Violet leaf-anise-bergamot evoke damp garden air, violet-lily-of-the-valley bloom with crystalline purity, and iris root-vanilla-musk settle like sunlight breaking through clouds. Impressionism in perfume.',
+  'guerlain-chamade': 'Named after the drumbeat of a racing heart. Hyacinth-blackcurrant bud-bergamot capture spring\'s first flush, jasmine-lily-of-the-valley-rose form a romantic floral cascade, and vanilla-sandalwood-musk whisper like a lover\'s heartbeat. Guerlain\'s ode to falling in love.',
+  'tomford-caferose': 'Rose steeped in Turkish coffee. Saffron-coffee-pink pepper open with spiced warmth, Turkish and Bulgarian roses bloom amid coffee steam, and oud-sandalwood-amber create a dark, resinous base. The scent of an Istanbul rose garden at dusk.',
+  'hermes-jourhermes': 'The light of a new day by Herm\u00e8s. Sweet lemon-grapefruit-peach catch the morning glow, gardenia-rose-jasmine bloom as the sun rises, and white musk-almond-amber wrap everything in a luminous, golden haze. Radiant feminine optimism.',
+  'ysl-rivegauche': 'The Left Bank\'s liberated spirit in a bottle (1971). Aldehyde-bergamot-sage open with intellectual freshness, rose-jasmine-lily-of-the-valley form a confident floral heart, and vetiver-oakmoss-sandalwood create a green, assertive base. A feminist manifesto in fragrance.',
+  'lancome-poeme': 'A poem written in flowers and vanilla. Mimosa-bergamot-pink pepper open with golden warmth, rose-rosemary-jasmine build a lyrical floral heart, and amber-vanilla-tonka bean create an enveloping, romantic base. Lanc\u00f4me\'s most poetic creation.',
+  'lancome-magienoire': 'Black magic from 1978. Coriander-bergamot-magnolia cast the opening spell, rose-hyacinth-ylang form a dark floral heart, and patchouli-animalistic musk-vetiver create a hypnotic, almost forbidden base. Lanc\u00f4me\'s most mysterious and daring fragrance.',
+  'armani-adg-absolu': 'Acqua di Gi\u00f2 evolved into woody-amber territory. Marine-bergamot-apple retain the oceanic DNA, patchouli-lavender-rosemary add aromatic depth, and tonka-amber-cedar create a warmer, more sophisticated version of the Mediterranean classic.',
+  'versace-erosflame': 'Eros ablaze — where the original was aquatic-sweet, Flame is spicy-woody. Black pepper-citrus-lemon ignite, geranium-rose-pepper sustain the heat, and sandalwood-cedar-vanilla settle into a warm, masculine glow. Eros\'s passionate counterpart.',
+  'jm-wildbluebell': 'An English bluebell wood in bloom. Lily-of-the-valley-persimmon-bergamot open with woodland freshness, bluebell-jasmine-rose capture the woodland carpet at its peak, and white amber-white musk-amber create a soft, dewy finish. Spring\'s simplest beauty.',
+  'chloe-lovestory': 'A Parisian love story told through flowers. Orange blossom-pear-bergamot set the romantic scene, jasmine-rose-lily-of-the-valley declare their feelings, and cedar-white musk-ambergris linger like a promise whispered on Pont des Arts.',
+  'burberry-myburberry': 'London\'s rain-kissed garden captured in a trench-coat-shaped bottle. Sweet pea-bergamot-pear evoke morning dew, geranium-broom-rose bloom behind a garden wall, and patchouli-musk-amber wrap around you like Burberry\'s iconic gabardine. Quintessentially British.',
+  'givenchy-veryirresistible': 'The fragrance of an irresistible smile. Anise-violet leaf-bergamot open with playful charm, centifolia rose-rose-peony bloom with generous warmth, and vanilla-white musk-amber leave a trail of magnetic sweetness. Givenchy\'s happiest creation.',
+  'prada-infusionhomme': 'Milanese minimalism for men. Bergamot-iris-citrus open with surgical precision, lavender-iris root-vetiver form a clean, powdery heart, and amber-cedar-benzoin create a quietly confident base. The olfactory equivalent of a perfectly tailored Italian suit.',
+  'dolce-lightblue-intense': 'Light Blue turned up to full Mediterranean intensity. Apple-lemon-raspberry sparkle like Capri\'s turquoise waters, jasmine-lily-of-the-valley-rose bloom under the Italian sun, and amber-white musk-cedar extend the summer holiday indefinitely.',
+  'creed-millesime': 'Creed\'s regal sea-and-citrus jewel, allegedly created for a European royal. Sea salt-lemon-bergamot shimmer like sunlight on waves, iris-jasmine-marine notes create a refined aquatic heart, and amber-musk-cedar dry down like driftwood warmed by the sun.',
+  'gucci-memoire': 'A genderless ode to memory and warmth. Chamomile-bitter almond-bergamot open with nostalgic comfort, jasmine-rose-Indian coral jasmine bloom with quiet intimacy, and sandalwood-cedar-musk create a cocooning woody embrace. Alessandro Michele\'s most personal fragrance.',
 }

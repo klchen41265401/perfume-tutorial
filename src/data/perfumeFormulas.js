@@ -10971,6 +10971,487 @@ export const PERFUME_FORMULAS = [
       { name: '麝香', percentage: 15, role: '麝香柔和' }
     ]
   },
+
+  {
+    id: 'chanel-allure-sensuelle',
+    name: 'Allure Sensuelle',
+    brand: 'chanel',
+    year: 2005,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '感性版Allure，以黑醋栗和桃子開場，茉莉與玫瑰編織絲絨般的花心，琥珀和香草帶來性感而持久的尾韻。',
+    topNotes: [
+      { name: '黑醋栗', percentage: 10, role: '果香甜酸' },
+      { name: '桃子', percentage: 8, role: '果香甜美' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '鳶尾花', percentage: 8, role: '花香優雅' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '香草', percentage: 13, role: '香草甜美' },
+      { name: '白麝香', percentage: 12, role: '麝香乾淨' }
+    ]
+  },
+  {
+    id: 'dior-sauvage-elixir',
+    name: 'Sauvage Elixir',
+    brand: 'dior',
+    year: 2021,
+    concentration: 'parfum',
+    family: 'woody',
+    description: '曠野系列的極致濃縮——肉桂與葡萄柚的辛辣開場，薰衣草與肉荳蔻構成芳香核心，檀香和琥珀形成深邃持久的基底。',
+    topNotes: [
+      { name: '肉桂', percentage: 8, role: '辛香溫暖' },
+      { name: '葡萄柚', percentage: 10, role: '柑橘明亮' },
+      { name: '肉荳蔻', percentage: 5, role: '辛香溫暖' }
+    ],
+    heartNotes: [
+      { name: '薰衣草', percentage: 15, role: '薰衣草安撫' },
+      { name: '甘草', percentage: 8, role: '甘草甜潤' },
+      { name: '小荳蔻', percentage: 7, role: '辛香清新' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 18, role: '檀香主調' },
+      { name: '琥珀', percentage: 15, role: '琥珀深沉' },
+      { name: '廣藿香', percentage: 14, role: '廣藿香沉穩' }
+    ]
+  },
+  {
+    id: 'dior-poisongirl',
+    name: 'Poison Girl',
+    brand: 'dior',
+    year: 2016,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '叛逆甜美的毒藥女孩——苦橙和檸檬的清新開場，玫瑰和格拉斯橙花交織花心，零陵香豆和香草構成令人上癮的甜美基底。',
+    topNotes: [
+      { name: '苦橙', percentage: 10, role: '柑橘苦甜' },
+      { name: '檸檬', percentage: 8, role: '柑橘清新' },
+      { name: '粉紅胡椒', percentage: 5, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '橙花', percentage: 10, role: '橙花清甜' },
+      { name: '格拉斯玫瑰', percentage: 10, role: '玫瑰經典' }
+    ],
+    baseNotes: [
+      { name: '零陵香豆', percentage: 15, role: '零陵香豆溫暖' },
+      { name: '香草', percentage: 15, role: '香草甜美' },
+      { name: '檀香', percentage: 12, role: '檀香溫柔' }
+    ]
+  },
+  {
+    id: 'guerlain-apreslondee',
+    name: 'Après L\'Ondée',
+    brand: 'guerlain',
+    year: 1906,
+    concentration: 'edt',
+    family: 'floral',
+    description: '雨後花園的詩意——紫羅蘭葉與柑橘帶來雨後的空氣感，紫羅蘭和鈴蘭在心香盛開，鳶尾根和香草如陽光穿透雲層。',
+    topNotes: [
+      { name: '紫羅蘭葉', percentage: 10, role: '綠色清新' },
+      { name: '茴芹', percentage: 5, role: '草本甜潤' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '紫羅蘭', percentage: 18, role: '花香粉質' },
+      { name: '鈴蘭', percentage: 10, role: '花香清新' },
+      { name: '含羞草', percentage: 8, role: '花香蜜甜' }
+    ],
+    baseNotes: [
+      { name: '鳶尾根', percentage: 15, role: '粉質優雅' },
+      { name: '香草', percentage: 10, role: '香草甜美' },
+      { name: '麝香', percentage: 16, role: '麝香柔和' }
+    ]
+  },
+  {
+    id: 'guerlain-chamade',
+    name: 'Chamade',
+    brand: 'guerlain',
+    year: 1969,
+    concentration: 'edt',
+    family: 'floral',
+    description: '心跳般的悸動——風信子與醋栗芽帶來春日綠意，茉莉和鈴蘭交織浪漫花心，香草和檀香如戀人間的溫柔低語。',
+    topNotes: [
+      { name: '風信子', percentage: 10, role: '花香清甜' },
+      { name: '黑醋栗芽', percentage: 8, role: '綠色果香' },
+      { name: '佛手柑', percentage: 7, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '鈴蘭', percentage: 12, role: '花香清新' },
+      { name: '玫瑰', percentage: 8, role: '玫瑰香' }
+    ],
+    baseNotes: [
+      { name: '香草', percentage: 12, role: '香草甜美' },
+      { name: '檀香', percentage: 13, role: '檀香溫柔' },
+      { name: '麝香', percentage: 15, role: '麝香柔和' }
+    ]
+  },
+  {
+    id: 'tomford-caferose',
+    name: 'Café Rose',
+    brand: 'tomford',
+    year: 2012,
+    concentration: 'edp',
+    family: 'floral',
+    description: '咖啡館裡的玫瑰——番紅花與咖啡的辛香開場，土耳其和保加利亞玫瑰在咖啡蒸氣中綻放，沉香和檀香作為深沉基底。',
+    topNotes: [
+      { name: '番紅花', percentage: 8, role: '辛香珍貴' },
+      { name: '咖啡', percentage: 10, role: '咖啡深邃' },
+      { name: '粉紅胡椒', percentage: 5, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '土耳其玫瑰', percentage: 15, role: '玫瑰經典' },
+      { name: '保加利亞玫瑰', percentage: 12, role: '玫瑰經典' },
+      { name: '茉莉', percentage: 8, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '沉香(烏木)', percentage: 12, role: '沉香深邃' },
+      { name: '檀香', percentage: 15, role: '檀香溫柔' },
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'hermes-jourhermes',
+    name: 'Jour d\'Hermès',
+    brand: 'hermes',
+    year: 2013,
+    concentration: 'edp',
+    family: 'floral',
+    description: '如同清晨第一道日光——甜檸檬與葡萄柚帶來晨曦明亮，白花束在心香全面綻放，麝香和甜杏仁帶來柔軟的光暈。',
+    topNotes: [
+      { name: '甜檸檬', percentage: 10, role: '柑橘甜美' },
+      { name: '葡萄柚', percentage: 8, role: '柑橘明亮' },
+      { name: '桃子', percentage: 7, role: '果香甜美' }
+    ],
+    heartNotes: [
+      { name: '梔子花', percentage: 12, role: '花香甜美' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '白麝香', percentage: 18, role: '麝香乾淨' },
+      { name: '杏仁', percentage: 7, role: '堅果溫潤' },
+      { name: '琥珀', percentage: 16, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'ysl-rivegauche',
+    name: 'Rive Gauche',
+    brand: 'ysl',
+    year: 1971,
+    concentration: 'edt',
+    family: 'floral',
+    description: '左岸的自由精神——醛香與佛手柑開場清新，玫瑰和茉莉編織法式花束，岩蘭草和橡木苔帶來知性的綠色基底。',
+    topNotes: [
+      { name: '醛', percentage: 8, role: '前調醛香' },
+      { name: '佛手柑', percentage: 10, role: '柑橘清新' },
+      { name: '鼠尾草', percentage: 5, role: '草本芳香' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '茉莉', percentage: 12, role: '花香心臟' },
+      { name: '鈴蘭', percentage: 8, role: '花香清新' }
+    ],
+    baseNotes: [
+      { name: '岩蘭草', percentage: 15, role: '岩蘭草煙燻' },
+      { name: '橡木苔', percentage: 12, role: '苔蘚沉穩' },
+      { name: '檀香', percentage: 15, role: '檀香溫柔' }
+    ]
+  },
+  {
+    id: 'lancome-poeme',
+    name: 'Poême',
+    brand: 'lancome',
+    year: 1995,
+    concentration: 'edp',
+    family: 'oriental',
+    description: '一首嗅覺詩篇——藍罌粟和含羞草帶來夢幻花韻，迷迭香和香草交織芳香甜蜜，琥珀和零陵香豆以溫暖句點收束。',
+    topNotes: [
+      { name: '含羞草', percentage: 10, role: '花香蜜甜' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' },
+      { name: '粉紅胡椒', percentage: 5, role: '辛香點綴' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 15, role: '玫瑰香' },
+      { name: '迷迭香', percentage: 8, role: '草本清新' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '香草', percentage: 12, role: '香草甜美' },
+      { name: '零陵香豆', percentage: 17, role: '零陵香豆溫暖' }
+    ]
+  },
+  {
+    id: 'lancome-magienoire',
+    name: 'Magie Noire',
+    brand: 'lancome',
+    year: 1978,
+    concentration: 'edt',
+    family: 'oriental',
+    description: '黑魔法般的神祕東方調——芫荽和佛手柑帶來辛香開場，玫瑰和風信子構成黑色花束，廣藿香和動物性麝香建構深沉迷幻的基底。',
+    topNotes: [
+      { name: '芫荽', percentage: 8, role: '辛香草本' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' },
+      { name: '木蘭花', percentage: 7, role: '花香馥郁' }
+    ],
+    heartNotes: [
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '風信子', percentage: 10, role: '花香清甜' },
+      { name: '依蘭', percentage: 10, role: '依蘭濃郁' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '麝香', percentage: 15, role: '麝香動物性' },
+      { name: '岩蘭草', percentage: 15, role: '岩蘭草煙燻' }
+    ]
+  },
+  {
+    id: 'armani-adg-absolu',
+    name: 'Acqua di Giò Absolu',
+    brand: 'armani',
+    year: 2018,
+    concentration: 'edp',
+    family: 'aromatic',
+    description: 'Acqua di Giò的木質升級——海洋柑橘保持清新基因，廣藿香與薰衣草帶來深度，零陵香豆和琥珀收尾溫暖而持久。',
+    topNotes: [
+      { name: '佛手柑', percentage: 10, role: '柑橘清新' },
+      { name: '海洋調', percentage: 8, role: '海洋清透' },
+      { name: '蘋果', percentage: 7, role: '果香清甜' }
+    ],
+    heartNotes: [
+      { name: '廣藿香', percentage: 12, role: '廣藿香沉穩' },
+      { name: '薰衣草', percentage: 10, role: '薰衣草安撫' },
+      { name: '迷迭香', percentage: 8, role: '草本清新' }
+    ],
+    baseNotes: [
+      { name: '零陵香豆', percentage: 15, role: '零陵香豆溫暖' },
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '雪松', percentage: 15, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'versace-erosflame',
+    name: 'Eros Flame',
+    brand: 'versace',
+    year: 2018,
+    concentration: 'edp',
+    family: 'woody',
+    description: '愛神之火——黑胡椒與柑橘點燃激情，天竺葵和玫瑰帶來辛香花韻，檀香和雪松構成溫暖而具男性魅力的基底。',
+    topNotes: [
+      { name: '黑胡椒', percentage: 10, role: '辛香強烈' },
+      { name: '柑橘', percentage: 10, role: '柑橘明亮' },
+      { name: '檸檬', percentage: 5, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '天竺葵', percentage: 12, role: '花香芳香' },
+      { name: '玫瑰', percentage: 10, role: '玫瑰香' },
+      { name: '胡椒', percentage: 8, role: '辛香溫暖' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 15, role: '檀香溫柔' },
+      { name: '雪松', percentage: 15, role: '木質沉穩' },
+      { name: '香草', percentage: 15, role: '香草甜美' }
+    ]
+  },
+  {
+    id: 'jm-wildbluebell',
+    name: 'Wild Bluebell',
+    brand: 'jm',
+    year: 2011,
+    concentration: 'cologne',
+    family: 'floral',
+    description: '英式林間的藍鈴花——鈴蘭和柿子帶來清甜開場，藍風鈴花和茉莉在心香輕盈綻放，白琥珀和麝香如林間柔光。',
+    topNotes: [
+      { name: '鈴蘭', percentage: 12, role: '花香清新' },
+      { name: '柿子', percentage: 8, role: '果香甜美' },
+      { name: '佛手柑', percentage: 5, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '藍風鈴', percentage: 15, role: '花香清甜' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' },
+      { name: '玫瑰', percentage: 8, role: '玫瑰香' }
+    ],
+    baseNotes: [
+      { name: '白琥珀', percentage: 15, role: '琥珀柔潤' },
+      { name: '白麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '琥珀', percentage: 12, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'chloe-lovestory',
+    name: 'Love Story',
+    brand: 'chloe',
+    year: 2014,
+    concentration: 'edp',
+    family: 'floral',
+    description: '巴黎愛情故事——橙花和梨帶來浪漫的甜蜜序幕，茉莉和黃玫瑰編織花語心意，雪松和麝香留下溫柔的吻痕。',
+    topNotes: [
+      { name: '橙花', percentage: 12, role: '橙花清甜' },
+      { name: '梨', percentage: 8, role: '果香清甜' },
+      { name: '佛手柑', percentage: 5, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '鈴蘭', percentage: 8, role: '花香清新' }
+    ],
+    baseNotes: [
+      { name: '雪松', percentage: 15, role: '木質沉穩' },
+      { name: '白麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '龍涎香', percentage: 10, role: '龍涎香深沉' }
+    ]
+  },
+  {
+    id: 'burberry-myburberry',
+    name: 'My Burberry',
+    brand: 'burberry',
+    year: 2014,
+    concentration: 'edp',
+    family: 'floral',
+    description: '倫敦雨後花園——甜豌豆和佛手柑帶來英式花園的清新，天竺葵和金雀花交織中調，廣藿香和麝香帶來經典風衣的質感。',
+    topNotes: [
+      { name: '甜豌豆', percentage: 10, role: '花香清甜' },
+      { name: '佛手柑', percentage: 10, role: '柑橘清新' },
+      { name: '梨', percentage: 5, role: '果香清甜' }
+    ],
+    heartNotes: [
+      { name: '天竺葵', percentage: 12, role: '花香芳香' },
+      { name: '金雀花', percentage: 10, role: '花香蜜甜' },
+      { name: '玫瑰', percentage: 10, role: '玫瑰香' }
+    ],
+    baseNotes: [
+      { name: '廣藿香', percentage: 15, role: '廣藿香沉穩' },
+      { name: '麝香', percentage: 15, role: '麝香柔和' },
+      { name: '琥珀', percentage: 13, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'givenchy-veryirresistible',
+    name: 'Very Irrésistible',
+    brand: 'givenchy',
+    year: 2003,
+    concentration: 'edp',
+    family: 'floral',
+    description: '難以抗拒的微笑——五種玫瑰構成豐盈的花香核心，茴芹和紫羅蘭帶來俏皮前調，香草和麝香以甜美微笑收尾。',
+    topNotes: [
+      { name: '茴芹', percentage: 8, role: '草本甜潤' },
+      { name: '紫羅蘭葉', percentage: 7, role: '綠色清新' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '百葉玫瑰', percentage: 15, role: '玫瑰經典' },
+      { name: '玫瑰', percentage: 12, role: '玫瑰香' },
+      { name: '牡丹', percentage: 8, role: '花香嬌嫩' }
+    ],
+    baseNotes: [
+      { name: '香草', percentage: 13, role: '香草甜美' },
+      { name: '白麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '琥珀', percentage: 14, role: '琥珀溫暖' }
+    ]
+  },
+  {
+    id: 'prada-infusionhomme',
+    name: 'Infusion d\'Homme',
+    brand: 'prada',
+    year: 2008,
+    concentration: 'edt',
+    family: 'aromatic',
+    description: '極簡米蘭風格的男性典範——鳶尾花與佛手柑帶來乾淨透明的開場，薰衣草和岩蘭草構建芳香心臟，琥珀和雪松收尾優雅。',
+    topNotes: [
+      { name: '佛手柑', percentage: 12, role: '柑橘清新' },
+      { name: '鳶尾花', percentage: 10, role: '花香優雅' },
+      { name: '柑橘', percentage: 5, role: '柑橘明亮' }
+    ],
+    heartNotes: [
+      { name: '薰衣草', percentage: 12, role: '薰衣草安撫' },
+      { name: '鳶尾根', percentage: 10, role: '粉質優雅' },
+      { name: '岩蘭草', percentage: 8, role: '岩蘭草煙燻' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '雪松', percentage: 15, role: '木質沉穩' },
+      { name: '安息香', percentage: 13, role: '樹脂溫暖' }
+    ]
+  },
+  {
+    id: 'dolce-lightblue-intense',
+    name: 'Light Blue Eau Intense',
+    brand: 'dolce',
+    year: 2017,
+    concentration: 'edp',
+    family: 'floral',
+    description: '淺藍的濃烈版——青蘋果和檸檬帶來更豐富的柑橘開場，茉莉和鈴蘭以更濃郁的花香綻放，琥珀和麝香帶來更持久的地中海餘韻。',
+    topNotes: [
+      { name: '蘋果', percentage: 10, role: '果香清甜' },
+      { name: '檸檬', percentage: 10, role: '柑橘清新' },
+      { name: '覆盆子', percentage: 5, role: '果香甜酸' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '鈴蘭', percentage: 10, role: '花香清新' },
+      { name: '玫瑰', percentage: 8, role: '玫瑰香' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '白麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '雪松', percentage: 12, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'creed-millesime',
+    name: 'Millésime Impérial',
+    brand: 'creed',
+    year: 1995,
+    concentration: 'edp',
+    family: 'aromatic',
+    description: '帝王級的海洋柑橘——海鹽和檸檬帶來清爽的海風，鳶尾花和茉莉增添花香層次，琥珀和麝香如陽光照耀的地中海海岸。',
+    topNotes: [
+      { name: '海鹽', percentage: 8, role: '海洋清透' },
+      { name: '檸檬', percentage: 10, role: '柑橘清新' },
+      { name: '佛手柑', percentage: 8, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '鳶尾花', percentage: 12, role: '花香優雅' },
+      { name: '茉莉', percentage: 10, role: '花香心臟' },
+      { name: '海洋調', percentage: 8, role: '海洋清透' }
+    ],
+    baseNotes: [
+      { name: '琥珀', percentage: 15, role: '琥珀溫暖' },
+      { name: '麝香', percentage: 15, role: '麝香乾淨' },
+      { name: '雪松', percentage: 14, role: '木質沉穩' }
+    ]
+  },
+  {
+    id: 'gucci-memoire',
+    name: 'Mémoire d\'une Odeur',
+    brand: 'gucci',
+    year: 2019,
+    concentration: 'edp',
+    family: 'aromatic',
+    description: '記憶中的氣味——洋甘菊和苦杏仁帶來懷舊的草本開場，印度珊瑚茉莉構成溫暖花心，檀香和雪松營造舒適的木質擁抱。',
+    topNotes: [
+      { name: '洋甘菊', percentage: 12, role: '草本舒緩' },
+      { name: '苦杏仁', percentage: 8, role: '堅果苦甜' },
+      { name: '佛手柑', percentage: 5, role: '柑橘清新' }
+    ],
+    heartNotes: [
+      { name: '茉莉', percentage: 15, role: '花香心臟' },
+      { name: '玫瑰', percentage: 8, role: '玫瑰香' },
+      { name: '印度珊瑚茉莉', percentage: 10, role: '花香異國' }
+    ],
+    baseNotes: [
+      { name: '檀香', percentage: 15, role: '檀香溫柔' },
+      { name: '雪松', percentage: 15, role: '木質沉穩' },
+      { name: '麝香', percentage: 12, role: '麝香柔和' }
+    ]
+  },
 ]
 
 // ============================================================
