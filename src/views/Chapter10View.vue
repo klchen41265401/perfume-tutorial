@@ -190,7 +190,7 @@
           </div>
         </div>
         <div class="perfume-ingredient-count">
-          🧪 {{ p.ingredients.length }} {{ t('ch10.ingredientsCount') }}
+          🧪 {{ (p.ingredients || []).length }} {{ t('ch10.ingredientsCount') }}
         </div>
       </div>
     </div>
@@ -614,7 +614,7 @@ export default {
           if (p.baseNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
           
           // 成分（包含在searchQuery中，移除獨立的ingredientQuery）
-          if (p.ingredients.some(ing => 
+          if (p.ingredients && p.ingredients.some(ing => 
             ing.name.toLowerCase().includes(q) ||
             ing.cas.toLowerCase().includes(q) ||
             ing.role.toLowerCase().includes(q) ||
@@ -668,8 +668,9 @@ export default {
     // Detail computed
     const sortedIngredients = computed(() => {
       if (!selectedPerfume.value) return []
+      const ings = selectedPerfume.value.ingredients || []
       const noteOrder = { top: 0, middle: 1, base: 2 }
-      return [...selectedPerfume.value.ingredients].sort((a, b) => {
+      return [...ings].sort((a, b) => {
         const noteDiff = (noteOrder[a.note] || 0) - (noteOrder[b.note] || 0)
         if (noteDiff !== 0) return noteDiff
         return b.pct - a.pct
@@ -678,12 +679,13 @@ export default {
 
     const maxPct = computed(() => {
       if (!selectedPerfume.value) return 1
-      return Math.max(...selectedPerfume.value.ingredients.map(i => i.pct), 1)
+      const ings = selectedPerfume.value.ingredients || []
+      return Math.max(...ings.map(i => i.pct), 1)
     })
 
     const noteDistribution = computed(() => {
       if (!selectedPerfume.value) return { topPct: 33, heartPct: 34, basePct: 33 }
-      const ings = selectedPerfume.value.ingredients
+      const ings = selectedPerfume.value.ingredients || []
       const top = ings.filter(i => i.note === 'top').reduce((s, i) => s + i.pct, 0)
       const heart = ings.filter(i => i.note === 'middle').reduce((s, i) => s + i.pct, 0)
       const base = ings.filter(i => i.note === 'base').reduce((s, i) => s + i.pct, 0)
