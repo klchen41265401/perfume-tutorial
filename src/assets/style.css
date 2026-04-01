@@ -609,6 +609,9 @@ hr {
     overflow-y: auto;
     height: auto;
   }
+  #app {
+    height: auto;
+  }
   .main-panel {
     height: auto;
     min-height: calc(100vh - 140px);
@@ -675,6 +678,9 @@ hr {
   }
   body {
     overflow-y: auto;
+    height: auto;
+  }
+  #app {
     height: auto;
   }
   .main-panel {
@@ -773,6 +779,9 @@ hr {
   body {
     overflow-x: hidden;
     overflow-y: auto;
+    height: auto;
+  }
+  #app {
     height: auto;
   }
   .layout {
