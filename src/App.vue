@@ -2,14 +2,14 @@
   <div class="app-shell">
     <div ref="webglMount" class="webgl-bg" aria-hidden="true"></div>
 
-    <!-- 手機版漢堡選單按鈕 -->
+    <!-- 手機版漢堡選單按鈕（側邊欄開啟時隱藏） -->
     <button
+      v-show="!mobileMenuOpen"
       class="hamburger-btn"
-      :class="{ active: mobileMenuOpen }"
-      @click="mobileMenuOpen = !mobileMenuOpen"
-      aria-label="Toggle menu"
+      @click="mobileMenuOpen = true"
+      aria-label="Open menu"
     >
-      <span class="hamburger-icon">{{ mobileMenuOpen ? "✕" : "☰" }}</span>
+      <span class="hamburger-icon">☰</span>
     </button>
 
     <!-- 手機版背景遮罩 -->

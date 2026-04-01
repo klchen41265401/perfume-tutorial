@@ -573,11 +573,6 @@ hr {
     line-height: 1;
   }
 
-  .hamburger-btn.active {
-    background: rgba(255, 215, 0, 0.15);
-    border-color: var(--gold-glow);
-  }
-
   .hamburger-btn:hover {
     background: rgba(255, 215, 0, 0.2);
     border-color: var(--gold-glow);

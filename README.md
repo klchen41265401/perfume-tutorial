@@ -128,8 +128,8 @@ npm run build
 
 **手機版 NavBar 從水平捲動導覽列改為漢堡按鈕 + 滑出側邊欄**
 
-| 類別 | 修正內容 |
-| --- | --- |
-| **App.vue** | 新增 `hamburger-btn`（固定於左上角 ☰/✕ 切換）、`mobile-backdrop`（半透明遮罩點擊關閉）、`mobileMenuOpen` 狀態；路由切換時自動關閉側邊欄 |
-| **NavBar.vue** | 手機版 (≤991px) 移除水平 `flex-direction: row` + `overflow-x: auto`，改為垂直佈局側邊欄；保留完整導覽標籤文字與圖示；移除 `nav-end-spacer`、`::after` 水平捲動修補 |
-| **style.css** | `.side-rail` 手機版改為 `position: fixed` 覆蓋層（`width: 280px`、`z-index: 1000`、`transform: translateX(-100%)` → `translateX(0)` 滑入動畫）；`.hamburger-btn` 固定左上 `z-index: 1001`；`.mobile-backdrop` 全螢幕半透明遮罩 `z-index: 999`；`.layout` 移除 `grid-template-rows: auto 1fr`，改為單行 + `padding-top` 預留漢堡按鈕空間 |
+| 類別           | 修正內容                                                                                                                                                                                                                                                                                                                                |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **App.vue**    | 新增 `hamburger-btn`（固定於左上角 ☰/✕ 切換）、`mobile-backdrop`（半透明遮罩點擊關閉）、`mobileMenuOpen` 狀態；路由切換時自動關閉側邊欄                                                                                                                                                                                                |
+| **NavBar.vue** | 手機版 (≤991px) 移除水平 `flex-direction: row` + `overflow-x: auto`，改為垂直佈局側邊欄；保留完整導覽標籤文字與圖示；移除 `nav-end-spacer`、`::after` 水平捲動修補                                                                                                                                                                      |
+| **style.css**  | `.side-rail` 手機版改為 `position: fixed` 覆蓋層（`width: 280px`、`z-index: 1000`、`transform: translateX(-100%)` → `translateX(0)` 滑入動畫）；`.hamburger-btn` 固定左上 `z-index: 1001`；`.mobile-backdrop` 全螢幕半透明遮罩 `z-index: 999`；`.layout` 移除 `grid-template-rows: auto 1fr`，改為單行 + `padding-top` 預留漢堡按鈕空間 |
