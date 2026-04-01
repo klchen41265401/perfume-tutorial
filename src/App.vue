@@ -12,14 +12,14 @@
       <span class="hamburger-icon">☰</span>
     </button>
 
-    <!-- 手機版背景遮罩 -->
-    <div
-      class="mobile-backdrop"
-      :class="{ active: mobileMenuOpen }"
-      @click="mobileMenuOpen = false"
-    ></div>
-
     <div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
+      <!-- 手機版背景遮罩（與 side-rail 同層，避免 stacking context 問題） -->
+      <div
+        class="mobile-backdrop"
+        :class="{ active: mobileMenuOpen }"
+        @click="mobileMenuOpen = false"
+      ></div>
+
       <aside class="side-rail" :class="{ 'mobile-open': mobileMenuOpen }">
         <NavBar
           :collapsed="sidebarCollapsed"
