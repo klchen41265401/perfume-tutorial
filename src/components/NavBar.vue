@@ -278,10 +278,20 @@ export default {
     overflow-y: hidden;
     height: auto;
     padding: 0.75rem 1rem;
+    padding-right: calc(1rem + env(safe-area-inset-right, 0px));
+    padding-left: calc(1rem + env(safe-area-inset-left, 0px));
     gap: 0.75rem;
     border-radius: 14px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
+  }
+
+  /* 修正水平捲動容器尾端 padding 在部分 WebView 被吞掉的問題 */
+  .nav-rail::after {
+    content: '';
+    flex-shrink: 0;
+    width: calc(1rem + env(safe-area-inset-right, 0px));
+    height: 1px;
   }
 
   .nav-brand {
@@ -306,6 +316,7 @@ export default {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0.3rem;
+    flex-shrink: 0;
   }
 
   .nav-item {
@@ -313,6 +324,7 @@ export default {
     padding: 0.45rem 0.65rem;
     font-size: 0.82rem;
     border-radius: 10px;
+    flex-shrink: 0;
   }
 
   .nav-item:hover {
@@ -322,7 +334,7 @@ export default {
   /* 語言切換按鈕 - 平板 */
   .lang-toggle {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 0;
     padding: 0.45rem 0.65rem;
     font-size: 0.82rem;
     flex-shrink: 0;
@@ -336,6 +348,8 @@ export default {
 @media (max-width: 767px) {
   .nav-rail {
     padding: 0.6rem 0.75rem;
+    padding-right: calc(0.75rem + env(safe-area-inset-right, 0px));
+    padding-left: calc(0.75rem + env(safe-area-inset-left, 0px));
     gap: 0.5rem;
     border-radius: 12px;
   }
@@ -352,6 +366,7 @@ export default {
   .nav-item {
     padding: 0.4rem 0.55rem;
     font-size: 0.78rem;
+    flex-shrink: 0;
   }
 
   .nav-label {
@@ -380,6 +395,8 @@ export default {
 @media (max-width: 479px) {
   .nav-rail {
     padding: 0.5rem 0.6rem;
+    padding-right: calc(0.6rem + env(safe-area-inset-right, 0px));
+    padding-left: calc(0.6rem + env(safe-area-inset-left, 0px));
     gap: 0.35rem;
     border-radius: 10px;
   }
@@ -395,6 +412,7 @@ export default {
   .nav-item {
     padding: 0.35rem 0.45rem;
     border-radius: 8px;
+    flex-shrink: 0;
   }
 
   .nav-ornament {
