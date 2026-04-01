@@ -964,16 +964,16 @@ export default {
 
 .enc-subtitle {
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* ── 篩選欄 ── */
 .filter-bar {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  padding: 1.1rem;
+  margin-bottom: 1.25rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -1164,9 +1164,9 @@ export default {
 /* ── 卡片網格 ── */
 .molecule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
 .mol-card {
@@ -1333,12 +1333,12 @@ export default {
   position: relative;
   background: var(--bg-primary);
   border-radius: 20px;
-  max-width: 720px;
+  max-width: min(720px, 95vw);
   width: 100%;
-  padding: 2rem;
+  padding: 1.75rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--border-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .detail-close {
@@ -1587,71 +1587,80 @@ export default {
 
 @media (max-width: 991px) {
   .molecule-grid {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.7rem;
   }
   .detail-panel {
-    max-width: 90vw;
-    padding: 1.5rem;
+    max-width: 92vw;
+    padding: 1.25rem;
   }
   .range-filters {
     flex-direction: column;
+  }
+  .filter-bar {
+    padding: 1rem;
   }
 }
 
 @media (max-width: 767px) {
   .molecule-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.6rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.5rem;
   }
 
   .detail-overlay {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
 
   .detail-panel {
-    padding: 1.25rem;
+    padding: 1rem;
     max-width: 100%;
-    border-radius: 16px;
+    border-radius: 14px;
   }
 
   .detail-name {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .filter-bar {
-    padding: 0.9rem;
-    border-radius: 12px;
+    padding: 0.75rem;
+    border-radius: 10px;
   }
 
   .chip {
-    font-size: 0.78rem;
-    padding: 0.28rem 0.6rem;
+    font-size: 0.72rem;
+    padding: 0.22rem 0.5rem;
   }
 
   .search-input {
-    font-size: 0.9rem;
-    padding: 0.6rem 2.2rem 0.6rem 2.5rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 2rem 0.5rem 2.2rem;
   }
 
   .mol-card-body {
-    padding: 0.6rem 0.8rem;
+    padding: 0.5rem 0.65rem;
   }
 
   .mol-card-name {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
   .mol-card-name-en {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
   .prop-table {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   .prop-table td {
-    padding: 0.45rem 0.6rem;
+    padding: 0.35rem 0.5rem;
   }
   .prop-table tr td:first-child {
-    width: 100px;
+    width: 90px;
+  }
+  .enc-header h1 {
+    font-size: 1.5rem;
+  }
+  .enc-subtitle {
+    font-size: 0.9rem;
   }
 }
 
@@ -1661,64 +1670,72 @@ export default {
   }
 
   .detail-overlay {
-    padding: 0.5rem;
+    padding: 0.35rem;
     align-items: flex-start;
   }
 
   .detail-panel {
-    padding: 1rem;
-    border-radius: 14px;
+    padding: 0.8rem;
+    border-radius: 12px;
   }
 
   .detail-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .detail-name-en {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .detail-badges {
-    gap: 0.25rem;
+    gap: 0.2rem;
   }
 
   .filter-bar {
-    padding: 0.75rem;
-  }
-
-  .chip-group {
-    gap: 0.3rem;
-  }
-
-  .chip {
-    font-size: 0.72rem;
-    padding: 0.22rem 0.5rem;
-  }
-
-  .enc-header h1 {
-    font-size: 1.4rem;
-  }
-
-  .enc-subtitle {
-    font-size: 0.88rem;
-  }
-
-  .scent-description {
-    font-size: 0.88rem;
     padding: 0.6rem;
   }
 
+  .chip-group {
+    gap: 0.25rem;
+  }
+
+  .chip {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.4rem;
+  }
+
+  .enc-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .enc-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .scent-description {
+    font-size: 0.82rem;
+    padding: 0.5rem;
+  }
+
   .scent-bar-row {
-    gap: 0.4rem;
+    gap: 0.3rem;
   }
 
   .bar-label {
-    font-size: 0.78rem;
-    min-width: 50px;
+    font-size: 0.72rem;
+    min-width: 45px;
   }
 
   .detail-structure {
-    padding: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  .mol-card-body {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .mol-card-name {
+    font-size: 0.82rem;
   }
 }
 </style>

@@ -57,7 +57,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  /* 漸進式縮放：最小 12.5px (320px WebView) → 最大 16px (≥768px) */
+  font-size: clamp(12.5px, 2.5vw + 4px, 16px);
   height: 100%;
 }
 
@@ -618,30 +619,42 @@ hr {
     height: auto;
     min-height: calc(100vh - 140px);
     overflow-y: visible;
-    padding: 1.5rem 1.5rem 2rem;
-    border-radius: 20px;
+    padding: 1.25rem 1.25rem 1.75rem;
+    border-radius: 18px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .container {
-    padding: 1.25rem;
+    padding: 1rem;
   }
   .molecule-viewer {
-    height: 320px;
+    height: 280px;
   }
   table {
-    font-size: 0.92rem;
+    font-size: 0.88rem;
   }
   th,
   td {
-    padding: 0.65rem;
+    padding: 0.55rem;
+  }
+  .card {
+    padding: 1.2rem;
+  }
+  .chart-container {
+    padding: 0.9rem;
+  }
+  .chart-container canvas {
+    max-height: 280px !important;
+  }
+  .chapter-section {
+    padding: 1.1rem;
   }
   .slider-group {
     gap: 0.5rem;
@@ -657,7 +670,7 @@ hr {
 /* ── Mobile (480-767) ── */
 @media (min-width: 480px) and (max-width: 767px) {
   html {
-    font-size: 14px;
+    font-size: 13.5px;
   }
   .layout {
     grid-template-columns: 1fr;
@@ -691,48 +704,48 @@ hr {
     height: auto;
     min-height: calc(100vh - 120px);
     overflow-y: visible;
-    padding: 1.25rem 1rem 1.75rem;
+    padding: 1rem 0.75rem 1.5rem;
     border-radius: 16px;
   }
   .container {
-    padding: 1rem;
+    padding: 0.75rem;
   }
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
   h1::after {
-    width: 70px;
+    width: 60px;
     height: 3px;
   }
   h2 {
-    font-size: 1.4rem;
-    padding-left: 0.75rem;
+    font-size: 1.3rem;
+    padding-left: 0.65rem;
   }
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   h4 {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
   .molecule-viewer {
-    height: 260px;
+    height: 240px;
   }
   table {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     display: block;
     overflow-x: auto;
   }
   th,
   td {
-    padding: 0.5rem 0.6rem;
+    padding: 0.45rem 0.55rem;
     white-space: nowrap;
   }
   .card {
-    padding: 1.1rem;
-    margin: 0.8rem 0;
+    padding: 1rem;
+    margin: 0.7rem 0;
     border-radius: 12px;
   }
   .card:hover {
@@ -740,42 +753,50 @@ hr {
   }
   .slider-group {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
   .slider-item {
     flex: 1 1 100%;
   }
   .slider-item label {
-    min-width: 70px;
-    font-size: 0.8rem;
+    min-width: 60px;
+    font-size: 0.78rem;
   }
   .chart-container {
-    padding: 0.8rem;
+    padding: 0.65rem;
+  }
+  /* canvas 回應式高度覆寫 inline max-height */
+  .chart-container canvas {
+    max-height: 240px !important;
   }
   .chapter-sections {
     grid-template-columns: 1fr;
   }
-  pre {
+  .chapter-section {
     padding: 1rem;
-    font-size: 0.85em;
+    border-radius: 12px;
+  }
+  pre {
+    padding: 0.85rem;
+    font-size: 0.82em;
   }
   blockquote {
-    padding: 0.9rem;
+    padding: 0.8rem;
   }
   ul,
   ol {
-    margin: 0.8rem 0 0.8rem 1.5rem;
+    margin: 0.7rem 0 0.7rem 1.3rem;
   }
   .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.85rem;
   }
 }
 
 /* ── Small Mobile (<480) ── */
 @media (max-width: 479px) {
   html {
-    font-size: 13px;
+    font-size: 12.5px;
     height: auto;
     overflow-y: auto;
   }
@@ -808,56 +829,56 @@ hr {
     height: auto;
     min-height: calc(100vh - 100px);
     overflow-y: visible;
-    padding: 1rem 0.75rem 1.5rem;
-    border-radius: 14px;
+    padding: 0.75rem 0.6rem 1.25rem;
+    border-radius: 12px;
   }
   .container {
-    padding: 0.75rem;
+    padding: 0.6rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
   h1::after {
-    width: 60px;
+    width: 50px;
     height: 2px;
     bottom: -6px;
   }
   h2 {
-    font-size: 1.25rem;
-    padding-left: 0.6rem;
+    font-size: 1.15rem;
+    padding-left: 0.5rem;
     border-left-width: 3px;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.02rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.7;
   }
   .molecule-viewer {
-    height: 220px;
-    margin: 1rem 0;
+    height: 180px;
+    margin: 0.8rem 0;
   }
   table {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
   th,
   td {
-    padding: 0.4rem 0.5rem;
+    padding: 0.35rem 0.4rem;
     white-space: nowrap;
   }
   thead th {
-    font-size: 0.75em;
+    font-size: 0.72em;
   }
   .card {
-    padding: 0.9rem;
-    margin: 0.7rem 0;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
     border-radius: 10px;
   }
   .card:hover {
@@ -865,58 +886,66 @@ hr {
   }
   .slider-group {
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.35rem;
   }
   .slider-item {
     flex: 1 1 100%;
   }
   .slider-item label {
-    min-width: 60px;
-    font-size: 0.78rem;
+    min-width: 50px;
+    font-size: 0.75rem;
   }
   .chart-container {
-    padding: 0.6rem;
-    border-radius: 10px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  /* canvas 回應式高度覆寫 inline max-height */
+  .chart-container canvas {
+    max-height: 200px !important;
   }
   .chapter-sections {
     grid-template-columns: 1fr;
-    gap: 0.7rem;
+    gap: 0.5rem;
+  }
+  .chapter-section {
+    padding: 0.8rem;
+    border-radius: 10px;
   }
   pre {
-    padding: 0.8rem;
-    font-size: 0.8em;
+    padding: 0.65rem;
+    font-size: 0.78em;
     border-radius: 8px;
   }
   blockquote {
-    padding: 0.7rem;
+    padding: 0.6rem;
     border-radius: 8px;
   }
   ul,
   ol {
-    margin: 0.6rem 0 0.6rem 1.2rem;
+    margin: 0.5rem 0 0.5rem 1rem;
   }
   li {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
   .btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
   }
   .btn:hover {
     transform: none;
   }
   code {
-    padding: 0.15rem 0.35rem;
-    font-size: 0.85em;
+    padding: 0.12rem 0.3rem;
+    font-size: 0.82em;
   }
   hr {
-    margin: 1.2rem 0;
+    margin: 1rem 0;
   }
   .structure-table {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
   .summary-box {
-    padding: 0.8rem;
+    padding: 0.65rem;
   }
 
   /* Scrollbar: thinner on small screens */

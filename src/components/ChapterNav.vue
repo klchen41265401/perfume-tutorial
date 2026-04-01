@@ -166,13 +166,13 @@ export default {
 @media (max-width: 767px) {
   .chapter-pagination {
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.6rem;
-    border-radius: 12px;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    border-radius: 10px;
   }
   .page-btn {
-    font-size: 0.78rem;
-    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
     width: 100%;
     text-align: center;
   }
@@ -184,18 +184,18 @@ export default {
 
 @media (max-width: 479px) {
   .chapter-pagination {
-    padding: 0.5rem;
-    border-radius: 10px;
-    margin: 0.75rem 0 1rem;
+    padding: 0.4rem;
+    border-radius: 8px;
+    margin: 0.5rem 0 0.75rem;
   }
   .page-btn {
-    font-size: 0.72rem;
-    padding: 0.3rem 0.5rem;
+    font-size: 0.68rem;
+    padding: 0.25rem 0.4rem;
   }
   .page-num {
-    min-width: 26px;
-    height: 26px;
-    font-size: 0.68rem;
+    min-width: 24px;
+    height: 24px;
+    font-size: 0.65rem;
   }
 }
 </style>

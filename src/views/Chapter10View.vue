@@ -1583,16 +1583,16 @@ export default {
 }
 .db-subtitle {
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* ── 篩選欄 ── */
 .filter-bar {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  padding: 1.1rem;
+  margin-bottom: 1.25rem;
   box-shadow: var(--shadow-sm);
 }
 .search-box {
@@ -1719,7 +1719,7 @@ export default {
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
   z-index: 100;
-  max-height: 400px;
+  max-height: min(400px, 60vh);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1742,7 +1742,7 @@ export default {
 }
 .brand-options-list {
   overflow-y: auto;
-  max-height: 280px;
+  max-height: min(280px, 45vh);
   padding: 0.4rem;
 }
 .brand-option {
@@ -1899,15 +1899,15 @@ export default {
 /* ── 卡片網格 ── */
 .perfume-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 .perfume-card {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--border-color);
   border-radius: 14px;
-  padding: 1.2rem;
+  padding: 1rem;
   cursor: pointer;
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-sm);
@@ -2053,12 +2053,12 @@ export default {
   position: relative;
   background: var(--bg-primary);
   border-radius: 20px;
-  max-width: 820px;
+  max-width: min(820px, 95vw);
   width: 100%;
-  padding: 2rem;
+  padding: 1.75rem;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--border-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .detail-close {
   position: absolute;
@@ -2541,133 +2541,152 @@ tr.note-base td:first-child {
 
 @media (max-width: 991px) {
   .perfume-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.7rem;
   }
   .detail-panel {
-    max-width: 90vw;
-    padding: 1.5rem;
+    max-width: 92vw;
+    padding: 1.25rem;
+  }
+  .filter-bar {
+    padding: 1rem;
   }
   .references-section {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   .ref-category {
-    padding: 1rem;
+    padding: 0.85rem;
   }
 }
 
 @media (max-width: 767px) {
   .perfume-grid {
     grid-template-columns: 1fr;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
   .detail-overlay {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
   .detail-panel {
-    padding: 1.25rem;
+    padding: 1rem;
     max-width: 100%;
-    border-radius: 16px;
+    border-radius: 14px;
   }
   .detail-name {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
   .filter-bar {
-    padding: 0.9rem;
-    border-radius: 12px;
+    padding: 0.75rem;
+    border-radius: 10px;
   }
   .chip {
-    font-size: 0.78rem;
-    padding: 0.28rem 0.6rem;
+    font-size: 0.72rem;
+    padding: 0.22rem 0.5rem;
   }
   .search-input {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .formula-table {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
   .formula-table th,
   .formula-table td {
-    padding: 0.4rem 0.5rem;
+    padding: 0.35rem 0.4rem;
   }
   .perf-label {
-    min-width: 80px;
-    font-size: 0.78rem;
+    min-width: 70px;
+    font-size: 0.72rem;
   }
   .pyramid-label {
-    min-width: 55px;
-    font-size: 0.75rem;
+    min-width: 48px;
+    font-size: 0.7rem;
   }
   .pyramid-tag {
-    font-size: 0.72rem;
-    padding: 0.15rem 0.45rem;
+    font-size: 0.68rem;
+    padding: 0.12rem 0.38rem;
   }
   .note-dist-bar {
-    font-size: 0.68rem;
-    height: 30px;
+    font-size: 0.62rem;
+    height: 26px;
+  }
+  .db-header h1 {
+    font-size: 1.5rem;
+  }
+  .db-subtitle {
+    font-size: 0.9rem;
   }
   .references-section {
-    margin-top: 2rem;
-    padding: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
   }
   .references-section h2 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
   .ref-category h3 {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
   .ref-list li {
-    font-size: 0.85rem;
-    padding-left: 1.2rem;
+    font-size: 0.8rem;
+    padding-left: 1rem;
   }
 }
 
 @media (max-width: 479px) {
   .detail-panel {
-    padding: 1rem;
-    border-radius: 14px;
+    padding: 0.8rem;
+    border-radius: 12px;
   }
   .detail-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .detail-meta {
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.25rem;
   }
   .perfume-description {
-    font-size: 0.88rem;
-    padding: 0.6rem;
+    font-size: 0.82rem;
+    padding: 0.5rem;
   }
   .formula-table {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
   .ing-pct {
-    min-width: 90px;
+    min-width: 80px;
   }
   .note-dist-bar {
-    height: 26px;
-    font-size: 0.62rem;
+    height: 22px;
+    font-size: 0.58rem;
   }
   .dist-segment {
-    min-width: 30px;
+    min-width: 26px;
   }
   .db-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
   .db-subtitle {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
+  }
+  .filter-bar {
+    padding: 0.6rem;
+  }
+  .chip {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.4rem;
   }
   .references-section {
-    padding: 1rem;
-  }
-  .references-section h2 {
-    font-size: 1.2rem;
-  }
-  .ref-category {
     padding: 0.8rem;
   }
+  .references-section h2 {
+    font-size: 1.1rem;
+  }
+  .ref-category {
+    padding: 0.65rem;
+  }
   .ref-list li {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+  .perfume-card {
+    border-radius: 10px;
   }
 }
 </style>
