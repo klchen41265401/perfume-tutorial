@@ -190,7 +190,7 @@
           </div>
         </div>
         <div class="perfume-ingredient-count">
-          🧪 {{ (p.ingredients || []).length }} {{ t('ch10.ingredientsCount') }}
+          🧪 {{ getIngredients(p).length }} {{ t('ch10.ingredientsCount') }}
         </div>
       </div>
     </div>
@@ -510,10 +510,68 @@ export default {
     const { getLabel, t, isZh, isEn } = useLanguage()
 
     // Translation helpers for perfume data
-    const tn = (note) => isEn.value ? translateNote(note) : note
+
+    /**
+     * 將香調元素統一取出顯示文字，相容字串格式與物件格式 {name, pct, role, note}
+     * @param {string|Object} n - 香調字串或物件
+     * @returns {string} 香調文字
+     */
+    const getNoteText = (n) => {
+      if (!n) return ''
+      if (typeof n === 'string') return n
+      return n.name || ''
+    }
+
+    /**
+     * 取得香水成分列表，相容 ingredients 欄位缺失的舊資料格式。
+     * 若無 ingredients，則從 topNotes/heartNotes/baseNotes 物件陣列還原。
+     * @param {Object} perfume - 香水物件
+     * @returns {Array} 正規化後的成分陣列
+     */
+    const getIngredients = (perfume) => {
+      if (!perfume) return []
+      if (Array.isArray(perfume.ingredients) && perfume.ingredients.length > 0) {
+        return perfume.ingredients
+      }
+      // 從舊格式的香調物件陣列還原 ingredients
+      const buildFromNotes = (notes, noteType) => {
+        if (!Array.isArray(notes)) return []
+        return notes
+          .filter(n => n && typeof n === 'object' && n.name)
+          .map(n => ({
+            name: n.name,
+            cas: 'N/A',
+            pct: n.pct || n.percentage || 0,
+            role: n.role || '',
+            note: noteType
+          }))
+      }
+      return [
+        ...buildFromNotes(perfume.topNotes, 'top'),
+        ...buildFromNotes(perfume.heartNotes, 'middle'),
+        ...buildFromNotes(perfume.baseNotes, 'base')
+      ]
+    }
+
+    /**
+     * 將 feminine/masculine 正規化為 GENDER_OPTIONS 使用的 female/male 格式
+     * @param {string} g - 原始 gender 值
+     * @returns {string|null} 正規化後的 gender 值
+     */
+    const normalizeGender = (g) => {
+      if (!g) return null
+      const map = { feminine: 'female', masculine: 'male' }
+      return map[g] || g
+    }
+
+    const tn = (note) => {
+      const text = getNoteText(note)
+      return isEn.value ? translateNote(text) : text
+    }
     const tr = (role) => isEn.value ? translateRole(role) : role
     const desc = (perfume) => isEn.value ? (DESCRIPTION_EN[perfume.id] || perfume.description) : perfume.description
     const joinNotes = (notes, count) => {
+      if (!Array.isArray(notes)) return ''
       const items = count ? notes.slice(0, count) : notes
       const sep = isZh.value ? '、' : ', '
       return items.map(tn).join(sep)
@@ -585,10 +643,9 @@ export default {
           if (p.name.toLowerCase().includes(q)) return true
           if (p.year && p.year.toString().includes(q)) return true
           if (getBrandLabel(p.brand).toLowerCase().includes(q)) return true
-          if (p.perfumer.toLowerCase().includes(q)) return true
           
           // 描述
-          if (p.description.toLowerCase().includes(q)) return true
+          if (p.description && p.description.toLowerCase().includes(q)) return true
           if (DESCRIPTION_EN[p.id] && DESCRIPTION_EN[p.id].toLowerCase().includes(q)) return true
           
           // 香調分類
@@ -604,21 +661,34 @@ export default {
           if (getConcLabel(p.concentration).toLowerCase().includes(q)) return true
           if (getConcRange(p.concentration).includes(q)) return true
           
-          // 性別
+          // 性別（相容 feminine/masculine 與 female/male 格式）
           if (getGenderLabel(p.gender).toLowerCase().includes(q)) return true
           if (getGenderIcon(p.gender).includes(q)) return true
+
+          // 調香師（部分舊資料可能無此欄位）
+          if (p.perfumer && p.perfumer.toLowerCase().includes(q)) return true
           
-          // 前中後調 (search both zh and en)
-          if (p.topNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
-          if (p.heartNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
-          if (p.baseNotes.some(n => n.toLowerCase().includes(q) || translateNote(n).toLowerCase().includes(q))) return true
+          // 前中後調（相容字串與物件兩種格式）
+          if (Array.isArray(p.topNotes) && p.topNotes.some(n => {
+            const text = getNoteText(n)
+            return text.toLowerCase().includes(q) || translateNote(text).toLowerCase().includes(q)
+          })) return true
+          if (Array.isArray(p.heartNotes) && p.heartNotes.some(n => {
+            const text = getNoteText(n)
+            return text.toLowerCase().includes(q) || translateNote(text).toLowerCase().includes(q)
+          })) return true
+          if (Array.isArray(p.baseNotes) && p.baseNotes.some(n => {
+            const text = getNoteText(n)
+            return text.toLowerCase().includes(q) || translateNote(text).toLowerCase().includes(q)
+          })) return true
           
-          // 成分（包含在searchQuery中，移除獨立的ingredientQuery）
-          if (p.ingredients && p.ingredients.some(ing => 
-            ing.name.toLowerCase().includes(q) ||
-            ing.cas.toLowerCase().includes(q) ||
-            ing.role.toLowerCase().includes(q) ||
-            ing.pct.toString().includes(q) ||
+          // 成分（含還原自香調物件格式的成分）
+          const ings = getIngredients(p)
+          if (ings.length > 0 && ings.some(ing => 
+            (ing.name || '').toLowerCase().includes(q) ||
+            (ing.cas || '').toLowerCase().includes(q) ||
+            (ing.role || '').toLowerCase().includes(q) ||
+            (ing.pct != null ? ing.pct.toString() : '').includes(q) ||
             getNoteLabel(ing.note).toLowerCase().includes(q)
           )) return true
           
@@ -655,7 +725,8 @@ export default {
       }
 
       if (selectedGenders.value.size > 0) {
-        result = result.filter(p => selectedGenders.value.has(p.gender))
+        // 相容 feminine/masculine（Format A）與 female/male（Format B）兩種格式
+        result = result.filter(p => selectedGenders.value.has(normalizeGender(p.gender)))
       }
 
       if (selectedBrands.value.size > 0) {
@@ -668,27 +739,27 @@ export default {
     // Detail computed
     const sortedIngredients = computed(() => {
       if (!selectedPerfume.value) return []
-      const ings = selectedPerfume.value.ingredients || []
+      const ings = getIngredients(selectedPerfume.value)
       const noteOrder = { top: 0, middle: 1, base: 2 }
       return [...ings].sort((a, b) => {
         const noteDiff = (noteOrder[a.note] || 0) - (noteOrder[b.note] || 0)
         if (noteDiff !== 0) return noteDiff
-        return b.pct - a.pct
+        return (b.pct || 0) - (a.pct || 0)
       })
     })
 
     const maxPct = computed(() => {
       if (!selectedPerfume.value) return 1
-      const ings = selectedPerfume.value.ingredients || []
-      return Math.max(...ings.map(i => i.pct), 1)
+      const ings = getIngredients(selectedPerfume.value)
+      return Math.max(...ings.map(i => i.pct || 0), 1)
     })
 
     const noteDistribution = computed(() => {
       if (!selectedPerfume.value) return { topPct: 33, heartPct: 34, basePct: 33 }
-      const ings = selectedPerfume.value.ingredients || []
-      const top = ings.filter(i => i.note === 'top').reduce((s, i) => s + i.pct, 0)
-      const heart = ings.filter(i => i.note === 'middle').reduce((s, i) => s + i.pct, 0)
-      const base = ings.filter(i => i.note === 'base').reduce((s, i) => s + i.pct, 0)
+      const ings = getIngredients(selectedPerfume.value)
+      const top = ings.filter(i => i.note === 'top').reduce((s, i) => s + (i.pct || 0), 0)
+      const heart = ings.filter(i => i.note === 'middle').reduce((s, i) => s + (i.pct || 0), 0)
+      const base = ings.filter(i => i.note === 'base').reduce((s, i) => s + (i.pct || 0), 0)
       const total = top + heart + base || 1
       return {
         topPct: Math.round(top / total * 100),
@@ -728,12 +799,14 @@ export default {
     function getConcLabel(id)   { return isZh.value ? (CONCENTRATION_TYPES[id]?.label || id) : (CONCENTRATION_TYPES[id]?.labelEn || id) }
     function getConcRange(id)   { return CONCENTRATION_TYPES[id]?.range || '' }
     function getGenderIcon(id)  {
-      const map = { feminine: '♀', masculine: '♂', unisex: '⚥' }
+      // 相容 feminine/masculine（Format A）與 female/male（Format B）格式
+      const map = { feminine: '♀', female: '♀', masculine: '♂', male: '♂', unisex: '⚥' }
       return map[id] || '·'
     }
     function getGenderLabel(id) {
-      const mapZh = { feminine: '女香', masculine: '男香', unisex: '中性' }
-      const mapEn = { feminine: 'Feminine', masculine: 'Masculine', unisex: 'Unisex' }
+      // 相容 feminine/masculine（Format A）與 female/male（Format B）格式
+      const mapZh = { feminine: '女香', female: '女香', masculine: '男香', male: '男香', unisex: '中性' }
+      const mapEn = { feminine: 'Feminine', female: 'Feminine', masculine: 'Masculine', male: 'Masculine', unisex: 'Unisex' }
       return isZh.value ? (mapZh[id] || id) : (mapEn[id] || id)
     }
     function getNoteLabel(note) {
@@ -754,6 +827,7 @@ export default {
       brandDropdownOpen, brandSearchQuery, filteredBrandOptions,
       hasActiveFilters, filteredPerfumes,
       sortedIngredients, maxPct, noteDistribution,
+      getIngredients,
       toggleFilter, resetFilters, getBrandCount,
       getBrandLabel, getFamilyColor, getFamilyIcon, getFamilyLabel,
       getConcColor, getConcLabel, getConcRange,
