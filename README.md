@@ -15,6 +15,8 @@ perfume-tutorial/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Actions 自動部署至 GitHub Pages
+├── reports/                    # 審計與分析報告
+│   └── 2025-06-18T_rwd-audit-report.md
 ├── src/
 │   ├── assets/                 # 靜態資源
 │   ├── components/             # 共用元件
@@ -63,6 +65,14 @@ npm run build
 
 ---
 
+## 報告
+
+| 日期       | 報告                                                    | 說明                                                              |
+| ---------- | ------------------------------------------------------- | ----------------------------------------------------------------- |
+| 2025-06-18 | [RWD 審計報告](reports/2025-06-18T_rwd-audit-report.md) | 全面盤點所有響應式 CSS，針對 WebView（360–414px）元素過大問題分析 |
+
+---
+
 ## 變更紀錄
 
 ### 2026-04-01T00:00:00+08:00 — Bug Fix
@@ -98,3 +108,18 @@ npm run build
 | `index.html`                | `<meta viewport>` 加入 `viewport-fit=cover`，啟用 safe area insets 支援                                                                                                                                                                                                                                                                 |
 | `src/components/NavBar.vue` | 水平捲動 `.nav-rail` 加入 `::after` 空白偽元素，修正 flex scrollable container 尾端 padding 在部分 WebView 被吞掉的問題；所有行動裝置 breakpoint 加入 `env(safe-area-inset-right/left)` padding；`nav-item` 與 `lang-toggle` 加入 `flex-shrink:0` 防止被壓縮；移除 tablet 下 `lang-toggle` 的 `margin-left:auto` 使其隨水平捲動自然排列 |
 | `src/assets/style.css`      | 三段行動裝置 breakpoint 的 `.layout` 加入 `env(safe-area-inset-right/left)` padding                                                                                                                                                                                                                                                     |
+
+### 2026-04-02T00:00:00+08:00 — WebView 全面 RWD 版面精修
+
+**修正 WebView（LINE/FB/IG 內建瀏覽器 360-414px）版面過大問題，涵蓋所有章節**
+
+| 類別 | 修正內容 |
+| --- | --- |
+| **根字體縮放** | `html font-size` 改為 `clamp(12.5px, 2.5vw + 4px, 16px)` 漸進式縮放，取代各斷點硬切 16→15→14→13，確保 WebView 下比例自然 |
+| **全域元素** (`style.css`) | Mobile (480-767px) 與 Small Mobile (<480px) 的 h1-h4、p、card、table、chart-container、chapter-section、pre、blockquote、btn 全面縮小 padding/margin/font-size |
+| **Canvas 圖表** | 新增 `.chart-container canvas { max-height }` 規則覆蓋 inline `style="max-height:320px"`，Mobile→240px / Small Mobile→200px |
+| **Tablet** (768-991px) | heading、card、chart-container、table cell 均微調縮小 |
+| **FooterBar** | 新增兩段 RWD breakpoint：767px (`margin-top:2rem; padding:1.25rem`) / 479px (`margin-top:1.5rem; padding:1rem`) |
+| **ChapterNav** | 767px / 479px 斷點 page-btn 與 page-num 進一步縮小 |
+| **Chapter 9** | 基底 grid minmax 300→280px；767px grid 200→160px；479px 所有元素進一步精縮；detail-panel `max-width: min(720px, 95vw)` |
+| **Chapter 10** | 基底 grid minmax 320→300px；767px 直接 1fr 單欄；brand-dropdown `max-height: min(400px, 60vh)`；detail-panel `max-width: min(820px, 95vw)`；479px 全面精縮 |
