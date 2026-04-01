@@ -113,13 +113,13 @@ npm run build
 
 **修正 WebView（LINE/FB/IG 內建瀏覽器 360-414px）版面過大問題，涵蓋所有章節**
 
-| 類別 | 修正內容 |
-| --- | --- |
-| **根字體縮放** | `html font-size` 改為 `clamp(12.5px, 2.5vw + 4px, 16px)` 漸進式縮放，取代各斷點硬切 16→15→14→13，確保 WebView 下比例自然 |
+| 類別                       | 修正內容                                                                                                                                                       |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **根字體縮放**             | `html font-size` 改為 `clamp(12.5px, 2.5vw + 4px, 16px)` 漸進式縮放，取代各斷點硬切 16→15→14→13，確保 WebView 下比例自然                                       |
 | **全域元素** (`style.css`) | Mobile (480-767px) 與 Small Mobile (<480px) 的 h1-h4、p、card、table、chart-container、chapter-section、pre、blockquote、btn 全面縮小 padding/margin/font-size |
-| **Canvas 圖表** | 新增 `.chart-container canvas { max-height }` 規則覆蓋 inline `style="max-height:320px"`，Mobile→240px / Small Mobile→200px |
-| **Tablet** (768-991px) | heading、card、chart-container、table cell 均微調縮小 |
-| **FooterBar** | 新增兩段 RWD breakpoint：767px (`margin-top:2rem; padding:1.25rem`) / 479px (`margin-top:1.5rem; padding:1rem`) |
-| **ChapterNav** | 767px / 479px 斷點 page-btn 與 page-num 進一步縮小 |
-| **Chapter 9** | 基底 grid minmax 300→280px；767px grid 200→160px；479px 所有元素進一步精縮；detail-panel `max-width: min(720px, 95vw)` |
-| **Chapter 10** | 基底 grid minmax 320→300px；767px 直接 1fr 單欄；brand-dropdown `max-height: min(400px, 60vh)`；detail-panel `max-width: min(820px, 95vw)`；479px 全面精縮 |
+| **Canvas 圖表**            | 新增 `.chart-container canvas { max-height }` 規則覆蓋 inline `style="max-height:320px"`，Mobile→240px / Small Mobile→200px                                    |
+| **Tablet** (768-991px)     | heading、card、chart-container、table cell 均微調縮小                                                                                                          |
+| **FooterBar**              | 新增兩段 RWD breakpoint：767px (`margin-top:2rem; padding:1.25rem`) / 479px (`margin-top:1.5rem; padding:1rem`)                                                |
+| **ChapterNav**             | 767px / 479px 斷點 page-btn 與 page-num 進一步縮小                                                                                                             |
+| **Chapter 9**              | 基底 grid minmax 300→280px；767px grid 200→160px；479px 所有元素進一步精縮；detail-panel `max-width: min(720px, 95vw)`                                         |
+| **Chapter 10**             | 基底 grid minmax 320→300px；767px 直接 1fr 單欄；brand-dropdown `max-height: min(400px, 60vh)`；detail-panel `max-width: min(820px, 95vw)`；479px 全面精縮     |

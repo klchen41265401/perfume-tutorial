@@ -1,19 +1,21 @@
 <template>
   <div class="chapter-pagination">
-    <router-link
-      v-if="prev"
-      :to="prev.to"
-      class="page-btn chapter-btn"
-    >
+    <router-link v-if="prev" :to="prev.to" class="page-btn chapter-btn">
       &larr; {{ prev.label }}
     </router-link>
-    <span v-else class="page-btn chapter-btn disabled">&larr; {{ t('common.previousChapter') }}</span>
+    <span v-else class="page-btn chapter-btn disabled"
+      >&larr; {{ t("common.previousChapter") }}</span
+    >
 
     <div class="page-numbers" v-if="sections && sections.length">
       <button
         v-for="sec in sections"
         :key="sec.id"
-        :class="['page-num', 'section-btn', { active: activeSection === sec.id }]"
+        :class="[
+          'page-num',
+          'section-btn',
+          { active: activeSection === sec.id },
+        ]"
         @click="selectSection(sec.id)"
         :title="sec.label"
       >
@@ -21,39 +23,37 @@
       </button>
     </div>
 
-    <router-link
-      v-if="next"
-      :to="next.to"
-      class="page-btn chapter-btn"
-    >
+    <router-link v-if="next" :to="next.to" class="page-btn chapter-btn">
       {{ next.label }} &rarr;
     </router-link>
-    <span v-else class="page-btn chapter-btn disabled">{{ t('common.nextChapter') }} &rarr;</span>
+    <span v-else class="page-btn chapter-btn disabled"
+      >{{ t("common.nextChapter") }} &rarr;</span
+    >
   </div>
 </template>
 
 <script>
-import { useLanguage } from '../composables/useLanguage.js'
+import { useLanguage } from "../composables/useLanguage.js";
 
 export default {
-  name: 'ChapterNav',
+  name: "ChapterNav",
   props: {
     prev: { type: Object, default: null },
     next: { type: Object, default: null },
     sections: { type: Array, default: () => [] },
-    activeSection: { type: String, default: '' }
+    activeSection: { type: String, default: "" },
   },
-  emits: ['update:activeSection'],
+  emits: ["update:activeSection"],
   setup() {
-    const { t } = useLanguage()
-    return { t }
+    const { t } = useLanguage();
+    return { t };
   },
   methods: {
     selectSection(id) {
-      this.$emit('update:activeSection', id)
-    }
-  }
-}
+      this.$emit("update:activeSection", id);
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -136,7 +136,11 @@ export default {
 }
 
 .section-btn.active {
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.7), rgba(168, 230, 207, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 215, 0, 0.7),
+    rgba(168, 230, 207, 0.7)
+  );
   color: #0b1a10 !important;
   border-color: transparent;
   box-shadow: 0 8px 16px rgba(10, 25, 10, 0.25);

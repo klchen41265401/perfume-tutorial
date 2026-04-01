@@ -306,112 +306,126 @@ export default {
   display: none;
 }
 
+/* ── 手機版側邊欄覆蓋層 (≤991px) ── */
 @media (max-width: 991px) {
   .collapse-toggle {
     display: none;
   }
 
   .nav-rail {
-    flex-direction: row;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    height: auto;
-    padding: 0.75rem 1rem;
-    padding-right: calc(1rem + env(safe-area-inset-right, 0px));
-    padding-left: calc(1rem + env(safe-area-inset-left, 0px));
-    gap: 0.75rem;
-    border-radius: 14px;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.25rem 1rem;
+    gap: 1rem;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid var(--border-color);
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
   }
 
-  /* 修正水平捲動容器尾端 padding 在部分 WebView 被吞掉的問題 */
+  /* 移除水平捲動所用的 spacer */
   .nav-rail::after {
-    content: "";
-    flex-shrink: 0;
-    width: calc(2.5rem + env(safe-area-inset-right, 0px));
-    min-width: 2.5rem;
-    height: 1px;
+    display: none;
   }
 
-  /* 真實 DOM spacer，確保 WebView 捲動到底後最右側 icon 可點擊 */
   .nav-end-spacer {
-    display: block;
-    flex-shrink: 0;
-    min-width: 2.5rem;
-    width: calc(2.5rem + env(safe-area-inset-right, 0px));
-    height: 1px;
-    pointer-events: none;
+    display: none;
   }
 
   .nav-brand {
-    border-bottom: none;
-    border-right: 1px solid rgba(255, 215, 0, 0.25);
-    padding-right: 1rem;
-    padding-bottom: 0;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+    border-right: none;
+    padding-bottom: 0.75rem;
+    padding-right: 0;
     flex-shrink: 0;
   }
 
   .brand-title {
-    font-size: 0.95rem;
+    font-size: 1rem;
     letter-spacing: 2px;
   }
 
   .brand-sub {
-    font-size: 0.72rem;
-    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
   }
 
   .nav-group {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 0.3rem;
-    flex-shrink: 0;
   }
 
   .nav-item {
-    white-space: nowrap;
-    padding: 0.45rem 0.65rem;
-    font-size: 0.82rem;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
     border-radius: 10px;
-    flex-shrink: 0;
   }
 
   .nav-item:hover {
-    transform: translateY(-1px);
+    transform: translateX(4px);
   }
 
-  /* 語言切換按鈕 - 平板 */
+  .nav-label {
+    display: inline;
+  }
+
+  .nav-ornament {
+    font-size: 1rem;
+  }
+
+  /* 語言切換按鈕 */
   .lang-toggle {
-    margin-top: 0;
-    margin-left: 0;
-    padding: 0.45rem 0.65rem;
-    font-size: 0.82rem;
-    flex-shrink: 0;
+    margin-top: 0.5rem;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.88rem;
+  }
+
+  .lang-label {
+    display: inline;
   }
 
   .nav-foot {
-    display: none;
+    display: block;
+    margin-top: auto;
   }
 }
 
 @media (max-width: 767px) {
   .nav-rail {
-    padding: 0.6rem 0.75rem;
-    padding-right: calc(0.75rem + env(safe-area-inset-right, 0px));
-    padding-left: calc(0.75rem + env(safe-area-inset-left, 0px));
-    gap: 0.5rem;
-    border-radius: 12px;
-  }
-
-  .nav-end-spacer {
-    min-width: 2rem;
-    width: calc(2rem + env(safe-area-inset-right, 0px));
+    padding: 1rem 0.85rem;
+    gap: 0.85rem;
   }
 
   .brand-title {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
+    letter-spacing: 1.5px;
+  }
+
+  .brand-sub {
+    font-size: 0.7rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.84rem;
+  }
+
+  .lang-toggle {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-rail {
+    padding: 0.85rem 0.7rem;
+    gap: 0.7rem;
+  }
+
+  .brand-title {
+    font-size: 0.82rem;
     letter-spacing: 1px;
   }
 
@@ -420,64 +434,18 @@ export default {
   }
 
   .nav-item {
-    padding: 0.4rem 0.55rem;
-    font-size: 0.78rem;
-    flex-shrink: 0;
-  }
-
-  .nav-label {
-    display: none;
-  }
-
-  .nav-ornament {
-    font-size: 1.1rem;
-  }
-
-  /* 語言切換按鈕 - 手機 */
-  .lang-toggle {
-    padding: 0.4rem 0.55rem;
-    font-size: 0.78rem;
-  }
-
-  .lang-label {
-    display: none;
-  }
-
-  .lang-icon {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 479px) {
-  .nav-rail {
-    padding: 0.5rem 0.6rem;
-    padding-right: calc(0.6rem + env(safe-area-inset-right, 0px));
-    padding-left: calc(0.6rem + env(safe-area-inset-left, 0px));
-    gap: 0.35rem;
-    border-radius: 10px;
-  }
-
-  .nav-end-spacer {
-    min-width: 1.5rem;
-    width: calc(1.5rem + env(safe-area-inset-right, 0px));
-  }
-
-  .nav-brand {
-    padding-right: 0.6rem;
-  }
-
-  .brand-title {
-    font-size: 0.75rem;
-  }
-
-  .nav-item {
-    padding: 0.35rem 0.45rem;
+    padding: 0.45rem 0.55rem;
+    font-size: 0.8rem;
     border-radius: 8px;
-    flex-shrink: 0;
   }
 
   .nav-ornament {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .lang-toggle {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.8rem;
   }
 }
 </style>

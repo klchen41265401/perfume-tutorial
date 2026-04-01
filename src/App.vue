@@ -1,8 +1,26 @@
 <template>
   <div class="app-shell">
     <div ref="webglMount" class="webgl-bg" aria-hidden="true"></div>
+
+    <!-- 手機版漢堡選單按鈕 -->
+    <button
+      class="hamburger-btn"
+      :class="{ active: mobileMenuOpen }"
+      @click="mobileMenuOpen = !mobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <span class="hamburger-icon">{{ mobileMenuOpen ? "✕" : "☰" }}</span>
+    </button>
+
+    <!-- 手機版背景遮罩 -->
+    <div
+      class="mobile-backdrop"
+      :class="{ active: mobileMenuOpen }"
+      @click="mobileMenuOpen = false"
+    ></div>
+
     <div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
-      <aside class="side-rail">
+      <aside class="side-rail" :class="{ 'mobile-open': mobileMenuOpen }">
         <NavBar
           :collapsed="sidebarCollapsed"
           @toggle="sidebarCollapsed = !sidebarCollapsed"
@@ -32,6 +50,7 @@ export default {
     return {
       webgl: null,
       sidebarCollapsed: false,
+      mobileMenuOpen: false,
     };
   },
   mounted() {
@@ -42,6 +61,7 @@ export default {
   },
   watch: {
     $route() {
+      this.mobileMenuOpen = false;
       this.$nextTick(() => {
         const mainPanel = this.$refs.mainPanel;
         if (mainPanel) {

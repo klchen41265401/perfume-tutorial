@@ -538,6 +538,95 @@ hr {
      - xxs: <480       (small mobile)
    ======================================== */
 
+/* ── 手機版漢堡選單按鈕 (桌面版隱藏) ── */
+.hamburger-btn {
+  display: none;
+}
+
+/* ── 手機版背景遮罩 (桌面版隱藏) ── */
+.mobile-backdrop {
+  display: none;
+}
+
+/* ── 手機版側邊欄覆蓋層共用樣式 (≤991px) ── */
+@media (max-width: 991px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+    z-index: 1001;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    background: rgba(12, 30, 18, 0.85);
+    backdrop-filter: blur(8px);
+    color: var(--gold-glow);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    line-height: 1;
+  }
+
+  .hamburger-btn.active {
+    background: rgba(255, 215, 0, 0.15);
+    border-color: var(--gold-glow);
+  }
+
+  .hamburger-btn:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: var(--gold-glow);
+    transform: scale(1.05);
+  }
+
+  .mobile-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    pointer-events: none;
+  }
+
+  .mobile-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .side-rail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: var(--glass-panel);
+    backdrop-filter: blur(16px);
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .side-rail.mobile-open {
+    transform: translateX(0);
+  }
+}
+
 /* ── Large Desktop (1400px+) ── */
 @media (min-width: 1400px) {
   .layout {
@@ -589,19 +678,16 @@ hr {
   }
   .layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
     height: auto;
     min-height: 100vh;
-    gap: 16px;
+    gap: 0;
     padding: 16px;
+    padding-top: 64px;
     padding-left: calc(16px + env(safe-area-inset-left, 0px));
     padding-right: calc(16px + env(safe-area-inset-right, 0px));
   }
   .layout.sidebar-collapsed {
     grid-template-columns: 1fr;
-  }
-  .side-rail {
-    height: auto;
   }
   /* Tablet: 捕動回到 body 層级，不再由 main-panel 自建捲動區 */
   html {
@@ -674,19 +760,16 @@ hr {
   }
   .layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
     height: auto;
     min-height: 100vh;
-    gap: 12px;
+    gap: 0;
     padding: 12px;
+    padding-top: 60px;
     padding-left: calc(12px + env(safe-area-inset-left, 0px));
     padding-right: calc(12px + env(safe-area-inset-right, 0px));
   }
   .layout.sidebar-collapsed {
     grid-template-columns: 1fr;
-  }
-  .side-rail {
-    height: auto;
   }
   /* Mobile: 捕動回到 body 層级 */
   html {
@@ -811,19 +894,16 @@ hr {
   }
   .layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
     height: auto;
     min-height: 100vh;
-    gap: 8px;
+    gap: 0;
     padding: 8px;
+    padding-top: 56px;
     padding-left: calc(8px + env(safe-area-inset-left, 0px));
     padding-right: calc(8px + env(safe-area-inset-right, 0px));
   }
   .layout.sidebar-collapsed {
     grid-template-columns: 1fr;
-  }
-  .side-rail {
-    height: auto;
   }
   .main-panel {
     height: auto;
