@@ -39,6 +39,9 @@
       }}</span>
     </button>
 
+    <!-- 水平捲動右側留白：部分 WebView 會吞掉 scrollable flex 容器的尾端 padding -->
+    <div class="nav-end-spacer" aria-hidden="true"></div>
+
     <div v-if="!collapsed" class="nav-foot">
       <span class="nav-foot-line">Forest Lab Edition</span>
     </div>
@@ -298,6 +301,11 @@ export default {
   letter-spacing: 1px;
 }
 
+/* 桌面版不顯示 spacer */
+.nav-end-spacer {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .collapse-toggle {
     display: none;
@@ -322,8 +330,19 @@ export default {
   .nav-rail::after {
     content: "";
     flex-shrink: 0;
-    width: calc(1rem + env(safe-area-inset-right, 0px));
+    width: calc(2.5rem + env(safe-area-inset-right, 0px));
+    min-width: 2.5rem;
     height: 1px;
+  }
+
+  /* 真實 DOM spacer，確保 WebView 捲動到底後最右側 icon 可點擊 */
+  .nav-end-spacer {
+    display: block;
+    flex-shrink: 0;
+    min-width: 2.5rem;
+    width: calc(2.5rem + env(safe-area-inset-right, 0px));
+    height: 1px;
+    pointer-events: none;
   }
 
   .nav-brand {
@@ -386,6 +405,11 @@ export default {
     border-radius: 12px;
   }
 
+  .nav-end-spacer {
+    min-width: 2rem;
+    width: calc(2rem + env(safe-area-inset-right, 0px));
+  }
+
   .brand-title {
     font-size: 0.85rem;
     letter-spacing: 1px;
@@ -431,6 +455,11 @@ export default {
     padding-left: calc(0.6rem + env(safe-area-inset-left, 0px));
     gap: 0.35rem;
     border-radius: 10px;
+  }
+
+  .nav-end-spacer {
+    min-width: 1.5rem;
+    width: calc(1.5rem + env(safe-area-inset-right, 0px));
   }
 
   .nav-brand {
