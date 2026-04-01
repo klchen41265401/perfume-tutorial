@@ -123,3 +123,13 @@ npm run build
 | **ChapterNav**             | 767px / 479px 斷點 page-btn 與 page-num 進一步縮小                                                                                                             |
 | **Chapter 9**              | 基底 grid minmax 300→280px；767px grid 200→160px；479px 所有元素進一步精縮；detail-panel `max-width: min(720px, 95vw)`                                         |
 | **Chapter 10**             | 基底 grid minmax 320→300px；767px 直接 1fr 單欄；brand-dropdown `max-height: min(400px, 60vh)`；detail-panel `max-width: min(820px, 95vw)`；479px 全面精縮     |
+
+### 2025-06-18T12:00:00+08:00 — 手機版漢堡選單重構
+
+**手機版 NavBar 從水平捲動導覽列改為漢堡按鈕 + 滑出側邊欄**
+
+| 類別 | 修正內容 |
+| --- | --- |
+| **App.vue** | 新增 `hamburger-btn`（固定於左上角 ☰/✕ 切換）、`mobile-backdrop`（半透明遮罩點擊關閉）、`mobileMenuOpen` 狀態；路由切換時自動關閉側邊欄 |
+| **NavBar.vue** | 手機版 (≤991px) 移除水平 `flex-direction: row` + `overflow-x: auto`，改為垂直佈局側邊欄；保留完整導覽標籤文字與圖示；移除 `nav-end-spacer`、`::after` 水平捲動修補 |
+| **style.css** | `.side-rail` 手機版改為 `position: fixed` 覆蓋層（`width: 280px`、`z-index: 1000`、`transform: translateX(-100%)` → `translateX(0)` 滑入動畫）；`.hamburger-btn` 固定左上 `z-index: 1001`；`.mobile-backdrop` 全螢幕半透明遮罩 `z-index: 999`；`.layout` 移除 `grid-template-rows: auto 1fr`，改為單行 + `padding-top` 預留漢堡按鈕空間 |
