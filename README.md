@@ -82,19 +82,19 @@ npm run build
 
 **修復行動裝置無法向下捲動（特別是 Chapter 9 / Chapter 10）**
 
-| 檔案 | 修正內容 |
-| --- | --- |
-| `src/assets/style.css` | 三段行動裝置 breakpoint 加入 `html/body { overflow-y:auto; height:auto }` 與 `#app { height:auto }`，解除 `overflow:hidden` + `#app { height:100% }` 鎖定 |
-| `src/views/Chapter9View.vue` | `.detail-overlay` 加入 `-webkit-overflow-scrolling:touch` 與 `overscroll-behavior:contain` |
-| `src/views/Chapter10View.vue` | 同上 |
-| `src/App.vue` | route watcher `scrollTo` 自動偵測捲動容器（desktop → main-panel / mobile → window） |
+| 檔案                          | 修正內容                                                                                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/assets/style.css`        | 三段行動裝置 breakpoint 加入 `html/body { overflow-y:auto; height:auto }` 與 `#app { height:auto }`，解除 `overflow:hidden` + `#app { height:100% }` 鎖定 |
+| `src/views/Chapter9View.vue`  | `.detail-overlay` 加入 `-webkit-overflow-scrolling:touch` 與 `overscroll-behavior:contain`                                                                |
+| `src/views/Chapter10View.vue` | 同上                                                                                                                                                      |
+| `src/App.vue`                 | route watcher `scrollTo` 自動偵測捲動容器（desktop → main-panel / mobile → window）                                                                       |
 
 ### 2026-04-01T02:00:00+08:00 — RWD NavBar Fix
 
 **修復部分 WebView 下 NavBar 最右側 icon 無法點擊**
 
-| 檔案 | 修正內容 |
-| --- | --- |
-| `index.html` | `<meta viewport>` 加入 `viewport-fit=cover`，啟用 safe area insets 支援 |
+| 檔案                        | 修正內容                                                                                                                                                                                                                                                                                                                                |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `index.html`                | `<meta viewport>` 加入 `viewport-fit=cover`，啟用 safe area insets 支援                                                                                                                                                                                                                                                                 |
 | `src/components/NavBar.vue` | 水平捲動 `.nav-rail` 加入 `::after` 空白偽元素，修正 flex scrollable container 尾端 padding 在部分 WebView 被吞掉的問題；所有行動裝置 breakpoint 加入 `env(safe-area-inset-right/left)` padding；`nav-item` 與 `lang-toggle` 加入 `flex-shrink:0` 防止被壓縮；移除 tablet 下 `lang-toggle` 的 `margin-left:auto` 使其隨水平捲動自然排列 |
-| `src/assets/style.css` | 三段行動裝置 breakpoint 的 `.layout` 加入 `env(safe-area-inset-right/left)` padding |
+| `src/assets/style.css`      | 三段行動裝置 breakpoint 的 `.layout` 加入 `env(safe-area-inset-right/left)` padding                                                                                                                                                                                                                                                     |

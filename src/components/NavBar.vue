@@ -1,11 +1,17 @@
 <template>
   <nav class="nav-rail" :class="{ collapsed }">
-    <button class="collapse-toggle" @click="$emit('toggle')" :title="collapsed ? t('common.expandSidebar') : t('common.collapseSidebar')">
-      <span class="toggle-icon">{{ collapsed ? '▸' : '◂' }}</span>
+    <button
+      class="collapse-toggle"
+      @click="$emit('toggle')"
+      :title="
+        collapsed ? t('common.expandSidebar') : t('common.collapseSidebar')
+      "
+    >
+      <span class="toggle-icon">{{ collapsed ? "▸" : "◂" }}</span>
     </button>
     <div class="nav-brand">
-      <div class="brand-title">{{ collapsed ? 'S·S' : 'SYLVAN SANCTUM' }}</div>
-      <div v-if="!collapsed" class="brand-sub">{{ t('common.subtitle') }}</div>
+      <div class="brand-title">{{ collapsed ? "S·S" : "SYLVAN SANCTUM" }}</div>
+      <div v-if="!collapsed" class="brand-sub">{{ t("common.subtitle") }}</div>
     </div>
     <div class="nav-group">
       <router-link
@@ -22,9 +28,15 @@
     </div>
 
     <!-- 語言切換按鈕 -->
-    <button class="lang-toggle" @click="toggleLanguage" :title="isZh ? t('common.switchToEnglish') : t('common.switchToChinese')">
+    <button
+      class="lang-toggle"
+      @click="toggleLanguage"
+      :title="isZh ? t('common.switchToEnglish') : t('common.switchToChinese')"
+    >
       <span class="lang-icon">{{ language.icon }}</span>
-      <span v-if="!collapsed" class="lang-label">{{ isZh ? '中文' : 'EN' }}</span>
+      <span v-if="!collapsed" class="lang-label">{{
+        isZh ? "中文" : "EN"
+      }}</span>
     </button>
 
     <div v-if="!collapsed" class="nav-foot">
@@ -34,36 +46,36 @@
 </template>
 
 <script>
-import { useLanguage } from '../composables/useLanguage.js'
+import { useLanguage } from "../composables/useLanguage.js";
 
 export default {
-  name: 'NavBar',
+  name: "NavBar",
   props: {
-    collapsed: { type: Boolean, default: false }
+    collapsed: { type: Boolean, default: false },
   },
-  emits: ['toggle'],
+  emits: ["toggle"],
   setup() {
-    const { language, isZh, isEn, toggleLanguage, t } = useLanguage()
-    return { language, isZh, isEn, toggleLanguage, t }
+    const { language, isZh, isEn, toggleLanguage, t } = useLanguage();
+    return { language, isZh, isEn, toggleLanguage, t };
   },
   data() {
     return {
       navItems: [
-        { to: '/', labelKey: 'common.homeLabel', icon: '🏠' },
-        { to: '/chapter/1', labelKey: 'common.chapter1Label', icon: '⚛️' },
-        { to: '/chapter/2', labelKey: 'common.chapter2Label', icon: '🔥' },
-        { to: '/chapter/3', labelKey: 'common.chapter3Label', icon: '🔗' },
-        { to: '/chapter/4', labelKey: 'common.chapter4Label', icon: '⚗️' },
-        { to: '/chapter/5', labelKey: 'common.chapter5Label', icon: '📋' },
-        { to: '/chapter/6', labelKey: 'common.chapter6Label', icon: '📊' },
-        { to: '/chapter/7', labelKey: 'common.chapter7Label', icon: '🌹' },
-        { to: '/chapter/8', labelKey: 'common.chapter8Label', icon: '🧬' },
-        { to: '/chapter/9', labelKey: 'common.chapter9Label', icon: '📖' },
-        { to: '/chapter/10', labelKey: 'common.chapter10Label', icon: '🧴' }
-      ]
-    }
-  }
-}
+        { to: "/", labelKey: "common.homeLabel", icon: "🏠" },
+        { to: "/chapter/1", labelKey: "common.chapter1Label", icon: "⚛️" },
+        { to: "/chapter/2", labelKey: "common.chapter2Label", icon: "🔥" },
+        { to: "/chapter/3", labelKey: "common.chapter3Label", icon: "🔗" },
+        { to: "/chapter/4", labelKey: "common.chapter4Label", icon: "⚗️" },
+        { to: "/chapter/5", labelKey: "common.chapter5Label", icon: "📋" },
+        { to: "/chapter/6", labelKey: "common.chapter6Label", icon: "📊" },
+        { to: "/chapter/7", labelKey: "common.chapter7Label", icon: "🌹" },
+        { to: "/chapter/8", labelKey: "common.chapter8Label", icon: "🧬" },
+        { to: "/chapter/9", labelKey: "common.chapter9Label", icon: "📖" },
+        { to: "/chapter/10", labelKey: "common.chapter10Label", icon: "🧴" },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -133,12 +145,14 @@ export default {
 }
 
 .brand-title {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 1.2rem;
   letter-spacing: 3px;
   color: var(--leaf-light);
   text-shadow: 0 0 18px rgba(168, 230, 207, 0.5);
-  transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+  transition:
+    font-size 0.3s ease,
+    letter-spacing 0.3s ease;
 }
 
 .collapsed .brand-title {
@@ -168,7 +182,11 @@ export default {
   margin-top: 0.5rem;
   border-radius: 12px;
   border: 1px solid rgba(168, 230, 207, 0.4);
-  background: linear-gradient(135deg, rgba(168, 230, 207, 0.15), rgba(20, 45, 25, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(168, 230, 207, 0.15),
+    rgba(20, 45, 25, 0.2)
+  );
   color: var(--leaf-light);
   cursor: pointer;
   font-size: 0.9rem;
@@ -183,7 +201,11 @@ export default {
 
 .lang-toggle:hover {
   border-color: rgba(168, 230, 207, 0.7);
-  background: linear-gradient(135deg, rgba(168, 230, 207, 0.25), rgba(20, 45, 25, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(168, 230, 207, 0.25),
+    rgba(20, 45, 25, 0.3)
+  );
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(168, 230, 207, 0.2);
 }
@@ -239,7 +261,11 @@ export default {
 .nav-item:hover {
   color: #ffffff;
   border-color: rgba(255, 215, 0, 0.4);
-  background: linear-gradient(90deg, rgba(255, 215, 0, 0.18), rgba(20, 50, 25, 0.2));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 0.18),
+    rgba(20, 50, 25, 0.2)
+  );
   transform: translateX(4px);
 }
 
@@ -256,7 +282,11 @@ export default {
 .nav-item.router-link-exact-active {
   color: #ffffff;
   border-color: rgba(168, 230, 207, 0.6);
-  background: linear-gradient(90deg, rgba(168, 230, 207, 0.25), rgba(20, 45, 25, 0.2));
+  background: linear-gradient(
+    90deg,
+    rgba(168, 230, 207, 0.25),
+    rgba(20, 45, 25, 0.2)
+  );
   box-shadow: 0 8px 18px rgba(10, 25, 10, 0.2);
 }
 
@@ -269,7 +299,9 @@ export default {
 }
 
 @media (max-width: 991px) {
-  .collapse-toggle { display: none; }
+  .collapse-toggle {
+    display: none;
+  }
 
   .nav-rail {
     flex-direction: row;
@@ -288,7 +320,7 @@ export default {
 
   /* 修正水平捲動容器尾端 padding 在部分 WebView 被吞掉的問題 */
   .nav-rail::after {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: calc(1rem + env(safe-area-inset-right, 0px));
     height: 1px;
